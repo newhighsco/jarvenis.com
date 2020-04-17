@@ -19,8 +19,8 @@ const nextConfig = {
   exportTrailingSlash: true,
   poweredByHeader: false,
   env: {
-    SITE_URL: 'https://starter.newhighsco.re/',
-    DISALLOW_ROBOTS: true
+    SITE_URL: 'https://jarvenis.com/',
+    DISALLOW_ROBOTS: false
   },
   exportPathMap: defaultPathMap => {
     const customPathMap = {}

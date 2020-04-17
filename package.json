@@ -1,17 +1,17 @@
 {
-  "name": "@newhighsco/press-start",
-  "description": "Chipset + Next.js site starter by New High Score",
-  "version": "1.11.1",
+  "name": "@newhighsco/jarvenis.com",
+  "description": "Jarvenis website",
+  "version": "1.0.0",
   "author": "New High Score <hello@newhighsco.re>",
   "license": "ISC",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/newhighsco/press-start.git"
+    "url": "https://github.com/newhighsco/jarvenis.com"
   },
-  "homepage": "https://github.com/newhighsco/press-start#readme",
+  "homepage": "https://jarvenis.com",
   "bugs": {
-    "url": "https://github.com/newhighsco/press-start/issues"
+    "url": "https://github.com/newhighsco/jarvenis.com/issues"
   },
   "scripts": {
     "start": "next dev",
