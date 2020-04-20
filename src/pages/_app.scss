@@ -1,5 +1,25 @@
 @use '~@newhighsco/chipset/styles/normalize';
-@use '../styles/fonts';
+@use '../styles/fonts.module';
+
+@font-face {
+  font-display: swap;
+  font-family: fonts.$kontrapunkt;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/kontrapunkt/regular.woff2') format('woff2'),
+    url('../fonts/kontrapunkt/regular.woff') format('woff'),
+    url('../fonts/kontrapunkt/regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: fonts.$big-noodle-titling;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/big-noodle-titling/regular.woff2') format('woff2'),
+    url('../fonts/big-noodle-titling/regular.woff') format('woff'),
+    url('../fonts/big-noodle-titling/regular.ttf') format('truetype');
+}
 
 body {
   font-size: 16px;
