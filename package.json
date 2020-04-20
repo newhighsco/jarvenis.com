@@ -19,7 +19,7 @@
   "scripts": {
     "start": "next dev",
     "start:storybook": "start-storybook --port 9001 --docs --ci --quiet",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:next",
     "build:next": "next build && next export --outdir build",
     "build:storybook": "build-storybook --output-dir build/storybook --docs --quiet",
     "test": "npm run lint",
