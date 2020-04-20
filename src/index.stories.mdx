@@ -1,12 +1,52 @@
-import { ColorItem, ColorPalette, Meta } from '@storybook/addon-docs/blocks'
-import colors from './styles/colors'
+import { startCase } from 'lodash'
+import {
+  ColorItem,
+  ColorPalette,
+  Heading,
+  IconGallery,
+  IconItem,
+  Meta,
+  Typeset
+} from '@storybook/addon-docs/blocks'
+import colors from './styles/_colors.module.scss'
+import fonts from './styles/_fonts.module.scss'
+const fontSizes = ['16px', '24px', '32px', '48px', '64px']
+const icons = require.context('./images/icons', false, /\.svg$/)
 
-<Meta title="Intro/Branding" />
+<Meta title="Styles/Branding" />
 
 # Colors
 
 <ColorPalette>
-  {colors.map(color => (
-    <ColorItem key={color.key} title={color.name} colors={color.values} />
+  {Object.keys(colors).map(key => (
+    <ColorItem
+      key={key}
+      title={startCase(key)}
+      colors={colors[key].split(',')}
+    />
   ))}
 </ColorPalette>
+
+# Fonts
+
+<div>
+  {Object.keys(fonts).map(key => (
+    <div key={key}>
+      <Heading>{fonts[key]}</Heading>
+      <Typeset fontSizes={fontSizes} fontFamily={fonts[key]} />
+    </div>
+  ))}
+</div>
+
+# Icons
+
+<IconGallery>
+  {icons.keys().map(key => {
+    const Svg = icons(key).default
+    return (
+      <IconItem key={key}>
+        <Svg />
+      </IconItem>
+    )
+  })}
+</IconGallery>

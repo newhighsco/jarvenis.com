@@ -4,7 +4,7 @@ import { ThemeProvider } from '@newhighsco/chipset'
 import componentTheme from '../src/theme'
 import storybookTheme from './theme'
 
-import '@newhighsco/chipset/styles/_normalize.scss'
+import './preview.scss'
 
 addDecorator(storyFn => (
   <ThemeProvider theme={componentTheme}>{storyFn()}</ThemeProvider>
