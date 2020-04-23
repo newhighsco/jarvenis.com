@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/newhighsco/jarvenis.com/compare/v1.1.0...v1.1.1) (2020-04-23)
+
+
+### Bug Fixes
+
+* **heading:** rotates headings ([196b051](https://github.com/newhighsco/jarvenis.com/commit/196b0517110d69caa4e9b9ea35b2d130b7fd5500))
+
 # [1.1.0](https://github.com/newhighsco/jarvenis.com/compare/v1.0.0...v1.1.0) (2020-04-23)
 
 
