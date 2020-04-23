@@ -1,0 +1,42 @@
+@use '../../styles/colors.module';
+@use '../../styles/fonts.module';
+
+@mixin background($color, $padding: 0.1em) {
+  background: $color;
+  box-shadow: $padding 0 0 $color, ($padding * -1) 0 0 $color;
+}
+
+.wrapper {
+  display: block;
+  font-family: fonts.$heading;
+  font-size: 3em;
+  line-height: 1;
+}
+
+.content {
+  @include background(colors.$resolution);
+
+  display: inline;
+  transform: rotate(-3deg);
+
+  em {
+    color: colors.$yellow;
+    font-style: normal;
+  }
+}
+
+.alternate {
+  .content {
+    @include background(colors.$yellow);
+
+    color: colors.$black;
+
+    em {
+      color: currentColor;
+    }
+  }
+}
+
+.small {
+  font-size: 2em;
+}

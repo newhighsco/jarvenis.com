@@ -1,0 +1,15 @@
+@use '../../styles/functions';
+
+.list {
+  margin-bottom: functions.spacing(4);
+}
+
+.link {
+  display: inline-block;
+  margin: functions.spacing(2);
+}
+
+.icon {
+  fill: currentColor;
+  width: functions.spacing(4);
+}

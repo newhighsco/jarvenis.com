@@ -7,12 +7,14 @@ export const config = {
   url: process.env.SITE_URL,
   name: 'Jarvenis',
   shortName: 'Jarv',
-  title: 'TODO:',
-  description: 'TODO:',
+  title: 'Jarv - News. Guides. Reviews',
+  description:
+    'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
   themeColor: colors.black,
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
-  disallowRobots: JSON.parse(process.env.DISALLOW_ROBOTS || false)
+  disallowRobots: JSON.parse(process.env.DISALLOW_ROBOTS || false),
+  email: 'JarvenisYT@gmail.com'
 }
 
 export const meta = {
@@ -33,5 +35,10 @@ export const meta = {
 }
 
 export const socialLinks = {
-  twitter: `https://twitter.com/${config.twitterHandle}`
+  discord: 'https://discordapp.com/invite/rwq9UHT',
+  instagram: `https://www.instagram.com/${config.twitterHandle}/`,
+  teespring: 'https://teespring.com/en-GB/stores/jarv',
+  twitch: `https://www.twitch.tv/${config.twitterHandle}`,
+  twitter: `https://twitter.com/${config.twitterHandle}`,
+  youtube: `https://youtube.com/${config.twitterHandle}`
 }

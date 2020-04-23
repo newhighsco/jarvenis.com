@@ -1,0 +1,17 @@
+@use '../../styles/fonts.module';
+@use '../../styles/functions';
+
+.wrapper {
+  display: inline-block;
+  text-align: center;
+}
+
+.icon {
+  fill: currentColor;
+  width: functions.spacing(10);
+}
+
+.text {
+  font-family: fonts.$logo;
+  text-transform: uppercase;
+}

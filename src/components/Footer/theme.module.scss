@@ -1,0 +1,6 @@
+@use '../../styles/functions';
+
+.gutter {
+  padding-left: functions.spacing(2) !important;
+  padding-right: functions.spacing(2) !important;
+}

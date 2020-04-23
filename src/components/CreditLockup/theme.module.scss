@@ -1,0 +1,9 @@
+@use '../../styles/functions';
+
+.wrapper {
+  margin: 0 functions.spacing(2);
+}
+
+.text {
+  font-size: smaller;
+}
