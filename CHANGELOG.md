@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/newhighsco/jarvenis.com/compare/v1.0.0...v1.1.0) (2020-04-23)
+
+
+### Features
+
+* initial release ([40bf8cb](https://github.com/newhighsco/jarvenis.com/commit/40bf8cbab95bfe56efff99e6567bf20e42e6efb0))
+
 # 1.0.0 (2020-04-23)
 
 
