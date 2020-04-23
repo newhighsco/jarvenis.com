@@ -11,13 +11,21 @@
   font-family: fonts.$heading;
   font-size: 3em;
   line-height: 1;
+
+  & + & {
+    margin-top: 0.2em;
+  }
+}
+
+.inner {
+  display: inline-block;
+  transform: rotate(-3deg);
 }
 
 .content {
   @include background(colors.$resolution);
 
   display: inline;
-  transform: rotate(-3deg);
 
   em {
     color: colors.$yellow;

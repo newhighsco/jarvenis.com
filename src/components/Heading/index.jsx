@@ -15,7 +15,9 @@ const Heading = ({ alternate, size, as = 'h1', children, ...rest }) => (
     )}
     {...rest}
   >
-    <span className={styles.content}>{children}</span>
+    <span className={styles.inner}>
+      <span className={styles.content}>{children}</span>
+    </span>
   </Element>
 )
 
