@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/newhighsco/jarvenis.com/compare/v1.1.2...v1.1.3) (2020-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/next-plugin-sitemap to v1.0.2 ([b1faad8](https://github.com/newhighsco/jarvenis.com/commit/b1faad84b9b737bbb1de4f12e9d9ed00d687ede8))
+
 ## [1.1.2](https://github.com/newhighsco/jarvenis.com/compare/v1.1.1...v1.1.2) (2020-04-24)
 
 
