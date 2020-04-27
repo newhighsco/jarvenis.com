@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/newhighsco/jarvenis.com/compare/v1.1.6...v1.1.7) (2020-04-27)
+
+
+### Bug Fixes
+
+* **robots:** correctly hides pages ([bb3359c](https://github.com/newhighsco/jarvenis.com/commit/bb3359ce4847a1564154522da310ab3f1d24669b))
+
 ## [1.1.6](https://github.com/newhighsco/jarvenis.com/compare/v1.1.5...v1.1.6) (2020-04-27)
 
 
