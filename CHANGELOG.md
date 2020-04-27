@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/newhighsco/jarvenis.com/compare/v1.1.3...v1.1.4) (2020-04-27)
+
+
+### Bug Fixes
+
+* correctly extends shared browserslist-config ([679f292](https://github.com/newhighsco/jarvenis.com/commit/679f29236d8d7d86923de9e52418ff0efc8ee1d5))
+
 ## [1.1.3](https://github.com/newhighsco/jarvenis.com/compare/v1.1.2...v1.1.3) (2020-04-25)
 
 
