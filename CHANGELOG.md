@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/newhighsco/jarvenis.com/compare/v1.1.7...v1.2.0) (2020-04-27)
+
+
+### Features
+
+* **css-options:** moves to external plugin ([7319062](https://github.com/newhighsco/jarvenis.com/commit/7319062ef0f814a652a5e6e375b5035d9ca9735e))
+
 ## [1.1.7](https://github.com/newhighsco/jarvenis.com/compare/v1.1.6...v1.1.7) (2020-04-27)
 
 
