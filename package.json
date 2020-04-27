@@ -96,7 +96,6 @@
       "@newhighsco"
     ],
     "baseBranches": [
-      "master",
       "staging"
     ]
   },
