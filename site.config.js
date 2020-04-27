@@ -13,12 +13,13 @@ export const config = {
   themeColor: colors.black,
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
-  disallowRobots: JSON.parse(process.env.DISALLOW_ROBOTS || false),
-  email: 'JarvenisYT@gmail.com'
+  disallowRobots: process.env.DISALLOW_ROBOTS,
+  email: 'jarv@jarvenis.com'
 }
 
 export const meta = {
   dangerouslySetAllPagesToNoFollow: config.disallowRobots,
+  dangerouslySetAllPagesToNoIndex: config.disallowRobots,
   titleTemplate: `%s | ${config.name}`,
   description: config.description,
   openGraph: {

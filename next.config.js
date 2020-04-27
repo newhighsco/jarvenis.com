@@ -20,16 +20,7 @@ const nextConfig = {
   poweredByHeader: false,
   env: {
     SITE_URL: 'https://jarvenis.com/',
-    DISALLOW_ROBOTS: false
-  },
-  exportPathMap: defaultPathMap => {
-    const customPathMap = {}
-    const pathMap = Object.assign(customPathMap, defaultPathMap)
-    const ignorePaths = []
-
-    ignorePaths.map(path => delete pathMap[path])
-
-    return pathMap
+    DISALLOW_ROBOTS: JSON.parse(process.env.DISALLOW_ROBOTS || false)
   }
 }
 
