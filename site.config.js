@@ -38,7 +38,7 @@ export const meta = {
 export const socialLinks = {
   discord: 'https://discordapp.com/invite/rwq9UHT',
   instagram: `https://www.instagram.com/${config.twitterHandle}/`,
-  teespring: 'https://teespring.com/en-GB/stores/jarv',
+  teespring: 'https://teespring.com/stores/jarv',
   twitch: `https://www.twitch.tv/${config.twitterHandle}`,
   twitter: `https://twitter.com/${config.twitterHandle}`,
   youtube: `https://youtube.com/${config.twitterHandle}`
