@@ -11,9 +11,17 @@
   font-family: fonts.$heading;
   font-size: 3em;
   line-height: 1;
+  position: relative;
+  z-index: 2;
 
   & + & {
-    margin-top: 0.2em;
+    margin-top: 0.1em;
+    z-index: 3;
+  }
+
+  & + * {
+    position: relative;
+    z-index: 1;
   }
 }
 
