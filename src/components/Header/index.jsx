@@ -8,12 +8,14 @@ import theme from './theme.module.scss'
 const Header = () => (
   <>
     <Landmark id="top">Top of page</Landmark>
-    <ContentContainer as="header" role="banner" fullWidth gutter theme={theme}>
-      <Link href="/" passHref>
-        <SmartLink>
-          <LogoLockup />
-        </SmartLink>
-      </Link>
+    <ContentContainer as="header" role="banner" gutter theme={theme}>
+      <ContentContainer size="desktopLarge">
+        <Link href="/" passHref>
+          <SmartLink>
+            <LogoLockup />
+          </SmartLink>
+        </Link>
+      </ContentContainer>
     </ContentContainer>
   </>
 )

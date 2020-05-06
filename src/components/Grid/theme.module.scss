@@ -1,0 +1,11 @@
+@use '~@newhighsco/chipset/styles/mixins/grid';
+@use '../../styles/functions';
+@use '../../styles/mixins';
+@use '../../styles/breakpoints.module';
+
+@include grid.gutter('', functions.spacing(2));
+@include grid.widths('', 2);
+
+@include mixins.mq(breakpoints.$tablet) {
+  @include grid.widths('tablet', 2 4);
+}

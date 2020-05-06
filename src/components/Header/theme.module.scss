@@ -1,5 +1,10 @@
 @use '../../styles/colors.module';
+@use '../../styles/functions';
 
 .wrapper {
   color: colors.$seagull;
+}
+
+.content {
+  padding: functions.spacing(4) 0;
 }

@@ -12,8 +12,6 @@ const PageContainer = ({ meta, children }) => (
     role="main"
     header={<Header />}
     footer={<Footer />}
-    fullWidth
-    gutter
   >
     <Meta {...meta} />
     {children}
