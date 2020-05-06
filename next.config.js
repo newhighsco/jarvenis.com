@@ -1,3 +1,5 @@
+const sourcebit = require('sourcebit')
+const sourcebitConfig = require('./sourcebit.config.js')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
   '@newhighsco/chipset'
@@ -23,6 +25,8 @@ const nextConfig = {
     DISALLOW_ROBOTS: JSON.parse(process.env.DISALLOW_ROBOTS || false)
   }
 }
+
+sourcebit.fetch(sourcebitConfig, { cache: true })
 
 module.exports = withPlugins(
   [
