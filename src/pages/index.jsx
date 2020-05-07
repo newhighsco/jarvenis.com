@@ -3,17 +3,10 @@ import { array, object } from 'prop-types'
 import urlJoin from 'url-join'
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import {
-  ContentContainer,
-  Grid,
-  GridItem,
-  List,
-  SmartLink,
-  TwitchEmbed,
-  ResponsiveMedia
-} from '@newhighsco/chipset'
+import { ContentContainer, List, TwitchEmbed } from '@newhighsco/chipset'
 import { Heading } from '../components/Heading'
 import { PageContainer } from '../components/PageContainer'
+import { ProductListing } from '../components/Products'
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
@@ -48,19 +41,7 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
     {!!products.length && (
       <ContentContainer size="desktopMedium" gutter>
         <Heading as="h2">Merchandise</Heading>
-        <Grid>
-          {products.map(({ id, slug, href, heading, kicker, image, price }) => (
-            <GridItem key={id} sizes={['one-half', 'tablet-one-quarter']}>
-              <SmartLink href={href} target="_blank">
-                <ResponsiveMedia>
-                  <img src={image} alt="" />
-                </ResponsiveMedia>
-                {heading} {kicker} {slug}
-                {price}
-              </SmartLink>
-            </GridItem>
-          ))}
-        </Grid>
+        <ProductListing products={products} />
       </ContentContainer>
     )}
   </PageContainer>
