@@ -9,6 +9,7 @@ import {
   GridItem,
   List,
   SmartLink,
+  TwitchEmbed,
   ResponsiveMedia
 } from '@newhighsco/chipset'
 import { Heading } from '../components/Heading'
@@ -30,7 +31,7 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
       <Heading as="h2" alternate>
         Live
       </Heading>
-      <p>Twitch embed here</p>
+      <TwitchEmbed channel={config.twitterHandle} alwaysOnline />
     </ContentContainer>
     {!!videos.length && (
       <ContentContainer size="desktopMedium" gutter>
