@@ -6,7 +6,7 @@ import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { ContentContainer, List, TwitchEmbed } from '@newhighsco/chipset'
 import { Heading } from '../components/Heading'
 import { PageContainer } from '../components/PageContainer'
-import { ProductListing } from '../components/Products'
+import { ProductListing } from '../components/ProductListing'
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
