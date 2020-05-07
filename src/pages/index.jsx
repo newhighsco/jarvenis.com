@@ -31,7 +31,7 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
       <Heading as="h2" alternate>
         Live
       </Heading>
-      <TwitchEmbed channel={config.twitterHandle} alwaysOnline />
+      <TwitchEmbed channel={config.twitterHandle} theme="dark" />
     </ContentContainer>
     {!!videos.length && (
       <ContentContainer size="desktopMedium" gutter>

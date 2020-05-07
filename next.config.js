@@ -22,8 +22,7 @@ const nextConfig = {
   poweredByHeader: false,
   env: {
     SITE_URL: 'https://jarvenis.com/',
-    DISALLOW_ROBOTS: JSON.parse(process.env.DISALLOW_ROBOTS || false),
-    TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID
+    DISALLOW_ROBOTS: JSON.parse(process.env.DISALLOW_ROBOTS || false)
   }
 }
 
