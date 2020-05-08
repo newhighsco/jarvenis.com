@@ -1,0 +1,8 @@
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+
+.alternate {
+  background: colors.$slate;
+  padding-top: functions.spacing(4);
+  padding-bottom: functions.spacing(4);
+}
