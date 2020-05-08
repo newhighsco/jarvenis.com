@@ -14,4 +14,5 @@ const LogoLockup = () => (
   </div>
 )
 
+export default LogoLockup
 export { LogoLockup }

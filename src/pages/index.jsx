@@ -3,10 +3,8 @@ import { array, object } from 'prop-types'
 import urlJoin from 'url-join'
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { ContentContainer, List, TwitchEmbed } from '@newhighsco/chipset'
-import { Heading } from '../components/Heading'
-import { PageContainer } from '../components/PageContainer'
-import { ProductListing } from '../components/ProductListing'
+import { List, TwitchEmbed } from '@newhighsco/chipset'
+import { Heading, PageContainer, ProductListing, Section } from '../components'
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
@@ -20,14 +18,14 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
       sameAs={[socialLinks.twitter]}
     />
     <LogoJsonLd url={config.url} logo={urlJoin(config.url, logoUrl)} />
-    <ContentContainer size="desktopMedium" gutter>
+    <Section>
       <Heading as="h2" alternate>
         Live
       </Heading>
       <TwitchEmbed channel={config.twitterHandle} theme="dark" />
-    </ContentContainer>
+    </Section>
     {!!videos.length && (
-      <ContentContainer size="desktopMedium" gutter>
+      <Section>
         <Heading as="h2">
           Latest <em>videos</em>
         </Heading>
@@ -36,13 +34,13 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
             <li key={id}>{heading}</li>
           ))}
         </List>
-      </ContentContainer>
+      </Section>
     )}
     {!!products.length && (
-      <ContentContainer size="desktopMedium" gutter>
+      <Section alternate>
         <Heading as="h2">Merchandise</Heading>
         <ProductListing products={products} />
-      </ContentContainer>
+      </Section>
     )}
   </PageContainer>
 )

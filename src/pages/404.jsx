@@ -2,8 +2,7 @@ import React from 'react'
 import { object } from 'prop-types'
 import Link from 'next/link'
 import { SmartLink } from '@newhighsco/chipset'
-import { Heading } from '../components/Heading'
-import { PageContainer } from '../components/PageContainer'
+import { Heading, PageContainer } from '../components'
 
 const NotFoundPage = ({ meta }) => (
   <PageContainer meta={meta}>

@@ -7,7 +7,7 @@ import {
   Landmark,
   SmartLink
 } from '@newhighsco/chipset'
-import { LogoLockup } from '../LogoLockup'
+import { LogoLockup } from '..'
 
 import theme from './theme.module.scss'
 
