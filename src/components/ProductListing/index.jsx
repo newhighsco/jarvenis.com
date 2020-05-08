@@ -2,7 +2,7 @@ import React from 'react'
 import { array } from 'prop-types'
 import { Grid, GridItem, SmartLink, ResponsiveMedia } from '@newhighsco/chipset'
 
-import styles from './index.module.scss'
+import styles from './styles.module.scss'
 
 const ProductListing = ({ products = [] }) => {
   if (!products?.length) return null
