@@ -1,5 +1,7 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/fonts.module';
 @use '../../styles/functions';
+@use '../../styles/mixins';
 
 .wrapper {
   display: inline-block;
@@ -8,7 +10,11 @@
 
 .icon {
   fill: currentColor;
-  width: functions.spacing(10);
+  width: functions.spacing(6);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    width: functions.spacing(10);
+  }
 }
 
 .text {
