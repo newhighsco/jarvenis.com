@@ -63,7 +63,7 @@
     "@newhighsco/storybook-preset": "2.3.2",
     "@newhighsco/stylelint-config": "2.0.11",
     "@storybook/react": "5.3.18",
-    "eslint": "6.8.0",
+    "eslint": "7.0.0",
     "husky": "4.2.5",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
