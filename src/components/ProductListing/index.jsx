@@ -9,7 +9,7 @@ const ProductListing = ({ products = [] }) => {
 
   return (
     <Grid className={styles.wrapper}>
-      {products.map(({ id, slug, href, heading, kicker, image, price }) => (
+      {products.map(({ id, href, heading, kicker, image, price }) => (
         <GridItem key={id} sizes={['one-half', 'tablet-one-quarter']}>
           <SmartLink className={styles.link} href={href} target="_blank">
             <ResponsiveMedia className={styles.image}>
