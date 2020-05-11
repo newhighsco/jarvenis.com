@@ -1,3 +1,11 @@
+@use '../../styles/functions';
+
 .wrapper {
+  margin-bottom: functions.spacing(-1);
   text-align: center;
+}
+
+.link {
+  display: block;
+  margin-bottom: functions.spacing(1);
 }
