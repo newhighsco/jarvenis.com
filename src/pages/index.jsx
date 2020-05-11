@@ -39,9 +39,9 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
       </Section>
     )}
     {!!products.length && (
-      <Section alternate>
+      <Section>
         <Heading as="h2">Merchandise</Heading>
-        <ProductListing products={products} />
+        <ProductListing products={products.slice(0, 4)} />
       </Section>
     )}
   </PageContainer>
