@@ -15,7 +15,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
       name: 'permaLink',
       message: 'What is your Teespring storefront URL permalink?',
       validate: value =>
-        value.length > 0 ? true : 'The URL permalink cannot be empty',
+        value.length > 0 ? true : 'Permalink cannot be empty',
       default: currentOptions.permaLink
     }
   ]
@@ -86,34 +86,9 @@ module.exports.bootstrap = async ({
       entries
     })
   }
-
-  // if (options.watch) {
-  //   setInterval(() => {
-  //     const { entries } = getPluginContext()
-  //     const entryIndex = Math.floor(Math.random() * entries.length)
-
-  //     entries[entryIndex].body = entries[entryIndex].body + ' (updated)'
-
-  //     log(`Updated entry #${entryIndex}`)
-  //     debug('Updated entries: %O', entries)
-
-  //     // 👉 We take the new entries array and update the plugin context.
-  //     setPluginContext({ entries })
-
-  //     // 👉 After updating the context, we must communicate the change and
-  //     // the need for all plugins to re-run in order to act on the new data.
-  //     refresh()
-  //   }, 3000)
-  // }
 }
 
-module.exports.transform = ({
-  data,
-  debug,
-  getPluginContext,
-  log,
-  options
-}) => {
+module.exports.transform = ({ data, getPluginContext, options }) => {
   const { entries } = getPluginContext()
 
   const model = {
