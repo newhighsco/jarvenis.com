@@ -7,11 +7,20 @@ module.exports = {
       }
     },
     {
+      module: require('./src/plugins/sourcebit-source-youtube'),
+      options: {
+        channelId: 'UCPbVYd8r0hfiBhKSyxMsjiw'
+      }
+    },
+    {
       module: require('sourcebit-target-next'),
       options: {
         commonProps: {
           products: {
             predicate: entry => entry.__metadata.modelName === 'product'
+          },
+          videos: {
+            predicate: entry => entry.__metadata.modelName === 'video'
           }
         }
       }

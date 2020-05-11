@@ -3,8 +3,14 @@ import { array, object } from 'prop-types'
 import urlJoin from 'url-join'
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { List, TwitchEmbed } from '@newhighsco/chipset'
-import { Heading, PageContainer, ProductListing, Section } from '../components'
+import { TwitchEmbed } from '@newhighsco/chipset'
+import {
+  Heading,
+  PageContainer,
+  ProductListing,
+  Section,
+  VideoListing
+} from '../components'
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
@@ -25,15 +31,11 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
       <TwitchEmbed channel={config.twitterHandle} theme="dark" />
     </Section>
     {!!videos.length && (
-      <Section>
+      <Section alternate>
         <Heading as="h2">
           Latest <em>videos</em>
         </Heading>
-        <List>
-          {videos.map(({ id, heading }) => (
-            <li key={id}>{heading}</li>
-          ))}
-        </List>
+        <VideoListing videos={videos.slice(0, 4)} />
       </Section>
     )}
     {!!products.length && (
