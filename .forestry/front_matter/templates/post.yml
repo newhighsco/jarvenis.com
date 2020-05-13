@@ -17,5 +17,3 @@ fields:
   label: Title
   config:
     required: true
-pages:
-- src/content/posts/first-post.mdx
