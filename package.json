@@ -31,10 +31,10 @@
     "format:css": "npm run lint:css -- --fix"
   },
   "dependencies": {
-    "@newhighsco/chipset": "3.2.0",
+    "@newhighsco/chipset": "3.2.1",
     "@newhighsco/next-plugin-css-options": "1.0.1",
     "@newhighsco/next-plugin-robots": "1.1.1",
-    "@newhighsco/next-plugin-sitemap": "1.0.4",
+    "@newhighsco/next-plugin-sitemap": "1.0.5",
     "@newhighsco/next-plugin-svgr": "1.0.2",
     "babel-loader": "8.1.0",
     "next": "9.4.0",
@@ -57,7 +57,7 @@
     "@newhighsco/browserslist-config": "1.0.2",
     "@newhighsco/commitlint-config": "1.0.1",
     "@newhighsco/editor-config": "1.1.1",
-    "@newhighsco/eslint-config": "2.2.0",
+    "@newhighsco/eslint-config": "2.2.2",
     "@newhighsco/prettier-config": "2.0.3",
     "@newhighsco/release-config": "1.0.21",
     "@newhighsco/renovate-config": "1.4.0",
