@@ -1,0 +1,19 @@
+@use '../../styles/colors.module';
+@use '../../styles/fonts.module';
+@use '../../styles/functions';
+
+.item {
+  border: 3px solid colors.$seagull;
+  font-family: fonts.$logo;
+  font-size: 1.15em;
+  padding: functions.spacing(1) functions.spacing(2);
+  text-transform: uppercase;
+}
+
+.wrapper {
+  text-align: center;
+
+  .item {
+    margin: 0 functions.spacing(1);
+  }
+}

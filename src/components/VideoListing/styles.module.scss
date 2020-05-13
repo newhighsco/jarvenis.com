@@ -1,12 +1,15 @@
 @use '../../styles/functions';
 
 .wrapper {
-  margin-bottom: functions.spacing(-1);
   text-align: center;
 }
 
 .link {
   display: block;
-  margin-bottom: functions.spacing(1);
+  margin-bottom: functions.spacing(2);
   text-align: left;
+}
+
+.buttons {
+  margin-top: functions.spacing(2);
 }
