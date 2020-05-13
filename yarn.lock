@@ -1613,14 +1613,15 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-1.0.2.tgz#4f87aae28d94f9072a6c4dfdb0b7fe84edbb1fef"
   integrity sha512-8YvdUKZ5R7e5f1IIPwHRlWIHVoAxAVMJXTLm/2Tct93pEfPFE4AdBORiv++tA4IxTB78oc9teAMp36AoP9UiPA==
 
-"@newhighsco/chipset@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-3.2.0.tgz#78738764604420c317dc65e25c820f6649c6ddf6"
-  integrity sha512-GW8A9doWnJnsg6QmhNDbtfNUHDiSqG2B/P/KWI9FPcMAHm2y6IBwsBSEnklHskUpBtRXOf4oYxRprMGVd9IxVw==
+"@newhighsco/chipset@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-3.2.1.tgz#f7bf07b931a0eeb926601ce9a4f5592588e2b331"
+  integrity sha512-rnxssKkP/gijiugpw5KgDGlmWjrzxGgYmVWJu2dU63KcjZlf4028VU5K4SmvMmNoE0Tol4bkRLHwzxH/uiCWiQ==
   dependencies:
     "@friendsofreactjs/react-css-themr" "4.1.0"
     classnames "2.2.6"
     react-ga "2.7.0"
+    url-parse "1.4.7"
 
 "@newhighsco/commitlint-config@1.0.1":
   version "1.0.1"
@@ -1632,10 +1633,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.1.1.tgz#f90fe3bfb5aa4bb46c578338241b5a16c4a65f08"
   integrity sha512-9UL8Ip4BT2oIzIQoUu/onM9PEKh5+xdmTVFGuGudY4J6nxs4yg0/iPpe81hXGu5dvcMOX/YRS3vLvf/rpXAHxA==
 
-"@newhighsco/eslint-config@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-2.2.0.tgz#95110c8e9b097415ed1e9120419cbee0952f4420"
-  integrity sha512-b1gHHWOP2390SxfVYhtv67aXfrRVrC5IuKOLk1pdurPJl/Z5/DWEis6yOh43k+0bS7IW2NnGaHHublq6zTyUWA==
+"@newhighsco/eslint-config@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-2.2.2.tgz#1ebc85f81e29dd5f569942e257d2fbe7741e3b3b"
+  integrity sha512-zDPHEzMtRBeqG/acwrDuhnCA60LaLwDaoceeuFhZoYpWNagGf/L9y7ex3GH29Ll8Ul8tZzZBA0oT2IbyEp3XGw==
   dependencies:
     babel-eslint "10.1.0"
     eslint-config-prettier "6.11.0"
@@ -1648,7 +1649,7 @@
     eslint-plugin-node "11.1.0"
     eslint-plugin-prettier "3.1.3"
     eslint-plugin-promise "4.2.1"
-    eslint-plugin-react "7.19.0"
+    eslint-plugin-react "7.20.0"
     eslint-plugin-standard "4.0.1"
 
 "@newhighsco/next-plugin-css-options@1.0.1":
@@ -1663,12 +1664,12 @@
   dependencies:
     url-join "4.0.1"
 
-"@newhighsco/next-plugin-sitemap@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-sitemap/-/next-plugin-sitemap-1.0.4.tgz#ca0dd78b9e4f635fd034139692cf8612d6d2cd77"
-  integrity sha512-wmu5tI1Y/JCkSm0ulJTuLSqWm4rF5hnb7u+6tSJ19iituLjIdULqWv7m7A/kIk+1IMlhLHD4lVy6pMvyNPRvAA==
+"@newhighsco/next-plugin-sitemap@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-sitemap/-/next-plugin-sitemap-1.0.5.tgz#6370ef2b4038950677d69322a03f0e5c597218eb"
+  integrity sha512-K+IMUWQFL2WR+fIqMJG7ehWaRxUqquTXsLGXLkuhTW8GmZT8ZpEev5AnoAm29UbadcrWLlFN9NWQ6DWeAek53A==
   dependencies:
-    sitemap "6.1.3"
+    sitemap "6.1.4"
 
 "@newhighsco/next-plugin-svgr@1.0.2":
   version "1.0.2"
@@ -2795,10 +2796,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.0.tgz#30d2d09f623fe32cde9cb582c7a6eda2788ce4a8"
   integrity sha512-WE4IOAC6r/yBZss1oQGM5zs2D7RuKR6Q+w+X2SouPofnWn+LbCqClRyhO3ZE7Ix8nmFgo/oVuuE01cJT2XB13A==
 
-"@types/node@^13.13.5":
-  version "13.13.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.5.tgz#96ec3b0afafd64a4ccea9107b75bf8489f0e5765"
-  integrity sha512-3ySmiBYJPqgjiHA7oEaIo2Rzz0HrOZ7yrNO5HWyaE5q0lQ3BppDZ3N53Miz8bw2I7gh1/zir2MGVZBvpb1zq9g==
+"@types/node@^14.0.1":
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.1.tgz#5d93e0a099cd0acd5ef3d5bde3c086e1f49ff68c"
+  integrity sha512-FAYBGwC+W6F9+huFIDtn43cpy7+SzG+atzRiTfdp3inUKL2hXnd4rG8hylJLIh4+hqrQy1P17kvJByE/z825hA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -6454,7 +6455,24 @@ eslint-plugin-promise@4.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-react@7.19.0, eslint-plugin-react@^7.19.0:
+eslint-plugin-react@7.20.0:
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.0.tgz#f98712f0a5e57dfd3e5542ef0604b8739cd47be3"
+  integrity sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
+  dependencies:
+    array-includes "^3.1.1"
+    doctrine "^2.1.0"
+    has "^1.0.3"
+    jsx-ast-utils "^2.2.3"
+    object.entries "^1.1.1"
+    object.fromentries "^2.0.2"
+    object.values "^1.1.1"
+    prop-types "^15.7.2"
+    resolve "^1.15.1"
+    string.prototype.matchall "^4.0.2"
+    xregexp "^4.3.0"
+
+eslint-plugin-react@^7.19.0:
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.19.0.tgz#6d08f9673628aa69c5559d33489e855d83551666"
   integrity sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
@@ -13737,12 +13755,12 @@ simplebar@^4.2.3:
     lodash.throttle "^4.1.1"
     resize-observer-polyfill "^1.5.1"
 
-sitemap@6.1.3:
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-6.1.3.tgz#5369e05a5455a097ad81dd455b11e1d241163581"
-  integrity sha512-+SbtpnAk6XcoxPMw1oIC61Q3/zir73T7QM9+155Tf7d/BUJSflfBzXzPID1ZAOu4FsTJ+rSHw90rF3/c7K3bVA==
+sitemap@6.1.4:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-6.1.4.tgz#e2033fe480c27124e0eaf8e2f6c2a2bc7cc56807"
+  integrity sha512-SKsZAS8THMiHQdFZTWaiTxe53OjqNVqujmx9ZL8FjW742oQSw3y6foRLRaXMKnQjroM1JNR8EnDkLy2xQxFZUA==
   dependencies:
-    "@types/node" "^13.13.5"
+    "@types/node" "^14.0.1"
     "@types/sax" "^1.2.1"
     arg "^4.1.3"
     sax "^1.2.4"
@@ -15402,7 +15420,7 @@ url-parse-lax@^1.0.0:
   dependencies:
     prepend-http "^1.0.1"
 
-url-parse@^1.4.3:
+url-parse@1.4.7, url-parse@^1.4.3:
   version "1.4.7"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
   integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
