@@ -1,5 +1,5 @@
 import React from 'react'
-import { array } from 'prop-types'
+import { array, bool } from 'prop-types'
 import {
   Button,
   ButtonGroup,
@@ -12,13 +12,13 @@ import { socialLinks } from '../../../site.config'
 
 import styles from './styles.module.scss'
 
-const ProductListing = ({ products = [] }) => {
+const ProductListing = ({ products = [], summary }) => {
   if (!products?.length) return null
 
   return (
     <>
       <Grid className={styles.wrapper}>
-        {products.map(({ id, href, heading, kicker, image, price }) => (
+        {products.map(({ id, href, title, kicker, image, price }) => (
           <GridItem
             key={id}
             sizes={['one-half', 'tablet-one-quarter']}
@@ -29,7 +29,7 @@ const ProductListing = ({ products = [] }) => {
                 <img src={image} alt="" />
               </ResponsiveMedia>
               <div className={styles.content}>
-                <div className={styles.heading}>{heading}</div>
+                <div className={styles.title}>{title}</div>
                 <div className={styles.kicker}>{kicker}</div>
                 <div className={styles.price}>{price}</div>
               </div>
@@ -37,17 +37,20 @@ const ProductListing = ({ products = [] }) => {
           </GridItem>
         ))}
       </Grid>
-      <ButtonGroup className={styles.buttons}>
-        <Button href={socialLinks.teespring} target="_blank">
-          Shop all
-        </Button>
-      </ButtonGroup>
+      {summary && (
+        <ButtonGroup className={styles.buttons}>
+          <Button href={socialLinks.teespring} target="_blank">
+            Shop all
+          </Button>
+        </ButtonGroup>
+      )}
     </>
   )
 }
 
 ProductListing.propTypes = {
-  products: array
+  products: array,
+  summary: bool
 }
 
 export default ProductListing

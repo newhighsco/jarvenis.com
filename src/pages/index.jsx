@@ -5,6 +5,7 @@ import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { TwitchEmbed } from '@newhighsco/chipset'
 import {
+  BlogListing,
   Heading,
   PageContainer,
   ProductListing,
@@ -15,7 +16,7 @@ import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
 
-const HomePage = ({ meta, videos = [], products = [] }) => (
+const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>
     <SocialProfileJsonLd
       type="Organization"
@@ -35,13 +36,21 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
         <Heading as="h2">
           Latest <em>videos</em>
         </Heading>
-        <VideoListing videos={videos.slice(0, 4)} />
+        <VideoListing videos={videos} summary />
+      </Section>
+    )}
+    {!!posts.length && (
+      <Section>
+        <Heading as="h2">
+          Latest <em>updates</em>
+        </Heading>
+        <BlogListing posts={posts} summary />
       </Section>
     )}
     {!!products.length && (
-      <Section>
+      <Section alternate>
         <Heading as="h2">Merchandise</Heading>
-        <ProductListing products={products.slice(0, 4)} />
+        <ProductListing products={products} summary />
       </Section>
     )}
   </PageContainer>
@@ -50,20 +59,28 @@ const HomePage = ({ meta, videos = [], products = [] }) => (
 HomePage.propTypes = {
   meta: object,
   videos: array,
-  products: array
+  products: array,
+  posts: array
 }
 
 export async function getStaticProps() {
-  const props = await sourcebitDataClient.getStaticPropsForPageAtPath('/')
+  const slug = '/'
+  const {
+    videos,
+    products,
+    posts
+  } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
 
   return {
     props: {
       meta: {
-        slug: '/',
+        slug,
         customTitle: true,
         title: config.title
       },
-      ...props
+      videos: videos.slice(0, 4),
+      products: products.slice(0, 4),
+      posts: posts.slice(0, 4)
     }
   }
 }
