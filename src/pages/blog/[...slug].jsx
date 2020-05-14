@@ -44,7 +44,7 @@ export async function getStaticPaths() {
   const paths = await sourcebitDataClient.getStaticPaths()
 
   return {
-    paths: paths.filter(path => path !== '/' && !path.startsWith('/blog/')),
+    paths: paths.filter(path => path.startsWith('/blog/')),
     fallback: false
   }
 }
