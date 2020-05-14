@@ -14,7 +14,7 @@ fields:
   default: now
 - name: title
   type: text
-  label: Title2
+  label: Title
   config:
     required: true
 - name: excerpt
