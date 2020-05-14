@@ -8,13 +8,13 @@ fields:
   description: ''
   config:
     required: true
-    date_format: 
-    time_format: 
+    date_format: DD/MM/YYYY
+    time_format: hh:mm
     display_utc: false
   default: now
 - name: title
   type: text
-  label: Title
+  label: Title2
   config:
     required: true
 - name: excerpt
