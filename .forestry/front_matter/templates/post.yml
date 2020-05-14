@@ -17,3 +17,12 @@ fields:
   label: Title
   config:
     required: true
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Excerpt
