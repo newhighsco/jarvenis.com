@@ -3,7 +3,7 @@ import colors from './src/styles/_colors.module.scss'
 import openGraphImageUrl from './src/images/sharing.jpg'
 
 export const config = {
-  lang: 'en',
+  lang: 'en-GB',
   url: process.env.SITE_URL,
   name: 'Jarvenis',
   shortName: 'Jarv',
