@@ -60,7 +60,6 @@ module.exports.options = {
 }
 
 module.exports.bootstrap = async ({
-  debug,
   getPluginContext,
   options,
   log,
@@ -81,12 +80,13 @@ module.exports.bootstrap = async ({
       mergeAttrs: true
     }).then(result => result)
 
-    log(`Loaded ${entries.length} entries`)
-    debug('Initial entries: %O', entries)
-
     setPluginContext({
       entries
     })
+  }
+
+  if (options.watch) {
+    console.error('Watch mode is not supported at this time')
   }
 }
 
@@ -101,29 +101,32 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     projectEnvironment: ''
   }
 
-  const normalizedEntries = entries.map(
-    ({
-      'yt:videoId': id,
-      link: { href },
-      title: heading,
-      'media:group': { 'media:description': content },
-      published: createdAt,
-      updated: updatedAt
-    }) => {
-      return {
-        id,
-        href,
-        heading,
-        image: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
-        content,
-        __metadata: {
-          ...model,
-          createdAt,
-          updatedAt
+  const normalizedEntries = entries
+    .sort((a, b) => b.published - a.published)
+    .map(
+      ({
+        'yt:videoId': id,
+        link: { href },
+        title,
+        'media:group': { 'media:description': content },
+        published: createdAt,
+        updated: updatedAt
+      }) => {
+        return {
+          id,
+          href,
+          title,
+          image: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+          content,
+          __metadata: {
+            ...model,
+            id,
+            createdAt,
+            updatedAt
+          }
         }
       }
-    }
-  )
+    )
 
   return {
     ...data,

@@ -64,7 +64,6 @@ module.exports.options = {
 }
 
 module.exports.bootstrap = async ({
-  debug,
   getPluginContext,
   options,
   log,
@@ -79,12 +78,13 @@ module.exports.bootstrap = async ({
       urlJoin(API_BASE_URL, options.permaLink, 'store_products')
     ).then(response => response.json())
 
-    log(`Loaded ${entries.length} entries`)
-    debug('Initial entries: %O', entries)
-
     setPluginContext({
       entries
     })
+  }
+
+  if (options.watch) {
+    console.error('Watch mode is not supported at this time')
   }
 }
 
@@ -103,7 +103,7 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     ({
       id,
       url: slug,
-      name: heading,
+      name: title,
       product_name: kicker,
       image_url: image,
       price
@@ -112,11 +112,14 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
         id,
         slug: slug.replace(/([^?]+)\?.*/g, '$1'),
         href: urlJoin(BASE_URL, slug),
-        heading,
+        title,
         kicker,
         image,
         price,
-        __metadata: model
+        __metadata: {
+          ...model,
+          id
+        }
       }
     }
   )
