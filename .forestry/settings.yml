@@ -5,10 +5,10 @@ admin_path: static/admin
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Contents
 - type: directory
   path: src/content/posts
-  label: Posts
+  label: Blog
   create: all
   match: "**/*"
   templates:
