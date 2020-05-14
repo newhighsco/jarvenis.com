@@ -13,9 +13,24 @@ module.exports = {
       }
     },
     {
+      module: require('./src/plugins/sourcebit-source-markdown'),
+      options: {
+        contentPath: './src/content'
+      }
+    },
+    {
       module: require('sourcebit-target-next'),
       options: {
+        pages: [
+          {
+            path: '/blog/{slug}',
+            predicate: entry => entry.__metadata.modelName === 'post'
+          }
+        ],
         commonProps: {
+          posts: {
+            predicate: entry => entry.__metadata.modelName === 'post'
+          },
           products: {
             predicate: entry => entry.__metadata.modelName === 'product'
           },

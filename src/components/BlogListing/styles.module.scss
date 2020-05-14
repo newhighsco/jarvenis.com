@@ -1,0 +1,9 @@
+@use '../../styles/functions';
+
+.item {
+  margin-bottom: functions.spacing(2);
+}
+
+.buttons {
+  margin-top: functions.spacing(2);
+}

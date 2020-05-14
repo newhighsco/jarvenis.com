@@ -9,3 +9,7 @@
 @include mixins.mq(breakpoints.$tablet) {
   @include grid.widths('tablet', 2 4);
 }
+
+@include mixins.mq(breakpoints.$desktop) {
+  @include grid.widths('desktop', 4);
+}

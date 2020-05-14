@@ -3,17 +3,25 @@ label: Post
 hide_body: false
 fields:
 - name: date
-  type: datetime
   label: Date
-  description: ''
-  config:
-    required: true
-    date_format: 
-    time_format: 
-    display_utc: false
+  type: datetime
   default: now
-- name: title
-  type: text
-  label: Title
   config:
     required: true
+    date_format:
+    time_format:
+    display_utc: false
+- name: title
+  label: Title
+  type: text
+  config:
+    required: true
+- name: excerpt
+  label: Excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown

@@ -1,6 +1,0 @@
----
-date: 2020-05-13T12:42:00Z
-title: First post
----
-
-This was the first post
