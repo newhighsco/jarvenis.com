@@ -15128,10 +15128,10 @@ sourcebit-target-next@0.4.0:
     lodash "^4.17.15"
     ws "^7.2.3"
 
-sourcebit@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/sourcebit/-/sourcebit-0.8.0.tgz#d80ed186828d81ae3c1cb8d9f201561009fb8673"
-  integrity sha512-8qe2wQTSRcjspNxfBVQVxxwNaHSf+uKzhgi2aIEBQyQbh1rhgblUOfrh15Ta2NHPThtI0nA3FLYmNnpLx3lIbQ==
+sourcebit@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/sourcebit/-/sourcebit-0.8.1.tgz#6dd2affbcb0550fd91e10e4c3e6cb6ea674d07d2"
+  integrity sha512-NxsilIcVUBuf2OmEA/aON7qc1Ooff2F+lRczSD/7TtMLhOGWHJxLQvqu/4Ha3oPuBtdze9q3sZYIjt7Z5j8NeA==
   dependencies:
     commander "^4.1.1"
     debug "^4.1.1"
