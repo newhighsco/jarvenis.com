@@ -1728,10 +1728,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/renovate-config/-/renovate-config-1.4.0.tgz#820fcb746e461191550bea59194cca3438e355ab"
   integrity sha512-XVUHGUgijzhS0NHcIuYpRYmuZcTvU4uANH5Rk4kb5MHwPMizhNeFH7dZJur02uCesOjA11sGKrsCD/8rymewWg==
 
-"@newhighsco/storybook-preset@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@newhighsco/storybook-preset/-/storybook-preset-2.3.3.tgz#cdbd50503f74af23768bab2f6f4d899f41dcee26"
-  integrity sha512-WfYa8XH1whXVQVcn6ks38GbubFj/GWZkWYhxh0u/IYVw5QR06BQjYXdOhie+mfoYRGzkHE+vhIKilYzi88yOmQ==
+"@newhighsco/storybook-preset@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@newhighsco/storybook-preset/-/storybook-preset-2.3.4.tgz#d4a85c1e6dcffdef3a6fbe1f0c914822d57572ee"
+  integrity sha512-Y7yuSwnEwYt9QG4rBqKRacZZF+l6wpHw4DO7WKbRZjWiOSQeVH4Vmqie3x3ufLKwfX+EExEZZKhZ/EQvJ6XN9A==
   dependencies:
     "@storybook/addon-actions" "5.3.19"
     "@storybook/addon-docs" "5.3.19"
@@ -1740,7 +1740,7 @@
     "@storybook/preset-scss" "1.0.2"
     "@svgr/webpack" "5.4.0"
     react-is "16.13.1"
-    sass "1.26.5"
+    sass "1.26.6"
     sass-loader "8.0.2"
 
 "@newhighsco/stylelint-config@2.0.14":
