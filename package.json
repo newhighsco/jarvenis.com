@@ -63,7 +63,7 @@
     "@newhighsco/prettier-config": "2.0.3",
     "@newhighsco/release-config": "1.0.24",
     "@newhighsco/renovate-config": "1.4.0",
-    "@newhighsco/storybook-preset": "2.3.4",
+    "@newhighsco/storybook-preset": "2.3.5",
     "@newhighsco/stylelint-config": "2.0.14",
     "@storybook/react": "5.3.19",
     "eslint": "7.1.0",
