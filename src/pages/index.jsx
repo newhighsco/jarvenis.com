@@ -1,9 +1,9 @@
 import React from 'react'
 import { array, object } from 'prop-types'
 import urlJoin from 'url-join'
+import dynamic from 'next/dynamic'
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { TwitchEmbed } from '@newhighsco/chipset'
 import {
   BlogListing,
   Heading,
@@ -15,6 +15,11 @@ import {
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
+
+const TwitchEmbed = dynamic(
+  () => import('@newhighsco/chipset').then(module => module.TwitchEmbed),
+  { ssr: false }
+)
 
 const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>
