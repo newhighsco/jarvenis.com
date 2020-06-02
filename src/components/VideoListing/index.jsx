@@ -22,7 +22,7 @@ const VideoListing = ({ videos = [], summary }) => {
           <GridItem key={id} sizes={['one-half', 'tablet-one-quarter']}>
             <SmartLink className={styles.link} href={href} target="_blank">
               <ResponsiveMedia ratio="16:9" className={styles.image}>
-                <img src={image} alt="" />
+                <img src={image} alt="" loading="lazy" />
               </ResponsiveMedia>
               <div className={styles.content}>
                 <div className={styles.title}>{title}</div>

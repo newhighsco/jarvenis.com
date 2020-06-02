@@ -26,7 +26,7 @@ const ProductListing = ({ products = [], summary }) => {
           >
             <SmartLink href={href} target="_blank">
               <ResponsiveMedia className={styles.image}>
-                <img src={image} alt="" />
+                <img src={image} alt="" loading="lazy" />
               </ResponsiveMedia>
               <div className={styles.content}>
                 <div className={styles.title}>{title}</div>
