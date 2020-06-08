@@ -16,8 +16,8 @@ import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
 
-const TwitchEmbed = dynamic(
-  () => import('@newhighsco/chipset').then(module => module.TwitchEmbed),
+const LiveStream = dynamic(
+  () => import('@newhighsco/chipset').then(module => module.LiveStream),
   { ssr: false }
 )
 
@@ -34,7 +34,7 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
       <Heading as="h2" alternate>
         Live
       </Heading>
-      <TwitchEmbed channel={config.twitterHandle} theme="dark" />
+      <LiveStream href={socialLinks.youtube} darkMode />
     </Section>
     {!!videos.length && (
       <Section alternate>
