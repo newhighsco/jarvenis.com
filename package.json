@@ -32,13 +32,13 @@
     "@newhighsco/chipset": "4.0.0",
     "@newhighsco/next-plugin-css-options": "1.0.1",
     "@newhighsco/next-plugin-robots": "1.1.1",
-    "@newhighsco/next-plugin-sitemap": "1.0.6",
+    "@newhighsco/next-plugin-sitemap": "1.0.7",
     "@newhighsco/next-plugin-svgr": "1.0.2",
     "babel-loader": "8.1.0",
     "jdown": "1.0.4",
     "next": "9.4.4",
     "next-compose-plugins": "2.2.0",
-    "next-fonts": "1.1.0",
+    "next-fonts": "1.2.0",
     "next-ga": "2.3.4",
     "next-images": "1.4.0",
     "next-seo": "4.5.0",
@@ -62,13 +62,13 @@
     "@newhighsco/prettier-config": "2.0.3",
     "@newhighsco/release-config": "1.0.24",
     "@newhighsco/renovate-config": "1.4.0",
-    "@newhighsco/stylelint-config": "2.0.15",
-    "eslint": "7.2.0",
+    "@newhighsco/stylelint-config": "2.0.18",
+    "eslint": "7.3.0",
     "husky": "4.2.5",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
     "semantic-release": "17.0.8",
-    "stylelint": "13.6.0"
+    "stylelint": "13.6.1"
   },
   "browserslist": [
     "extends @newhighsco/browserslist-config"
