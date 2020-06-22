@@ -1,7 +1,7 @@
 @use '../../styles/functions';
 
 .wrapper {
-  margin: 0 functions.spacing(2);
+  margin: functions.spacing(2) functions.spacing(2) 0;
 }
 
 .text {

@@ -3,8 +3,28 @@
 
 .wrapper {
   color: colors.$seagull;
+  position: relative;
+
+  &::before {
+    background-image: url('../../images/large-markings.png');
+    background-repeat: no-repeat;
+    background-size: functions.spacing(40) auto;
+    content: '';
+    display: block;
+    opacity: 30%;
+    position: absolute;
+    top: functions.spacing(1);
+    left: functions.spacing(1);
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  > * {
+    z-index: 2;
+  }
 }
 
 .content {
-  padding: functions.spacing(4) 0;
+  padding: functions.spacing(2) 0;
 }

@@ -1,0 +1,17 @@
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+
+.logo {
+  width: auto;
+}
+
+.navigation {
+  flex-grow: 1;
+  width: auto;
+  text-align: right;
+}
+
+.icon {
+  fill: colors.$white;
+  width: functions.spacing(4);
+}

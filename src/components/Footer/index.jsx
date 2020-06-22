@@ -8,6 +8,7 @@ import {
   List,
   SmartLink
 } from '@newhighsco/chipset'
+import { LogoLockup } from '..'
 import icons from '../../images/icons'
 import { config, socialLinks } from '../../../site.config'
 
@@ -28,21 +29,9 @@ const links = [
     target: '_blank'
   },
   {
-    href: socialLinks.twitch,
-    text: `Watch ${config.shortName} live on Twitch`,
-    icon: icons('twitch'),
-    target: '_blank'
-  },
-  {
     href: socialLinks.discord,
     text: 'Join the Community Hub on Discord',
     icon: icons('discord'),
-    target: '_blank'
-  },
-  {
-    href: socialLinks.teespring,
-    text: 'Merchandise',
-    icon: icons('teespring'),
     target: '_blank'
   }
 ]
@@ -50,8 +39,17 @@ const links = [
 const Footer = () => (
   <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
     <ContentContainer size="desktopLarge">
-      <Grid reverse valign="middle">
-        <GridItem sizes={['tablet-one-half']}>
+      <Grid valign="middle">
+        <GridItem>
+          <LogoLockup className={styles.logo} showIcon={false} />
+        </GridItem>
+        <GridItem>
+          Links
+          <br />
+          Links
+          <br />
+        </GridItem>
+        <GridItem>
           {!!links.length && (
             <List className={styles.links} inline>
               {links.map(({ href, text, icon: IconSvg, target }, i) => {
@@ -73,7 +71,8 @@ const Footer = () => (
             </List>
           )}
         </GridItem>
-        <GridItem sizes={['tablet-one-half']}>
+        <GridItem className={styles.credits} align="center">
+          <small>&copy; 2020 {config.name}. All rights reserved</small>
           <CreditLockup />
         </GridItem>
       </Grid>

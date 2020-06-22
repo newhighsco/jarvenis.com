@@ -1,6 +1,44 @@
 @use '../../styles/colors.module';
+@use '../../styles/functions';
 
 .wrapper {
   background-color: colors.$paua;
+  background-image: url('../../images/background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: colors.$white;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &::before {
+    background-image: url('../../images/top-triangles.png');
+    background-position: top right;
+    background-size: auto functions.spacing(50);
+    opacity: 70%;
+    top: functions.spacing(4);
+  }
+
+  &::after {
+    background-image: url('../../images/bottom-triangles.png');
+    background-position: bottom left;
+    background-size: auto functions.spacing(35);
+    opacity: 90%;
+  }
+
+  > * {
+    z-index: 2;
+  }
 }
