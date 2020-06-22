@@ -24,7 +24,7 @@ const nextConfig = {
   }
 }
 
-sourcebit.fetch(sourcebitConfig, { cache: true })
+sourcebit.fetch(sourcebitConfig, { cache: false })
 
 module.exports = withPlugins(
   [
