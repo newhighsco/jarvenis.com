@@ -19,12 +19,10 @@
     bottom: 0;
     z-index: 1;
   }
-
-  > * {
-    z-index: 2;
-  }
 }
 
 .content {
   padding: functions.spacing(2) 0;
+  position: relative;
+  z-index: 2;
 }
