@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import {
   ContentContainer,
   CreditLockup,
@@ -15,7 +16,12 @@ import { config, socialLinks } from '../../../site.config'
 import theme from './theme.module.scss'
 import styles from './styles.module.scss'
 
+const year = new Date().getFullYear()
 const links = [
+  { href: '/blog', text: 'Blog' },
+  { href: socialLinks.teespring, text: 'Store', target: '_blank' }
+]
+const iconLinks = [
   {
     href: socialLinks.twitter,
     text: `Follow ${config.shortName} on Twitter`,
@@ -40,39 +46,56 @@ const Footer = () => (
   <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
     <ContentContainer size="desktopLarge">
       <Grid valign="middle">
-        <GridItem>
-          <LogoLockup className={styles.logo} showIcon={false} />
+        <GridItem sizes={['tablet-one-third']}>
+          <Link href="/" passHref>
+            <SmartLink>
+              <LogoLockup className={styles.logo} showIcon={false} />
+            </SmartLink>
+          </Link>
         </GridItem>
-        <GridItem>
-          Links
-          <br />
-          Links
-          <br />
-        </GridItem>
-        <GridItem>
-          {!!links.length && (
-            <List className={styles.links} inline>
-              {links.map(({ href, text, icon: IconSvg, target }, i) => {
-                return (
-                  <li key={i}>
-                    <SmartLink
-                      className={styles.link}
-                      href={href}
-                      title={text}
-                      target={target}
-                    >
-                      <Icon theme={{ wrapper: styles.icon }} alt={text}>
-                        {IconSvg && <IconSvg />}
-                      </Icon>
+        <GridItem sizes={['tablet-one-third']}>
+          {!!links && (
+            <List className={styles.links} unstyled>
+              {links.map(({ href, text, target }, i) => (
+                <li key={i} className={styles.link}>
+                  {target ? (
+                    <SmartLink href={href} target={target}>
+                      {text}
                     </SmartLink>
-                  </li>
-                )
-              })}
+                  ) : (
+                    <Link href={href} passHref>
+                      <SmartLink>{text}</SmartLink>
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </List>
+          )}
+        </GridItem>
+        <GridItem sizes={['tablet-one-third']}>
+          {!!iconLinks.length && (
+            <List className={styles.iconLinks} inline>
+              {iconLinks.map(({ href, text, icon: IconSvg, target }, i) => (
+                <li key={i}>
+                  <SmartLink
+                    className={styles.iconLink}
+                    href={href}
+                    title={text}
+                    target={target}
+                  >
+                    <Icon theme={{ wrapper: styles.icon }} alt={text}>
+                      {IconSvg && <IconSvg />}
+                    </Icon>
+                  </SmartLink>
+                </li>
+              ))}
             </List>
           )}
         </GridItem>
         <GridItem className={styles.credits} align="center">
-          <small>&copy; 2020 {config.name}. All rights reserved</small>
+          <small>
+            &copy; {year} {config.name}. All rights reserved
+          </small>
           <CreditLockup />
         </GridItem>
       </Grid>
