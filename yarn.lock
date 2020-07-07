@@ -12043,10 +12043,10 @@ source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
-sourcebit-target-next@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.5.0.tgz#cffac4d9618e8a76a6f4cd8f94e5d0030c77b2c7"
-  integrity sha512-PKBty7Vrlrt28GXKlaKq1hpkbiFnElSCUjMqTroqm8yL10fCtyROGmSU2H14vRoPb5TcGcQe627RBRWh8SCHOw==
+sourcebit-target-next@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.5.1.tgz#237652a3cb3aea39008744db88e3a3f6e80ef7c2"
+  integrity sha512-0hP2glVp3iptPIbPNuUntLH9B2HaRxgGVa8o3m4T3xHWVMluYapd4lpNdxiawRfqncLpjK9llm1pg2FOVVkbvQ==
   dependencies:
     "@sindresorhus/slugify" "^1.0.0"
     fs-extra "^8.1.0"
