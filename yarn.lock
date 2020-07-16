@@ -11985,10 +11985,10 @@ source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
-sourcebit-target-next@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.5.1.tgz#237652a3cb3aea39008744db88e3a3f6e80ef7c2"
-  integrity sha512-0hP2glVp3iptPIbPNuUntLH9B2HaRxgGVa8o3m4T3xHWVMluYapd4lpNdxiawRfqncLpjK9llm1pg2FOVVkbvQ==
+sourcebit-target-next@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.5.2.tgz#151a92d522a6b16c3b5f403478eef447e234c79b"
+  integrity sha512-7zsbuWG6HkpuAYxlQKh2dHZy+Srha721+ekJYeQAhgVhnkZTYBqfTqZHWefwLdkcLvGdXMX11KV02FarGUOlIw==
   dependencies:
     "@sindresorhus/slugify" "^1.0.0"
     fs-extra "^8.1.0"
