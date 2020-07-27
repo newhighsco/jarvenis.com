@@ -67,7 +67,7 @@
     background: colors.$seagull;
     height: functions.spacing(1);
     margin-bottom: functions.spacing(2);
-    opacity: 20%;
+    opacity: 0.2;
   }
 
   &::after {
@@ -75,7 +75,7 @@
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    opacity: 50%;
+    opacity: 0.5;
     position: absolute;
     height: functions.spacing(3);
     top: functions.spacing(1);
