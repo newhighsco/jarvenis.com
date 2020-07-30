@@ -3,11 +3,18 @@
 @use '../../styles/functions';
 
 .item {
-  border: 3px solid colors.$seagull;
+  border: functions.spacing(0.375) solid colors.$seagull;
+  border-radius: functions.spacing(0.375);
   font-family: fonts.$logo;
   font-size: 1.15em;
   padding: functions.spacing(1) functions.spacing(2);
   text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: colors.$slate;
+  }
 }
 
 .wrapper {
