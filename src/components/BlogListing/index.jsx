@@ -47,7 +47,7 @@ const BlogListing = ({ posts = [], summary }) => {
       {summary && (
         <ButtonGroup className={styles.buttons}>
           <Link href="/blog" passHref>
-            <Button>View all</Button>
+            <Button>Read the blog</Button>
           </Link>
         </ButtonGroup>
       )}

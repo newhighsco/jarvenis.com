@@ -1,13 +1,7 @@
 import React from 'react'
 import { array, bool } from 'prop-types'
-import {
-  Button,
-  ButtonGroup,
-  Grid,
-  GridItem,
-  SmartLink,
-  ResponsiveMedia
-} from '@newhighsco/chipset'
+import { Button, ButtonGroup, Grid, GridItem } from '@newhighsco/chipset'
+import { Card } from '..'
 import { socialLinks } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -17,23 +11,14 @@ const ProductListing = ({ products = [], summary }) => {
 
   return (
     <>
-      <Grid className={styles.wrapper}>
-        {products.map(({ id, href, title, kicker, image, price }) => (
+      <Grid className={styles.wrapper} flex>
+        {products.map(({ id, price, ...rest }) => (
           <GridItem
             key={id}
             sizes={['one-half', 'tablet-one-quarter']}
             className={styles.item}
           >
-            <SmartLink href={href} target="_blank">
-              <ResponsiveMedia className={styles.image}>
-                <img src={image} alt="" loading="lazy" />
-              </ResponsiveMedia>
-              <div className={styles.content}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.kicker}>{kicker}</div>
-                <div className={styles.price}>{price}</div>
-              </div>
-            </SmartLink>
+            <Card target="_blank" meta={price} {...rest} />
           </GridItem>
         ))}
       </Grid>
