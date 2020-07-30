@@ -7,6 +7,7 @@
 
   &::before {
     background-image: url('../../images/large-markings.png');
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: functions.spacing(40) auto;
     content: '';
