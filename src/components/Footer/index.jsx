@@ -44,7 +44,7 @@ const iconLinks = [
 
 const Footer = () => (
   <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
-    <ContentContainer size="desktopLarge">
+    <ContentContainer size="desktopMedium">
       <Grid valign="middle">
         <GridItem sizes={['tablet-one-third']}>
           <Link href="/" passHref>

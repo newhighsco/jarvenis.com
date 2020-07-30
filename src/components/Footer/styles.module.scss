@@ -8,7 +8,7 @@
   width: functions.spacing(20) !important;
 
   @include mixins.mq(breakpoints.$tablet) {
-    margin-bottom: functions.spacing(2);
+    margin: functions.spacing(2) 0;
   }
 }
 
@@ -16,7 +16,7 @@
   margin-bottom: functions.spacing(3);
 
   @include mixins.mq(breakpoints.$tablet) {
-    margin-bottom: functions.spacing(2);
+    margin: functions.spacing(2) 0;
     text-align: center;
   }
 }
@@ -27,7 +27,15 @@
 
   @include mixins.mq(breakpoints.$tablet) {
     display: inline-block;
-    margin: 0 functions.spacing(2);
+    margin: 0 functions.spacing(1) !important;
+  }
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$seagull;
+    }
   }
 }
 
@@ -36,7 +44,7 @@
   margin-left: functions.spacing(-2);
 
   @include mixins.mq(breakpoints.$tablet) {
-    margin-bottom: functions.spacing(2);
+    margin: functions.spacing(2) 0;
     text-align: right;
   }
 }
@@ -44,6 +52,12 @@
 .iconLink {
   display: inline-block;
   margin-left: functions.spacing(2);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$perano;
+  }
 }
 
 .icon {
@@ -70,20 +84,12 @@
     opacity: 0.2;
   }
 
-  &::after {
-    background-image: url('../../images/small-markings.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    opacity: 0.5;
-    position: absolute;
-    height: functions.spacing(3);
-    top: functions.spacing(1);
-    right: 0;
-  }
-
   & > * {
     position: relative;
     z-index: 2;
+  }
+
+  small {
+    opacity: 0.75;
   }
 }

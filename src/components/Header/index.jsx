@@ -20,7 +20,7 @@ const Header = () => (
   <>
     <Landmark id="top">Top of page</Landmark>
     <ContentContainer as="header" role="banner" gutter theme={theme}>
-      <ContentContainer size="desktopLarge">
+      <ContentContainer size="desktopMedium">
         <Grid flex valign="middle">
           <GridItem className={styles.logo}>
             <Link href="/" passHref>

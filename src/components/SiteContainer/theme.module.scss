@@ -1,5 +1,7 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/colors.module';
 @use '../../styles/functions';
+@use '../../styles/mixins';
 
 .wrapper {
   background-color: colors.$paua;
@@ -33,9 +35,16 @@
 
   &::after {
     background-image: url('../../images/bottom-triangles.png');
-    background-position: bottom left;
+    background-position: bottom right;
     background-size: auto functions.spacing(35);
-    opacity: 0.9;
+    opacity: 0.7;
+    bottom: functions.spacing(17);
+
+    @include mixins.mq(breakpoints.$tablet) {
+      background-position: bottom left;
+      background-size: auto functions.spacing(45);
+      bottom: 0;
+    }
   }
 
   & > * {
