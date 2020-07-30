@@ -4,6 +4,7 @@ import urlJoin from 'url-join'
 import dynamic from 'next/dynamic'
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
+import { Button, ButtonGroup } from '@newhighsco/chipset'
 import {
   BlogListing,
   Heading,
@@ -58,6 +59,16 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
         <ProductListing products={products} summary />
       </Section>
     )}
+    <Section>
+      <Heading>
+        Join the <em>Community Hub</em>
+      </Heading>
+      <ButtonGroup>
+        <Button href={socialLinks.discord} target="_blank">
+          View all
+        </Button>
+      </ButtonGroup>
+    </Section>
   </PageContainer>
 )
 
