@@ -3,7 +3,8 @@ import { bool, node } from 'prop-types'
 import classNames from 'classnames'
 import { ContentContainer } from '@newhighsco/chipset'
 
-import theme from './theme.module.scss'
+import outer from './outer.module.scss'
+import inner from './inner.module.scss'
 import styles from './styles.module.scss'
 
 const Section = ({ alternate, children }) => {
@@ -12,10 +13,12 @@ const Section = ({ alternate, children }) => {
   return (
     <ContentContainer
       gutter
-      theme={theme}
+      theme={outer}
       className={classNames(alternate && styles.alternate)}
     >
-      <ContentContainer size="desktopMedium">{children}</ContentContainer>
+      <ContentContainer size="desktopMedium" theme={inner}>
+        {children}
+      </ContentContainer>
     </ContentContainer>
   )
 }

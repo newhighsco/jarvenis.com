@@ -1,7 +1,0 @@
-@use '../../styles/functions';
-
-.wrapper {
-  & + & {
-    margin-top: functions.spacing(4);
-  }
-}
