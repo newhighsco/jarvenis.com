@@ -12696,10 +12696,10 @@ sourcebit-target-next@0.5.2:
     socket.io "^2.3.0"
     socket.io-client "^2.3.0"
 
-sourcebit@0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/sourcebit/-/sourcebit-0.9.0.tgz#cf65f39f5cb6d29336aea873f934e5204a93538b"
-  integrity sha512-aYlB+2OjVX4aI/rPXnJHn6I3UXHXEP1RXsvcXzAlCKljSjJ1Naec4/P0n3BqIf4NlbIao99YhXbNqsHOVvhcRA==
+sourcebit@0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/sourcebit/-/sourcebit-0.10.0.tgz#304cbde2014ecefc8df9cc4d62f38290953530cb"
+  integrity sha512-Cvd8w8/0VExEUIj4Tonm3TQLGH+hGPKLovttc2LjKJ4E+pHhx9W9Ek/c54EhmiiPs0n9uSIXy0uzMCrtzGQO4g==
   dependencies:
     commander "^4.1.1"
     debug "^4.1.1"
