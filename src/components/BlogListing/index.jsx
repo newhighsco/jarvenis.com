@@ -24,23 +24,25 @@ const BlogListing = ({ posts = [], summary }) => {
             sizes={['tablet-one-half', 'desktop-one-quarter']}
             className={styles.item}
           >
-            <Link href="/blog/[...slug]" as={`/blog/${slug}`} passHref>
-              <SmartLink>
-                <div className={styles.content}>
-                  <time dateTime={date} className={styles.date}>
-                    {new Date(date).toLocaleDateString(config.lang)}
-                  </time>
-                  <h2 className={styles.title}>{title}</h2>
-                  {excerpt && (
-                    <div
-                      className={styles.excerpt}
-                      dangerouslySetInnerHTML={{ __html: excerpt }}
-                    />
-                  )}
-                  <div>Read more</div>
-                </div>
-              </SmartLink>
-            </Link>
+            <div className={styles.content}>
+              <time dateTime={date} className={styles.date}>
+                {new Date(date).toLocaleDateString(
+                  config.lang,
+                  config.dateFormat
+                )}
+              </time>
+              <Link href="/blog/[...slug]" as={`/blog/${slug}`} passHref>
+                <SmartLink className={styles.heading}>
+                  <h2>{title}</h2>
+                </SmartLink>
+              </Link>
+              {excerpt && (
+                <p
+                  className={styles.excerpt}
+                  dangerouslySetInnerHTML={{ __html: excerpt }}
+                />
+              )}
+            </div>
           </GridItem>
         ))}
       </Grid>

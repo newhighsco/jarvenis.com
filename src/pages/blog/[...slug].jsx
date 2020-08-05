@@ -17,10 +17,10 @@ const BlogPostPage = ({ title, date, content, meta }) => {
         description=""
       />
       <Section>
-        <Heading>{title}</Heading>
         <time dateTime={date}>
-          {new Date(date).toLocaleDateString(config.lang)}
+          {new Date(date).toLocaleDateString(config.lang, config.dateFormat)}
         </time>
+        <Heading align="center">{title}</Heading>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Section>
     </PageContainer>
@@ -35,7 +35,7 @@ BlogPostPage.propTypes = {
 }
 
 export async function getStaticProps({ params }) {
-  const slug = '/blog/' + params?.slug?.join('/')
+  const slug = `/blog/${params?.slug?.join('/')}`
   const { page } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
   const { title, date, content } = page
 

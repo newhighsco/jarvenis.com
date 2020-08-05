@@ -1,7 +1,29 @@
+@use '../../styles/colors.module';
 @use '../../styles/functions';
 
 .item {
   margin-bottom: functions.spacing(2);
+}
+
+.heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+
+  &:hover {
+    color: colors.$seagull;
+    text-decoration: underline;
+  }
+}
+
+.content {
+  > * + * {
+    margin-top: functions.spacing(1);
+  }
+
+  time {
+    font-size: smaller;
+  }
 }
 
 .buttons {

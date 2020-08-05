@@ -14,7 +14,12 @@ export const config = {
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
   disallowRobots: process.env.DISALLOW_ROBOTS,
-  email: 'jarv@jarvenis.com'
+  email: 'jarv@jarvenis.com',
+  dateFormat: {
+    month: 'short',
+    year: 'numeric',
+    day: 'numeric'
+  }
 }
 
 export const meta = {
