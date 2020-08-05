@@ -3,7 +3,8 @@ module.exports = {
     {
       module: require('./src/plugins/sourcebit-source-teespring'),
       options: {
-        permaLink: 'jarv'
+        permaLink: 'jarv',
+        currency: 'GBP'
       }
     },
     {

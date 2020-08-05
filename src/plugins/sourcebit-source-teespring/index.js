@@ -8,6 +8,8 @@ const name = 'sourcebit-source-teespring'
 
 module.exports.name = name
 
+const CURRENCIES = ['USD', 'GBP', 'EUR', 'CAD', 'AUD']
+
 module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
   const questions = [
     {
@@ -17,6 +19,14 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
       validate: value =>
         value.length > 0 ? true : 'Permalink cannot be empty',
       default: currentOptions.permaLink
+    },
+    {
+      type: 'list',
+      name: 'currency',
+      message: 'What currency should prices be displayed in?',
+      choices: CURRENCIES,
+      validate: value => (value.length > 0 ? true : 'Currency cannot be empty'),
+      default: currentOptions.currency
     }
   ]
 
@@ -49,7 +59,8 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
 
 module.exports.getOptionsFromSetup = ({ answers }) => {
   return {
-    permaLink: answers.permaLink
+    permaLink: answers.permaLink,
+    currency: answers.currency
   }
 }
 
@@ -60,6 +71,9 @@ module.exports.options = {
   },
   permaLink: {
     default: null
+  },
+  currency: {
+    default: CURRENCIES[0]
   }
 }
 
@@ -75,7 +89,11 @@ module.exports.bootstrap = async ({
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
     const { products: entries } = await fetch(
-      urlJoin(API_BASE_URL, options.permaLink, 'store_products')
+      urlJoin(
+        API_BASE_URL,
+        options.permaLink,
+        `store_products?currency=${options.currency}`
+      )
     ).then(response => response.json())
 
     setPluginContext({
@@ -96,7 +114,7 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     modelName: 'product',
     modelLabel: 'Teespring Products',
     projectId: options.permaLink,
-    projectEnvironment: ''
+    projectEnvironment: options.currency
   }
 
   const normalizedEntries = entries.map(
