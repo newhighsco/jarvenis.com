@@ -1,0 +1,30 @@
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+
+.wrapper {
+  background: #f6f6f6;
+  border-radius: functions.spacing(0.375);
+  color: colors.$black;
+
+  &[role='link']:hover {
+    box-shadow: 0 0 0 functions.spacing(0.5) colors.$seagull;
+  }
+}
+
+.content {
+  padding: functions.spacing(2);
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.copy {
+  > p + p {
+    margin-top: functions.spacing(1);
+  }
+
+  small {
+    font-size: smaller;
+  }
+}

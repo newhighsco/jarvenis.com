@@ -1,7 +1,6 @@
 import React from 'react'
 import { array, bool } from 'prop-types'
-import { Button, ButtonGroup, Grid, GridItem } from '@newhighsco/chipset'
-import { Card } from '..'
+import { Button, ButtonGroup, Card, Grid, GridItem } from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -12,13 +11,18 @@ const VideoListing = ({ videos = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper} flex>
-        {videos.map(({ id, ...rest }) => (
+        {videos.map(({ id, href, image, title }) => (
           <GridItem
             key={id}
             sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
             className={styles.item}
           >
-            <Card target="_blank" ratio="16:9" {...rest} />
+            <Card
+              href={href}
+              target="_blank"
+              heading={<h2>{title}</h2>}
+              image={{ src: image, ratio: '16:9' }}
+            />
           </GridItem>
         ))}
       </Grid>
