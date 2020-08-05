@@ -23,15 +23,21 @@ const links = [
 ]
 const iconLinks = [
   {
-    href: socialLinks.twitter,
-    text: `Follow ${config.shortName} on Twitter`,
-    icon: icons('twitter'),
-    target: '_blank'
-  },
-  {
     href: socialLinks.youtube,
     text: `Subscribe to ${config.shortName} on YouTube`,
     icon: icons('youtube'),
+    target: '_blank'
+  },
+  {
+    href: socialLinks.twitch,
+    text: `Subscribe to ${config.shortName} on Twitch`,
+    icon: icons('twitch'),
+    target: '_blank'
+  },
+  {
+    href: socialLinks.twitter,
+    text: `Follow ${config.shortName} on Twitter`,
+    icon: icons('twitter'),
     target: '_blank'
   },
   {
