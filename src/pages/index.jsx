@@ -32,40 +32,37 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
     />
     <LogoJsonLd url={config.url} logo={urlJoin(config.url, logoUrl)} />
     <Section>
-      <Heading as="h2" alternate>
-        Live
-      </Heading>
       <LiveStream href={socialLinks.youtube} darkMode />
     </Section>
     {!!videos.length && (
-      <Section alternate>
-        <Heading as="h2">
-          Latest <em>videos</em>
+      <Section>
+        <Heading as="h2" align="center">
+          Latest videos
         </Heading>
         <VideoListing videos={videos} summary />
       </Section>
     )}
     {!!posts.length && (
-      <Section>
-        <Heading as="h2">
-          Latest <em>updates</em>
+      <Section alternate>
+        <Heading as="h2" align="center">
+          Latest updates
         </Heading>
         <BlogListing posts={posts} summary />
       </Section>
     )}
     {!!products.length && (
-      <Section alternate>
-        <Heading as="h2">Merchandise</Heading>
+      <Section>
+        <Heading as="h2" align="center">
+          Merchandise
+        </Heading>
         <ProductListing products={products} summary />
       </Section>
     )}
-    <Section>
-      <Heading>
-        Join the <em>Community Hub</em>
-      </Heading>
+    <Section alternate>
+      <Heading align="center">Community Hub</Heading>
       <ButtonGroup>
         <Button href={socialLinks.discord} target="_blank">
-          View all
+          Join us on Discord
         </Button>
       </ButtonGroup>
     </Section>
