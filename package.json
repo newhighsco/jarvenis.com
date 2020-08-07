@@ -99,9 +99,6 @@
   "renovate": {
     "extends": [
       "@newhighsco"
-    ],
-    "baseBranches": [
-      "staging"
     ]
   },
   "stylelint": {
