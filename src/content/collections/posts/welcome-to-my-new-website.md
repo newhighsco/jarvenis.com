@@ -17,4 +17,4 @@ As well as the above, here we have a dedicated "**LIVE**" section which appears 
 
 Thanks again to New High Score and thanks to **EVERYONE** that's supported Jarv and the channel so far. None of this would be possible without you!
 
-Remember, stay safe & stay awesome!
+Remember, stay safe & stay awesome!!
