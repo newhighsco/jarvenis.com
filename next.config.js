@@ -29,7 +29,7 @@ module.exports = withPlugins(
       {
         exclude: /\.svg$/,
         inlineImageLimit: 1,
-        handleImages: ['jpg', 'png', 'ico']
+        handleImages: ['jpeg', 'png', 'ico']
       }
     ],
     [
