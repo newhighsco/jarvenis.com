@@ -29,7 +29,7 @@ module.exports = withPlugins(
       withOptimizedImages,
       {
         inlineImageLimit: 1,
-        handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico']
+        handleImages: ['jpeg', 'png', 'ico']
       }
     ],
     [
