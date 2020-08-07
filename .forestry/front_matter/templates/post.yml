@@ -25,3 +25,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- src/content/collections/posts/welcome-to-my-new-website.md
