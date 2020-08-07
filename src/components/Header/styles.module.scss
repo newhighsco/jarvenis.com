@@ -43,6 +43,8 @@
 
 .link {
   display: none;
+  font-family: fonts.$heading;
+  font-size: 2.5em;
 
   a {
     &:hover,
@@ -54,8 +56,7 @@
 
   @include mixins.mq(breakpoints.$tablet) {
     display: inline-block;
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 2em;
     margin-left: functions.spacing(4) !important;
 
     a {
@@ -68,10 +69,6 @@
         text-decoration: underline;
       }
     }
-  }
-
-  @include mixins.mq(breakpoints.$desktop) {
-    font-size: 1.5em;
   }
 }
 
@@ -115,8 +112,6 @@
 
     .link {
       display: block;
-      font-family: fonts.$heading;
-      font-size: 2.5em;
       padding: functions.spacing(1) functions.spacing(2);
       text-align: center;
     }
