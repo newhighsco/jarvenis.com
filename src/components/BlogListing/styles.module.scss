@@ -19,6 +19,10 @@
   }
 
   @include mixins.mq(breakpoints.$tablet) {
+    font-size: 1.25em;
+  }
+
+  @include mixins.mq(breakpoints.$desktop) {
     font-size: 1.5em;
   }
 }

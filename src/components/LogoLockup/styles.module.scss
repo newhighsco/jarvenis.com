@@ -1,18 +1,15 @@
-@use '../../styles/breakpoints.module';
-@use '../../styles/fonts.module';
 @use '../../styles/functions';
-@use '../../styles/mixins';
 
 .wrapper {
   display: inline-block;
   line-height: 0;
   text-align: center;
-  width: functions.spacing(10);
+  width: functions.spacing(7.5);
 }
 
 .icon {
   fill: currentColor;
-  width: 75%;
+  width: 100%;
 }
 
 .text {

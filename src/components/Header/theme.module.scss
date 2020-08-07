@@ -1,20 +1,15 @@
-@use '../../styles/breakpoints.module';
 @use '../../styles/colors.module';
-@use '../../styles/functions';
-@use '../../styles/mixins';
 
 .wrapper {
   background-color: colors.$denim;
   background-image: url('../../images/header.jpg');
-  background-position: 50% 50%;
+  background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .content {
-  padding: functions.spacing(2) 0;
-
-  @include mixins.mq(breakpoints.$tablet) {
-    padding: functions.spacing(4) 0;
-  }
+  position: relative;
+  z-index: 2;
 }

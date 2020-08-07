@@ -7,16 +7,12 @@ import { Heading, PageContainer, Section } from '../components'
 const NotFoundPage = ({ meta }) => (
   <PageContainer meta={meta}>
     <Section>
-      <Link href="/" passHref>
-        <SmartLink>
-          <Heading>
-            Page <em>not</em> found
-          </Heading>
-          <Heading as="p" size="small" alternate>
-            Return to homepage
-          </Heading>
-        </SmartLink>
-      </Link>
+      <Heading align="center">Page not found</Heading>
+      <p>
+        <Link href="/" passHref>
+          <SmartLink>Return to homepage</SmartLink>
+        </Link>
+      </p>
     </Section>
   </PageContainer>
 )
