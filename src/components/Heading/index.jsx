@@ -1,30 +1,21 @@
 import React from 'react'
-import { bool, node, oneOf } from 'prop-types'
-import classNames from 'classnames'
+import { node, oneOf } from 'prop-types'
 import { Element } from '@newhighsco/chipset'
 
 import styles from './styles.module.scss'
 
-const Heading = ({ alternate, size, as = 'h1', children, ...rest }) => (
-  <Element
-    as={as}
-    className={classNames(
-      styles.wrapper,
-      alternate && styles.alternate,
-      size && styles[size]
-    )}
-    {...rest}
-  >
-    <span className={styles.inner}>
-      <span className={styles.content}>{children}</span>
-    </span>
-  </Element>
+const Heading = ({ as = 'h1', kicker, children, ...rest }) => (
+  <div className={styles.wrapper} {...rest}>
+    {kicker && <div className={styles.kicker}>{kicker}</div>}
+    <Element as={as} className={styles.content}>
+      {children}
+    </Element>
+  </div>
 )
 
 Heading.propTypes = {
-  alternate: bool,
-  size: oneOf(['small']),
   as: oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']),
+  kicker: node,
   children: node
 }
 

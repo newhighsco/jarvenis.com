@@ -16,11 +16,20 @@ const BlogPostPage = ({ title, date, content, meta }) => {
         authorName={config.shortName}
         description=""
       />
-      <Section>
-        <time dateTime={date}>
-          {new Date(date).toLocaleDateString(config.lang, config.dateFormat)}
-        </time>
-        <Heading align="center">{title}</Heading>
+      <Section size="desktopMedium">
+        <Heading
+          align="center"
+          kicker={
+            <time dateTime={date}>
+              {new Date(date).toLocaleDateString(
+                config.lang,
+                config.dateFormat
+              )}
+            </time>
+          }
+        >
+          {title}
+        </Heading>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Section>
     </PageContainer>

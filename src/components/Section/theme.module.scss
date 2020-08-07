@@ -3,11 +3,21 @@
 @use '../../styles/mixins';
 
 .content {
+  padding-top: functions.spacing(4);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    padding-top: functions.spacing(6);
+  }
+
   > * + * {
     margin-top: functions.spacing(4);
 
     @include mixins.mq(breakpoints.$tablet) {
       margin-top: functions.spacing(6);
     }
+  }
+
+  &:empty {
+    padding-top: 0;
   }
 }

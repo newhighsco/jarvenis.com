@@ -4,12 +4,20 @@
 @use '../../styles/mixins';
 
 .alternate {
-  background: rgba(colors.$slate, 50%);
-  padding-top: functions.spacing(4);
+  background: colors.$denim;
+  margin-top: functions.spacing(4);
   padding-bottom: functions.spacing(4);
 
   @include mixins.mq(breakpoints.$tablet) {
-    padding-top: functions.spacing(6);
+    margin-top: functions.spacing(6);
     padding-bottom: functions.spacing(6);
+  }
+
+  & + & {
+    margin-top: 0;
+
+    .inner > *:first-child {
+      padding-top: 0;
+    }
   }
 }

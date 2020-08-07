@@ -2,12 +2,12 @@
 @use '../../styles/functions';
 
 .wrapper {
-  background: #f6f6f6;
+  background: colors.$smoke;
   border-radius: functions.spacing(0.375);
-  color: colors.$black;
+  color: colors.$gulf;
 
   &[role='link']:hover {
-    box-shadow: 0 0 0 functions.spacing(0.5) colors.$seagull;
+    box-shadow: 0 0 0 functions.spacing(0.5) colors.$sea;
   }
 }
 

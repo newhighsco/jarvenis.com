@@ -1,22 +1,20 @@
 import React from 'react'
-import { bool, node } from 'prop-types'
+import { bool, node, string } from 'prop-types'
 import classNames from 'classnames'
 import { ContentContainer } from '@newhighsco/chipset'
 
-import outer from './outer.module.scss'
-import inner from './inner.module.scss'
+import theme from './theme.module.scss'
 import styles from './styles.module.scss'
 
-const Section = ({ alternate, children }) => {
+const Section = ({ alternate, size = 'desktopLarge', children }) => {
   if (!children) return null
 
   return (
     <ContentContainer
       gutter
-      theme={outer}
       className={classNames(alternate && styles.alternate)}
     >
-      <ContentContainer size="desktopMedium" theme={inner}>
+      <ContentContainer size={size} theme={theme} className={styles.inner}>
         {children}
       </ContentContainer>
     </ContentContainer>
@@ -25,6 +23,7 @@ const Section = ({ alternate, children }) => {
 
 Section.propTypes = {
   alternate: bool,
+  size: string,
   children: node
 }
 

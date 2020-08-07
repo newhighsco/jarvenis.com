@@ -34,7 +34,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: colors.$seagull;
+      color: colors.$sky;
     }
   }
 }
@@ -56,7 +56,8 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$perano;
+    color: colors.$sky;
+    transform: scale(1.1);
   }
 }
 
@@ -78,10 +79,9 @@
   }
 
   &::before {
-    background: colors.$seagull;
+    background: colors.$sea;
     height: functions.spacing(1);
     margin-bottom: functions.spacing(2);
-    opacity: 0.2;
   }
 
   & > * {

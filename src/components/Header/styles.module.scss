@@ -3,6 +3,10 @@
 
 .logo {
   width: auto;
+
+  path {
+    fill: currentColor;
+  }
 }
 
 .navigation {
@@ -12,6 +16,6 @@
 }
 
 .icon {
-  fill: colors.$white;
+  fill: currentColor;
   width: functions.spacing(4);
 }

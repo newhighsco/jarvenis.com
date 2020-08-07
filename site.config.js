@@ -10,7 +10,7 @@ export const config = {
   title: 'Jarv - News. Guides. Reviews',
   description:
     'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
-  themeColor: colors.black,
+  themeColor: colors.denim,
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
   disallowRobots: process.env.DISALLOW_ROBOTS,

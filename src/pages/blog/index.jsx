@@ -5,7 +5,7 @@ import { BlogListing, Heading, PageContainer, Section } from '../../components'
 
 const BlogListingPage = ({ meta, posts = [] }) => (
   <PageContainer meta={meta}>
-    <Section>
+    <Section size="desktopMedium">
       <Heading align="center">Latest updates from Jarv</Heading>
       <BlogListing posts={posts} />
     </Section>

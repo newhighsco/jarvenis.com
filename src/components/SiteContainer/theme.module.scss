@@ -4,51 +4,6 @@
 @use '../../styles/mixins';
 
 .wrapper {
-  background-color: colors.$paua;
-  background-image: url('../../images/background.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: colors.$gulf;
   color: colors.$white;
-  position: relative;
-
-  &::before,
-  &::after {
-    background-repeat: no-repeat;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-
-  &::before {
-    background-image: url('../../images/top-triangles.png');
-    background-position: top right;
-    background-size: auto functions.spacing(50);
-    opacity: 0.7;
-    top: functions.spacing(4);
-  }
-
-  &::after {
-    background-image: url('../../images/bottom-triangles.png');
-    background-position: bottom right;
-    background-size: auto functions.spacing(35);
-    opacity: 0.7;
-    bottom: functions.spacing(17);
-
-    @include mixins.mq(breakpoints.$tablet) {
-      background-position: bottom left;
-      background-size: auto functions.spacing(45);
-      bottom: 0;
-    }
-  }
-
-  & > * {
-    position: relative;
-    z-index: 2;
-  }
 }

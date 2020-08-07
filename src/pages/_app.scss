@@ -4,22 +4,22 @@
 
 @font-face {
   font-display: swap;
-  font-family: fonts.$kontrapunkt;
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/kontrapunkt/regular.woff2') format('woff2'),
-    url('../fonts/kontrapunkt/regular.woff') format('woff'),
-    url('../fonts/kontrapunkt/regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-display: swap;
   font-family: fonts.$big-noodle-titling;
   font-weight: normal;
   font-style: normal;
   src: url('../fonts/big-noodle-titling/regular.woff2') format('woff2'),
     url('../fonts/big-noodle-titling/regular.woff') format('woff'),
     url('../fonts/big-noodle-titling/regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: fonts.$lemon-milk;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/lemon-milk/regular.woff2') format('woff2'),
+    url('../fonts/lemon-milk/regular.woff') format('woff'),
+    url('../fonts/lemon-milk/regular.ttf') format('truetype');
 }
 
 body {

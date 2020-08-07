@@ -2,28 +2,9 @@
 @use '../../styles/functions';
 
 .wrapper {
-  color: colors.$seagull;
-  position: relative;
-
-  &::before {
-    background-image: url('../../images/large-markings.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: functions.spacing(40) auto;
-    content: '';
-    display: block;
-    opacity: 0.3;
-    position: absolute;
-    top: functions.spacing(1);
-    left: functions.spacing(1);
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
+  background-color: colors.$denim;
 }
 
 .content {
   padding: functions.spacing(2) 0;
-  position: relative;
-  z-index: 2;
 }

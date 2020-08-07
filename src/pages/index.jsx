@@ -31,8 +31,8 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
       sameAs={[socialLinks.twitter]}
     />
     <LogoJsonLd url={config.url} logo={urlJoin(config.url, logoUrl)} />
-    <Section>
-      <LiveStream href={socialLinks.youtube} darkMode />
+    <Section size="desktopMedium">
+      <LiveStream href={socialLinks.youtube} />
     </Section>
     {!!videos.length && (
       <Section>
@@ -43,7 +43,7 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
       </Section>
     )}
     {!!posts.length && (
-      <Section alternate>
+      <Section alternate size="desktopMedium">
         <Heading as="h2" align="center">
           Latest updates
         </Heading>
@@ -51,14 +51,14 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
       </Section>
     )}
     {!!products.length && (
-      <Section>
+      <Section size="desktop">
         <Heading as="h2" align="center">
           Merchandise
         </Heading>
         <ProductListing products={products} summary />
       </Section>
     )}
-    <Section alternate>
+    <Section alternate size="desktopMedium">
       <Heading align="center">Community Hub</Heading>
       <ButtonGroup>
         <Button href={socialLinks.discord} target="_blank">

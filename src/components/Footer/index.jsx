@@ -39,18 +39,12 @@ const iconLinks = [
     text: `Follow ${config.shortName} on Twitter`,
     icon: icons('twitter'),
     target: '_blank'
-  },
-  {
-    href: socialLinks.discord,
-    text: 'Join the Community Hub on Discord',
-    icon: icons('discord'),
-    target: '_blank'
   }
 ]
 
 const Footer = () => (
   <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
-    <ContentContainer size="desktopMedium">
+    <ContentContainer size="desktopLarge">
       <Grid valign="middle">
         <GridItem sizes={['tablet-one-third']}>
           <Link href="/" passHref>

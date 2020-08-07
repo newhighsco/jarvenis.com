@@ -1,6 +1,6 @@
 // Font families
 $big-noodle-titling: 'Big Noodle Titling';
-$kontrapunkt: 'Kontrapunkt';
+$lemon-milk: 'Lemon/Milk';
 
 // Font stacks
 $-stack-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
@@ -8,10 +8,10 @@ $-stack-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica
 
 // Font aliases
 $body: $-stack-system;
+$alternate: $lemon-milk, $-stack-system;
 $heading: $big-noodle-titling, $-stack-system;
-$logo: $kontrapunkt, $-stack-system;
 
 :export {
   big-noodle-titling: unquote($big-noodle-titling);
-  kontrapunkt: unquote($kontrapunkt);
+  lemon-milk: unquote($lemon-milk);
 }

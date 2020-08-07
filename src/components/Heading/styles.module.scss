@@ -1,30 +1,21 @@
 @use '../../styles/breakpoints.module';
-@use '../../styles/colors.module';
 @use '../../styles/fonts.module';
 @use '../../styles/mixins';
 
-@mixin background($color, $padding: 0.1em) {
-  background: $color;
-  box-shadow: $padding 0 0 $color, ($padding * -1) 0 0 $color;
+.wrapper {
+  display: block;
 }
 
-.wrapper {
+.kicker {
+  display: block;
+  font-size: smaller;
+}
+
+.content {
   display: block;
   font-family: fonts.$heading;
   font-size: 2.5em;
   line-height: 1;
-  position: relative;
-  z-index: 2;
-
-  & + & {
-    margin-top: 0.1em;
-    z-index: 3;
-  }
-
-  & + * {
-    position: relative;
-    z-index: 1;
-  }
 
   @include mixins.mq(breakpoints.$tablet) {
     font-size: 3em;
@@ -33,36 +24,4 @@
   @include mixins.mq(breakpoints.$desktop) {
     font-size: 3.75em;
   }
-}
-
-.inner {
-  display: inline-block;
-  transform: rotate(-2deg);
-}
-
-.content {
-  @include background(colors.$resolution);
-
-  display: inline;
-
-  em {
-    color: colors.$yellow;
-    font-style: normal;
-  }
-}
-
-.alternate {
-  .content {
-    @include background(colors.$yellow);
-
-    color: colors.$black;
-
-    em {
-      color: currentColor;
-    }
-  }
-}
-
-.small {
-  font-size: 2em;
 }
