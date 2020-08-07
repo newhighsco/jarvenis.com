@@ -1,0 +1,27 @@
+@use '../../styles/colors.module';
+@use '../../styles/fonts.module';
+@use '../../styles/functions';
+
+.item {
+  background-color: colors.$gulf;
+  border: functions.spacing(0.375) solid colors.$sea;
+  border-radius: functions.spacing(0.375);
+  font-family: fonts.$alternate;
+  font-size: 1.15em;
+  padding: functions.spacing(1) functions.spacing(2);
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: colors.$denim;
+  }
+}
+
+.wrapper {
+  text-align: center;
+
+  .item {
+    margin: 0 functions.spacing(1);
+  }
+}

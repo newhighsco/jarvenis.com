@@ -1,5 +1,15 @@
 @use '../../styles/colors.module';
 
 .wrapper {
-  color: colors.$seagull;
+  background-color: colors.$denim;
+  background-image: url('../../images/header.jpg');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
 }

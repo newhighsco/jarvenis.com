@@ -1,0 +1,27 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: public/admin
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: src/content/collections/posts
+  label: Blog
+  create: all
+  match: "**/*"
+  templates:
+  - post
+upload_dir: public/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: ".next"
+  install_dependencies_command: yarn install
+  preview_docker_image: node:13.14.0
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run start -- --port 8000 --hostname 0.0.0.0

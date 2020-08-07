@@ -1,0 +1,42 @@
+@use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+@use '../../styles/mixins';
+
+.item {
+  margin-bottom: functions.spacing(2);
+}
+
+.heading {
+  font-weight: bold;
+  line-height: 1.2;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+    text-decoration: underline;
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    font-size: 1.25em;
+  }
+
+  @include mixins.mq(breakpoints.$desktop) {
+    font-size: 1.5em;
+  }
+}
+
+.content {
+  > * + * {
+    margin-top: functions.spacing(1);
+  }
+
+  time {
+    font-size: smaller;
+  }
+}
+
+.buttons {
+  margin-top: functions.spacing(2);
+}

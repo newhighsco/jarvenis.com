@@ -1,0 +1,127 @@
+@use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
+@use '../../styles/fonts.module';
+@use '../../styles/functions';
+@use '../../styles/mixins';
+
+.inner {
+  position: relative;
+}
+
+.logo {
+  margin: functions.spacing(2);
+  width: auto;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+  }
+
+  path {
+    fill: currentColor;
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin: functions.spacing(4);
+  }
+}
+
+.icon {
+  fill: currentColor;
+  width: functions.spacing(4);
+}
+
+.links {
+  @include mixins.mq(breakpoints.$tablet) {
+    flex-grow: 1;
+    margin: functions.spacing(4);
+    text-align: right;
+    width: auto;
+  }
+}
+
+.link {
+  display: none;
+  font-family: fonts.$heading;
+  font-size: 2.5em;
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$sea;
+    }
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: functions.spacing(4) !important;
+
+    a {
+      color: colors.$gulf;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: colors.$white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toggle {
+  margin: functions.spacing(4) functions.spacing(2);
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include mixins.mq(breakpoints.$tablet) {
+    display: none;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$gulf;
+    outline: none;
+  }
+}
+
+@include mixins.mq($max: breakpoints.$tablet - 1) {
+  .menuOpen {
+    & ~ main > * {
+      display: none;
+    }
+
+    &::before {
+      background-image: url('../../images/background.jpg');
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    .link {
+      display: block;
+      padding: functions.spacing(1) functions.spacing(2);
+      text-align: center;
+    }
+
+    .toggle {
+      &:hover,
+      &:active,
+      &:focus {
+        color: colors.$sea;
+      }
+    }
+  }
+}

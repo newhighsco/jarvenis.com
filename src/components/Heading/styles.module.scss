@@ -1,50 +1,34 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/colors.module';
 @use '../../styles/fonts.module';
-
-@mixin background($color, $padding: 0.1em) {
-  background: $color;
-  box-shadow: $padding 0 0 $color, ($padding * -1) 0 0 $color;
-}
+@use '../../styles/functions';
+@use '../../styles/mixins';
 
 .wrapper {
   display: block;
-  font-family: fonts.$heading;
-  font-size: 3em;
-  line-height: 1;
-
-  & + & {
-    margin-top: 0.2em;
-  }
 }
 
-.inner {
-  display: inline-block;
-  transform: rotate(-3deg);
+.kicker {
+  display: block;
+  font-size: smaller;
 }
 
 .content {
-  @include background(colors.$resolution);
+  display: block;
+  font-family: fonts.$heading;
+  font-size: 2.5em;
+  line-height: 1;
 
-  display: inline;
+  @include mixins.mq(breakpoints.$tablet) {
+    font-size: 3em;
+  }
 
-  em {
-    color: colors.$yellow;
-    font-style: normal;
+  @include mixins.mq(breakpoints.$desktop) {
+    font-size: 3.75em;
   }
 }
 
-.alternate {
-  .content {
-    @include background(colors.$yellow);
-
-    color: colors.$black;
-
-    em {
-      color: currentColor;
-    }
-  }
-}
-
-.small {
-  font-size: 2em;
+.icon {
+  fill: colors.$sky;
+  margin-right: functions.spacing(1);
 }

@@ -1,21 +1,17 @@
 $black: #000;
-$denim: #1777bb;
-$paua: #28234b;
-$perano: #b0bcee;
-$resolution: #1a3185;
-$seagull: #76badd;
-$slate: #3a348e;
-$yellow: #fae100;
+$denim: #1956c8;
+$gulf: #04185c;
+$sea: #6bcbef;
+$sky: #c9e9f6;
+$smoke: #f6f6f6;
 $white: #fff;
 
 :export {
   black: $black;
   white: $white;
-  paua: $paua;
-  slate: $slate;
-  perano: $perano;
-  resolution: $resolution;
-  demin: $denim;
-  seagull: $seagull;
-  yellow: $yellow;
+  denim: $denim;
+  gulf: $gulf;
+  sea: $sea;
+  sky: $sky;
+  smoke: $smoke;
 }

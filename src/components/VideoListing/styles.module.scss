@@ -1,0 +1,14 @@
+@use '../../styles/functions';
+
+.wrapper {
+  text-align: center;
+}
+
+.item {
+  margin-bottom: functions.spacing(2);
+  text-align: left;
+}
+
+.buttons {
+  margin-top: functions.spacing(2);
+}

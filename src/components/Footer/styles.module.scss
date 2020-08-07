@@ -1,15 +1,102 @@
+@use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
 @use '../../styles/functions';
+@use '../../styles/mixins';
 
-.list {
+.logo {
   margin-bottom: functions.spacing(4);
+  width: functions.spacing(20) !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin: functions.spacing(2) 0;
+  }
+}
+
+.links {
+  margin-bottom: functions.spacing(3);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin: functions.spacing(2) 0;
+    text-align: center;
+  }
 }
 
 .link {
+  display: block;
+  margin-bottom: functions.spacing(1);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    display: inline-block;
+    margin: 0 functions.spacing(1) !important;
+  }
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$sea;
+      text-decoration: underline;
+    }
+  }
+}
+
+.iconLinks {
+  margin-bottom: functions.spacing(2);
+  margin-left: functions.spacing(-2);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin: functions.spacing(2) 0;
+    text-align: right;
+  }
+}
+
+.iconLink {
   display: inline-block;
-  margin: functions.spacing(2);
+  margin-left: functions.spacing(2);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+    transform: scale(1.1);
+  }
 }
 
 .icon {
   fill: currentColor;
-  width: functions.spacing(4);
+  width: functions.spacing(3);
+}
+
+.credits {
+  font-size: smaller;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &::before {
+    background: colors.$sky;
+    height: functions.spacing(1);
+    margin-bottom: functions.spacing(2);
+  }
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  small {
+    opacity: 0.75;
+  }
 }

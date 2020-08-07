@@ -1,6 +1,10 @@
 @use '../../styles/functions';
 
-.gutter {
-  padding-left: functions.spacing(2) !important;
-  padding-right: functions.spacing(2) !important;
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  padding: functions.spacing(4) 0;
 }

@@ -1,10 +1,13 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/functions';
-
-.content {
-  padding: functions.spacing(4) 0;
-}
+@use '../../styles/mixins';
 
 .gutter {
-  padding-left: functions.spacing(4);
-  padding-right: functions.spacing(4);
+  padding-left: functions.spacing(2);
+  padding-right: functions.spacing(2);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    padding-left: functions.spacing(4);
+    padding-right: functions.spacing(4);
+  }
 }

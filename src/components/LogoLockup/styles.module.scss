@@ -1,17 +1,23 @@
-@use '../../styles/fonts.module';
 @use '../../styles/functions';
 
 .wrapper {
   display: inline-block;
+  line-height: 0;
   text-align: center;
+  width: functions.spacing(7.5);
 }
 
 .icon {
   fill: currentColor;
-  width: functions.spacing(10);
+  width: 100%;
 }
 
 .text {
-  font-family: fonts.$logo;
-  text-transform: uppercase;
+  fill: currentColor;
+  margin-top: 10%;
+  width: 100%;
+
+  &:only-child {
+    margin-top: 0;
+  }
 }

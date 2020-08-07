@@ -1,16 +1,7 @@
 @use '~@newhighsco/chipset/styles/normalize';
 @use '../styles/breakpoints.module';
+@use '../styles/colors.module';
 @use '../styles/fonts.module';
-
-@font-face {
-  font-display: swap;
-  font-family: fonts.$kontrapunkt;
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/kontrapunkt/regular.woff2') format('woff2'),
-    url('../fonts/kontrapunkt/regular.woff') format('woff'),
-    url('../fonts/kontrapunkt/regular.ttf') format('truetype');
-}
 
 @font-face {
   font-display: swap;
@@ -22,8 +13,20 @@
     url('../fonts/big-noodle-titling/regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-display: swap;
+  font-family: fonts.$lemon-milk;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/lemon-milk/regular.woff2') format('woff2'),
+    url('../fonts/lemon-milk/regular.woff') format('woff'),
+    url('../fonts/lemon-milk/regular.ttf') format('truetype');
+}
+
 body {
-  font-size: 16px;
+  background-color: colors.$gulf;
+  color: colors.$white;
+  font-size: 18px;
   line-height: 1.5;
   font-family: fonts.$body;
   font-weight: normal;
@@ -33,4 +36,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }

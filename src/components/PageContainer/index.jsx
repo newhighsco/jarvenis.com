@@ -1,9 +1,7 @@
 import React from 'react'
 import { node, object } from 'prop-types'
 import { PageContainer as ThemedPageContainer } from '@newhighsco/chipset'
-import { Header } from '../Header'
-import { Footer } from '../Footer'
-import { Meta } from '../Meta'
+import { Footer, Header, Meta } from '..'
 
 const PageContainer = ({ meta, children }) => (
   <ThemedPageContainer
@@ -12,8 +10,6 @@ const PageContainer = ({ meta, children }) => (
     role="main"
     header={<Header />}
     footer={<Footer />}
-    fullWidth
-    gutter
   >
     <Meta {...meta} />
     {children}
