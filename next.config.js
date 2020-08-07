@@ -5,6 +5,7 @@ const withTranspileModules = require('next-transpile-modules')([
   '@newhighsco/chipset'
 ])
 const withImages = require('next-images')
+const withOptimizedImages = require('next-optimized-images')
 const withSitemap = require('@newhighsco/next-plugin-sitemap')
 const withRobots = require('@newhighsco/next-plugin-robots')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
@@ -24,6 +25,13 @@ sourcebit.fetch(sourcebitConfig, { cache: false })
 module.exports = withPlugins(
   [
     [withTranspileModules],
+    [
+      withOptimizedImages,
+      {
+        inlineImageLimit: 1,
+        handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico']
+      }
+    ],
     [
       withImages,
       {
