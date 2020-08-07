@@ -2,7 +2,7 @@ import React from 'react'
 import { object, string } from 'prop-types'
 import { ArticleJsonLd } from 'next-seo'
 import { sourcebitDataClient } from 'sourcebit-target-next'
-import { Heading, PageContainer, Section } from '../../components'
+import { Heading, PageContainer, Prose, Section } from '../../components'
 import { config } from '../../../site.config'
 
 const BlogPostPage = ({ title, date, content, meta }) => {
@@ -30,7 +30,7 @@ const BlogPostPage = ({ title, date, content, meta }) => {
         >
           {title}
         </Heading>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <Prose html={content} />
       </Section>
     </PageContainer>
   )

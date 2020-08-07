@@ -1,0 +1,53 @@
+@use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+@use '../../styles/mixins';
+
+.wrapper {
+  // Unset common styles left in place by WYSIWYG editor
+  $properties: 'box-sizing', 'color', 'font-family', 'font-size', 'font-style',
+    'font-weight', 'line-height', 'margin', 'padding', 'text-decoration',
+    'white-space';
+
+  @each $property in $properties {
+    [style*='#{$property}'] {
+      #{$property}: inherit !important;
+    }
+  }
+
+  > * + * {
+    margin-top: functions.spacing(2);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+
+    @include mixins.mq(breakpoints.$tablet) {
+      font-size: 1.25em;
+    }
+
+    @include mixins.mq(breakpoints.$desktop) {
+      font-size: 1.5em;
+    }
+  }
+
+  a[href] {
+    text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$sea;
+    }
+  }
+
+  ol,
+  ul {
+    margin-left: functions.spacing(4);
+  }
+}
