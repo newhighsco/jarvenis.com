@@ -55,39 +55,44 @@ module.exports.bootstrap = async ({
   } else {
     const entries = []
     const models = []
-    const content = await jdown(options.contentPath, { fileInfo: true })
 
-    Object.keys(content).map(collection => {
-      const modelName = singular(collection)
+    try {
+      const content = await jdown(options.contentPath, { fileInfo: true })
 
-      models.push({
-        source: name,
-        modelName,
-        modelLabel: startCase(collection),
-        projectId: '',
-        projectEnvironment: ''
-      })
+      Object.keys(content).map(collection => {
+        const modelName = singular(collection)
 
-      entries.push(
-        ...content[collection].map(
-          ({ fileInfo: { path, createdAt, modifiedAt }, ...rest }) => {
-            const slugRegEx = new RegExp(
-              `^collections/${collection}/(.*).html`,
-              'g'
-            )
-            const slug = path.replace(slugRegEx, '$1')
+        models.push({
+          source: name,
+          modelName,
+          modelLabel: startCase(collection),
+          projectId: '',
+          projectEnvironment: ''
+        })
 
-            return {
-              slug,
-              type: modelName,
-              createdAt,
-              modifiedAt,
-              ...rest
+        entries.push(
+          ...content[collection].map(
+            ({ fileInfo: { path, createdAt, modifiedAt }, ...rest }) => {
+              const slugRegEx = new RegExp(
+                `^collections/${collection}/(.*).html`,
+                'g'
+              )
+              const slug = path.replace(slugRegEx, '$1')
+
+              return {
+                slug,
+                type: modelName,
+                createdAt,
+                modifiedAt,
+                ...rest
+              }
             }
-          }
+          )
         )
-      )
-    })
+      })
+    } catch (e) {
+      log(e)
+    }
 
     setPluginContext({
       entries,
