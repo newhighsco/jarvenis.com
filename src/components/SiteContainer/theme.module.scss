@@ -1,9 +1,0 @@
-@use '../../styles/breakpoints.module';
-@use '../../styles/colors.module';
-@use '../../styles/functions';
-@use '../../styles/mixins';
-
-.wrapper {
-  background-color: colors.$gulf;
-  color: colors.$white;
-}

@@ -1,5 +1,6 @@
 @use '~@newhighsco/chipset/styles/normalize';
 @use '../styles/breakpoints.module';
+@use '../styles/colors.module';
 @use '../styles/fonts.module';
 
 @font-face {
@@ -23,6 +24,8 @@
 }
 
 body {
+  background-color: colors.$gulf;
+  color: colors.$white;
   font-size: 18px;
   line-height: 1.5;
   font-family: fonts.$body;
