@@ -25,7 +25,7 @@ const Header = () => (
           <GridItem className={styles.logo}>
             <Link href="/" passHref>
               <SmartLink>
-                <LogoLockup />
+                <LogoLockup showText={false} />
               </SmartLink>
             </Link>
           </GridItem>

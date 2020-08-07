@@ -4,6 +4,12 @@
 .logo {
   width: auto;
 
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+  }
+
   path {
     fill: currentColor;
   }

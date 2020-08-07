@@ -13,9 +13,12 @@ import {
   Section,
   VideoListing
 } from '../components'
+import icons from '../images/icons'
 import { config, socialLinks } from '../../site.config'
 
 import logoUrl from '../images/logo.jpg'
+
+const DiscordSvg = icons('discord')
 
 const LiveStream = dynamic(
   () => import('@newhighsco/chipset').then(module => module.LiveStream),
@@ -59,7 +62,9 @@ const HomePage = ({ meta, videos = [], products = [], posts = [] }) => (
       </Section>
     )}
     <Section alternate size="desktopMedium">
-      <Heading align="center">Community Hub</Heading>
+      <Heading align="center" icon={<DiscordSvg />}>
+        Community Hub
+      </Heading>
       <ButtonGroup>
         <Button href={socialLinks.discord} target="_blank">
           Join us on Discord

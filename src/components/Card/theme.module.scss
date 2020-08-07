@@ -6,7 +6,8 @@
   border-radius: functions.spacing(0.375);
   color: colors.$gulf;
 
-  &[role='link']:hover {
+  &[role='link']:hover,
+  &[role='link']:focus-within {
     box-shadow: 0 0 0 functions.spacing(0.5) colors.$sea;
   }
 }

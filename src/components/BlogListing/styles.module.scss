@@ -1,18 +1,25 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/colors.module';
 @use '../../styles/functions';
+@use '../../styles/mixins';
 
 .item {
   margin-bottom: functions.spacing(2);
 }
 
 .heading {
-  font-size: 1.5em;
   font-weight: bold;
   line-height: 1.2;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: colors.$sea;
     text-decoration: underline;
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    font-size: 1.5em;
   }
 }
 

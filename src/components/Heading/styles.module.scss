@@ -1,5 +1,7 @@
 @use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
 @use '../../styles/fonts.module';
+@use '../../styles/functions';
 @use '../../styles/mixins';
 
 .wrapper {
@@ -24,4 +26,9 @@
   @include mixins.mq(breakpoints.$desktop) {
     font-size: 3.75em;
   }
+}
+
+.icon {
+  fill: colors.$sky;
+  margin-right: functions.spacing(1);
 }

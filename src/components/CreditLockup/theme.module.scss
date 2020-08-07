@@ -4,14 +4,9 @@
   margin: functions.spacing(4) 0 functions.spacing(2);
 }
 
-.logo {
-  opacity: 0.75;
-}
-
 .link {
   &:hover {
     .logo {
-      opacity: 1;
       transform: scale(1.1);
     }
   }

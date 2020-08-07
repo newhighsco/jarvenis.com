@@ -4,7 +4,11 @@
 @use '../../styles/mixins';
 
 .alternate {
-  background: colors.$denim;
+  background-color: colors.$denim;
+  background-image: url('../../images/background.jpg');
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: functions.spacing(4);
   padding-bottom: functions.spacing(4);
 

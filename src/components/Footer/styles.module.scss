@@ -7,6 +7,12 @@
   margin-bottom: functions.spacing(4);
   width: functions.spacing(20) !important;
 
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+  }
+
   @include mixins.mq(breakpoints.$tablet) {
     margin: functions.spacing(2) 0;
   }
@@ -34,7 +40,8 @@
     &:hover,
     &:active,
     &:focus {
-      color: colors.$sky;
+      color: colors.$sea;
+      text-decoration: underline;
     }
   }
 }
@@ -56,7 +63,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sky;
+    color: colors.$sea;
     transform: scale(1.1);
   }
 }
@@ -79,7 +86,7 @@
   }
 
   &::before {
-    background: colors.$sea;
+    background: colors.$sky;
     height: functions.spacing(1);
     margin-bottom: functions.spacing(2);
   }
