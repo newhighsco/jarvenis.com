@@ -1,16 +1,7 @@
 ---
-label: Meta
+label: Meta data
 hide_body: true
 fields:
-- name: noindex
-  type: boolean
-  label: Noindex
-  description: Tells search engines not to index this page
-- name: nofollow
-  type: boolean
-  label: Nofollow
-  description: Tells crawlers not to follow any links on this page or pass along any
-    link equity
 - name: meta
   type: field_group
   config: {}
@@ -29,4 +20,13 @@ fields:
       schema:
         format: markdown
     label: Description
+  - name: noindex
+    type: boolean
+    label: Noindex
+    description: Tells search engines not to index this page
+  - name: nofollow
+    type: boolean
+    label: Nofollow
+    description: Tells crawlers not to follow any links on this page or pass along
+      any link equity
   label: Meta
