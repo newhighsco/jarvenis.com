@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <>
-      <Landmark id="top" />
+      <Landmark id="top">Top of page</Landmark>
       <ContentContainer
         as="header"
         role="banner"
