@@ -14,7 +14,7 @@ const ProductListing = ({ products = [], summary }) => {
         {products.map(({ id, href, image, title, kicker }) => (
           <GridItem
             key={id}
-            sizes={['one-half', 'tablet-landscape-one-quarter']}
+            sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
             className={styles.item}
           >
             <Card

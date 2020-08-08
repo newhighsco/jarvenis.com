@@ -13,7 +13,7 @@ const withVideos = require('next-videos')
 
 const branchEnv = branch => {
   const branches = {
-    master: {
+    main: {
       SITE_URL: 'https://jarvenis.com',
       DISALLOW_ROBOTS: false
     },
