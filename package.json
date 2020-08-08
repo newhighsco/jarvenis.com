@@ -100,7 +100,7 @@
       "@newhighsco"
     ],
     "baseBranches": [
-      "master",
+      "main",
       "staging"
     ]
   },
