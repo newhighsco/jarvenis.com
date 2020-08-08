@@ -22,13 +22,16 @@ const branchEnv = branch => {
       DISALLOW_ROBOTS: true
     },
     preview: {
-      SITE_URL: process.env.VERCEL_URL || 'http://localhost:3000',
+      SITE_URL: process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000',
       DISALLOW_ROBOTS: true
     }
   }
 
   console.log(111, branch)
   console.log(222, branches)
+  console.log(333, branches[branch])
 
   return branches[branch] || branches.preview
 }
