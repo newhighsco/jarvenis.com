@@ -10,6 +10,7 @@ fields:
     type: text
     config:
       required: false
+      max: 60
     label: Title
   - name: description
     type: textarea
@@ -19,6 +20,8 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
+      min: 50
+      max: 160
     label: Description
   - name: noindex
     type: boolean
