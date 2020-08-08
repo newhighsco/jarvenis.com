@@ -27,6 +27,9 @@ const branchEnv = branch => {
     }
   }
 
+  console.log(111, branch)
+  console.log(222, branches)
+
   return branches[branch] || branches.preview
 }
 
