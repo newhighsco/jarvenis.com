@@ -20,7 +20,7 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
-      min: 50
+      min: 
       max: 160
     label: Description
   - name: noindex
