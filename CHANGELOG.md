@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/newhighsco/jarvenis.com/compare/v1.3.0...v1.3.1) (2020-08-08)
+
+
+### Bug Fixes
+
+* **blog:** use prose for summary ([078b122](https://github.com/newhighsco/jarvenis.com/commit/078b122003cdcfa65a31a348a537feb17dbe1faa))
+
 # [1.3.0](https://github.com/newhighsco/jarvenis.com/compare/v1.2.1...v1.3.0) (2020-08-07)
 
 
