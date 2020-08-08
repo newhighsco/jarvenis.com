@@ -31,6 +31,6 @@ fields:
   type: include
   config: {}
   template: meta
-  label: Meta
+  label: Meta data
 pages:
 - src/content/collections/posts/welcome-to-my-new-website.md
