@@ -8,6 +8,7 @@ import {
   GridItem,
   SmartLink
 } from '@newhighsco/chipset'
+import { Prose } from '..'
 import { config } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -37,7 +38,7 @@ const BlogListing = ({ posts = [], summary }) => {
                 </SmartLink>
               </Link>
               {excerpt && (
-                <p
+                <Prose
                   className={styles.excerpt}
                   dangerouslySetInnerHTML={{ __html: excerpt }}
                 />
