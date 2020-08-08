@@ -1,4 +1,27 @@
 ---
 label: Meta
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: noindex
+  type: boolean
+  label: Noindex
+  description: Tells search engines not to index this page
+- name: nofollow
+  type: boolean
+  label: Nofollow
+  description: Tells crawlers not to follow any links on this page or pass along any
+    link equity
