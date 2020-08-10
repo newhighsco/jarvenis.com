@@ -9,7 +9,13 @@ sections:
 - type: document
   path: src/content/index.md
   label: Home
+- type: directory
+  path: src/content
+  label: Pages
+  create: all
   match: "**/*"
+  templates:
+  - page
 - type: directory
   path: src/content/collections/blog
   label: Blog
