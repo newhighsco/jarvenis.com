@@ -1,6 +1,6 @@
 ---
 date: 2020-08-08T10:47:25.000+01:00
-title: Test post with meta data!
+title: Test post with meta data
 excerpt: Short **excerpt** _here_
 meta:
   title: Meta title example
@@ -8,6 +8,7 @@ meta:
   noindex: false
   nofollow: false
   image: uploads/sharing.jpg
+layout: ''
 
 ---
 This is a test article that has meta data. Please do not delete.
