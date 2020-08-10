@@ -10,4 +10,4 @@ meta:
   image: uploads/sharing.jpg
 
 ---
-This is a test article that has meta data. Please do not delete
+This is a test article that has meta data. Please do not delete.
