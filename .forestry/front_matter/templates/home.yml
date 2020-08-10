@@ -7,3 +7,5 @@ fields:
   config: {}
   template: page
   label: Blah
+pages:
+- src/content/blah.md
