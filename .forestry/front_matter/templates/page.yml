@@ -13,4 +13,4 @@ fields:
   template: meta
   label: Meta data
 pages:
-- src/content/index.md
+- src/content/blah.md

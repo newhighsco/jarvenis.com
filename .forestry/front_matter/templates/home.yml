@@ -8,4 +8,4 @@ fields:
   template: page
   label: Page
 pages:
-- src/content/blah.md
+- src/content/index.md
