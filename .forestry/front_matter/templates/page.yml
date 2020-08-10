@@ -7,3 +7,8 @@ fields:
   config:
     required: true
   label: Title
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta
