@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: src/content/index.md
+  label: Home
+  match: "**/*"
 - type: directory
   path: src/content/collections/blog
   label: Blog
