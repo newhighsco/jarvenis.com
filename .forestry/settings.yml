@@ -12,7 +12,6 @@ sections:
 - type: document
   path: src/content/blah.md
   label: Blah
-  match: "**/*"
 - type: directory
   path: src/content/collections/blog
   label: Blog
