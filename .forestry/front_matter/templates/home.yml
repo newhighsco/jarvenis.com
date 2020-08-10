@@ -2,6 +2,13 @@
 label: Home
 hide_body: true
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: false
+  default: home
 - name: page
   type: include
   config: {}
