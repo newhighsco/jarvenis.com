@@ -35,5 +35,6 @@ fields:
   default: post
   hidden: true
 pages:
+- src/content/collections/blog/some-test.md
 - src/content/collections/blog/test-post-with-meta-data.md
 - src/content/collections/blog/welcome-to-my-new-website.md
