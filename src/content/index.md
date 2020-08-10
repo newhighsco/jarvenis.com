@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Homepage
 meta:
   title: Global meta title
@@ -6,6 +7,5 @@ meta:
   image: ''
   noindex: false
   nofollow: false
-layout: ''
 
 ---

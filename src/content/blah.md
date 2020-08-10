@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Title page
 meta:
   title: meta title include
@@ -6,7 +7,6 @@ meta:
   image: ''
   noindex: false
   nofollow: false
-layout: ''
 
 ---
 Some page
