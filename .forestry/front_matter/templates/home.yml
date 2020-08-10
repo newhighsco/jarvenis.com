@@ -1,4 +1,9 @@
 ---
 label: Home
 hide_body: true
-fields: []
+fields:
+- name: blah
+  type: include
+  config: {}
+  template: page
+  label: Blah
