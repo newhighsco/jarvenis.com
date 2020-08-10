@@ -2,7 +2,7 @@
 layout: home
 title: Homepage
 meta:
-  title: Global meta title
+  title: Global meta title.
   description: Global meta desc
   image: ''
   noindex: false
