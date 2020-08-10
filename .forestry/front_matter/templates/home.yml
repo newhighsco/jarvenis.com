@@ -2,10 +2,10 @@
 label: Home
 hide_body: true
 fields:
-- name: blah
+- name: page
   type: include
   config: {}
   template: page
-  label: Blah
+  label: Page
 pages:
 - src/content/blah.md
