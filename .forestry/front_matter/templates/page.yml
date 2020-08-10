@@ -2,15 +2,15 @@
 label: Page
 hide_body: false
 fields:
-- name: meta
-  type: include
-  config: {}
-  template: meta
-  label: Meta data
 - name: title
   type: text
   config:
     required: true
   label: Title
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta data
 pages:
 - src/content/blah.md
