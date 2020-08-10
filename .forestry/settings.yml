@@ -10,14 +10,6 @@ sections:
   path: src/content/index.md
   label: Home
 - type: directory
-  path: src/content
-  label: Pages
-  create: all
-  match: "**/*"
-  exclude: collections/**/*
-  templates:
-  - page
-- type: directory
   path: src/content/collections/blog
   label: Blog
   create: all
