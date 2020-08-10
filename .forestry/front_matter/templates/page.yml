@@ -12,3 +12,5 @@ fields:
   config: {}
   template: meta
   label: Meta data
+pages:
+- src/content/index.md
