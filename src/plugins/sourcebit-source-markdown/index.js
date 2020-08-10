@@ -111,22 +111,11 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const normalizedEntries = entries
     .sort((a, b) => b.date - a.date)
     .map(
-      ({
-        slug,
-        type,
-        date,
-        title,
-        excerpt,
-        contents: content,
-        createdAt,
-        updatedAt
-      }) => {
+      ({ type, excerpt, contents: content, createdAt, updatedAt, ...rest }) => {
         const model = models.find(model => model.modelName === type)
 
         return {
-          slug,
-          date,
-          title,
+          ...rest,
           excerpt: excerpt ? marked(excerpt) : content.split('\n')[0],
           content,
           __metadata: {

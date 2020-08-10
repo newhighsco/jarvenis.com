@@ -46,14 +46,19 @@ BlogPostPage.propTypes = {
 export async function getStaticProps({ params }) {
   const slug = `/blog/${params?.slug?.join('/')}`
   const { page } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
-  const { title, date, content } = page
+  const { meta, title, date, content } = page
 
   return {
     props: {
-      meta: { slug, title },
+      meta: {
+        ...meta,
+        slug,
+        title: meta?.title || title
+      },
       title,
       date,
-      content
+      content,
+      page
     }
   }
 }

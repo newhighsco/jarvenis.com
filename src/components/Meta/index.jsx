@@ -11,6 +11,7 @@ const Meta = ({
   title,
   titleTemplate,
   description,
+  image,
   ...rest
 }) => {
   const canonical = slug ? urlJoin(config.url, slug) : null
@@ -22,7 +23,8 @@ const Meta = ({
     openGraph: {
       title,
       description,
-      url: canonical
+      url: canonical,
+      images: image ? [{ url: urlJoin(config.url, image) }] : null
     }
   }
 
@@ -40,7 +42,8 @@ Meta.propTypes = {
   customTitle: bool,
   title: string,
   titleTemplate: string,
-  description: string
+  description: string,
+  image: string
 }
 
 export default Meta
