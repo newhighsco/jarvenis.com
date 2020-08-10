@@ -2,17 +2,17 @@
 label: Home
 hide_body: true
 fields:
-- name: layout
-  type: text
-  config:
-    required: false
-  label: Layout
-  hidden: false
-  default: home
 - name: page
   type: include
   config: {}
   template: page
   label: Page
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  hidden: true
+  default: home
 pages:
 - src/content/index.md
