@@ -3,11 +3,6 @@ label: Post
 hide_body: false
 display_field: title
 fields:
-- name: page
-  type: include
-  config: {}
-  template: page
-  label: Page
 - name: date
   label: Date
   type: datetime
@@ -17,6 +12,11 @@ fields:
     date_format: DD/MM/YYYY
     time_format: hh:mm
     display_utc: false
+- name: page
+  type: include
+  config: {}
+  template: page
+  label: Page
 - name: excerpt
   label: Excerpt
   type: textarea
