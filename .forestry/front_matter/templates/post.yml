@@ -32,6 +32,3 @@ fields:
   config: {}
   template: meta
   label: Meta data
-pages:
-- src/content/collections/posts/test-post-with-meta-data.md
-- src/content/collections/posts/welcome-to-my-new-website.md
