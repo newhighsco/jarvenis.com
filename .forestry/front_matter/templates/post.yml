@@ -3,6 +3,9 @@ label: Post
 hide_body: false
 display_field: title
 fields:
+- name: draft
+  type: boolean
+  label: Draft
 - name: date
   label: Date
   type: datetime
@@ -32,6 +35,3 @@ fields:
   config: {}
   template: meta
   label: Meta data
-pages:
-- src/content/collections/posts/test-post-with-meta-data.md
-- src/content/collections/posts/welcome-to-my-new-website.md
