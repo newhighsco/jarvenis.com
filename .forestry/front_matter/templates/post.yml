@@ -3,6 +3,11 @@ label: Post
 hide_body: false
 display_field: title
 fields:
+- name: page
+  type: include
+  config: {}
+  template: page
+  label: Page
 - name: date
   label: Date
   type: datetime
@@ -12,11 +17,6 @@ fields:
     date_format: DD/MM/YYYY
     time_format: hh:mm
     display_utc: false
-- name: title
-  label: Title
-  type: text
-  config:
-    required: true
 - name: excerpt
   label: Excerpt
   type: textarea
@@ -27,11 +27,6 @@ fields:
     schema:
       format: markdown
   description: Optional - a short summary of the article to display on the homepage
-- name: meta
-  type: include
-  config: {}
-  template: meta
-  label: Meta data
 pages:
 - src/content/collections/blog/test-post-with-meta-data.md
 - src/content/collections/blog/welcome-to-my-new-website.md
