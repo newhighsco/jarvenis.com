@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Title page
+title: Page title
 meta:
   title: meta title include
   description: meta title desc
