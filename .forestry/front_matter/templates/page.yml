@@ -5,7 +5,7 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
   label: Layout
   hidden: true
   default: page
