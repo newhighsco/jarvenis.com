@@ -2,11 +2,6 @@
 label: Home
 hide_body: true
 fields:
-- name: page
-  type: include
-  config: {}
-  template: page
-  label: Page
 - name: layout
   type: text
   config:
@@ -14,5 +9,10 @@ fields:
   label: Layout
   hidden: true
   default: home
+- name: page
+  type: include
+  config: {}
+  template: page
+  label: Page
 pages:
 - src/content/index.md
