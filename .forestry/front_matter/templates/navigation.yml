@@ -33,3 +33,4 @@ fields:
     labelField: text
 pages:
 - src/data/footer.json
+- src/data/header.json
