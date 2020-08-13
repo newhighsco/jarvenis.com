@@ -1,4 +1,4 @@
-[
+{"links":[
   {
     "href": "/blog",
     "text": "Blog"
@@ -9,3 +9,4 @@
     "target": "_blank"
   }
 ]
+}
