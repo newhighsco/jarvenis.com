@@ -3,6 +3,8 @@ import { array, object, string } from 'prop-types'
 import { Prose } from '@newhighsco/chipset'
 import { BlogListing, Heading, PageContainer, Section } from '../..'
 
+export const getCommonProps = ({ posts }) => ({ posts })
+
 const BlogListingPageLayout = ({ title, content, meta, posts = [] }) => (
   <PageContainer meta={meta}>
     <Section size="desktopMedium">

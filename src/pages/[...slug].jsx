@@ -5,7 +5,8 @@ import pageLayouts from '../components/PageLayout'
 import { getPageLayoutProps } from '../components/PageLayout/utils'
 
 const Page = props => {
-  const PageLayout = pageLayouts[props?._layout] || pageLayouts.default
+  const { default: PageLayout } =
+    pageLayouts[props?._layout] || pageLayouts.default
 
   return <PageLayout {...props} />
 }
