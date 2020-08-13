@@ -1,4 +1,11 @@
 [
-  { "href": "/blog", "text": "Blog" },
-  { "href": "https://test.com/", "text": "Store", "target": "_blank" }
+  {
+    "href": "/blog",
+    "text": "Blog"
+  },
+  {
+    "href": "https://test.com/",
+    "text": "Store",
+    "target": "_blank"
+  }
 ]
