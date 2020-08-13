@@ -19,3 +19,5 @@ fields:
   config: {}
   template: meta
   label: Meta data
+pages:
+- src/content/collections/blog/index.md
