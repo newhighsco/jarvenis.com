@@ -31,6 +31,3 @@ fields:
     label: Target
   config:
     labelField: text
-pages:
-- src/data/footer.json
-- src/data/header.json
