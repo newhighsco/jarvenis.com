@@ -1,12 +1,14 @@
-{"links":[
-  {
-    "href": "/blog",
-    "text": "Blog"
-  },
-  {
-    "href": "https://teespring.com/stores/jarv",
-    "text": "Store",
-    "target": "_blank"
-  }
-]
+{
+  "links": [
+    {
+      "href": "/blog",
+      "text": "Blog",
+      "target": ""
+    },
+    {
+      "href": "https://teespring.com/stores/jarv",
+      "text": "Store",
+      "target": "_blank"
+    }
+  ]
 }
