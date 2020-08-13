@@ -28,7 +28,6 @@ sections:
 - type: document
   path: src/data/header.json
   label: Header
-  match: "**/*"
 upload_dir: public/uploads
 public_path: uploads
 front_matter_path: ''
