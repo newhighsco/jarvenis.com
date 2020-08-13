@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Content
@@ -28,6 +28,9 @@ sections:
 - type: document
   path: src/data/header.json
   label: Header
+- type: document
+  path: src/data/footer.json
+  label: Footer
 upload_dir: public/uploads
 public_path: uploads
 front_matter_path: ''

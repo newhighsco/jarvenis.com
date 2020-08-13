@@ -25,11 +25,12 @@ fields:
       - _blank
       source:
         type: simple
-        section: 
-        file: 
-        path: 
+        section:
+        file:
+        path:
     label: Target
   config:
     labelField: text
 pages:
 - src/data/header.json
+- src/data/footer.json
