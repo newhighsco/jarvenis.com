@@ -1,6 +1,5 @@
 import React from 'react'
 import { array, object } from 'prop-types'
-import urlJoin from 'url-join'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { Button, ButtonGroup } from '@newhighsco/chipset'
@@ -14,8 +13,6 @@ import {
 } from '..'
 import icons from '../../images/icons'
 import { config, socialLinks } from '../../../site.config'
-
-import logoUrl from '../../images/logo.jpg'
 
 const DiscordSvg = icons('discord')
 
@@ -32,7 +29,7 @@ const HomePageLayout = ({ meta, videos = [], products = [], posts = [] }) => (
       url={config.url}
       sameAs={[socialLinks.twitter]}
     />
-    <LogoJsonLd url={config.url} logo={urlJoin(config.url, logoUrl)} />
+    <LogoJsonLd url={config.url} logo={config.logo} />
     <Section size="desktopMedium">
       <LiveStream href={socialLinks.youtube} />
     </Section>

@@ -1,20 +1,17 @@
 import React from 'react'
-import { bool, node, string } from 'prop-types'
-import urlJoin from 'url-join'
+import { array, bool, node, string } from 'prop-types'
 import { NextSeo } from 'next-seo'
-import { config } from '../../../site.config'
 
 const Meta = ({
   children,
-  slug,
+  canonical,
   customTitle,
   title,
   titleTemplate,
   description,
-  image,
+  images,
   ...rest
 }) => {
-  const canonical = slug ? urlJoin(config.url, slug) : null
   const meta = {
     title,
     titleTemplate: customTitle ? `%s` : titleTemplate,
@@ -24,7 +21,7 @@ const Meta = ({
       title,
       description,
       url: canonical,
-      images: image ? [{ url: urlJoin(config.url, image) }] : null
+      images
     }
   }
 
@@ -38,12 +35,12 @@ const Meta = ({
 
 Meta.propTypes = {
   children: node,
-  slug: string,
+  canonical: string,
   customTitle: bool,
   title: string,
   titleTemplate: string,
   description: string,
-  image: string
+  images: array
 }
 
 export default Meta

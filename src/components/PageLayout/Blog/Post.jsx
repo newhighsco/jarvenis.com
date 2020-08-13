@@ -8,12 +8,14 @@ import { config } from '../../../../site.config'
 const BlogPostPageLayout = ({ title, date, content, meta }) => (
   <PageContainer meta={meta}>
     <ArticleJsonLd
-      url=""
-      title={title}
+      url={meta.canonical}
       datePublished={date}
-      dateModified={date}
+      title={title}
+      description={meta.description}
+      images={meta?.images?.map(image => image.url)}
       authorName={config.shortName}
-      description=""
+      publisherName={config.name}
+      publisherLogo={config.logo}
     />
     <Section size="desktopMedium">
       <Heading

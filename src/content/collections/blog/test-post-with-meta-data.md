@@ -9,7 +9,7 @@ meta:
   description: Meta description example
   noindex: false
   nofollow: false
-  image: uploads/sharing.jpg
+  image: uploads/sharing-test.jpg
 
 ---
 This is a test article that has meta data. Please do not delete.
