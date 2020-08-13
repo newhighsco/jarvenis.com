@@ -1716,10 +1716,10 @@
   dependencies:
     url-join "4.0.1"
 
-"@newhighsco/next-plugin-sitemap@1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-sitemap/-/next-plugin-sitemap-1.0.13.tgz#52757950c60916f0e9e09db86f396b9d3ffe931e"
-  integrity sha512-vaf+Ndd1zzR1s5ltN19Qf6kZNr6QLrQhwiuG75tVzHz/daJ9WmPsa1tTJHShV3+QNK5tLPedEFu8a+XO8H2naQ==
+"@newhighsco/next-plugin-sitemap@1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-sitemap/-/next-plugin-sitemap-1.0.14.tgz#c912342505aef5f561c73eb9229b92984151fea8"
+  integrity sha512-kNfz406vw74gXgx/je4VP6DA7Oqvusqpy/HiFygIU/sHp9Mh2hm9DcbcPQm5bP5PfuSiQdIaKUdqMwtrju+PdA==
   dependencies:
     sitemap "6.2.0"
 
