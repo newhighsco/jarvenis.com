@@ -4,6 +4,7 @@ import ContentContainer from '../components/ContentContainer/theme.module.scss'
 import CreditLockup from '../components/CreditLockup/theme.module.scss'
 import Grid from '../components/Grid/theme.module.scss'
 import LiveStream from '../components/LiveStream/theme.module.scss'
+import Prose from '../components/Prose/theme.module.scss'
 
 export default {
   Button,
@@ -11,5 +12,6 @@ export default {
   ContentContainer,
   CreditLockup,
   Grid,
-  LiveStream
+  LiveStream,
+  Prose
 }
