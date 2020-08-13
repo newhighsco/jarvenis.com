@@ -1,9 +1,9 @@
 ---
 _type: page
 _layout: blog
-title: Latest updates
+title: Latest updates from Jarv
 meta:
-  title: ''
+  title: Latest updates
   description: ''
   image: ''
   noindex: false
