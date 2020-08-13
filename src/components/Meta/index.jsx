@@ -1,5 +1,5 @@
 import React from 'react'
-import { array, bool, node, string } from 'prop-types'
+import { array, bool, node, object, string } from 'prop-types'
 import { NextSeo } from 'next-seo'
 
 const Meta = ({
@@ -10,6 +10,7 @@ const Meta = ({
   titleTemplate,
   description,
   images,
+  openGraph,
   ...rest
 }) => {
   const meta = {
@@ -18,6 +19,7 @@ const Meta = ({
     description,
     canonical,
     openGraph: {
+      ...openGraph,
       title,
       description,
       url: canonical,
@@ -40,7 +42,8 @@ Meta.propTypes = {
   title: string,
   titleTemplate: string,
   description: string,
-  images: array
+  images: array,
+  openGraph: object
 }
 
 export default Meta

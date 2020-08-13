@@ -6,7 +6,18 @@ import { Heading, PageContainer, Section } from '../..'
 import { config } from '../../../../site.config'
 
 const BlogPostPageLayout = ({ title, date, content, meta }) => (
-  <PageContainer meta={meta}>
+  <PageContainer
+    meta={{
+      ...meta,
+      openGraph: {
+        type: 'article',
+        article: {
+          publishedTime: date,
+          section: 'Blog'
+        }
+      }
+    }}
+  >
     <ArticleJsonLd
       url={meta.canonical}
       datePublished={date}
