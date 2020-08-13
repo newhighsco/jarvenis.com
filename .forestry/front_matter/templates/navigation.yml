@@ -7,13 +7,13 @@ fields:
   label: Links
   fields:
   - type: text
-    name: href
-    label: URL
+    name: text
+    label: Text
     config:
       required: true
   - type: text
-    name: text
-    label: Text
+    name: href
+    label: URL
     config:
       required: true
   - name: target
