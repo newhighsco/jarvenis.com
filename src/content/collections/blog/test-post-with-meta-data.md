@@ -1,5 +1,6 @@
 ---
-layout: post
+_type: post
+_layout: post
 date: 2020-08-08T10:47:25.000+01:00
 title: Test post with meta data!
 excerpt: Short **excerpt** _here_

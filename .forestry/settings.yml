@@ -10,11 +10,11 @@ sections:
   path: src/content/index.md
   label: Home
 - type: document
-  path: src/content/blah.md
-  label: Blah
+  path: src/content/collections/blog/index.md
+  label: Blog listing
 - type: directory
   path: src/content/collections/blog
-  label: Blog
+  label: Blog posts
   create: all
   match: "**/*"
   templates:

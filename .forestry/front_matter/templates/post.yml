@@ -3,11 +3,11 @@ label: Post
 hide_body: false
 display_field: title
 fields:
-- name: layout
+- name: _type
   type: text
   config:
     required: true
-  label: Layout
+  label: Type
   default: post
   hidden: true
 - name: date

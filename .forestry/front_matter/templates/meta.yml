@@ -6,6 +6,10 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: customTitle
+    type: boolean
+    label: Custom title
+    hidden: true
   - name: title
     type: text
     config:

@@ -1,9 +1,11 @@
 ---
-layout: home
+_type: page
+_layout: home
 title: Homepage
 meta:
-  title: Global meta title.
-  description: Global meta desc
+  customTitle: true
+  title: Jarv - News. Guides. Reviews
+  description: Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News
   image: ''
   noindex: false
   nofollow: false

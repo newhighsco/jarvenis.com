@@ -1,5 +1,6 @@
 ---
-layout: post
+_type: post
+_layout: post
 date: 2020-08-07T19:00:00.000+00:00
 title: Welcome to my NEW website!
 excerpt: This is the first of hopefully many Blog posts here at jarvenis.com
