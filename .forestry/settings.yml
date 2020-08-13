@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Content
@@ -20,6 +20,9 @@ sections:
   exclude: index.md
   templates:
   - post
+- type: document
+  path: src/content/404.md
+  label: 404 page
 upload_dir: public/uploads
 public_path: uploads
 front_matter_path: ''

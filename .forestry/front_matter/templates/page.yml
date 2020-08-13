@@ -20,4 +20,5 @@ fields:
   template: meta
   label: Meta data
 pages:
+- src/content/404.md
 - src/content/collections/blog/index.md
