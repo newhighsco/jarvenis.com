@@ -1,0 +1,4 @@
+[
+  { "href": "/blog", "text": "Blog" },
+  { "href": "https://test.com/", "text": "Store", "target": "_blank" }
+]
