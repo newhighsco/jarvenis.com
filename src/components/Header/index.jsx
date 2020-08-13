@@ -12,18 +12,13 @@ import {
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
 import icons from '../../images/icons'
-import { socialLinks } from '../../../site.config'
+import { links } from '../../data/footer.json'
 
 import theme from './theme.module.scss'
 import styles from './styles.module.scss'
 
 const MenuSvg = icons('menu')
 const CloseSvg = icons('close')
-
-const links = [
-  { href: '/blog', text: 'Blog' },
-  { href: socialLinks.teespring, text: 'Store', target: '_blank' }
-]
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
