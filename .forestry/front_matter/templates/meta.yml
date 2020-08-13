@@ -6,12 +6,17 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: customTitle
+    type: boolean
+    label: Custom title
+    hidden: true
   - name: title
     type: text
     config:
       required: false
       max: 60
     label: Title
+    description: Optional
   - name: description
     type: textarea
     default: ''
@@ -23,6 +28,13 @@ fields:
       min: 
       max: 160
     label: Description
+    description: Optional
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+    description: Optional - 1080x1080px
   - name: noindex
     type: boolean
     label: Noindex

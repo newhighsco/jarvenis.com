@@ -1,0 +1,24 @@
+---
+label: Page
+hide_body: false
+fields:
+- name: _type
+  type: text
+  config:
+    required: true
+  label: Type
+  hidden: true
+  default: page
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta data
+pages:
+- src/content/404.md
+- src/content/collections/blog/index.md

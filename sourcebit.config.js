@@ -24,21 +24,22 @@ module.exports = {
       options: {
         pages: [
           {
-            path: '/blog/{slug}',
-            predicate: entry => entry.__metadata.modelName === 'post'
+            predicate: entry =>
+              ['page', 'post'].includes(entry.__metadata.modelName)
           }
         ],
-        commonProps: {
-          posts: {
-            predicate: entry => entry.__metadata.modelName === 'post'
-          },
-          products: {
-            predicate: entry => entry.__metadata.modelName === 'product'
-          },
-          videos: {
-            predicate: entry => entry.__metadata.modelName === 'video'
-          }
-        }
+        commonProps: entries => ({
+          defaultMeta: entries.find(
+            entry => entry.__metadata.modelName === 'page' && entry.slug === '/'
+          ).meta,
+          posts: entries.filter(entry => entry.__metadata.modelName === 'post'),
+          products: entries.filter(
+            entry => entry.__metadata.modelName === 'product'
+          ),
+          videos: entries.filter(
+            entry => entry.__metadata.modelName === 'video'
+          )
+        })
       }
     }
   ]

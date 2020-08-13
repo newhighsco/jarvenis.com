@@ -1,4 +1,5 @@
 const sourcebit = require('sourcebit')
+const { sourcebitDataClient } = require('sourcebit-target-next')
 const sourcebitConfig = require('./sourcebit.config.js')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
@@ -32,12 +33,30 @@ const branchEnv = branch => {
   return branches[branch] || branches.preview
 }
 
+sourcebit.fetch(sourcebitConfig, { cache: false })
+
 const nextConfig = {
   poweredByHeader: false,
-  env: branchEnv(process.env.VERCEL_GITHUB_COMMIT_REF)
-}
+  env: branchEnv(process.env.VERCEL_GITHUB_COMMIT_REF),
+  exportPathMap: async (defaultPathMap, { dev }) => {
+    if (!dev) {
+      const customPathMap = {}
+      const paths = await sourcebitDataClient.getStaticPaths()
 
-sourcebit.fetch(sourcebitConfig, { cache: false })
+      paths
+        .filter(path => !['/', '/404'].includes(path))
+        .map(path => {
+          customPathMap[path] = { page: '/[...slug]' }
+        })
+
+      const pathMap = Object.assign(customPathMap, defaultPathMap)
+
+      return pathMap
+    }
+
+    return defaultPathMap
+  }
+}
 
 module.exports = withPlugins(
   [

@@ -12,15 +12,12 @@ import {
 import { LogoLockup } from '..'
 import icons from '../../images/icons'
 import { config, socialLinks } from '../../../site.config'
+import { links } from '../../data/footer.json'
 
 import theme from './theme.module.scss'
 import styles from './styles.module.scss'
 
 const year = new Date().getFullYear()
-const links = [
-  { href: '/blog', text: 'Blog' },
-  { href: socialLinks.teespring, text: 'Store', target: '_blank' }
-]
 const iconLinks = [
   {
     href: socialLinks.youtube,
@@ -63,7 +60,7 @@ const Footer = () => (
                       {text}
                     </SmartLink>
                   ) : (
-                    <Link href={href} passHref>
+                    <Link href="[...slug]" as={href} passHref>
                       <SmartLink>{text}</SmartLink>
                     </Link>
                   )}

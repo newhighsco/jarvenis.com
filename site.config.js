@@ -1,15 +1,19 @@
 import urlJoin from 'url-join'
 import colors from './src/styles/_colors.module.scss'
+import logoUrl from './src/images/logo.jpg'
 import openGraphImageUrl from './src/images/sharing.jpg'
+
+const url = process.env.SITE_URL
 
 export const config = {
   lang: 'en-GB',
-  url: process.env.SITE_URL,
+  url,
   name: 'Jarvenis',
   shortName: 'Jarv',
-  title: 'Jarv - News. Guides. Reviews',
   description:
     'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
+  logo: urlJoin(url, logoUrl),
+  openGraphImage: urlJoin(url, openGraphImageUrl),
   themeColor: colors.denim,
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
@@ -26,11 +30,10 @@ export const meta = {
   dangerouslySetAllPagesToNoFollow: config.disallowRobots,
   dangerouslySetAllPagesToNoIndex: config.disallowRobots,
   titleTemplate: `%s | ${config.name}`,
-  description: config.description,
   openGraph: {
     site_name: config.name,
     type: 'website',
-    images: [{ url: urlJoin(config.url, openGraphImageUrl) }]
+    images: [{ url: openGraphImageUrl }]
   },
   twitter: {
     cardType: 'summary',

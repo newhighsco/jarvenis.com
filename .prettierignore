@@ -4,6 +4,8 @@
 # production
 /.next
 /build
+/src/content
+/src/data
 
 # misc
 npm-debug.log*

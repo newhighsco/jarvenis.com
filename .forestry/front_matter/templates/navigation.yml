@@ -1,0 +1,36 @@
+---
+label: Navigation
+hide_body: true
+fields:
+- type: field_group_list
+  name: links
+  label: Links
+  fields:
+  - type: text
+    name: text
+    label: Text
+    config:
+      required: true
+  - type: text
+    name: href
+    label: URL
+    config:
+      required: true
+  - name: target
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - _blank
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Target
+  config:
+    labelField: text
+pages:
+- src/data/footer.json
+- src/data/header.json

@@ -1,0 +1,11 @@
+---
+label: Home
+hide_body: true
+fields:
+- name: page
+  type: include
+  config: {}
+  template: page
+  label: Page
+pages:
+- src/content/index.md

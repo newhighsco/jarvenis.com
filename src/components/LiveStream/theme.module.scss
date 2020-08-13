@@ -1,0 +1,6 @@
+@use '../../styles/functions';
+
+.wrapper {
+  border-radius: functions.spacing(0.375);
+  overflow: hidden;
+}

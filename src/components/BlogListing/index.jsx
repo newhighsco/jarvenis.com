@@ -6,9 +6,9 @@ import {
   ButtonGroup,
   Grid,
   GridItem,
+  Prose,
   SmartLink
 } from '@newhighsco/chipset'
-import { Prose } from '..'
 import { config } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -32,24 +32,19 @@ const BlogListing = ({ posts = [], summary }) => {
                   config.dateFormat
                 )}
               </time>
-              <Link href="/blog/[...slug]" as={`/blog/${slug}`} passHref>
+              <Link href="[...slug]" as={slug} passHref>
                 <SmartLink className={styles.heading}>
                   <h2>{title}</h2>
                 </SmartLink>
               </Link>
-              {excerpt && (
-                <Prose
-                  className={styles.excerpt}
-                  dangerouslySetInnerHTML={{ __html: excerpt }}
-                />
-              )}
+              {excerpt && <Prose className={styles.excerpt} html={excerpt} />}
             </div>
           </GridItem>
         ))}
       </Grid>
       {summary && (
         <ButtonGroup className={styles.buttons}>
-          <Link href="/blog" passHref>
+          <Link href="[...slug]" as="/blog" passHref>
             <Button>Read the blog</Button>
           </Link>
         </ButtonGroup>
