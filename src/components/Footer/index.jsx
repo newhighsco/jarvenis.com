@@ -63,7 +63,7 @@ const Footer = () => (
                       {text}
                     </SmartLink>
                   ) : (
-                    <Link href={href} passHref>
+                    <Link href="[...slug]" as={href} passHref>
                       <SmartLink>{text}</SmartLink>
                     </Link>
                   )}

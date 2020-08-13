@@ -57,38 +57,51 @@ module.exports.bootstrap = async ({
     const models = []
 
     try {
-      const content = await jdown(options.contentPath, { fileInfo: true })
+      const markdown = await jdown(options.contentPath, { fileInfo: true })
 
-      Object.keys(content).map(collection => {
-        const modelName = singular(collection)
+      Object.keys(markdown).map(key => {
+        const content = markdown[key]
 
-        models.push({
-          source: name,
-          modelName,
-          modelLabel: startCase(collection),
-          projectId: '',
-          projectEnvironment: ''
-        })
+        const processContent = ({
+          fileInfo: { path, createdAt, modifiedAt },
+          _type = 'page',
+          ...rest
+        }) => {
+          const modelName = singular(_type)
+          const modelLabel = startCase(_type)
 
-        entries.push(
-          ...content[collection].map(
-            ({ fileInfo: { path, createdAt, modifiedAt }, ...rest }) => {
-              const slugRegEx = new RegExp(
-                `^collections/${collection}/(.*).html`,
-                'g'
-              )
-              const slug = path.replace(slugRegEx, '$1')
+          if (!models.find(model => model.modelName === _type)) {
+            models.push({
+              source: name,
+              modelName,
+              modelLabel,
+              projectId: options.contentPath,
+              projectEnvironment: ''
+            })
+          }
 
-              return {
-                slug,
-                type: modelName,
-                createdAt,
-                modifiedAt,
-                ...rest
-              }
-            }
+          const slug = path
+            .replace(/^(collections\/)?(.*).html$/, '/$2')
+            .replace(/\/index$/, '')
+
+          return {
+            _type: modelName,
+            slug: slug || '/',
+            createdAt,
+            modifiedAt,
+            ...rest
+          }
+        }
+
+        if (Array.isArray(content)) {
+          entries.push(...content.map(child => processContent(child)))
+        } else if (content.fileInfo) {
+          entries.push(processContent(content))
+        } else {
+          entries.push(
+            ...Object.keys(content).map(key => processContent(content[key]))
           )
-        )
+        }
       })
     } catch (e) {
       log(e)
@@ -111,8 +124,15 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const normalizedEntries = entries
     .sort((a, b) => b.date - a.date)
     .map(
-      ({ type, excerpt, contents: content, createdAt, updatedAt, ...rest }) => {
-        const model = models.find(model => model.modelName === type)
+      ({
+        _type,
+        excerpt,
+        contents: content = '',
+        createdAt,
+        modifiedAt: updatedAt,
+        ...rest
+      }) => {
+        const model = models.find(model => model.modelName === _type)
 
         return {
           ...rest,

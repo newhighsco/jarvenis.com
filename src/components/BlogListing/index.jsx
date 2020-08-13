@@ -32,7 +32,7 @@ const BlogListing = ({ posts = [], summary }) => {
                   config.dateFormat
                 )}
               </time>
-              <Link href="/blog/[...slug]" as={`/blog/${slug}`} passHref>
+              <Link href="[...slug]" as={slug} passHref>
                 <SmartLink className={styles.heading}>
                   <h2>{title}</h2>
                 </SmartLink>
@@ -44,7 +44,7 @@ const BlogListing = ({ posts = [], summary }) => {
       </Grid>
       {summary && (
         <ButtonGroup className={styles.buttons}>
-          <Link href="/blog" passHref>
+          <Link href="[...slug]" as="/blog" passHref>
             <Button>Read the blog</Button>
           </Link>
         </ButtonGroup>

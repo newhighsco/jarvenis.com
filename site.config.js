@@ -7,7 +7,6 @@ export const config = {
   url: process.env.SITE_URL,
   name: 'Jarvenis',
   shortName: 'Jarv',
-  title: 'Jarv - News. Guides. Reviews',
   description:
     'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
   themeColor: colors.denim,
@@ -26,7 +25,6 @@ export const meta = {
   dangerouslySetAllPagesToNoFollow: config.disallowRobots,
   dangerouslySetAllPagesToNoIndex: config.disallowRobots,
   titleTemplate: `%s | ${config.name}`,
-  description: config.description,
   openGraph: {
     site_name: config.name,
     type: 'website',
