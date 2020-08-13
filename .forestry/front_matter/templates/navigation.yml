@@ -3,12 +3,29 @@ label: Navigation
 hide_body: true
 fields:
 - type: field_group_list
-  name: Header
-  label: Header
+  name: links
+  label: Links
   fields:
   - type: text
     name: href
-    label: href
+    label: URL
+    config:
+      required: true
   - type: text
     name: text
-    label: text
+    label: Text
+    config:
+      required: true
+  - name: target
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - _blank
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Target
