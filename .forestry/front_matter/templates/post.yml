@@ -35,5 +35,4 @@ fields:
       format: markdown
   description: Optional - a short summary of the article to display on the homepage
 pages:
-- src/content/collections/blog/test-post-with-meta-data.md
 - src/content/collections/blog/welcome-to-my-new-website.md
