@@ -29,3 +29,5 @@ fields:
         file: 
         path: 
     label: Target
+  config:
+    labelField: text
