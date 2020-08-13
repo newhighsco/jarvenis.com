@@ -17,6 +17,7 @@ sections:
   label: Blog posts
   create: all
   match: "**/*"
+  exclude: index.md
   templates:
   - post
 upload_dir: public/uploads
