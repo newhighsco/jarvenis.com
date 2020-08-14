@@ -97,6 +97,7 @@
     }
 
     &::before {
+      background-attachment: fixed;
       background-image: url('../../images/background.jpg');
       background-position: 0% 100%;
       background-repeat: no-repeat;
