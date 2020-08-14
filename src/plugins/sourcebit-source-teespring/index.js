@@ -117,6 +117,9 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     projectEnvironment: options.currency
   }
 
+  const imageUrl = (url, extension) =>
+    url.replace(/^((.+)\/(\d+)\/(\d+)).(jpe*g)$/, `$1.${extension}`)
+
   const normalizedEntries = entries.map(
     ({
       id,
@@ -126,6 +129,16 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
       image_url: image,
       price
     }) => {
+      image = imageUrl(image, 'jpg')
+
+      const images = []
+      const imageOptimized = imageUrl(image, 'webp')
+      const hasOptimizedImage = imageOptimized !== image
+
+      if (hasOptimizedImage) {
+        images.push({ srcSet: imageOptimized, type: 'image/webp' })
+      }
+
       return {
         id,
         slug: slug.replace(/([^?]+)\?.*/g, '$1'),
@@ -133,6 +146,7 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
         title,
         kicker,
         image,
+        images,
         price,
         __metadata: {
           ...model,

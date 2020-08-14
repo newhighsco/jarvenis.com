@@ -11,7 +11,7 @@ const ProductListing = ({ products = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper} flex>
-        {products.map(({ id, href, image, title, kicker }) => (
+        {products.map(({ id, href, image, images, title, kicker }) => (
           <GridItem
             key={id}
             sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
@@ -21,7 +21,7 @@ const ProductListing = ({ products = [], summary }) => {
               href={href}
               target="_blank"
               heading={<h2>{title}</h2>}
-              image={{ src: image }}
+              image={{ src: image, sources: images }}
             >
               <p>{kicker}</p>
             </Card>
