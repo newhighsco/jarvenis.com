@@ -11,7 +11,7 @@ const VideoListing = ({ videos = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper} flex>
-        {videos.map(({ id, href, image, title }) => (
+        {videos.map(({ id, href, image, images, title }) => (
           <GridItem
             key={id}
             sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
@@ -21,7 +21,7 @@ const VideoListing = ({ videos = [], summary }) => {
               href={href}
               target="_blank"
               heading={<h2>{title}</h2>}
-              image={{ src: image, ratio: '16:9' }}
+              image={{ src: image, sources: images, ratio: '16:9' }}
             />
           </GridItem>
         ))}

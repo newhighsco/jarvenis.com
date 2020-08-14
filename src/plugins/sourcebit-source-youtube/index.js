@@ -101,6 +101,9 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     projectEnvironment: ''
   }
 
+  const imageHost = 'https://i.ytimg.com/'
+  const imageFileName = '/maxresdefault'
+
   const normalizedEntries = entries
     .sort((a, b) => b.published - a.published)
     .map(
@@ -112,11 +115,23 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
         published: createdAt,
         updated: updatedAt
       }) => {
+        const image = `${imageHost}vi/${id}${imageFileName}.jpg`
+
         return {
           id,
           href,
           title,
-          image: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+          image,
+          images: [
+            {
+              srcSet: `${imageHost}vi_webp/${id}${imageFileName}.webp`,
+              type: 'image/webp'
+            },
+            {
+              srcSet: image,
+              type: 'image/jpeg'
+            }
+          ],
           content,
           __metadata: {
             ...model,
