@@ -115,21 +115,15 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
         published: createdAt,
         updated: updatedAt
       }) => {
-        const image = `${imageHost}vi/${id}${imageFileName}.jpg`
-
         return {
           id,
           href,
           title,
-          image,
+          image: `${imageHost}vi/${id}${imageFileName}.jpg`,
           images: [
             {
               srcSet: `${imageHost}vi_webp/${id}${imageFileName}.webp`,
               type: 'image/webp'
-            },
-            {
-              srcSet: image,
-              type: 'image/jpeg'
             }
           ],
           content,
