@@ -66,7 +66,8 @@ module.exports = withPlugins(
       {
         exclude: /\.svg$/,
         inlineImageLimit: 1,
-        handleImages: ['jpeg', 'png', 'ico']
+        handleImages: ['ico', 'jpeg', 'png', 'webp'],
+        removeOriginalExtension: true
       }
     ],
     [
