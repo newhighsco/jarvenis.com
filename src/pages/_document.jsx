@@ -10,7 +10,7 @@ class DocumentPage extends Document {
     const { sitemap } = loadConfig()
 
     return (
-      <Html lang={config.lang}>
+      <Html className="no-js" lang={config.lang}>
         <Head>
           <link rel="icon" href={logoUrl} />
           {sitemap && (

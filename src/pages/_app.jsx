@@ -6,6 +6,7 @@ import { DefaultSeo } from 'next-seo'
 import { SiteContainer, ThemeProvider } from '@newhighsco/chipset'
 import { config, meta } from '../../site.config'
 import theme from '../theme'
+import 'modernizr'
 
 import './_app.scss'
 

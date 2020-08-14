@@ -12,6 +12,7 @@ const withSvgr = require('@newhighsco/next-plugin-svgr')
 const withFonts = require('next-fonts')
 const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
+const withModernizr = require('next-plugin-modernizr')
 
 const branchEnv = branch => {
   const branches = {
@@ -87,6 +88,7 @@ module.exports = withPlugins(
     ],
     [withFonts],
     [withVideos],
+    [withModernizr],
     [withSitemap, { sitemap: { hostname: nextConfig.env.SITE_URL } }],
     [
       withRobots,
