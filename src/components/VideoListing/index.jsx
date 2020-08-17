@@ -24,7 +24,7 @@ const VideoListing = ({ videos = [], summary }) => {
           const sources = []
 
           if (!absoluteUrl(image)) {
-            src = require(`../../../public${image}?size=300`).src
+            src = require(`../../../public${image}?size=320`).src
             const {
               srcSet
             } = require(`../../../public${image}?resize&format=webp`)
