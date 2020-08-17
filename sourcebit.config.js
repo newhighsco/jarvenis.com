@@ -37,16 +37,26 @@ module.exports = {
           }
         ],
         commonProps: entries => ({
-          defaultMeta: entries.find(
-            entry => entry.__metadata.modelName === 'page' && entry.slug === '/'
-          ).meta,
-          posts: entries.filter(entry => entry.__metadata.modelName === 'post'),
-          products: entries.filter(
-            entry => entry.__metadata.modelName === 'product'
-          ),
-          videos: entries.filter(
-            entry => entry.__metadata.modelName === 'video'
-          )
+          posts: entries
+            .filter(entry => entry.__metadata.modelName === 'post')
+            .map(({ slug, date, title, excerpt }) => ({
+              slug,
+              date,
+              title,
+              excerpt
+            })),
+          products: entries
+            .filter(entry => entry.__metadata.modelName === 'product')
+            .map(({ id, href, image, title, type }) => ({
+              id,
+              href,
+              image,
+              title,
+              type
+            })),
+          videos: entries
+            .filter(entry => entry.__metadata.modelName === 'video')
+            .map(({ id, href, image, title }) => ({ id, href, image, title }))
         })
       }
     }

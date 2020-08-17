@@ -11,6 +11,7 @@ const withRobots = require('@newhighsco/next-plugin-robots')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
 const withFonts = require('next-fonts')
 const withVideos = require('next-videos')
+const withMdx = require('next-mdx-frontmatter')
 
 const branchEnv = branch => {
   const branches = {
@@ -92,5 +93,5 @@ module.exports = withPlugins(
       { robots: { disallowPaths: nextConfig.env.DISALLOW_ROBOTS ? ['/'] : [] } }
     ]
   ],
-  nextConfig
+  withMdx({ extension: /\.mdx?$/ })(nextConfig)
 )

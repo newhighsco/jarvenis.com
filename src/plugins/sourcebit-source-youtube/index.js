@@ -100,9 +100,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const model = {
     source: name,
     modelName: 'video',
-    modelLabel: 'YouTube Video',
-    projectId: '',
-    projectEnvironment: ''
+    modelLabel: 'YouTube Video'
   }
 
   const normalizedEntries = entries

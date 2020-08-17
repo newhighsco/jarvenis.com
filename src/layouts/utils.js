@@ -2,11 +2,11 @@ import { sourcebitDataClient } from 'sourcebit-target-next'
 import urlJoin from 'url-join'
 import { config } from '../../site.config'
 import layouts from '.'
+import { meta as defaultMeta } from '../content/index.md'
 
 export const getLayoutStaticProps = async slug => {
   const {
     page,
-    defaultMeta,
     ...commonProps
   } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
   const { meta, title, ...rest } = page

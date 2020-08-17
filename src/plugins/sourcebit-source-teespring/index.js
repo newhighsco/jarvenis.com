@@ -118,18 +118,16 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
   const model = {
     source: name,
     modelName: 'product',
-    modelLabel: 'Teespring Products',
-    projectId: options.permaLink,
-    projectEnvironment: options.currency
+    modelLabel: 'Teespring Products'
   }
 
   const normalizedEntries = entries.map(
-    ({ id, url: slug, name: title, product_name: kicker, price }) => ({
+    ({ id, url: slug, name: title, product_name: type, price }) => ({
       id,
       slug: slug.replace(/([^?]+)\?.*/g, '$1'),
       href: urlJoin(BASE_URL, slug),
       title,
-      kicker,
+      type,
       image: assets.find(asset => asset.id === id).url,
       price,
       __metadata: {

@@ -19,7 +19,7 @@ const ProductListing = ({ products = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper} flex>
-        {products.map(({ id, href, image, title, kicker }) => {
+        {products.map(({ id, href, image, title, type }) => {
           var src = image
           const sources = []
 
@@ -51,7 +51,7 @@ const ProductListing = ({ products = [], summary }) => {
                   sources
                 }}
               >
-                <p>{kicker}</p>
+                <p>{type}</p>
               </Card>
             </GridItem>
           )

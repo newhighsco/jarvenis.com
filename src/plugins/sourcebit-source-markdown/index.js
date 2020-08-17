@@ -74,9 +74,7 @@ module.exports.bootstrap = async ({
             models.push({
               source: name,
               modelName,
-              modelLabel,
-              projectId: options.contentPath,
-              projectEnvironment: ''
+              modelLabel
             })
           }
 
