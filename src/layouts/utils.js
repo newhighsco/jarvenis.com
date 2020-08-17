@@ -1,9 +1,9 @@
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import urlJoin from 'url-join'
-import { config } from '../../../site.config'
-import pageLayouts from '../PageLayout'
+import { config } from '../../site.config'
+import layouts from '.'
 
-export const getPageLayoutProps = async slug => {
+export const getLayoutStaticProps = async slug => {
   const {
     page,
     defaultMeta,
@@ -11,7 +11,7 @@ export const getPageLayoutProps = async slug => {
   } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
   const { meta, title, ...rest } = page
   const canonical = slug ? urlJoin(config.url, slug) : null
-  const { getCommonProps } = pageLayouts[page?._layout] || pageLayouts.default
+  const { getCommonProps } = layouts[page?.layout] || layouts.default
   const props = {
     meta: {
       ...meta,
@@ -21,7 +21,7 @@ export const getPageLayoutProps = async slug => {
       images: [
         {
           url: meta?.image
-            ? urlJoin(config.url, require(`../../../public/${meta.image}`))
+            ? urlJoin(config.url, require(`../../public/${meta.image}`))
             : config.openGraphImage
         }
       ]

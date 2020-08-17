@@ -1,6 +1,6 @@
 ---
 _type: page
-_layout: blog
+layout: blog
 title: Latest updates from Jarv
 meta:
   title: Latest updates

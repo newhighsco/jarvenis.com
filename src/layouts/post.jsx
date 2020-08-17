@@ -2,10 +2,10 @@ import React from 'react'
 import { object, string } from 'prop-types'
 import { ArticleJsonLd } from 'next-seo'
 import { Prose } from '@newhighsco/chipset'
-import { Heading, PageContainer, Section } from '../..'
-import { config } from '../../../../site.config'
+import { Heading, PageContainer, Section } from '../components'
+import { config } from '../../site.config'
 
-const BlogPostPageLayout = ({ title, date, content, meta }) => (
+const PostLayout = ({ title, date, content, meta }) => (
   <PageContainer
     meta={{
       ...meta,
@@ -44,11 +44,11 @@ const BlogPostPageLayout = ({ title, date, content, meta }) => (
   </PageContainer>
 )
 
-BlogPostPageLayout.propTypes = {
+PostLayout.propTypes = {
   title: string,
   date: string,
   content: string,
   meta: object
 }
 
-export default BlogPostPageLayout
+export default PostLayout

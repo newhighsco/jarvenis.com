@@ -1,8 +1,8 @@
 import Page from './[...slug]'
-import { getPageLayoutProps } from '../components/PageLayout/utils'
+import { getLayoutStaticProps } from '../layouts/utils'
 
 export async function getStaticProps() {
-  return await getPageLayoutProps('/')
+  return await getLayoutStaticProps('/')
 }
 
 export default Page

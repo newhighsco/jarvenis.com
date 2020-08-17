@@ -10,9 +10,9 @@ import {
   ProductListing,
   Section,
   VideoListing
-} from '..'
-import icons from '../../images/icons'
-import { config, socialLinks } from '../../../site.config'
+} from '../components'
+import icons from '../images/icons'
+import { config, socialLinks } from '../../site.config'
 
 const DiscordSvg = icons('discord')
 
@@ -27,7 +27,7 @@ export const getCommonProps = ({ videos, products, posts }) => ({
   posts: posts.slice(0, 4)
 })
 
-const HomePageLayout = ({ meta, videos = [], products = [], posts = [] }) => (
+const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>
     <SocialProfileJsonLd
       type="Organization"
@@ -76,11 +76,11 @@ const HomePageLayout = ({ meta, videos = [], products = [], posts = [] }) => (
   </PageContainer>
 )
 
-HomePageLayout.propTypes = {
+HomeLayout.propTypes = {
   meta: object,
   videos: array,
   products: array,
   posts: array
 }
 
-export default HomePageLayout
+export default HomeLayout

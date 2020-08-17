@@ -10,6 +10,13 @@ fields:
   label: Type
   default: post
   hidden: true
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  default: post
+  hidden: true
 - name: date
   label: Date
   type: datetime

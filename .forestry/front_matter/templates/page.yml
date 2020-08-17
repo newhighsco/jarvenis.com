@@ -9,6 +9,11 @@ fields:
   label: Type
   hidden: true
   default: page
+- name: layout
+  type: text
+  config: {}
+  label: Layout
+  hidden: true
 - name: title
   type: text
   config:

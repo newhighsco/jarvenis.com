@@ -1,6 +1,6 @@
 ---
 _type: page
-_layout: home
+layout: home
 title: Homepage
 meta:
   customTitle: true

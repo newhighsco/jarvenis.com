@@ -1,24 +1,23 @@
 import React from 'react'
 import { string } from 'prop-types'
 import { sourcebitDataClient } from 'sourcebit-target-next'
-import pageLayouts from '../components/PageLayout'
-import { getPageLayoutProps } from '../components/PageLayout/utils'
+import layouts from '../layouts'
+import { getLayoutStaticProps } from '../layouts/utils'
 
 const Page = props => {
-  const { default: PageLayout } =
-    pageLayouts[props?._layout] || pageLayouts.default
+  const { default: Layout } = layouts[props?.layout] || layouts.default
 
-  return <PageLayout {...props} />
+  return <Layout {...props} />
 }
 
 Page.propTypes = {
-  _layout: string
+  layout: string
 }
 
 export async function getStaticProps({ params }) {
   const slug = params?.slug.join('/')
 
-  return await getPageLayoutProps(slug)
+  return await getLayoutStaticProps(slug)
 }
 
 export async function getStaticPaths() {
