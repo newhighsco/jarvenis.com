@@ -81,6 +81,10 @@ module.exports.bootstrap = async ({
     }).then(result => result)
 
     setPluginContext({
+      assets: entries.map(({ 'yt:videoId': id }) => ({
+        id,
+        url: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
+      })),
       entries
     })
   }
@@ -90,19 +94,16 @@ module.exports.bootstrap = async ({
   }
 }
 
-module.exports.transform = ({ data, getPluginContext, options }) => {
-  const { entries } = getPluginContext()
+module.exports.transform = ({ data, getPluginContext }) => {
+  const { assets, entries } = getPluginContext()
 
   const model = {
     source: name,
     modelName: 'video',
     modelLabel: 'YouTube Video',
-    projectId: options.channelId,
+    projectId: '',
     projectEnvironment: ''
   }
-
-  const imageHost = 'https://i.ytimg.com/'
-  const imageFileName = '/maxresdefault'
 
   const normalizedEntries = entries
     .sort((a, b) => b.published - a.published)
@@ -114,32 +115,36 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
         'media:group': { 'media:description': content },
         published: createdAt,
         updated: updatedAt
-      }) => {
-        return {
+      }) => ({
+        id,
+        href,
+        title,
+        image: assets.find(asset => asset.id === id).url,
+        content,
+        __metadata: {
+          ...model,
           id,
-          href,
-          title,
-          image: `${imageHost}vi/${id}${imageFileName}.jpg`,
-          images: [
-            {
-              srcSet: `${imageHost}vi_webp/${id}${imageFileName}.webp`,
-              type: 'image/webp'
-            }
-          ],
-          content,
-          __metadata: {
-            ...model,
-            id,
-            createdAt,
-            updatedAt
-          }
+          createdAt,
+          updatedAt
         }
-      }
+      })
     )
+
+  const normalizedAssets = assets.map(({ id, url }) => ({
+    contentType: 'image/jpeg',
+    fileName: `youtube/${id}.jpg`,
+    url,
+    __metadata: {
+      ...model,
+      modelName: '__asset',
+      modelLabel: 'Asset',
+      id
+    }
+  }))
 
   return {
     ...data,
     models: data.models.concat(model),
-    objects: data.objects.concat(normalizedEntries)
+    objects: data.objects.concat(normalizedEntries, normalizedAssets)
   }
 }

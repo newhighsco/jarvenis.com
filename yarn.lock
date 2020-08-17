@@ -12397,6 +12397,13 @@ sourcebit-target-next@0.5.2:
     socket.io "^2.3.0"
     socket.io-client "^2.3.0"
 
+sourcebit-transform-assets@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/sourcebit-transform-assets/-/sourcebit-transform-assets-0.3.0.tgz#207671c045e988e72b1dfe66100a4fe151b91331"
+  integrity sha512-RJfO5OQ43p857CBN64gXeG7qCt3jcdy1W+z7+78xSnrPDBbc84aEflQxLQNd0Hw9zxYDnL8iZGpITZBFm3cRNQ==
+  dependencies:
+    mkdirp "^1.0.3"
+
 sourcebit@0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/sourcebit/-/sourcebit-0.10.0.tgz#304cbde2014ecefc8df9cc4d62f38290953530cb"

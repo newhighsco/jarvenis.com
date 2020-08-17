@@ -1,6 +1,13 @@
 import React from 'react'
 import { array, bool } from 'prop-types'
-import { Button, ButtonGroup, Card, Grid, GridItem } from '@newhighsco/chipset'
+import {
+  absoluteUrl,
+  Button,
+  ButtonGroup,
+  Card,
+  Grid,
+  GridItem
+} from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -11,22 +18,39 @@ const ProductListing = ({ products = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper} flex>
-        {products.map(({ id, href, image, images, title, kicker }) => (
-          <GridItem
-            key={id}
-            sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
-            className={styles.item}
-          >
-            <Card
-              href={href}
-              target="_blank"
-              heading={<h2>{title}</h2>}
-              image={{ src: image, sources: images }}
+        {products.map(({ id, href, image, title, kicker }) => {
+          var src = image
+          const sources = []
+
+          if (!absoluteUrl(image)) {
+            src = require(`../../../public${image}`)
+
+            sources.push({
+              srcSet: require(`../../../public${image}?webp`),
+              type: 'image/webp'
+            })
+          }
+
+          return (
+            <GridItem
+              key={id}
+              sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
+              className={styles.item}
             >
-              <p>{kicker}</p>
-            </Card>
-          </GridItem>
-        ))}
+              <Card
+                href={href}
+                target="_blank"
+                heading={<h2>{title}</h2>}
+                image={{
+                  src,
+                  sources
+                }}
+              >
+                <p>{kicker}</p>
+              </Card>
+            </GridItem>
+          )
+        })}
       </Grid>
       {summary && (
         <ButtonGroup className={styles.buttons}>

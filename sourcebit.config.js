@@ -20,6 +20,13 @@ module.exports = {
       }
     },
     {
+      module: require('sourcebit-transform-assets'),
+      options: {
+        assetPath: 'public/downloads',
+        publicUrl: '/downloads'
+      }
+    },
+    {
       module: require('sourcebit-target-next'),
       options: {
         pages: [

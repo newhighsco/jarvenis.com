@@ -1,5 +1,7 @@
+const path = require('path')
 const fetch = require('node-fetch')
 const urlJoin = require('url-join')
+const mimeTypes = require('mime-types')
 
 const BASE_URL = 'https://teespring.com/'
 const API_BASE_URL = `${BASE_URL}api/stores/`
@@ -97,6 +99,10 @@ module.exports.bootstrap = async ({
     ).then(response => response.json())
 
     setPluginContext({
+      assets: entries.map(({ id, image_url: url }) => ({
+        id,
+        url: url.replace('vangogh.', 'mockup-api.')
+      })),
       entries
     })
   }
@@ -107,7 +113,7 @@ module.exports.bootstrap = async ({
 }
 
 module.exports.transform = ({ data, getPluginContext, options }) => {
-  const { entries } = getPluginContext()
+  const { assets, entries } = getPluginContext()
 
   const model = {
     source: name,
@@ -117,48 +123,41 @@ module.exports.transform = ({ data, getPluginContext, options }) => {
     projectEnvironment: options.currency
   }
 
-  const imageUrl = (url, extension) =>
-    url.replace(/^((.+)\/(\d+)\/(\d+)).(jpe*g)$/, `$1.${extension}`)
-
   const normalizedEntries = entries.map(
-    ({
+    ({ id, url: slug, name: title, product_name: kicker, price }) => ({
       id,
-      url: slug,
-      name: title,
-      product_name: kicker,
-      image_url: image,
-      price
-    }) => {
-      image = imageUrl(image, 'jpg')
-
-      const images = []
-      const imageOptimized = imageUrl(image, 'webp')
-      const hasOptimizedImage = imageOptimized !== image
-
-      if (hasOptimizedImage) {
-        images.push({ srcSet: imageOptimized, type: 'image/webp' })
+      slug: slug.replace(/([^?]+)\?.*/g, '$1'),
+      href: urlJoin(BASE_URL, slug),
+      title,
+      kicker,
+      image: assets.find(asset => asset.id === id).url,
+      price,
+      __metadata: {
+        ...model,
+        id
       }
+    })
+  )
 
-      return {
-        id,
-        slug: slug.replace(/([^?]+)\?.*/g, '$1'),
-        href: urlJoin(BASE_URL, slug),
-        title,
-        kicker,
-        image,
-        images,
-        price,
-        __metadata: {
-          ...model,
-          id
-        }
+  const normalizedAssets = assets.map(({ id, url }) => {
+    const extension = path.extname(url).split('&')[0]
+
+    return {
+      contentType: mimeTypes.lookup(extension),
+      fileName: `teespring/${id}${extension}`,
+      url,
+      __metadata: {
+        ...model,
+        modelName: '__asset',
+        modelLabel: 'Asset',
+        id
       }
     }
-  )
+  })
 
   return {
     ...data,
     models: data.models.concat(model),
-    objects: data.objects.concat(normalizedEntries)
+    objects: data.objects.concat(normalizedEntries, normalizedAssets)
   }
 }

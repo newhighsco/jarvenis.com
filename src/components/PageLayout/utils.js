@@ -16,8 +16,8 @@ export const getPageLayoutProps = async slug => {
     meta: {
       ...meta,
       canonical,
-      title: meta?.title || title || defaultMeta?.title,
-      description: meta?.description || defaultMeta?.description,
+      title: meta?.title || title || defaultMeta?.title || null,
+      description: meta?.description || defaultMeta?.description || null,
       images: [
         {
           url: meta?.image
