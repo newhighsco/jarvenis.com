@@ -10,6 +10,7 @@ import {
 } from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
+import breakpoints from '../../styles/_breakpoints.module.scss'
 import styles from './styles.module.scss'
 
 const ProductListing = ({ products = [], summary }) => {
@@ -23,13 +24,15 @@ const ProductListing = ({ products = [], summary }) => {
           const sources = []
 
           if (!absoluteUrl(image)) {
-            src = require(`../../../public${image}?size=320`)
+            src = require(`../../../public${image}?size=${breakpoints.mobile}`)
+              .src
             const {
               srcSet
             } = require(`../../../public${image}?resize&format=webp`)
 
             sources.push({
               srcSet,
+              sizes: `85vw, (min-width: ${breakpoints.tablet}px) 50vw, (min-width: ${breakpoints.tabletLandscape}px) 25vw`,
               type: 'image/webp'
             })
           }
