@@ -49,11 +49,12 @@
     "pluralize": "8.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "responsive-loader": "2.0.2",
     "sass": "1.26.10",
+    "sharp": "0.25.4",
     "sourcebit": "0.10.0",
     "sourcebit-target-next": "0.5.2",
     "sourcebit-transform-assets": "0.3.0",
-    "webp-loader": "0.6.0",
     "xml2js": "0.4.23"
   },
   "devDependencies": {

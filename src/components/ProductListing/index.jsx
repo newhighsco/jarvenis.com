@@ -23,10 +23,13 @@ const ProductListing = ({ products = [], summary }) => {
           const sources = []
 
           if (!absoluteUrl(image)) {
-            src = require(`../../../public${image}`)
+            src = require(`../../../public${image}?size=320`)
+            const {
+              srcSet
+            } = require(`../../../public${image}?resize&format=webp`)
 
             sources.push({
-              srcSet: require(`../../../public${image}?webp`),
+              srcSet,
               type: 'image/webp'
             })
           }
