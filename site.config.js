@@ -16,7 +16,6 @@ export const config = {
   twitterHandle: 'jarvenis',
   googleTrackingId: null,
   disallowRobots: process.env.DISALLOW_ROBOTS,
-  email: 'jarv@jarvenis.com',
   dateFormat: {
     month: 'short',
     year: 'numeric',
@@ -31,7 +30,7 @@ export const meta = {
   openGraph: {
     site_name: config.name,
     type: 'website',
-    images: [{ url: openGraphImageUrl }]
+    images: [{ url: config.openGraphImage }]
   },
   twitter: {
     cardType: 'summary',
@@ -43,9 +42,9 @@ export const meta = {
 
 export const socialLinks = {
   discord: 'https://discordapp.com/invite/rwq9UHT',
-  instagram: `https://www.instagram.com/${config.twitterHandle}/`,
+  email: 'jarv@jarvenis.com',
   teespring: 'https://teespring.com/stores/jarv',
-  twitch: `https://www.twitch.tv/${config.twitterHandle}`,
-  twitter: `https://twitter.com/${config.twitterHandle}`,
-  youtube: `https://youtube.com/${config.twitterHandle}`
+  twitch: `https://www.twitch.tv/jarvenis`,
+  twitter: `https://twitter.com/jarvenis`,
+  youtube: `https://youtube.com/jarvenis`
 }
