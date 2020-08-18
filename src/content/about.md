@@ -1,7 +1,7 @@
 ---
 _type: page
 layout: ''
-title: About
+title: About Jarv
 meta:
   customTitle: false
   title: ''
