@@ -14,7 +14,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  exclude: "{index|404}.md"
+  exclude: "{index,404}.md"
   templates:
   - page
 - type: document

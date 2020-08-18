@@ -16,3 +16,4 @@ fields:
   label: Page
 pages:
 - src/content/index.md
+- src/content/index.md
