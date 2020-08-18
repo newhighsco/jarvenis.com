@@ -13,7 +13,7 @@ sections:
   path: src/content
   label: Pages
   create: all
-  match: src/content/{,!(collections)/**/}*
+  match: "{,!(collections)/**/}*"
   exclude: "{index,404}.md"
   templates:
   - page

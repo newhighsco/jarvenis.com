@@ -26,6 +26,4 @@ fields:
   label: Meta data
 pages:
 - src/content/404.md
-- src/content/about-jarv.md
-- src/content/collections/blog/index.md
 - src/content/collections/blog/index.md
