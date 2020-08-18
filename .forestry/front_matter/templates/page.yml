@@ -26,4 +26,5 @@ fields:
   label: Meta data
 pages:
 - src/content/404.md
+- src/content/about.md
 - src/content/collections/blog/index.md
