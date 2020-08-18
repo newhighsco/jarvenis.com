@@ -3,18 +3,3 @@
 .wrapper {
   margin: functions.spacing(4) 0 functions.spacing(2);
 }
-
-.link {
-  &:hover {
-    .logo {
-      transform: scale(1.1);
-    }
-  }
-
-  &:focus,
-  &:active {
-    .logo {
-      transform: scale(1);
-    }
-  }
-}
