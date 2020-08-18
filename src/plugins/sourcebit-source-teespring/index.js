@@ -29,6 +29,12 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
       choices: CURRENCIES,
       validate: value => (value.length > 0 ? true : 'Currency cannot be empty'),
       default: currentOptions.currency
+    },
+    {
+      type: 'number',
+      name: 'pageLimit',
+      message: 'Option - limit the number of pages of products to retrieve?',
+      default: currentOptions.pageLimit
     }
   ]
 
@@ -62,7 +68,8 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
 module.exports.getOptionsFromSetup = ({ answers }) => {
   return {
     permaLink: answers.permaLink,
-    currency: answers.currency
+    currency: answers.currency,
+    pageLimit: answers.pageLimit
   }
 }
 
@@ -76,6 +83,9 @@ module.exports.options = {
   },
   currency: {
     default: CURRENCIES[0]
+  },
+  pageLimit: {
+    default: Number.MAX_SAFE_INTEGER
   }
 }
 
@@ -85,9 +95,8 @@ module.exports.bootstrap = async ({
   log,
   setPluginContext
 }) => {
-  const context = getPluginContext()
   const fetchProducts = async (page = 1, accumulator = []) => {
-    const { products, next } = await fetch(
+    const { products, next, page: currentPage } = await fetch(
       urlJoin(
         API_BASE_URL,
         options.permaLink,
@@ -97,19 +106,19 @@ module.exports.bootstrap = async ({
 
     accumulator = accumulator.concat(products)
 
-    if (next) {
+    if (next && currentPage < options.pageLimit) {
       return await fetchProducts(page + 1, accumulator)
     }
 
     return accumulator
   }
 
+  const context = getPluginContext()
+
   if (context && context.entries) {
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
     const entries = await fetchProducts()
-
-    console.log(111, entries)
 
     setPluginContext({
       assets: entries.map(({ id, image_url: url }) => ({
