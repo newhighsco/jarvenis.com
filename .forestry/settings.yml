@@ -9,14 +9,6 @@ sections:
 - type: document
   path: src/content/index.md
   label: Home
-- type: directory
-  path: src/content
-  label: Pages
-  create: all
-  match: "{,!(collections)/**/}*"
-  exclude: "{index,404}.md"
-  templates:
-  - page
 - type: document
   path: src/content/collections/blog/index.md
   label: Blog listing
@@ -28,6 +20,14 @@ sections:
   exclude: index.md
   templates:
   - post
+- type: directory
+  path: src/content
+  label: Pages
+  create: all
+  match: "{,!(collections)/**/}*"
+  exclude: "{index,404}.md"
+  templates:
+  - page
 - type: document
   path: src/content/404.md
   label: 404 page
