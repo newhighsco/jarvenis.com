@@ -86,17 +86,30 @@ module.exports.bootstrap = async ({
   setPluginContext
 }) => {
   const context = getPluginContext()
+  const fetchProducts = async (page = 1, accumulator = []) => {
+    const { products, next } = await fetch(
+      urlJoin(
+        API_BASE_URL,
+        options.permaLink,
+        `store_products?currency=${options.currency}&page=${page}`
+      )
+    ).then(response => response.json())
+
+    accumulator = accumulator.concat(products)
+
+    if (next) {
+      return await fetchProducts(page + 1, accumulator)
+    }
+
+    return accumulator
+  }
 
   if (context && context.entries) {
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
-    const { products: entries } = await fetch(
-      urlJoin(
-        API_BASE_URL,
-        options.permaLink,
-        `store_products?currency=${options.currency}`
-      )
-    ).then(response => response.json())
+    const entries = await fetchProducts()
+
+    console.log(111, entries)
 
     setPluginContext({
       assets: entries.map(({ id, image_url: url }) => ({
@@ -112,7 +125,7 @@ module.exports.bootstrap = async ({
   }
 }
 
-module.exports.transform = ({ data, getPluginContext, options }) => {
+module.exports.transform = ({ data, getPluginContext }) => {
   const { assets, entries } = getPluginContext()
 
   const model = {
