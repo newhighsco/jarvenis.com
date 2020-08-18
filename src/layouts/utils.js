@@ -9,7 +9,7 @@ export const getLayoutStaticProps = async slug => {
     page,
     ...commonProps
   } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
-  const { meta, title, ...rest } = page
+  const { meta, title, __metadata, ...rest } = page
   const canonical = slug ? urlJoin(config.url, slug) : null
   const { getCommonProps } = layouts[page?.layout] || layouts.default
   const props = {
