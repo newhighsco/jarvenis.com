@@ -6,7 +6,6 @@ import {
   Grid,
   GridItem,
   Icon,
-  Landmark,
   List,
   SmartLink
 } from '@newhighsco/chipset'
@@ -29,8 +28,8 @@ const Header = () => {
 
   return (
     <>
-      <Landmark id="top">Top of page</Landmark>
       <ContentContainer
+        id="top"
         as="header"
         role="banner"
         theme={theme}
