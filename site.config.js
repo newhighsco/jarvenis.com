@@ -10,8 +10,6 @@ export const config = {
   url,
   name: 'Jarvenis',
   shortName: 'Jarv',
-  description:
-    'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
   logo: urlJoin(url, logoUrl),
   openGraphImage: urlJoin(url, openGraphImageUrl),
   themeColor: colors.denim,
