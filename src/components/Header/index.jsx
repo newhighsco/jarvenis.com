@@ -7,6 +7,7 @@ import {
   GridItem,
   Icon,
   List,
+  Navigation,
   SmartLink
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
@@ -45,6 +46,20 @@ const Header = () => {
               </Link>
             </GridItem>
             <GridItem className={styles.links}>
+              <Navigation
+                links={links}
+                renderLink={({ href, text, ...rest }) => (
+                  <Link href="[...slug]" as={href} passHref>
+                    <SmartLink {...rest}>{text}</SmartLink>
+                  </Link>
+                )}
+                theme={{
+                  item: styles.link,
+                  toggle: styles.toggle,
+                  toggleIcon: styles.icon
+                }}
+                toggle
+              />
               {!!links && (
                 <List unstyled>
                   {links.map(({ href, text, target }, i) => (
