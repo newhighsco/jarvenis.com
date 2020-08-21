@@ -6,7 +6,7 @@ import {
   Grid,
   GridItem,
   Icon,
-  List,
+  Navigation,
   SmartLink
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
@@ -51,43 +51,29 @@ const Footer = () => (
           </Link>
         </GridItem>
         <GridItem sizes={['tablet-one-third']}>
-          {!!links && (
-            <List className={styles.links} unstyled>
-              {links.map(({ href, text, target }, i) => (
-                <li key={i} className={styles.link}>
-                  {target ? (
-                    <SmartLink href={href} target={target}>
-                      {text}
-                    </SmartLink>
-                  ) : (
-                    <Link href="[...slug]" as={href} passHref>
-                      <SmartLink>{text}</SmartLink>
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </List>
-          )}
+          <Navigation
+            links={links}
+            renderLink={({ href, text, ...rest }) => (
+              <Link href="[...slug]" as={href} passHref>
+                <SmartLink {...rest}>{text}</SmartLink>
+              </Link>
+            )}
+            theme={{ wrapper: styles.links, item: styles.link }}
+          />
         </GridItem>
         <GridItem sizes={['tablet-one-third']}>
-          {!!iconLinks.length && (
-            <List className={styles.iconLinks} inline>
-              {iconLinks.map(({ href, text, icon: IconSvg, target }, i) => (
-                <li key={i}>
-                  <SmartLink
-                    className={styles.iconLink}
-                    href={href}
-                    title={text}
-                    target={target}
-                  >
-                    <Icon theme={{ wrapper: styles.icon }} alt={text}>
-                      {IconSvg && <IconSvg />}
-                    </Icon>
-                  </SmartLink>
-                </li>
-              ))}
-            </List>
-          )}
+          <Navigation
+            links={iconLinks}
+            renderLink={({ text, icon: IconSvg, ...rest }) => (
+              <SmartLink {...rest}>
+                <Icon theme={{ wrapper: styles.icon }} alt={text}>
+                  {IconSvg && <IconSvg />}
+                </Icon>
+              </SmartLink>
+            )}
+            theme={{ wrapper: styles.iconLinks, link: styles.iconLink }}
+            inline
+          />
         </GridItem>
         <GridItem className={styles.credits} align="center">
           <small>

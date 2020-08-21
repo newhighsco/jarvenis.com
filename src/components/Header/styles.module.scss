@@ -27,12 +27,7 @@
   }
 }
 
-.icon {
-  fill: currentColor;
-  width: functions.spacing(4);
-}
-
-.links {
+.navigation {
   @include mixins.mq(breakpoints.$tablet) {
     flex-grow: 1;
     margin: functions.spacing(4);
@@ -41,57 +36,75 @@
   }
 }
 
+.list {
+  @include mixins.mq(breakpoints.$tablet) {
+    &[hidden] {
+      display: block;
+    }
+  }
+}
+
+.item {
+  @include mixins.mq(breakpoints.$tablet) {
+    display: inline-block;
+  }
+}
+
 .link {
-  display: none;
+  display: block;
   font-family: fonts.$heading;
   font-size: 2.5em;
 
-  a {
-    &:hover,
-    &:active,
-    &:focus {
-      color: colors.$sea;
-    }
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
-    display: inline-block;
+    color: colors.$gulf;
     font-size: 2em;
     margin-left: functions.spacing(4) !important;
 
-    a {
-      color: colors.$gulf;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: colors.$white;
-        text-decoration: underline;
-      }
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$white;
+      text-decoration: underline;
     }
   }
 }
 
 .toggle {
+  background: none;
+  border: 0;
+  font-size: 1em;
   margin: functions.spacing(4) functions.spacing(2);
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;
 
-  @include mixins.mq(breakpoints.$tablet) {
-    display: none;
-  }
-
   &:hover,
   &:active,
   &:focus {
+    background: none;
     color: colors.$gulf;
     outline: none;
   }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    display: none;
+  }
+}
+
+.toggleIcon {
+  fill: currentColor;
+  width: functions.spacing(4);
 }
 
 @include mixins.mq($max: breakpoints.$tablet - 1) {
-  .menuOpen {
+  .menuVisible {
     & ~ main > * {
       display: none;
     }
@@ -112,7 +125,6 @@
     }
 
     .link {
-      display: block;
       padding: functions.spacing(1) functions.spacing(2);
       text-align: center;
     }

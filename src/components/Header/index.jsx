@@ -5,25 +5,20 @@ import {
   ContentContainer,
   Grid,
   GridItem,
-  Icon,
-  List,
+  Navigation,
   SmartLink
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
-import icons from '../../images/icons'
 import { links } from '../../data/footer.json'
 
 import theme from './theme.module.scss'
 import styles from './styles.module.scss'
 
-const MenuSvg = icons('menu')
-const CloseSvg = icons('close')
-
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuVisible, setMenuVisibility] = useState(false)
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
+    setMenuVisibility(!menuVisible)
   }
 
   return (
@@ -33,7 +28,7 @@ const Header = () => {
         as="header"
         role="banner"
         theme={theme}
-        className={classNames(menuOpen && styles.menuOpen)}
+        className={classNames(menuVisible && styles.menuVisible)}
       >
         <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
           <Grid gutterless flex valign="middle">
@@ -44,34 +39,24 @@ const Header = () => {
                 </SmartLink>
               </Link>
             </GridItem>
-            <GridItem className={styles.links}>
-              {!!links && (
-                <List unstyled>
-                  {links.map(({ href, text, target }, i) => (
-                    <li key={i} className={styles.link}>
-                      {target ? (
-                        <SmartLink href={href} target={target}>
-                          {text}
-                        </SmartLink>
-                      ) : (
-                        <Link href="[...slug]" as={href} passHref>
-                          <SmartLink>{text}</SmartLink>
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                  <li>
-                    <SmartLink onClick={toggleMenu} className={styles.toggle}>
-                      <Icon
-                        theme={{ wrapper: styles.icon }}
-                        alt={`${!menuOpen ? 'Open' : 'Close'} menu`}
-                      >
-                        {!menuOpen ? <MenuSvg /> : <CloseSvg />}
-                      </Icon>
-                    </SmartLink>
-                  </li>
-                </List>
-              )}
+            <GridItem className={styles.navigation}>
+              <Navigation
+                links={links}
+                renderLink={({ href, text, ...rest }) => (
+                  <Link href="[...slug]" as={href} passHref>
+                    <SmartLink {...rest}>{text}</SmartLink>
+                  </Link>
+                )}
+                theme={{
+                  list: styles.list,
+                  item: styles.item,
+                  link: styles.link,
+                  toggle: styles.toggle,
+                  toggleIcon: styles.toggleIcon
+                }}
+                toggle
+                onToggle={toggleMenu}
+              />
             </GridItem>
           </Grid>
         </ContentContainer>
