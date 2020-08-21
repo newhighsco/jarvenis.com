@@ -104,8 +104,7 @@
       "@newhighsco"
     ],
     "baseBranches": [
-      "main",
-      "staging"
+      "main"
     ]
   },
   "stylelint": {
