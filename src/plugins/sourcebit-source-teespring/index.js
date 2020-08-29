@@ -140,7 +140,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const model = {
     source: name,
     modelName: 'product',
-    modelLabel: 'Teespring Products'
+    modelLabel: 'Teespring Product'
   }
 
   const normalizedEntries = entries.map(
