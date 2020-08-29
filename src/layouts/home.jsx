@@ -21,12 +21,6 @@ const LiveStream = dynamic(
   { ssr: false }
 )
 
-export const getCommonProps = ({ videos, products, posts }) => ({
-  videos: videos.slice(0, 4),
-  products: products.slice(0, 4),
-  posts: posts.slice(0, 4)
-})
-
 const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>
     <SocialProfileJsonLd

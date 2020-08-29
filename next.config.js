@@ -1,5 +1,4 @@
 const sourcebit = require('sourcebit')
-const { sourcebitDataClient } = require('sourcebit-target-next')
 const sourcebitConfig = require('./sourcebit.config.js')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
@@ -11,7 +10,7 @@ const withRobots = require('@newhighsco/next-plugin-robots')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
 const withFonts = require('next-fonts')
 const withVideos = require('next-videos')
-const withMdx = require('next-mdx-frontmatter')
+const withMdx = require('next-mdx-enhanced')
 
 const branchEnv = branch => {
   const branches = {
@@ -38,25 +37,7 @@ sourcebit.fetch(sourcebitConfig, { cache: false })
 
 const nextConfig = {
   poweredByHeader: false,
-  env: branchEnv(process.env.VERCEL_GITHUB_COMMIT_REF),
-  exportPathMap: async (defaultPathMap, { dev }) => {
-    if (!dev) {
-      const customPathMap = {}
-      const paths = await sourcebitDataClient.getStaticPaths()
-
-      paths
-        .filter(path => !['/', '/404'].includes(path))
-        .map(path => {
-          customPathMap[path] = { page: '/[...slug]' }
-        })
-
-      const pathMap = Object.assign(customPathMap, defaultPathMap)
-
-      return pathMap
-    }
-
-    return defaultPathMap
-  }
+  env: branchEnv(process.env.VERCEL_GITHUB_COMMIT_REF)
 }
 
 module.exports = withPlugins(
@@ -93,5 +74,10 @@ module.exports = withPlugins(
       { robots: { disallowPaths: nextConfig.env.DISALLOW_ROBOTS ? ['/'] : [] } }
     ]
   ],
-  withMdx({ extension: /\.mdx?$/ })(nextConfig)
+  withMdx({
+    defaultLayout: true,
+    layoutPath: 'src/layouts',
+    usesSrc: true,
+    reExportDataFetching: true
+  })(nextConfig)
 )

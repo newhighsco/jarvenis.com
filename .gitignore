@@ -28,3 +28,4 @@ build
 .env
 .sourcebit-*cache.json
 public/downloads
+.mdx-data

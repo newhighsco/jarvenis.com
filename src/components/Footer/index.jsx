@@ -54,7 +54,7 @@ const Footer = () => (
           <Navigation
             links={links}
             renderLink={({ href, text, ...rest }) => (
-              <Link href="[...slug]" as={href} passHref>
+              <Link href={href} passHref>
                 <SmartLink {...rest}>{text}</SmartLink>
               </Link>
             )}

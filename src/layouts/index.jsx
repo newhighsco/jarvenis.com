@@ -1,10 +1,13 @@
 import React from 'react'
 import { node, object } from 'prop-types'
 import { Prose } from '@newhighsco/chipset'
-import { BlogListing, Heading, PageContainer, Section } from '../components'
-import { frontMatter as posts } from '../pages/blog/*.mdx'
+import { Heading, PageContainer, Section } from '../components'
 
-const BlogLayout = ({ frontMatter, children }) => {
+export async function getStaticProps() {
+  return { props: { foo: 'bar' } }
+}
+
+const DefaultLayout = ({ children, frontMatter, ...rest }) => {
   const { title, meta } = frontMatter
 
   return (
@@ -12,15 +15,15 @@ const BlogLayout = ({ frontMatter, children }) => {
       <Section size="desktopMedium">
         <Heading align="center">{title}</Heading>
         <Prose align="center">{children}</Prose>
-        <BlogListing posts={posts} />
+        <pre>{JSON.stringify(rest, null, 2)}</pre>
       </Section>
     </PageContainer>
   )
 }
 
-BlogLayout.propTypes = {
+DefaultLayout.propTypes = {
   frontMatter: object,
   children: node
 }
 
-export default BlogLayout
+export default DefaultLayout
