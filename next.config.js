@@ -1,3 +1,4 @@
+const urlJoin = require('url-join')
 const sourcebit = require('sourcebit')
 const sourcebitConfig = require('./sourcebit.config.js')
 const withPlugins = require('next-compose-plugins')
@@ -78,6 +79,34 @@ module.exports = withPlugins(
     defaultLayout: true,
     layoutPath: 'src/layouts',
     usesSrc: true,
-    reExportDataFetching: true
+    extendFrontMatter: {
+      process: (mdxContent, frontMatter) => {
+        const { __resourcePath: path, title, meta } = frontMatter
+        const slug = `/${path}`
+          .replace(/\.mdx?$/, '')
+          .replace(/^\/index$/, '/')
+          .replace(/\/(index|404)$/, '')
+        const canonical = slug ? urlJoin(nextConfig.env.SITE_URL, slug) : null
+
+        return {
+          slug,
+          meta: {
+            ...meta,
+            canonical,
+            title: meta.title || title,
+            ...(meta.image && {
+              images: [
+                {
+                  url: urlJoin(
+                    nextConfig.env.SITE_URL,
+                    require(`./public/${meta.image}`)
+                  )
+                }
+              ]
+            })
+          }
+        }
+      }
+    }
   })(nextConfig)
 )

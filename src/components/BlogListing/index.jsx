@@ -19,32 +19,28 @@ const BlogListing = ({ posts = [], summary }) => {
   return (
     <>
       <Grid className={styles.wrapper}>
-        {posts.map(({ __resourcePath, date, title, excerpt }) => {
-          const slug = __resourcePath.replace(/\.mdx$/, '')
-
-          return (
-            <GridItem
-              key={slug}
-              sizes={['tablet-one-half', 'desktop-one-quarter']}
-              className={styles.item}
-            >
-              <div className={styles.content}>
-                <time dateTime={date} className={styles.date}>
-                  {new Date(date).toLocaleDateString(
-                    config.lang,
-                    config.dateFormat
-                  )}
-                </time>
-                <Link href={slug} passHref>
-                  <SmartLink className={styles.heading}>
-                    <h2>{title}</h2>
-                  </SmartLink>
-                </Link>
-                {excerpt && <Prose className={styles.excerpt} html={excerpt} />}
-              </div>
-            </GridItem>
-          )
-        })}
+        {posts.map(({ slug, date, title, excerpt }) => (
+          <GridItem
+            key={slug}
+            sizes={['tablet-one-half', 'desktop-one-quarter']}
+            className={styles.item}
+          >
+            <div className={styles.content}>
+              <time dateTime={date} className={styles.date}>
+                {new Date(date).toLocaleDateString(
+                  config.lang,
+                  config.dateFormat
+                )}
+              </time>
+              <Link href={slug} passHref>
+                <SmartLink className={styles.heading}>
+                  <h2>{title}</h2>
+                </SmartLink>
+              </Link>
+              {excerpt && <Prose className={styles.excerpt} html={excerpt} />}
+            </div>
+          </GridItem>
+        ))}
       </Grid>
       {summary && (
         <ButtonGroup className={styles.buttons}>

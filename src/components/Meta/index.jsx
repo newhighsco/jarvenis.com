@@ -1,6 +1,7 @@
 import React from 'react'
 import { array, bool, node, object, string } from 'prop-types'
 import { NextSeo } from 'next-seo'
+import { frontMatter } from '../../pages/index.mdx'
 
 const Meta = ({
   children,
@@ -13,6 +14,11 @@ const Meta = ({
   openGraph,
   ...rest
 }) => {
+  const { meta: defaultMeta } = frontMatter
+
+  title = title || defaultMeta?.title
+  description = description || defaultMeta?.description
+
   const meta = {
     title,
     titleTemplate: customTitle ? `%s` : titleTemplate,
