@@ -2,13 +2,6 @@
 label: Page
 hide_body: false
 fields:
-- name: _type
-  type: text
-  config:
-    required: true
-  label: Type
-  hidden: true
-  default: page
 - name: layout
   type: text
   config: {}
@@ -25,6 +18,6 @@ fields:
   template: meta
   label: Meta data
 pages:
-- src/content/404.md
-- src/content/about.md
-- src/content/collections/blog/index.md
+- src/pages/404.mdx
+- src/pages/about.mdx
+- src/pages/blog.mdx

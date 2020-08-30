@@ -15,4 +15,4 @@ fields:
   template: page
   label: Page
 pages:
-- src/content/index.md
+- src/pages/index.mdx

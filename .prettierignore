@@ -4,7 +4,6 @@
 # production
 /.next
 /build
-/src/content
 /src/data
 
 # misc

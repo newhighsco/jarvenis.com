@@ -7,29 +7,28 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: src/content/index.md
+  path: src/pages/index.mdx
   label: Home
 - type: document
-  path: src/content/collections/blog/index.md
+  path: src/pages/blog.mdx
   label: Blog listing
 - type: directory
-  path: src/content/collections/blog
+  path: src/pages/blog
   label: Blog posts
   create: all
   match: "**/*"
-  exclude: index.md
   templates:
   - post
 - type: directory
-  path: src/content
+  path: src/pages
   label: Pages
   create: all
-  match: "{,!(collections)/**/}*"
-  exclude: "{index,404}.md"
+  match: "{,!(blog)/**/}*"
+  exclude: "{index,404}.mdx"
   templates:
   - page
 - type: document
-  path: src/content/404.md
+  path: src/pages/404.mdx
   label: 404 page
 - type: heading
   label: Navigation
