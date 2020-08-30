@@ -3,11 +3,7 @@ import { node, object } from 'prop-types'
 import { Prose } from '@newhighsco/chipset'
 import { Heading, PageContainer, Section } from '../components'
 
-export async function getStaticProps() {
-  return { props: { foo: 'bar' } }
-}
-
-const DefaultLayout = ({ children, frontMatter, ...rest }) => {
+const DefaultLayout = ({ children, frontMatter }) => {
   const { title, meta } = frontMatter
 
   return (
@@ -15,7 +11,6 @@ const DefaultLayout = ({ children, frontMatter, ...rest }) => {
       <Section size="desktopMedium">
         <Heading align="center">{title}</Heading>
         <Prose align="center">{children}</Prose>
-        <pre>{JSON.stringify(rest, null, 2)}</pre>
       </Section>
     </PageContainer>
   )

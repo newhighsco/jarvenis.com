@@ -1,5 +1,5 @@
 import React from 'react'
-import { array, object } from 'prop-types'
+import { object } from 'prop-types'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { Button, ButtonGroup } from '@newhighsco/chipset'
@@ -13,6 +13,8 @@ import {
 } from '../components'
 import icons from '../images/icons'
 import { config, socialLinks } from '../../site.config'
+import { frontMatter as posts } from '../pages/blog/*.mdx'
+import { props as commonProps } from '../../.sourcebit-nextjs-cache.json'
 
 const DiscordSvg = icons('discord')
 
@@ -21,60 +23,62 @@ const LiveStream = dynamic(
   { ssr: false }
 )
 
-const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
-  <PageContainer meta={meta}>
-    <SocialProfileJsonLd
-      type="Organization"
-      name={config.name}
-      url={config.url}
-      sameAs={[socialLinks.twitter]}
-    />
-    <LogoJsonLd url={config.url} logo={config.logo} />
-    <Section size="desktopMedium">
-      <LiveStream href={socialLinks.youtube} />
-    </Section>
-    {!!videos.length && (
-      <Section>
-        <Heading as="h2" align="center">
-          Latest videos
-        </Heading>
-        <VideoListing videos={videos} summary />
+const HomeLayout = ({ frontMatter }) => {
+  const { videos = [], products = [] } = commonProps
+  const { meta } = frontMatter
+
+  return (
+    <PageContainer meta={meta}>
+      <SocialProfileJsonLd
+        type="Organization"
+        name={config.name}
+        url={config.url}
+        sameAs={[socialLinks.twitter]}
+      />
+      <LogoJsonLd url={config.url} logo={config.logo} />
+      <Section size="desktopMedium">
+        <LiveStream href={socialLinks.youtube} />
       </Section>
-    )}
-    {!!posts.length && (
+      {!!videos.length && (
+        <Section>
+          <Heading as="h2" align="center">
+            Latest videos
+          </Heading>
+          <VideoListing videos={videos.slice(0, 4)} summary />
+        </Section>
+      )}
+      {!!posts.length && (
+        <Section alternate size="desktopMedium">
+          <Heading as="h2" align="center">
+            Latest updates
+          </Heading>
+          <BlogListing posts={posts.slice(0, 4)} summary />
+        </Section>
+      )}
+      {!!products.length && (
+        <Section size="desktop">
+          <Heading as="h2" align="center">
+            Merchandise
+          </Heading>
+          <ProductListing products={products.slice(0, 4)} summary />
+        </Section>
+      )}
       <Section alternate size="desktopMedium">
-        <Heading as="h2" align="center">
-          Latest updates
+        <Heading align="center" icon={<DiscordSvg />}>
+          Community Hub
         </Heading>
-        <BlogListing posts={posts} summary />
+        <ButtonGroup>
+          <Button href={socialLinks.discord} target="_blank">
+            Join us on Discord
+          </Button>
+        </ButtonGroup>
       </Section>
-    )}
-    {!!products.length && (
-      <Section size="desktop">
-        <Heading as="h2" align="center">
-          Merchandise
-        </Heading>
-        <ProductListing products={products} summary />
-      </Section>
-    )}
-    <Section alternate size="desktopMedium">
-      <Heading align="center" icon={<DiscordSvg />}>
-        Community Hub
-      </Heading>
-      <ButtonGroup>
-        <Button href={socialLinks.discord} target="_blank">
-          Join us on Discord
-        </Button>
-      </ButtonGroup>
-    </Section>
-  </PageContainer>
-)
+    </PageContainer>
+  )
+}
 
 HomeLayout.propTypes = {
-  meta: object,
-  videos: array,
-  products: array,
-  posts: array
+  frontMatter: object
 }
 
 export default HomeLayout
