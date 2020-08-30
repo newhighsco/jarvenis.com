@@ -110,7 +110,6 @@ module.exports.transform = ({ data, getPluginContext }) => {
         'yt:videoId': id,
         link: { href },
         title,
-        'media:group': { 'media:description': content },
         published: createdAt,
         updated: updatedAt
       }) => ({
@@ -118,7 +117,6 @@ module.exports.transform = ({ data, getPluginContext }) => {
         href,
         title,
         image: assets.find(asset => asset.id === id).url,
-        content,
         __metadata: {
           ...model,
           id,
