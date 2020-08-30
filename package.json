@@ -17,9 +17,9 @@
     "url": "https://github.com/newhighsco/jarvenis.com/issues"
   },
   "scripts": {
-    "dev": "next dev",
+    "clean": "rm -rf {.mdx-data,.next,build,public/downloads,.sourcebit-*cache.json}",
+    "start": "next dev",
     "build": "next build && next export --outdir build",
-    "start": "next start",
     "test": "npm run lint",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "eslint --cache --ext .js,.json,.jsx,.mdx .",
