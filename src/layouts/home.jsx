@@ -25,7 +25,7 @@ export const getCommonProps = ({ videos, products, posts }) => ({
 const DiscordSvg = icons('discord')
 
 const LiveStream = dynamic(
-  () => import('@newhighsco/chipset').then(module => module.LiveStream),
+  () => import('@newhighsco/chipset').then(({ LiveStream }) => LiveStream),
   { ssr: false }
 )
 
