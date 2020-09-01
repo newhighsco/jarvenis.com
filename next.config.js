@@ -11,7 +11,7 @@ const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
 const withEnv = require('./src/utils/env')
 
-sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
+sourcebit.fetch(sourcebitConfig, { cache: true, quiet: true })
 
 const nextConfig = {
   poweredByHeader: false,
