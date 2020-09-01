@@ -4,9 +4,6 @@
   "version": "1.3.1",
   "author": "New High Score <hello@newhighsco.re>",
   "license": "ISC",
-  "config": {
-    "title": "Jarvenis"
-  },
   "private": true,
   "repository": {
     "type": "git",
