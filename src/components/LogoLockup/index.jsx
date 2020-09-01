@@ -5,8 +5,8 @@ import { Icon, VisuallyHidden } from '@newhighsco/chipset'
 import { config } from '../../../site.config'
 
 import styles from './styles.module.scss'
-import { ReactComponent as LogoSvg } from '../../images/logo.url.svg'
-import TextSvg from '../../images/logo-text.svg'
+import { ReactComponent as LogoSvg } from '../../images/logo.svg'
+import { ReactComponent as TextSvg } from '../../images/logo-text.svg'
 
 const LogoLockup = ({ showIcon = true, showText = true, className }) => (
   <div className={classNames(styles.wrapper, className)}>
