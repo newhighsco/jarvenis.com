@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@newhighsco/chipset": "5.0.0",
-    "@newhighsco/next-plugin-svgr": "3.0.0",
+    "@newhighsco/next-plugin-svgr": "3.0.1",
     "babel-loader": "8.1.0",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",
@@ -59,7 +59,7 @@
     "@newhighsco/browserslist-config": "1.0.2",
     "@newhighsco/commitlint-config": "1.0.6",
     "@newhighsco/editor-config": "1.1.1",
-    "@newhighsco/eslint-config": "2.2.23",
+    "@newhighsco/eslint-config": "2.2.24",
     "@newhighsco/postcss-config": "2.0.3",
     "@newhighsco/prettier-config": "2.0.5",
     "@newhighsco/release-config": "1.0.26",
