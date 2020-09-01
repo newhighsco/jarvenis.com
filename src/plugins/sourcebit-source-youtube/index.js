@@ -4,9 +4,9 @@ const { parseStringPromise } = require('xml2js')
 const feedUrl = channelId =>
   `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
 
-const name = 'sourcebit-source-youtube'
+const SOURCE = 'sourcebit-source-youtube'
 
-module.exports.name = name
+module.exports.name = SOURCE
 
 module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
   const questions = [
@@ -98,7 +98,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const { assets, entries } = getPluginContext()
 
   const model = {
-    source: name,
+    source: SOURCE,
     modelName: 'video',
     modelLabel: 'YouTube Video'
   }

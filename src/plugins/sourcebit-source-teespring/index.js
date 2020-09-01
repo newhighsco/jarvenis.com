@@ -6,9 +6,9 @@ const mimeTypes = require('mime-types')
 const BASE_URL = 'https://teespring.com/'
 const API_BASE_URL = `${BASE_URL}api/stores/`
 const STOREFRONT_BASE_URL = `${BASE_URL}stores/`
-const name = 'sourcebit-source-teespring'
+const SOURCE = 'sourcebit-source-teespring'
 
-module.exports.name = name
+module.exports.name = SOURCE
 
 const CURRENCIES = ['USD', 'GBP', 'EUR', 'CAD', 'AUD']
 
@@ -138,7 +138,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
   const { assets, entries } = getPluginContext()
 
   const model = {
-    source: name,
+    source: SOURCE,
     modelName: 'product',
     modelLabel: 'Teespring Product'
   }
