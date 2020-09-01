@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Homepage
+title: Home
 meta:
   customTitle: true
   title: Jarv - News. Guides. Reviews
