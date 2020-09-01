@@ -10,10 +10,10 @@ sections:
   path: src/content/index.md
   label: Home
 - type: document
-  path: src/content/collections/blog/index.md
+  path: src/content/blog/index.md
   label: Blog listing
 - type: directory
-  path: src/content/collections/blog
+  path: src/content/blog
   label: Blog posts
   create: all
   match: "**/*"
@@ -24,7 +24,7 @@ sections:
   path: src/content
   label: Pages
   create: all
-  match: "{,!(collections)/**/}*"
+  match: "{,!(blog)/**/}*"
   exclude: "{index,404}.md"
   templates:
   - page

@@ -1,5 +1,4 @@
 ---
-_type: page
 layout: blog
 title: Latest updates from Jarv
 meta:

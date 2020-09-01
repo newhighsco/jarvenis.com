@@ -2,17 +2,12 @@
 label: Page
 hide_body: false
 fields:
-- name: _type
+- name: layout
   type: text
   config:
     required: true
-  label: Type
-  hidden: true
-  default: page
-- name: layout
-  type: text
-  config: {}
   label: Layout
+  default: page
   hidden: true
 - name: title
   type: text
@@ -27,4 +22,4 @@ fields:
 pages:
 - src/content/404.md
 - src/content/about.md
-- src/content/collections/blog/index.md
+- src/content/blog/index.md

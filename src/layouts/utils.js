@@ -1,5 +1,6 @@
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import urlJoin from 'url-join'
+import renderToString from 'next-mdx-remote/render-to-string'
 import { config } from '../../site.config'
 import layouts from '.'
 import { meta as defaultMeta } from '../content/index.md'
@@ -9,24 +10,24 @@ export const getLayoutStaticProps = async slug => {
     page,
     ...commonProps
   } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
-  const { meta, title, __metadata, ...rest } = page
+  const { frontmatter, markdown } = page
+  const { meta, title, ...rest } = frontmatter
   const canonical = slug ? urlJoin(config.url, slug) : null
-  const { getCommonProps } = layouts[page?.layout] || layouts.default
+  const { getCommonProps } = layouts[frontmatter?.layout] || layouts.page
   const props = {
     meta: {
       ...meta,
       canonical,
-      title: meta?.title || title || defaultMeta?.title || null,
-      description: meta?.description || defaultMeta?.description || null,
-      images: [
-        {
-          url: meta?.image
-            ? urlJoin(config.url, require(`../../public/${meta.image}`))
-            : config.openGraphImage
-        }
-      ]
+      title: meta?.title || title || defaultMeta?.title,
+      description: meta?.description || defaultMeta?.description,
+      ...(meta?.image && {
+        images: [
+          { url: urlJoin(config.url, require(`../../public/${meta.image}`)) }
+        ]
+      })
     },
     title,
+    markdown: await renderToString(markdown),
     ...rest,
     ...(getCommonProps ? getCommonProps(commonProps) : {})
   }

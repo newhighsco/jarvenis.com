@@ -1,0 +1,17 @@
+models:
+  home:
+    type: page
+    label: Home
+    layout: home
+  blog:
+    type: page
+    label: Blog
+    layout: blog
+  page:
+    type: page
+    label: Page
+    layout: page
+  post:
+    type: page
+    label: Post
+    layout: post

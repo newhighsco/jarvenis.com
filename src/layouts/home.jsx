@@ -14,18 +14,20 @@ import {
 import icons from '../images/icons'
 import { config, socialLinks } from '../../site.config'
 
+export const getCommonProps = ({ videos, products, posts }) => ({
+  videos: videos.slice(0, 4),
+  products: products.slice(0, 4),
+  posts: posts
+    .sort((a, b) => b.frontmatter?.date.localeCompare(a.frontmatter?.date))
+    .slice(0, 4)
+})
+
 const DiscordSvg = icons('discord')
 
 const LiveStream = dynamic(
   () => import('@newhighsco/chipset').then(module => module.LiveStream),
   { ssr: false }
 )
-
-export const getCommonProps = ({ videos, products, posts }) => ({
-  videos: videos.slice(0, 4),
-  products: products.slice(0, 4),
-  posts: posts.slice(0, 4)
-})
 
 const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>

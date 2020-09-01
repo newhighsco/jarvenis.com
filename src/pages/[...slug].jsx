@@ -5,7 +5,7 @@ import layouts from '../layouts'
 import { getLayoutStaticProps } from '../layouts/utils'
 
 const Page = props => {
-  const { default: Layout } = layouts[props?.layout] || layouts.default
+  const { default: Layout } = layouts[props?.layout] || layouts.page
 
   return <Layout {...props} />
 }

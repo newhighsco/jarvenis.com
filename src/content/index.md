@@ -1,5 +1,4 @@
 ---
-_type: page
 layout: home
 title: Homepage
 meta:

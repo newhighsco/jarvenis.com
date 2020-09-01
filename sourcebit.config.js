@@ -14,9 +14,14 @@ module.exports = {
       }
     },
     {
-      module: require('./src/plugins/sourcebit-source-markdown'),
+      module: require('sourcebit-source-filesystem'),
       options: {
-        contentPath: './src/content'
+        sources: [
+          {
+            name: 'pages',
+            path: './src/content'
+          }
+        ]
       }
     },
     {
@@ -32,32 +37,31 @@ module.exports = {
       options: {
         pages: [
           {
-            predicate: entry =>
-              ['page', 'post'].includes(entry.__metadata.modelName)
+            path: '/{__metadata.urlPath}',
+            predicate: entry => entry.__metadata.modelType === 'page'
           }
         ],
-        commonProps: entries => ({
-          posts: entries
-            .filter(entry => entry.__metadata.modelName === 'post')
-            .map(({ slug, date, title, excerpt }) => ({
-              slug,
-              date,
-              title,
-              excerpt
-            })),
-          products: entries
-            .filter(entry => entry.__metadata.modelName === 'product')
-            .map(({ id, href, image, title, type }) => ({
-              id,
-              href,
-              image,
-              title,
-              type
-            })),
-          videos: entries
-            .filter(entry => entry.__metadata.modelName === 'video')
-            .map(({ id, href, image, title }) => ({ id, href, image, title }))
-        })
+        commonProps: entries =>
+          entries.reduce(
+            (commonProps, { __metadata, ...rest }) => {
+              if (__metadata.modelName === 'post') {
+                const slug = __metadata.urlPath
+
+                commonProps.posts.push({ slug, ...rest })
+              }
+
+              if (__metadata.modelName === 'product') {
+                commonProps.products.push({ ...rest })
+              }
+
+              if (__metadata.modelName === 'video') {
+                commonProps.videos.push({ ...rest })
+              }
+
+              return commonProps
+            },
+            { posts: [], products: [], videos: [] }
+          )
       }
     }
   ]

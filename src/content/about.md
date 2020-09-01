@@ -1,6 +1,5 @@
 ---
-_type: page
-layout: ''
+layout: page
 title: About Jarv
 meta:
   customTitle: false
