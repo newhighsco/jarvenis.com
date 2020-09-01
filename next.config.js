@@ -24,9 +24,8 @@ module.exports = withPlugins(
     [
       withImages,
       {
-        exclude: /\.svg$/,
         inlineImageLimit: 1,
-        handleImages: ['ico', 'jpeg', 'png', 'webp'],
+        handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico'],
         removeOriginalExtension: true,
         responsive: {
           adapter: require('responsive-loader/sharp'),
