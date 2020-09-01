@@ -9,9 +9,10 @@ meta:
   image: ''
   noindex: false
   nofollow: false
+  customTitle: false
 
 ---
-This is the first of hopefully many Blog posts here at jarvenis.com. Here's you'll find:
+This is the first of hopefully many Blog posts here at jarvenis.com. Here you'll find:
 
 * **J**arv's latest videos
 * **A**wesome merchandise
