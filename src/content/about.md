@@ -3,7 +3,7 @@ layout: page
 title: About Jarv
 meta:
   customTitle: false
-  title: ''
+  title: About
   description: ''
   image: ''
   noindex: false
