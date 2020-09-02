@@ -4,7 +4,6 @@ import {
   ContentContainer,
   CreditLockup,
   Grid,
-  GridItem,
   Icon,
   Navigation,
   SmartLink
@@ -43,14 +42,14 @@ const Footer = () => (
   <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
     <ContentContainer size="desktopLarge">
       <Grid valign="middle">
-        <GridItem sizes={['tablet-one-third']}>
+        <Grid.Item sizes={['tablet-one-third']}>
           <Link href="/" passHref>
             <SmartLink>
               <LogoLockup className={styles.logo} showIcon={false} />
             </SmartLink>
           </Link>
-        </GridItem>
-        <GridItem sizes={['tablet-one-third']}>
+        </Grid.Item>
+        <Grid.Item sizes={['tablet-one-third']}>
           <Navigation
             links={links}
             renderLink={({ href, text, ...rest }) => (
@@ -60,8 +59,8 @@ const Footer = () => (
             )}
             theme={{ wrapper: styles.links, item: styles.link }}
           />
-        </GridItem>
-        <GridItem sizes={['tablet-one-third']}>
+        </Grid.Item>
+        <Grid.Item sizes={['tablet-one-third']}>
           <Navigation
             links={iconLinks}
             renderLink={({ text, icon: IconSvg, ...rest }) => (
@@ -74,13 +73,13 @@ const Footer = () => (
             theme={{ wrapper: styles.iconLinks, link: styles.iconLink }}
             inline
           />
-        </GridItem>
-        <GridItem className={styles.credits} align="center">
+        </Grid.Item>
+        <Grid.Item className={styles.credits} align="center">
           <small>
             &copy; {year} {config.name}. All rights reserved
           </small>
           <CreditLockup />
-        </GridItem>
+        </Grid.Item>
       </Grid>
     </ContentContainer>
   </ContentContainer>

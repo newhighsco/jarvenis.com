@@ -2,7 +2,7 @@ import React from 'react'
 import { array, object } from 'prop-types'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { Button, ButtonGroup } from '@newhighsco/chipset'
+import { Button } from '@newhighsco/chipset'
 import {
   BlogListing,
   Heading,
@@ -69,11 +69,11 @@ const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
       <Heading align="center" icon={<DiscordSvg />}>
         Community Hub
       </Heading>
-      <ButtonGroup>
+      <Button.Group>
         <Button href={socialLinks.discord} target="_blank">
           Join us on Discord
         </Button>
-      </ButtonGroup>
+      </Button.Group>
     </Section>
   </PageContainer>
 )

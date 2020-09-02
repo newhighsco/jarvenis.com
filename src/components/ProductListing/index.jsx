@@ -1,13 +1,6 @@
 import React from 'react'
 import { array, bool } from 'prop-types'
-import {
-  absoluteUrl,
-  Button,
-  ButtonGroup,
-  Card,
-  Grid,
-  GridItem
-} from '@newhighsco/chipset'
+import { absoluteUrl, Button, Card, Grid } from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
 import breakpoints from '../../styles/_breakpoints.module.scss'
@@ -37,7 +30,7 @@ const ProductListing = ({ products = [], summary }) => {
           }
 
           return (
-            <GridItem
+            <Grid.Item
               key={id}
               sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
               className={styles.item}
@@ -53,16 +46,16 @@ const ProductListing = ({ products = [], summary }) => {
               >
                 <p>{type}</p>
               </Card>
-            </GridItem>
+            </Grid.Item>
           )
         })}
       </Grid>
       {summary && (
-        <ButtonGroup className={styles.buttons}>
+        <Button.Group className={styles.buttons}>
           <Button href={socialLinks.teespring} target="_blank">
             Shop all
           </Button>
-        </ButtonGroup>
+        </Button.Group>
       )}
     </>
   )

@@ -2,14 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { array, bool } from 'prop-types'
 import marked from 'marked'
-import {
-  Button,
-  ButtonGroup,
-  Grid,
-  GridItem,
-  Prose,
-  SmartLink
-} from '@newhighsco/chipset'
+import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
 import { config } from '../../../site.config'
 
 import styles from './styles.module.scss'
@@ -24,7 +17,7 @@ const BlogListing = ({ posts = [], summary }) => {
           const { date, title, excerpt } = frontmatter
 
           return (
-            <GridItem
+            <Grid.Item
               key={slug}
               sizes={['tablet-one-half', 'desktop-one-quarter']}
               className={styles.item}
@@ -45,16 +38,16 @@ const BlogListing = ({ posts = [], summary }) => {
                   <Prose className={styles.excerpt} html={marked(excerpt)} />
                 )}
               </div>
-            </GridItem>
+            </Grid.Item>
           )
         })}
       </Grid>
       {summary && (
-        <ButtonGroup className={styles.buttons}>
+        <Button.Group className={styles.buttons}>
           <Link href="[...slug]" as="/blog" passHref>
             <Button>Read the blog</Button>
           </Link>
-        </ButtonGroup>
+        </Button.Group>
       )}
     </>
   )
