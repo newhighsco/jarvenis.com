@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/newhighsco/jarvenis.com/compare/v1.4.4...v1.4.5) (2020-09-02)
+
+
+### Bug Fixes
+
+* **header:** update toggle styles ([3cf1906](https://github.com/newhighsco/jarvenis.com/commit/3cf1906e73326094de8fb41f3a7436ca18da8366))
+
 ## [1.4.4](https://github.com/newhighsco/jarvenis.com/compare/v1.4.3...v1.4.4) (2020-09-02)
 
 
