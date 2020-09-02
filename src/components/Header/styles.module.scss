@@ -98,6 +98,14 @@
   }
 }
 
+.toggleActive {
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sea;
+  }
+}
+
 .toggleIcon {
   fill: currentColor;
   width: functions.spacing(4);
@@ -127,14 +135,6 @@
     .link {
       padding: functions.spacing(1) functions.spacing(2);
       text-align: center;
-    }
-
-    .toggle {
-      &:hover,
-      &:active,
-      &:focus {
-        color: colors.$sea;
-      }
     }
   }
 }

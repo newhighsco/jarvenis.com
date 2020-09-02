@@ -51,6 +51,7 @@ const Header = () => {
                   item: styles.item,
                   link: styles.link,
                   toggle: styles.toggle,
+                  toggleActive: styles.toggleActive,
                   toggleIcon: styles.toggleIcon
                 }}
                 toggle
