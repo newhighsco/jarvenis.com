@@ -1,6 +1,6 @@
-const withEnv = require('./src/utils/env')
+const envConfig = require('./env.config')
 
-const env = withEnv(process.env.VERCEL_GITHUB_COMMIT_REF)
+const env = envConfig[process.env.VERCEL_GITHUB_COMMIT_REF] || envConfig.preview
 const robotsTxtOptions = { policies: [] }
 
 if (env.DISALLOW_ROBOTS) {

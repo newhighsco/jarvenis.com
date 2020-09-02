@@ -9,13 +9,13 @@ const withSvgr = require('@newhighsco/next-plugin-svgr')
 const withFonts = require('next-fonts')
 const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
-const withEnv = require('./src/utils/env')
+const envConfig = require('./env.config')
 
 sourcebit.fetch(sourcebitConfig, { cache: true, quiet: true })
 
 const nextConfig = {
   poweredByHeader: false,
-  env: withEnv(process.env.VERCEL_GITHUB_COMMIT_REF)
+  env: envConfig[process.env.VERCEL_GITHUB_COMMIT_REF] || envConfig.preview
 }
 
 module.exports = withPlugins(
