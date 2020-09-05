@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/newhighsco/jarvenis.com/compare/v1.4.9...v1.4.10) (2020-09-05)
+
+
+### Bug Fixes
+
+* **fonts:** improves font loading ([ca0aec1](https://github.com/newhighsco/jarvenis.com/commit/ca0aec15f72b34cf3d194a017d0852b4f2e3e995))
+
 ## [1.4.9](https://github.com/newhighsco/jarvenis.com/compare/v1.4.8...v1.4.9) (2020-09-05)
 
 
