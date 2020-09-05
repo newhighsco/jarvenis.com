@@ -10,6 +10,20 @@ class DocumentPage extends Document {
       <Html lang={config.lang}>
         <Head>
           <link rel="icon" href={logoUrl} />
+          <link
+            rel="preload"
+            href="../fonts/big-noodle-titling/regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="../fonts/lemon-milk/regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin=""
+          />
         </Head>
         <body>
           <Main />
