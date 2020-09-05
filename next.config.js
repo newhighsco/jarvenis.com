@@ -6,6 +6,7 @@ const withTranspileModules = require('next-transpile-modules')([
 ])
 const withImages = require('next-optimized-images')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
+const withFonts = require('next-fonts')
 const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
 const envConfig = require('./env.config')
@@ -42,6 +43,7 @@ module.exports = withPlugins(
         }
       }
     ],
+    [withFonts],
     [withVideos]
   ],
   withMdx({ extension: /\.mdx?$/ })(nextConfig)

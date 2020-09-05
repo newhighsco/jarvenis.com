@@ -3,6 +3,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { config } from '../../site.config'
 
 import logoUrl from '../images/logo.svg'
+import headingFontUrl from '../fonts/big-noodle-titling/regular.woff2'
+import alternateFontUrl from '../fonts/lemon-milk/regular.woff2'
 
 class DocumentPage extends Document {
   render() {
@@ -12,14 +14,14 @@ class DocumentPage extends Document {
           <link rel="icon" href={logoUrl} />
           <link
             rel="preload"
-            href="../fonts/big-noodle-titling/regular.woff2"
+            href={headingFontUrl}
             as="font"
             type="font/woff2"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="../fonts/lemon-milk/regular.woff2"
+            href={alternateFontUrl}
             as="font"
             type="font/woff2"
             crossOrigin=""
