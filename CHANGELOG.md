@@ -1,3 +1,10 @@
+## [1.4.11](https://github.com/newhighsco/jarvenis.com/compare/v1.4.10...v1.4.11) (2020-09-05)
+
+
+### Bug Fixes
+
+* **fonts:** correct preload paths ([95c7de5](https://github.com/newhighsco/jarvenis.com/commit/95c7de51dde0f137bd0111cf2c2bd3bb110fe35c))
+
 ## [1.4.10](https://github.com/newhighsco/jarvenis.com/compare/v1.4.9...v1.4.10) (2020-09-05)
 
 
