@@ -1,3 +1,10 @@
+## [1.4.12](https://github.com/newhighsco/jarvenis.com/compare/v1.4.11...v1.4.12) (2020-09-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency responsive-loader to v2.1.1 ([994285a](https://github.com/newhighsco/jarvenis.com/commit/994285a57720184f657f0f0775659026ea57106c))
+
 ## [1.4.11](https://github.com/newhighsco/jarvenis.com/compare/v1.4.10...v1.4.11) (2020-09-05)
 
 
