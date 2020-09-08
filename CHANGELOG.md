@@ -1,3 +1,10 @@
+## [1.4.13](https://github.com/newhighsco/jarvenis.com/compare/v1.4.12...v1.4.13) (2020-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-videos to v1.4.0 ([6098d19](https://github.com/newhighsco/jarvenis.com/commit/6098d197d2f3a01a5c28b7ddc1ac4ab3a183c683))
+
 ## [1.4.12](https://github.com/newhighsco/jarvenis.com/compare/v1.4.11...v1.4.12) (2020-09-06)
 
 
