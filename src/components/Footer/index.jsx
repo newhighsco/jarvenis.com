@@ -13,8 +13,7 @@ import icons from '../../images/icons'
 import { config, socialLinks } from '../../../site.config'
 import { links } from '../../data/footer.json'
 
-import theme from './theme.module.scss'
-import styles from './styles.module.scss'
+import styles from './Footer.module.scss'
 
 const year = new Date().getFullYear()
 const iconLinks = [
@@ -39,7 +38,12 @@ const iconLinks = [
 ]
 
 const Footer = () => (
-  <ContentContainer as="footer" role="contentinfo" theme={theme} gutter>
+  <ContentContainer
+    as="footer"
+    role="contentinfo"
+    theme={{ wrapper: styles.wrapper, content: styles.content }}
+    gutter
+  >
     <ContentContainer size="desktopLarge">
       <Grid valign="middle">
         <Grid.Item sizes={['tablet-one-third']}>

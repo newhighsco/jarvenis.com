@@ -1,10 +1,10 @@
-import Button from '../components/Button/theme.module.scss'
-import Card from '../components/Card/theme.module.scss'
-import ContentContainer from '../components/ContentContainer/theme.module.scss'
-import CreditLockup from '../components/CreditLockup/theme.module.scss'
-import Grid from '../components/Grid/theme.module.scss'
-import LiveStream from '../components/LiveStream/theme.module.scss'
-import Prose from '../components/Prose/theme.module.scss'
+import Button from '../components/Button/Button.module.scss'
+import Card from '../components/Card/Card.module.scss'
+import ContentContainer from '../components/ContentContainer/ContentContainer.module.scss'
+import CreditLockup from '../components/CreditLockup/CreditLockup.module.scss'
+import Grid from '../components/Grid/Grid.module.scss'
+import LiveStream from '../components/LiveStream/LiveStream.module.scss'
+import Prose from '../components/Prose/Prose.module.scss'
 
 export default {
   Button,

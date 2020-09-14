@@ -5,7 +5,7 @@ import marked from 'marked'
 import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
 import { config } from '../../../site.config'
 
-import styles from './styles.module.scss'
+import styles from './BlogListing.module.scss'
 
 const BlogListing = ({ posts = [], summary }) => {
   if (!posts?.length) return null

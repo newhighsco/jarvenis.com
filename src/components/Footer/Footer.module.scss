@@ -3,6 +3,15 @@
 @use '../../styles/functions';
 @use '../../styles/mixins';
 
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  padding: functions.spacing(4) 0;
+}
+
 .logo {
   margin-bottom: functions.spacing(4);
   width: functions.spacing(20) !important;

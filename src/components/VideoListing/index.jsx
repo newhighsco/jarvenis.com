@@ -4,7 +4,7 @@ import { absoluteUrl, Button, Card, Grid } from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
 import breakpoints from '../../styles/_breakpoints.module.scss'
-import styles from './styles.module.scss'
+import styles from './VideoListing.module.scss'
 
 const VideoListing = ({ videos = [], summary }) => {
   if (!videos.length) return null

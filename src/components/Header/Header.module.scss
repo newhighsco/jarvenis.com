@@ -4,6 +4,20 @@
 @use '../../styles/functions';
 @use '../../styles/mixins';
 
+.wrapper {
+  background-color: colors.$denim;
+  background-image: url('../../images/header.jpg');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
 .inner {
   position: relative;
 }

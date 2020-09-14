@@ -2,7 +2,7 @@ import React from 'react'
 import { node, oneOf } from 'prop-types'
 import { Element, Icon } from '@newhighsco/chipset'
 
-import styles from './styles.module.scss'
+import styles from './Heading.module.scss'
 
 const Heading = ({ as = 'h1', kicker, icon, children, ...rest }) => (
   <div className={styles.wrapper} {...rest}>

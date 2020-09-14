@@ -10,8 +10,7 @@ import {
 import { LogoLockup } from '..'
 import { links } from '../../data/footer.json'
 
-import theme from './theme.module.scss'
-import styles from './styles.module.scss'
+import styles from './Header.module.scss'
 
 const Header = () => {
   const [menuVisible, setMenuVisibility] = useState(false)
@@ -26,7 +25,7 @@ const Header = () => {
         id="top"
         as="header"
         role="banner"
-        theme={theme}
+        theme={{ wrapper: styles.wrapper, content: styles.content }}
         className={classNames(menuVisible && styles.menuVisible)}
       >
         <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>

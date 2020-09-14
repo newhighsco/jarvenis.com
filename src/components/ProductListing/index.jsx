@@ -4,7 +4,7 @@ import { absoluteUrl, Button, Card, Grid } from '@newhighsco/chipset'
 import { socialLinks } from '../../../site.config'
 
 import breakpoints from '../../styles/_breakpoints.module.scss'
-import styles from './styles.module.scss'
+import styles from './ProductListing.module.scss'
 
 const ProductListing = ({ products = [], summary }) => {
   if (!products?.length) return null
