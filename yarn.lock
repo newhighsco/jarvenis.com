@@ -2416,13 +2416,13 @@
     eslint-plugin-react "7.21.3"
     eslint-plugin-standard "4.0.1"
 
-"@newhighsco/next-plugin-svgr@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.2.tgz#fb950e634346d0185acd85a3390135b77a2be821"
-  integrity sha512-VyBLRHTqJqB7R3oKEwXu/yW1v3uAlru53Anx9kLtDZUbaBqfV4SK9Ejg6yIpJF67SO3U/pjsgn9gmsoUp5NrAw==
+"@newhighsco/next-plugin-svgr@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.3.tgz#baae203d05d38d7e711dddb17dac3055d668bb88"
+  integrity sha512-LGEq14yrVYAAon2fCIOq3hfhV2gS6NxKWwEpuxU9uBnsmGL1ZHPR/I3IrA8U/gDeE3VKCkS3Ma12VKhwzlIybg==
   dependencies:
     "@svgr/webpack" "5.4.0"
-    file-loader "6.1.0"
+    file-loader "6.1.1"
     url-loader "4.1.0"
 
 "@newhighsco/postcss-config@3.0.8":
@@ -6877,13 +6877,13 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-loader@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-6.1.0.tgz#65b9fcfb0ea7f65a234a1f10cdd7f1ab9a33f253"
-  integrity sha512-26qPdHyTsArQ6gU4P1HJbAbnFTyT2r0pG7czh1GFAd9TZbj0n94wWbupgixZH/ET/meqi2/5+F7DhW4OAXD+Lg==
+file-loader@6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-6.1.1.tgz#a6f29dfb3f5933a1c350b2dbaa20ac5be0539baa"
+  integrity sha512-Klt8C4BjWSXYQAfhpYYkG4qHNTna4toMHEbWrI5IuVoxbU6uiDKeKAP99R8mmbJi3lvewn/jQBOgU4+NS3tDQw==
   dependencies:
     loader-utils "^2.0.0"
-    schema-utils "^2.7.1"
+    schema-utils "^3.0.0"
 
 file-loader@^2.0.0:
   version "2.0.0"
