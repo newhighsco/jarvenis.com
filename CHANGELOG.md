@@ -1,3 +1,10 @@
+## [1.4.38](https://github.com/newhighsco/jarvenis.com/compare/v1.4.37...v1.4.38) (2020-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-seo to v4.14.0 ([2f28fc1](https://github.com/newhighsco/jarvenis.com/commit/2f28fc1b1eab91b148e8d7d0bc48b9a44f90849c))
+
 ## [1.4.37](https://github.com/newhighsco/jarvenis.com/compare/v1.4.36...v1.4.37) (2020-10-17)
 
 
