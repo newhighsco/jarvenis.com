@@ -1,3 +1,10 @@
+## [1.4.41](https://github.com/newhighsco/jarvenis.com/compare/v1.4.40...v1.4.41) (2020-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v1.2.20 ([d4c7114](https://github.com/newhighsco/jarvenis.com/commit/d4c7114a942617f447d1fadbd0c8acfd75a48eb4))
+
 ## [1.4.40](https://github.com/newhighsco/jarvenis.com/compare/v1.4.39...v1.4.40) (2020-10-27)
 
 
