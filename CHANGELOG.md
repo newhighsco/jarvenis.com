@@ -1,3 +1,10 @@
+## [1.4.46](https://github.com/newhighsco/jarvenis.com/compare/v1.4.45...v1.4.46) (2020-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v17 ([#285](https://github.com/newhighsco/jarvenis.com/issues/285)) ([35e49c1](https://github.com/newhighsco/jarvenis.com/commit/35e49c1c08028d5a8d1d94284d860c858ce447fc))
+
 ## [1.4.45](https://github.com/newhighsco/jarvenis.com/compare/v1.4.44...v1.4.45) (2020-10-30)
 
 
