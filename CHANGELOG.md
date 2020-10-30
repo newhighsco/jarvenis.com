@@ -1,3 +1,10 @@
+## [1.4.47](https://github.com/newhighsco/jarvenis.com/compare/v1.4.46...v1.4.47) (2020-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v10 ([#299](https://github.com/newhighsco/jarvenis.com/issues/299)) ([22440bc](https://github.com/newhighsco/jarvenis.com/commit/22440bc6c157765e513391d23f29989fcd0763dd))
+
 ## [1.4.46](https://github.com/newhighsco/jarvenis.com/compare/v1.4.45...v1.4.46) (2020-10-30)
 
 
