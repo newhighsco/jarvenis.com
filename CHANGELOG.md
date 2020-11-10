@@ -1,3 +1,10 @@
+## [1.4.57](https://github.com/newhighsco/jarvenis.com/compare/v1.4.56...v1.4.57) (2020-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-compose-plugins to v2.2.1 ([1c7d7bf](https://github.com/newhighsco/jarvenis.com/commit/1c7d7bf963d1326c4580418868323561b90c518d))
+
 ## [1.4.56](https://github.com/newhighsco/jarvenis.com/compare/v1.4.55...v1.4.56) (2020-11-09)
 
 
