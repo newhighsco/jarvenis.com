@@ -1,3 +1,10 @@
+## [1.4.63](https://github.com/newhighsco/jarvenis.com/compare/v1.4.62...v1.4.63) (2020-11-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-fonts to v1.5.0 ([4647bd5](https://github.com/newhighsco/jarvenis.com/commit/4647bd5e794b956680268e7d62efcfa6beefed1c))
+
 ## [1.4.62](https://github.com/newhighsco/jarvenis.com/compare/v1.4.61...v1.4.62) (2020-11-11)
 
 
