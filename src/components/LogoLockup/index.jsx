@@ -9,14 +9,14 @@ import { ReactComponent as LogoSvg } from '../../images/logo.svg'
 import { ReactComponent as TextSvg } from '../../images/logo-text.svg'
 
 const LogoLockup = ({ showIcon = true, showText = true, className }) => (
-  <div className={classNames(styles.wrapper, className)}>
+  <div className={classNames(styles.root, className)}>
     {showIcon && (
-      <Icon theme={{ wrapper: styles.icon }}>
+      <Icon theme={{ root: styles.icon }}>
         <LogoSvg />
       </Icon>
     )}
     {showText ? (
-      <Icon theme={{ wrapper: styles.text }} alt={config.name}>
+      <Icon theme={{ root: styles.text }} alt={config.name}>
         <TextSvg />
       </Icon>
     ) : (

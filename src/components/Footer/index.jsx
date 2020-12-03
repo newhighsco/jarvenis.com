@@ -41,7 +41,7 @@ const Footer = () => (
   <ContentContainer
     as="footer"
     role="contentinfo"
-    theme={{ wrapper: styles.wrapper, content: styles.content }}
+    theme={{ root: styles.root, content: styles.content }}
     gutter
   >
     <ContentContainer size="desktopLarge">
@@ -57,11 +57,11 @@ const Footer = () => (
           <Navigation
             links={links}
             renderLink={({ href, text, ...rest }) => (
-              <Link href="[...slug]" as={href} passHref>
+              <Link href={href} passHref>
                 <SmartLink {...rest}>{text}</SmartLink>
               </Link>
             )}
-            theme={{ wrapper: styles.links, item: styles.link }}
+            theme={{ root: styles.links, item: styles.link }}
           />
         </Grid.Item>
         <Grid.Item sizes={['tablet-one-third']}>
@@ -69,12 +69,12 @@ const Footer = () => (
             links={iconLinks}
             renderLink={({ text, icon: IconSvg, ...rest }) => (
               <SmartLink {...rest}>
-                <Icon theme={{ wrapper: styles.icon }} alt={text}>
+                <Icon theme={{ root: styles.icon }} alt={text}>
                   {IconSvg && <IconSvg />}
                 </Icon>
               </SmartLink>
             )}
-            theme={{ wrapper: styles.iconLinks, link: styles.iconLink }}
+            theme={{ root: styles.iconLinks, link: styles.iconLink }}
             inline
           />
         </Grid.Item>

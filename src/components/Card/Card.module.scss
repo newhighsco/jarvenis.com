@@ -1,7 +1,7 @@
 @use '../../styles/colors.module';
 @use '../../styles/functions';
 
-.wrapper {
+.root {
   background: colors.$smoke;
   border-radius: functions.spacing(0.375);
   color: colors.$gulf;

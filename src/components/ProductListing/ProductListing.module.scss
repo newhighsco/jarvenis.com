@@ -2,7 +2,7 @@
 @use '../../styles/functions';
 @use '../../styles/mixins';
 
-.wrapper {
+.root {
   text-align: center;
 
   @include mixins.mq($max: breakpoints.$tablet - 1) {

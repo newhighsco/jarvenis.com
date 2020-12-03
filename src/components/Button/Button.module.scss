@@ -2,7 +2,7 @@
 @use '../../styles/fonts.module';
 @use '../../styles/functions';
 
-.item {
+.root {
   background-color: colors.$gulf;
   border: functions.spacing(0.375) solid colors.$sea;
   border-radius: functions.spacing(0.375);
@@ -18,10 +18,10 @@
   }
 }
 
-.wrapper {
+.group {
   text-align: center;
 
-  .item {
+  .root {
     margin: 0 functions.spacing(1);
   }
 }

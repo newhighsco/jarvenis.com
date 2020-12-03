@@ -11,7 +11,7 @@ const VideoListing = ({ videos = [], summary }) => {
 
   return (
     <>
-      <Grid className={styles.wrapper} flex>
+      <Grid className={styles.root} flex>
         {videos.map(({ id, href, image, title }) => {
           var src = image
           const sources = []

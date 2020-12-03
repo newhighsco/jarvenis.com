@@ -25,7 +25,7 @@ const Header = () => {
         id="top"
         as="header"
         role="banner"
-        theme={{ wrapper: styles.wrapper, content: styles.content }}
+        theme={{ root: styles.root, content: styles.content }}
         className={classNames(menuVisible && styles.menuVisible)}
       >
         <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
@@ -41,7 +41,7 @@ const Header = () => {
               <Navigation
                 links={links}
                 renderLink={({ href, text, ...rest }) => (
-                  <Link href="[...slug]" as={href} passHref>
+                  <Link href={href} passHref>
                     <SmartLink {...rest}>{text}</SmartLink>
                   </Link>
                 )}

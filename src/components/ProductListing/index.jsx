@@ -11,7 +11,7 @@ const ProductListing = ({ products = [], summary }) => {
 
   return (
     <>
-      <Grid className={styles.wrapper} flex>
+      <Grid className={styles.root} flex>
         {products.map(({ id, href, image, title, type }) => {
           var src = image
           const sources = []

@@ -12,7 +12,7 @@ const BlogListing = ({ posts = [], summary }) => {
 
   return (
     <>
-      <Grid className={styles.wrapper}>
+      <Grid className={styles.root}>
         {posts.map(({ slug, frontmatter }) => {
           const { date, title, excerpt } = frontmatter
 
@@ -29,7 +29,7 @@ const BlogListing = ({ posts = [], summary }) => {
                     config.dateFormat
                   )}
                 </time>
-                <Link href="[...slug]" as={slug} passHref>
+                <Link href={slug} passHref>
                   <SmartLink className={styles.heading}>
                     <h2>{title}</h2>
                   </SmartLink>
@@ -44,7 +44,7 @@ const BlogListing = ({ posts = [], summary }) => {
       </Grid>
       {summary && (
         <Button.Group className={styles.buttons}>
-          <Link href="[...slug]" as="/blog" passHref>
+          <Link href="/blog" passHref>
             <Button>Read the blog</Button>
           </Link>
         </Button.Group>

@@ -66,7 +66,7 @@ const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
       </Section>
     )}
     <Section alternate size="desktopMedium">
-      <Heading align="center" icon={<DiscordSvg />}>
+      <Heading as="h2" align="center" icon={<DiscordSvg />}>
         Community Hub
       </Heading>
       <Button.Group>
