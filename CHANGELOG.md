@@ -1,3 +1,10 @@
+## [1.4.81](https://github.com/newhighsco/jarvenis.com/compare/v1.4.80...v1.4.81) (2020-12-03)
+
+
+### Bug Fixes
+
+* disable broken LiveStream embed ([913a677](https://github.com/newhighsco/jarvenis.com/commit/913a677f6ae1cefcf7086a88985b8b4583486962))
+
 ## [1.4.80](https://github.com/newhighsco/jarvenis.com/compare/v1.4.79...v1.4.80) (2020-12-03)
 
 
