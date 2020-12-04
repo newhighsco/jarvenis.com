@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/newhighsco/jarvenis.com/compare/v1.4.82...v1.5.0) (2020-12-04)
+
+
+### Features
+
+* **postcss:** enables PurgeCSS ([9db41be](https://github.com/newhighsco/jarvenis.com/commit/9db41be0abfe25386102699eedcc9ae25e403e76))
+
 ## [1.4.82](https://github.com/newhighsco/jarvenis.com/compare/v1.4.81...v1.4.82) (2020-12-04)
 
 
