@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/newhighsco/jarvenis.com/compare/v1.5.0...v1.5.1) (2020-12-04)
+
+
+### Bug Fixes
+
+* **sourcebit:** disable caching ([66c25fe](https://github.com/newhighsco/jarvenis.com/commit/66c25fe8627f7ef034533d51bc028c12015c05d7))
+
 # [1.5.0](https://github.com/newhighsco/jarvenis.com/compare/v1.4.82...v1.5.0) (2020-12-04)
 
 
