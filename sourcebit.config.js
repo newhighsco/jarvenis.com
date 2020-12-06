@@ -25,14 +25,6 @@ module.exports = {
       }
     },
     {
-      module: require('sourcebit-transform-assets'),
-      options: {
-        maximumSearchDepth: 0,
-        assetPath: 'public/downloads',
-        publicUrl: '/downloads'
-      }
-    },
-    {
       module: require('sourcebit-target-next'),
       options: {
         pages: [
