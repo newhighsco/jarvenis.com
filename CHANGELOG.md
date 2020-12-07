@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/newhighsco/jarvenis.com/compare/v1.5.5...v1.5.6) (2020-12-07)
+
+
+### Bug Fixes
+
+* reinstates live stream ([c3ec89e](https://github.com/newhighsco/jarvenis.com/commit/c3ec89ef213fccf10257ee7ccc2838913f089577))
+
 ## [1.5.5](https://github.com/newhighsco/jarvenis.com/compare/v1.5.4...v1.5.5) (2020-12-07)
 
 
