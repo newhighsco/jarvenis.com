@@ -1,6 +1,6 @@
 import React from 'react'
 import { array, object } from 'prop-types'
-// import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { Button } from '@newhighsco/chipset'
 import {
@@ -24,10 +24,10 @@ export const getCommonProps = ({ videos, products, posts }) => ({
 
 const DiscordSvg = icons('discord')
 
-// const LiveStream = dynamic(
-//   () => import('@newhighsco/chipset').then(({ LiveStream }) => LiveStream),
-//   { ssr: false }
-// )
+const LiveStream = dynamic(
+  () => import('@newhighsco/chipset').then(({ LiveStream }) => LiveStream),
+  { ssr: false }
+)
 
 const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
   <PageContainer meta={meta}>
@@ -38,9 +38,9 @@ const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
       sameAs={[socialLinks.twitter]}
     />
     <LogoJsonLd url={config.url} logo={config.logo} />
-    {/* <Section size="desktopMedium">
+    <Section size="desktopMedium">
       <LiveStream href={socialLinks.youtube} />
-    </Section> */}
+    </Section>
     {!!videos.length && (
       <Section>
         <Heading as="h2" align="center">
