@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/newhighsco/jarvenis.com/compare/v1.5.4...v1.5.5) (2020-12-07)
+
+
+### Bug Fixes
+
+* handle missing downloaded assets ([fb423d8](https://github.com/newhighsco/jarvenis.com/commit/fb423d885d00029b24e6b80111c784f6cf6e8433))
+
 ## [1.5.4](https://github.com/newhighsco/jarvenis.com/compare/v1.5.3...v1.5.4) (2020-12-06)
 
 
