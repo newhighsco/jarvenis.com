@@ -17,16 +17,18 @@ const ProductListing = ({ products = [], summary }) => {
           const sources = []
 
           if (!absoluteUrl(image)) {
-            src = require(`../../../public${image}?size=320`).src
-            const {
-              srcSet
-            } = require(`../../../public${image}?resize&format=webp`)
+            try {
+              src = require(`../../../public${image}?size=320`).src
+              const {
+                srcSet
+              } = require(`../../../public${image}?resize&format=webp`)
 
-            sources.push({
-              srcSet,
-              sizes: `85vw, (min-width: ${breakpoints.tablet}px) 50vw, (min-width: ${breakpoints.tabletLandscape}px) 25vw`,
-              type: 'image/webp'
-            })
+              sources.push({
+                srcSet,
+                sizes: `85vw, (min-width: ${breakpoints.tablet}px) 50vw, (min-width: ${breakpoints.tabletLandscape}px) 25vw`,
+                type: 'image/webp'
+              })
+            } catch {}
           }
 
           return (
