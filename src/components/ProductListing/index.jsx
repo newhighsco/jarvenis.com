@@ -13,7 +13,7 @@ const ProductListing = ({ products = [], summary }) => {
     <>
       <Grid className={styles.root} flex>
         {products.map(({ id, href, image, title, type }) => {
-          var src = image
+          let src = image
           const sources = []
 
           if (!absoluteUrl(image)) {

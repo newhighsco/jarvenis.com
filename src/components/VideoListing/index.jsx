@@ -13,7 +13,7 @@ const VideoListing = ({ videos = [], summary }) => {
     <>
       <Grid className={styles.root} flex>
         {videos.map(({ id, href, image, title }) => {
-          var src = image
+          let src = image
           const sources = []
 
           if (!absoluteUrl(image)) {
