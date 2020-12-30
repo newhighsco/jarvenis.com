@@ -96,18 +96,22 @@ module.exports.bootstrap = async ({
   setPluginContext
 }) => {
   const fetchProducts = async (page = 1, accumulator = []) => {
-    const { products, next, page: currentPage } = await fetch(
-      urlJoin(
-        API_BASE_URL,
-        options.permaLink,
-        `store_products?currency=${options.currency}&page=${page}`
-      )
-    ).then(response => response.json())
+    try {
+      const { products, next, page: currentPage } = await fetch(
+        urlJoin(
+          API_BASE_URL,
+          options.permaLink,
+          `store_products?currency=${options.currency}&page=${page}`
+        )
+      ).then(response => response.json())
 
-    accumulator = accumulator.concat(products)
+      accumulator = accumulator.concat(products)
 
-    if (next && currentPage < options.pageLimit) {
-      return await fetchProducts(page + 1, accumulator)
+      if (next && currentPage < options.pageLimit) {
+        return await fetchProducts(page + 1, accumulator)
+      }
+    } catch (error) {
+      console.error(error)
     }
 
     return accumulator
