@@ -102,7 +102,9 @@ module.exports.bootstrap = async ({
         options.permaLink,
         `store_products?currency=${options.currency}&page=${page}`
       )
-    ).then(response => response.json())
+    )
+      .then(response => response.json())
+      .catch(response => console.log(111, response))
 
     accumulator = accumulator.concat(products)
 
