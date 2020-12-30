@@ -35,6 +35,7 @@ module.exports = {
     {
       module: require('sourcebit-target-next'),
       options: {
+        liveUpdate: false,
         pages: [
           {
             path: '/{__metadata.urlPath}',
