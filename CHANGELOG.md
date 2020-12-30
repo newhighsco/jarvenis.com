@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/newhighsco/jarvenis.com/compare/v1.5.22...v1.6.0) (2020-12-30)
+
+
+### Features
+
+* **app:** removes Google Analytics ([a43b7f8](https://github.com/newhighsco/jarvenis.com/commit/a43b7f8054fbc5bd79bcb9a12145d01a8ffcdce0))
+
 ## [1.5.22](https://github.com/newhighsco/jarvenis.com/compare/v1.5.21...v1.5.22) (2020-12-30)
 
 
