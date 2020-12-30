@@ -14,7 +14,6 @@ export const config = {
   openGraphImage: urlJoin(url, openGraphImageUrl),
   themeColor: colors.denim,
   twitterHandle: 'jarvenis',
-  googleTrackingId: null,
   disallowRobots: process.env.DISALLOW_ROBOTS,
   dateFormat: {
     month: 'short',
