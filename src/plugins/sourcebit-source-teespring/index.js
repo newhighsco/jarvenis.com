@@ -110,7 +110,9 @@ module.exports.bootstrap = async ({
       if (next && currentPage < options.pageLimit) {
         return await fetchProducts(page + 1, accumulator)
       }
-    } catch (error) {}
+    } catch (error) {
+      console.error(error)
+    }
 
     return accumulator
   }
