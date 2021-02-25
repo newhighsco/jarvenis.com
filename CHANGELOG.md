@@ -1,3 +1,11 @@
+## [1.6.59](https://github.com/newhighsco/jarvenis.com/compare/v1.6.58...v1.6.59) (2021-02-25)
+
+
+### Bug Fixes
+
+* **home:** sets correct Section styles ([7728b19](https://github.com/newhighsco/jarvenis.com/commit/7728b19ffda2705fb8a5d08afc828e2c723cb083))
+* **icons:** optimise icon usage ([444cf6f](https://github.com/newhighsco/jarvenis.com/commit/444cf6ff30a010181fdb0291381ea427c852ace4))
+
 ## [1.6.58](https://github.com/newhighsco/jarvenis.com/compare/v1.6.57...v1.6.58) (2021-02-24)
 
 
