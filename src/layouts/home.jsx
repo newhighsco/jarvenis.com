@@ -27,54 +27,60 @@ const LiveStream = dynamic(
   { ssr: false }
 )
 
-const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => (
-  <PageContainer meta={meta}>
-    <SocialProfileJsonLd
-      type="Organization"
-      name={config.name}
-      url={config.url}
-      sameAs={[socialLinks.twitter]}
-    />
-    <LogoJsonLd url={config.url} logo={config.logo} />
-    <Section size="desktopMedium">
-      <LiveStream href={socialLinks.youtube} />
-    </Section>
-    {!!videos.length && (
-      <Section>
-        <Heading as="h2" align="center">
-          Latest videos
-        </Heading>
-        <VideoListing videos={videos} summary />
+const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => {
+  const hasVideos = !!videos.length
+  const hasPosts = !!posts.length
+  const hasProducts = !!products.length
+
+  return (
+    <PageContainer meta={meta}>
+      <SocialProfileJsonLd
+        type="Organization"
+        name={config.name}
+        url={config.url}
+        sameAs={[socialLinks.twitter]}
+      />
+      <LogoJsonLd url={config.url} logo={config.logo} />
+      <Section size="desktopMedium">
+        <LiveStream href={socialLinks.youtube} />
       </Section>
-    )}
-    {!!posts.length && (
-      <Section alternate size="desktopMedium">
-        <Heading as="h2" align="center">
-          Latest updates
+      {hasVideos && (
+        <Section>
+          <Heading as="h2" align="center">
+            Latest videos
+          </Heading>
+          <VideoListing videos={videos} summary />
+        </Section>
+      )}
+      {hasPosts && (
+        <Section alternate={hasVideos} size="desktopMedium">
+          <Heading as="h2" align="center">
+            Latest updates
+          </Heading>
+          <BlogListing posts={posts} summary />
+        </Section>
+      )}
+      {hasProducts && (
+        <Section size="desktop">
+          <Heading as="h2" align="center">
+            Merchandise
+          </Heading>
+          <ProductListing products={products} summary />
+        </Section>
+      )}
+      <Section alternate={hasProducts} size="desktopMedium">
+        <Heading as="h2" align="center" icon={<DiscordIcon />}>
+          Community Hub
         </Heading>
-        <BlogListing posts={posts} summary />
+        <Button.Group>
+          <Button href={socialLinks.discord} target="_blank">
+            Join us on Discord
+          </Button>
+        </Button.Group>
       </Section>
-    )}
-    {!!products.length && (
-      <Section size="desktop">
-        <Heading as="h2" align="center">
-          Merchandise
-        </Heading>
-        <ProductListing products={products} summary />
-      </Section>
-    )}
-    <Section alternate size="desktopMedium">
-      <Heading as="h2" align="center" icon={<DiscordSvg />}>
-        Community Hub
-      </Heading>
-      <Button.Group>
-        <Button href={socialLinks.discord} target="_blank">
-          Join us on Discord
-        </Button>
-      </Button.Group>
-    </Section>
-  </PageContainer>
-)
+    </PageContainer>
+  )
+}
 
 HomeLayout.propTypes = {
   meta: object,
