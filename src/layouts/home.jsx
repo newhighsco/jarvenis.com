@@ -11,7 +11,7 @@ import {
   Section,
   VideoListing
 } from '../components'
-import icons from '../images/icons'
+import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 import { config, socialLinks } from '../../site.config'
 
 export const getCommonProps = ({ videos, products, posts }) => ({
@@ -21,8 +21,6 @@ export const getCommonProps = ({ videos, products, posts }) => ({
     .sort((a, b) => b.frontmatter?.date.localeCompare(a.frontmatter?.date))
     .slice(0, 4)
 })
-
-const DiscordSvg = icons('discord')
 
 const LiveStream = dynamic(
   () => import('@newhighsco/chipset').then(({ LiveStream }) => LiveStream),

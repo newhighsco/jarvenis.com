@@ -23,6 +23,7 @@
     "site.config.js"
   ],
   "scripts": {
+    "postinstall": "husky install",
     "clean": "rm -rf {.next,build,public/downloads,.sourcebit-*cache.json}",
     "start": "next dev",
     "build": "next build && next export --outdir build",
@@ -92,12 +93,6 @@
     "extends": [
       "@newhighsco/eslint-config/react"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint"
-    }
   },
   "prettier": "@newhighsco/prettier-config",
   "release": {

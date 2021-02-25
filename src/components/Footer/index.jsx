@@ -9,7 +9,9 @@ import {
   SmartLink
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
-import icons from '../../images/icons'
+import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
+import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
+import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
 import { config, socialLinks } from '../../../site.config'
 import { links } from '../../data/footer.json'
 
@@ -20,19 +22,19 @@ const iconLinks = [
   {
     href: socialLinks.youtube,
     text: `Subscribe to ${config.shortName} on YouTube`,
-    icon: icons('youtube'),
+    icon: YouTubeIcon,
     target: '_blank'
   },
   {
     href: socialLinks.twitch,
     text: `Subscribe to ${config.shortName} on Twitch`,
-    icon: icons('twitch'),
+    icon: TwitchIcon,
     target: '_blank'
   },
   {
     href: socialLinks.twitter,
     text: `Follow ${config.shortName} on Twitter`,
-    icon: icons('twitter'),
+    icon: TwitterIcon,
     target: '_blank'
   }
 ]
