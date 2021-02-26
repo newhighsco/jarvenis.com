@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/newhighsco/jarvenis.com/compare/v1.7.1...v1.7.2) (2021-02-26)
+
+
+### Bug Fixes
+
+* **images:** adjust sizes usage ([8aafff1](https://github.com/newhighsco/jarvenis.com/commit/8aafff144dfcf9396119d6ac58a35c4935a3a487))
+
 ## [1.7.1](https://github.com/newhighsco/jarvenis.com/compare/v1.7.0...v1.7.1) (2021-02-26)
 
 
