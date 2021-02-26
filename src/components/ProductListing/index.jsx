@@ -27,9 +27,11 @@ const ProductListing = ({ products = [], summary }) => {
                 srcSet,
                 sizes: `(max-width: ${
                   breakpoints.tablet - 1
-                }px) 85vw, (max-width: ${
+                }px) 42.5vw, (max-width: ${
                   breakpoints.tabletLandscape - 1
-                }px) 50vw, 25vw`,
+                }px) 50vw, (max-width: ${
+                  breakpoints.desktopMedium - 1
+                }px) 25vw, (min-width: ${breakpoints.desktopMedium}px) 228w`,
                 type: 'image/webp'
               })
             } catch {}

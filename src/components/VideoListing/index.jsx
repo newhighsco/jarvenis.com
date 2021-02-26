@@ -29,7 +29,7 @@ const VideoListing = ({ videos = [], summary }) => {
                   breakpoints.tablet - 1
                 }px) 85vw, (max-width: ${
                   breakpoints.tabletLandscape - 1
-                }px) 50vw, 25vw`,
+                }px) 50vw, (min-width: ${breakpoints.tabletLandscape}px) 25vw`,
                 type: 'image/webp'
               })
             } catch {}
