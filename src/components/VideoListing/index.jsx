@@ -25,7 +25,11 @@ const VideoListing = ({ videos = [], summary }) => {
 
               sources.push({
                 srcSet,
-                sizes: `85vw, (min-width: ${breakpoints.tablet}px) 50vw, (min-width: ${breakpoints.tabletLandscape}px) 25vw`,
+                sizes: `(max-width: ${
+                  breakpoints.tablet - 1
+                }px) 85vw, (max-width: ${
+                  breakpoints.tabletLandscape - 1
+                }px) 50vw, 25vw`,
                 type: 'image/webp'
               })
             } catch {}
