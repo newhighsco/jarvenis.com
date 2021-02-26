@@ -94,6 +94,12 @@
       "@newhighsco/eslint-config/react"
     ]
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
+    }
+  },
   "prettier": "@newhighsco/prettier-config",
   "release": {
     "extends": "@newhighsco/release-config",
