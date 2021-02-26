@@ -31,6 +31,7 @@ module.exports = withPlugins(
     [
       withImages,
       {
+        imagesFolder: 'chunks/images',
         inlineImageLimit: -1,
         handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico'],
         removeOriginalExtension: true,
