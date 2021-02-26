@@ -29,7 +29,7 @@ module.exports = withPlugins(
         removeOriginalExtension: true,
         responsive: {
           adapter: require('responsive-loader/sharp'),
-          sizes: [160, 240, 320, 480, 640, 800, 960, 1120]
+          sizes: [160, 320, 480, 640, 800, 960, 1120]
         }
       }
     ],

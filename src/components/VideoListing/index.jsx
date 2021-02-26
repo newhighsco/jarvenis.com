@@ -44,7 +44,9 @@ const VideoListing = ({ videos = [], summary }) => {
                 image={{
                   src,
                   sources,
-                  ratio: '16:9'
+                  ratio: '16:9',
+                  width: 320,
+                  height: 180
                 }}
               />
             </Grid.Item>

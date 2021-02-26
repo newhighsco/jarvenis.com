@@ -43,7 +43,9 @@ const ProductListing = ({ products = [], summary }) => {
                 heading={<h2>{title}</h2>}
                 image={{
                   src,
-                  sources
+                  sources,
+                  width: 320,
+                  height: 320
                 }}
               >
                 <p>{type}</p>
