@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/newhighsco/jarvenis.com/compare/v1.7.2...v1.8.0) (2021-02-26)
+
+
+### Features
+
+* **images:** optimise sizes attrbutes ([af79819](https://github.com/newhighsco/jarvenis.com/commit/af798192712ffcfb0584bea504d76613956c390a))
+
 ## [1.7.2](https://github.com/newhighsco/jarvenis.com/compare/v1.7.1...v1.7.2) (2021-02-26)
 
 
