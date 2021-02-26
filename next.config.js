@@ -18,7 +18,7 @@ const nextConfig = {
   webpack: config => {
     config.module.rules.push({
       test: /\.(woff(2)?)$/,
-      use: 'url-loader'
+      use: 'file-loader'
     })
 
     return config
