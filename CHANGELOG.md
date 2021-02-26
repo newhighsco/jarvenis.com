@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/newhighsco/jarvenis.com/compare/v1.8.0...v1.9.0) (2021-02-26)
+
+
+### Features
+
+* **video-listing:** don't lazy load images ([48cc44c](https://github.com/newhighsco/jarvenis.com/commit/48cc44ce57216f20e15e13323c5c55b3bb9aff0c))
+
 # [1.8.0](https://github.com/newhighsco/jarvenis.com/compare/v1.7.2...v1.8.0) (2021-02-26)
 
 
