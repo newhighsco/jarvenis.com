@@ -14,7 +14,15 @@ sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
   poweredByHeader: false,
-  env: envConfig[process.env.VERCEL_GITHUB_COMMIT_REF] || envConfig.preview
+  env: envConfig[process.env.VERCEL_GITHUB_COMMIT_REF] || envConfig.preview,
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.(woff(2)?)$/,
+      use: 'url-loader'
+    })
+
+    return config
+  }
 }
 
 module.exports = withPlugins(
