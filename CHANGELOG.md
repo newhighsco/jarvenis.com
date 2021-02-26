@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/newhighsco/jarvenis.com/compare/v1.9.0...v1.10.0) (2021-02-26)
+
+
+### Features
+
+* **images:** improve image caching ([00997ae](https://github.com/newhighsco/jarvenis.com/commit/00997ae6c81f6600936621c7286bab4ab10811ef))
+
 # [1.9.0](https://github.com/newhighsco/jarvenis.com/compare/v1.8.0...v1.9.0) (2021-02-26)
 
 
