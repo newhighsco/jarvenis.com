@@ -50,7 +50,8 @@ const VideoListing = ({ videos = [], summary }) => {
                   sources,
                   ratio: '16:9',
                   width: 320,
-                  height: 180
+                  height: 180,
+                  loading: 'eager'
                 }}
               />
             </Grid.Item>
