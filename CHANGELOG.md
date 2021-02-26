@@ -1,3 +1,23 @@
+# [1.7.0](https://github.com/newhighsco/jarvenis.com/compare/v1.6.59...v1.7.0) (2021-02-26)
+
+
+### Bug Fixes
+
+* **fonts:** prevents warnings ([63a041f](https://github.com/newhighsco/jarvenis.com/commit/63a041f8736118807ad5f51b2fe2325b4eb6afa2))
+
+
+### Features
+
+* **fonts:** correctly preload fonts ([3c99110](https://github.com/newhighsco/jarvenis.com/commit/3c991106e55746c2c0b14275abe6a9fc89d8cac6))
+* **header:** add webp background image ([c46d12b](https://github.com/newhighsco/jarvenis.com/commit/c46d12b8e4bd75724815b136b6b253c7aef42a7a))
+* **images:** add 240px crop ([e1c4fe2](https://github.com/newhighsco/jarvenis.com/commit/e1c4fe2260e3886c20e0629e453b0e2b6ad74a49))
+* **images:** sets explicit widths ([809e655](https://github.com/newhighsco/jarvenis.com/commit/809e655b94bde89c252f0374b9c64645ba98467e))
+
+
+### Reverts
+
+* **husky:** restore package.json settings ([220b490](https://github.com/newhighsco/jarvenis.com/commit/220b4900784e250c9814ab5a4d4c3ef6c81072aa))
+
 ## [1.6.59](https://github.com/newhighsco/jarvenis.com/compare/v1.6.58...v1.6.59) (2021-02-25)
 
 
