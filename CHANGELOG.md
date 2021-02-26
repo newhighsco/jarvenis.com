@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/newhighsco/jarvenis.com/compare/v1.7.0...v1.7.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* **fonts:** prevent inlining of font files ([ab64748](https://github.com/newhighsco/jarvenis.com/commit/ab6474817cbaff4eb49251b9f53af5a1b3bd61d9))
+
 # [1.7.0](https://github.com/newhighsco/jarvenis.com/compare/v1.6.59...v1.7.0) (2021-02-26)
 
 
