@@ -2205,22 +2205,22 @@
     eslint-plugin-react "7.22.0"
     eslint-plugin-standard "4.1.0"
 
-"@newhighsco/next-plugin-svgr@3.0.15":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.15.tgz#c5c2a263fb66d3a52af61d4322daf1146c21f2f7"
-  integrity sha512-PywCzcw6JvXzSzKjQzBTqIwyaZ88mON4R2Z/VaREnCWZ1SaP2NP5YIY5OSHQCIUWdgtS6DMnS5wVQB8quuSVAA==
+"@newhighsco/next-plugin-svgr@3.0.16":
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.16.tgz#c4ddf5c0e1e8f10bf307968dd6bb59c5137cc873"
+  integrity sha512-WHVKqVWLxQMsv7tb4WixmSoTDmvmD2qM8xnBSxGCVaJfO7jhIs4kvNsOaQUdYr0CyzfcFBdVCk/5chMMYv/xIQ==
   dependencies:
     "@svgr/webpack" "5.5.0"
     file-loader "6.2.0"
     url-loader "4.1.1"
 
-"@newhighsco/postcss-config@3.0.68":
-  version "3.0.68"
-  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.0.68.tgz#2e374160ddd33e8a99853e968628c62b420a3165"
-  integrity sha512-TWskEAQKj1drmC9LqQT1VMV8C4siIzOFp3rL9aIhDiL5O1sjgCIjAz1JE4CNaUMXEllfR/DfSCixIdGqrznaeA==
+"@newhighsco/postcss-config@3.0.69":
+  version "3.0.69"
+  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.0.69.tgz#344297b081785f56a6f5a8edf11e9415079c857e"
+  integrity sha512-usBhYnCRPWGRUdFp1rUQIb+a+HBihWJOBXU7sJ3k3I5tp6vh030C2zSc6Pk+7AJI01SD6RefI+dDWCP3y3gQDg==
   dependencies:
     "@fullhuman/postcss-purgecss" "4.0.2"
-    autoprefixer "10.2.4"
+    autoprefixer "10.2.5"
     caniuse-lite "1.0.30001196"
     postcss "8.2.7"
     postcss-flexbugs-fixes "5.0.2"
@@ -2260,10 +2260,10 @@
     sass "1.32.8"
     sass-loader "10.1.1"
 
-"@newhighsco/stylelint-config@2.0.32":
-  version "2.0.32"
-  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-2.0.32.tgz#afe2f723132ec26793fa881d6493f1bf17c69887"
-  integrity sha512-0OTCBfP+4QYjjke7HgTnGYTvqDBB253I6Rlj2QzupsHIIs9rrn0Tliv1M0fU9EvIhOmMKxzoKrX6bA07EGkB4Q==
+"@newhighsco/stylelint-config@2.0.33":
+  version "2.0.33"
+  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-2.0.33.tgz#c61624b360b7298c01b5aa2d0a0656421d094ae2"
+  integrity sha512-yLJ0H65I5Ws7A34fzxzZq0//IaPXL6lRs36hO3ygZOpIDEvi5In/F7lmLYvabeCNYP7SpvIRj8dKQ7qsDW5uwA==
   dependencies:
     stylelint-config-css-modules "2.2.0"
     stylelint-config-prettier "8.0.2"
@@ -4349,14 +4349,14 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@10.2.4:
-  version "10.2.4"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.4.tgz#c0e7cf24fcc6a1ae5d6250c623f0cb8beef2f7e1"
-  integrity sha512-DCCdUQiMD+P/as8m3XkeTUkUKuuRqLGcwD0nll7wevhqoJfMRpJlkFd1+MQh1pvupjiQuip42lc/VFvfUTMSKw==
+autoprefixer@10.2.5:
+  version "10.2.5"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.5.tgz#096a0337dbc96c0873526d7fef5de4428d05382d"
+  integrity sha512-7H4AJZXvSsn62SqZyJCP+1AWwOuoYpUfK6ot9vm0e87XD6mT8lDywc9D9OTJPMULyGcvmIxzTAMeG2Cc+YX+fA==
   dependencies:
-    browserslist "^4.16.1"
-    caniuse-lite "^1.0.30001181"
-    colorette "^1.2.1"
+    browserslist "^4.16.3"
+    caniuse-lite "^1.0.30001196"
+    colorette "^1.2.2"
     fraction.js "^4.0.13"
     normalize-range "^0.1.2"
     postcss-value-parser "^4.1.0"
@@ -5064,7 +5064,7 @@ browserslist@4.14.2:
     escalade "^3.0.2"
     node-releases "^1.1.61"
 
-browserslist@4.16.1, browserslist@^4.16.1:
+browserslist@4.16.1:
   version "4.16.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.1.tgz#bf757a2da376b3447b800a16f0f1c96358138766"
   integrity sha512-UXhDrwqsNcpTYJBTZsbGATDxZbiVDsx6UjpmRUmtnP10pr8wAYr5LgFoEFw9ixriQH2mv/NX2SfGzE/o8GndLA==
@@ -5106,6 +5106,17 @@ browserslist@^4.15.0:
     electron-to-chromium "^1.3.612"
     escalade "^3.1.1"
     node-releases "^1.1.67"
+
+browserslist@^4.16.3:
+  version "4.16.3"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.3.tgz#340aa46940d7db878748567c5dea24a48ddf3717"
+  integrity sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==
+  dependencies:
+    caniuse-lite "^1.0.30001181"
+    colorette "^1.2.1"
+    electron-to-chromium "^1.3.649"
+    escalade "^3.1.1"
+    node-releases "^1.1.70"
 
 browserslist@^4.6.4:
   version "4.13.0"
@@ -5387,7 +5398,7 @@ camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-caniuse-lite@1.0.30001196:
+caniuse-lite@1.0.30001196, caniuse-lite@^1.0.30001196:
   version "1.0.30001196"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001196.tgz#00518a2044b1abf3e0df31fadbe5ed90b63f4e64"
   integrity sha512-CPvObjD3ovWrNBaXlAIGWmg2gQQuJ5YhuciUOjPRox6hIQttu8O+b51dx6VIpIY9ESd2d0Vac1RKpICdG4rGUg==
@@ -7214,6 +7225,11 @@ electron-to-chromium@^1.3.634:
   version "1.3.634"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.634.tgz#82ea400f520f739c4f6ff00c1f7524827a917d25"
   integrity sha512-QPrWNYeE/A0xRvl/QP3E0nkaEvYUvH3gM04ZWYtIa6QlSpEetRlRI1xvQ7hiMIySHHEV+mwDSX8Kj4YZY6ZQAw==
+
+electron-to-chromium@^1.3.649:
+  version "1.3.682"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.682.tgz#f4b5c8d4479df96b61e508a721d6c32c1262ef23"
+  integrity sha512-zok2y37qR00U14uM6qBz/3iIjWHom2eRfC2S1StA0RslP7x34jX+j4mxv80t8OEOHLJPVG54ZPeaFxEI7gPrwg==
 
 element-resize-detector@^1.2.1:
   version "1.2.1"
@@ -12362,7 +12378,7 @@ node-releases@^1.1.58:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.60.tgz#6948bdfce8286f0b5d0e5a88e8384e954dfe7084"
   integrity sha512-gsO4vjEdQaTusZAEebUWp2a5d7dF5DYoIpDG7WySnk7BuZDW+GPpHXoXXuYawRBr/9t5q54tirPz79kFIWg4dA==
 
-node-releases@^1.1.61:
+node-releases@^1.1.61, node-releases@^1.1.70:
   version "1.1.71"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
   integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
