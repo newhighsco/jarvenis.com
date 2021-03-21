@@ -1,3 +1,10 @@
+## [1.10.12](https://github.com/newhighsco/jarvenis.com/compare/v1.10.11...v1.10.12) (2021-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fullhuman/postcss-purgecss to v4.0.3 ([#590](https://github.com/newhighsco/jarvenis.com/issues/590)) ([8af4f20](https://github.com/newhighsco/jarvenis.com/commit/8af4f20c0f8fa777decf16534784311f3c56e441))
+
 ## [1.10.11](https://github.com/newhighsco/jarvenis.com/compare/v1.10.10...v1.10.11) (2021-03-19)
 
 
