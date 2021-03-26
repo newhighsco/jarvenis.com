@@ -1,6 +1,6 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { config } from '../../site.config'
+import { config, meta } from '../../site.config'
 
 import logoUrl from '../images/logo.svg'
 
@@ -23,6 +23,12 @@ class DocumentPage extends Document {
             as="font"
             type="font/woff2"
             crossOrigin=""
+          />
+          <link
+            rel="alternate"
+            type="application/rss+xml"
+            title={meta.titleTemplate.replace(/%s/g, 'Feed')}
+            href="/rss.xml"
           />
         </Head>
         <body>
