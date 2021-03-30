@@ -1,3 +1,10 @@
+## [1.10.18](https://github.com/newhighsco/jarvenis.com/compare/v1.10.17...v1.10.18) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sharp to v0.28.0 ([#605](https://github.com/newhighsco/jarvenis.com/issues/605)) ([e15b40e](https://github.com/newhighsco/jarvenis.com/commit/e15b40e08376319ef9af2e899559a066c8983b9c))
+
 ## [1.10.17](https://github.com/newhighsco/jarvenis.com/compare/v1.10.16...v1.10.17) (2021-03-30)
 
 
