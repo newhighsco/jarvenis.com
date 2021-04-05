@@ -13,7 +13,8 @@ export const getLayoutStaticProps = async slug => {
   const { frontmatter, markdown } = page
   const { meta, title, ...rest } = frontmatter
   const canonical = !['/404'].includes(slug) ? urlJoin(config.url, slug) : null
-  const { getCommonProps } = layouts[frontmatter?.layout] || layouts.page
+  const { getCommonProps, getPageProps } =
+    layouts[frontmatter?.layout] || layouts.page
   const props = {
     meta: {
       ...meta,
@@ -29,6 +30,7 @@ export const getLayoutStaticProps = async slug => {
     title,
     markdown: await renderToString(markdown),
     ...rest,
+    ...(getPageProps ? getPageProps(slug, page) : {}),
     ...(getCommonProps ? getCommonProps(commonProps) : {})
   }
 

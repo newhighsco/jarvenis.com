@@ -5,6 +5,19 @@ import { ArticleJsonLd } from 'next-seo'
 import { Prose } from '@newhighsco/chipset'
 import { Heading, PageContainer, Section } from '../components'
 import { config } from '../../site.config'
+import { postsDir } from '../../next-rss'
+
+export const getPageProps = (slug, { frontmatter }) => {
+  const { meta, title, date } = frontmatter
+
+  return {
+    postData: {
+      id: slug.replace(`${postsDir}/`, ''),
+      title: meta?.title || title,
+      date
+    }
+  }
+}
 
 const PostLayout = ({ title, date, markdown, meta }) => {
   const content = hydrate(markdown)
