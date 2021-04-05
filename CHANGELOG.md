@@ -1,3 +1,52 @@
+## [1.10.23](https://github.com/newhighsco/jarvenis.com/compare/v1.10.22...v1.10.23) (2021-04-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/next-plugin-svgr to v3.0.19 ([#384](https://github.com/newhighsco/jarvenis.com/issues/384)) ([6f62a3b](https://github.com/newhighsco/jarvenis.com/commit/6f62a3b9c689bfd567820af7aae00988b51d295d))
+
+## [1.10.22](https://github.com/newhighsco/jarvenis.com/compare/v1.10.21...v1.10.22) (2021-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-transpile-modules to v6.4.0 ([#612](https://github.com/newhighsco/jarvenis.com/issues/612)) ([ae0ff59](https://github.com/newhighsco/jarvenis.com/commit/ae0ff598ee7f0cca5ab9875af05c8b779fc2378f))
+
+## [1.10.21](https://github.com/newhighsco/jarvenis.com/compare/v1.10.20...v1.10.21) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#608](https://github.com/newhighsco/jarvenis.com/issues/608)) ([a155dca](https://github.com/newhighsco/jarvenis.com/commit/a155dca52928f9cc650e364201be3acbf7b61b95))
+
+## [1.10.20](https://github.com/newhighsco/jarvenis.com/compare/v1.10.19...v1.10.20) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v10.1.2 ([#607](https://github.com/newhighsco/jarvenis.com/issues/607)) ([05e5571](https://github.com/newhighsco/jarvenis.com/commit/05e557108b4ee9058ec07427a0652448377ba3e3))
+
+## [1.10.19](https://github.com/newhighsco/jarvenis.com/compare/v1.10.18...v1.10.19) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v1.6.18 ([#606](https://github.com/newhighsco/jarvenis.com/issues/606)) ([31e43b9](https://github.com/newhighsco/jarvenis.com/commit/31e43b9cf5cbfd43b77d201bf2a3b3bc58649e6f))
+
+## [1.10.18](https://github.com/newhighsco/jarvenis.com/compare/v1.10.17...v1.10.18) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sharp to v0.28.0 ([#605](https://github.com/newhighsco/jarvenis.com/issues/605)) ([e15b40e](https://github.com/newhighsco/jarvenis.com/commit/e15b40e08376319ef9af2e899559a066c8983b9c))
+
+## [1.10.17](https://github.com/newhighsco/jarvenis.com/compare/v1.10.16...v1.10.17) (2021-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v10.1.1 ([#604](https://github.com/newhighsco/jarvenis.com/issues/604)) ([4307609](https://github.com/newhighsco/jarvenis.com/commit/4307609dc41dec1db04e3a39f6f948afcdb85210))
+
 ## [1.10.16](https://github.com/newhighsco/jarvenis.com/compare/v1.10.15...v1.10.16) (2021-03-24)
 
 
