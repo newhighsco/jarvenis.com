@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/newhighsco/jarvenis.com/compare/v1.10.23...v1.11.0) (2021-04-05)
+
+
+### Features
+
+* **rss:** adds RSS feed ([#600](https://github.com/newhighsco/jarvenis.com/issues/600)) ([e10a07d](https://github.com/newhighsco/jarvenis.com/commit/e10a07d3acba4f23be939f145e21412dba5329a5)), closes [#221](https://github.com/newhighsco/jarvenis.com/issues/221)
+
 ## [1.10.23](https://github.com/newhighsco/jarvenis.com/compare/v1.10.22...v1.10.23) (2021-04-02)
 
 
