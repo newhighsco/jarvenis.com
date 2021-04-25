@@ -104,9 +104,10 @@ module.exports.bootstrap = async ({
           `store_products?currency=${options.currency}&page=${page}`
         )
       ).then(response => {
-        console.log(response.text())
+        const body = response.text()
+        console.log(body)
 
-        return response.json()
+        return JSON.parse(body)
       })
 
       accumulator = accumulator.concat(products)
