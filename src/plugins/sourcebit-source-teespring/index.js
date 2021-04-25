@@ -105,7 +105,7 @@ module.exports.bootstrap = async ({
         )
       ).then(response => {
         const body = response.text()
-        console.error(999, body)
+        throw new Error(body)
 
         return JSON.parse(body)
       })
