@@ -97,6 +97,7 @@ module.exports.bootstrap = async ({
 }) => {
   const fetchProducts = async (page = 1, accumulator = []) => {
     try {
+      let body
       const { products, next, page: currentPage } = await fetch(
         urlJoin(
           API_BASE_URL,
@@ -105,12 +106,11 @@ module.exports.bootstrap = async ({
         )
       )
         .then(async response => {
-          const body = await response.text()
-          console.error(999, body)
+          body = await response.text()
 
           return JSON.parse(body)
         })
-        .catch(error => console.error(111, error))
+        .catch(error => console.error(error, body))
 
       accumulator = accumulator.concat(products)
 
@@ -118,7 +118,7 @@ module.exports.bootstrap = async ({
         return await fetchProducts(page + 1, accumulator)
       }
     } catch (error) {
-      console.error(222, error)
+      console.error(error)
     }
 
     return accumulator
