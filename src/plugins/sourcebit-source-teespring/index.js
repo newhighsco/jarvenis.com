@@ -104,7 +104,7 @@ module.exports.bootstrap = async ({
           `store_products?currency=${options.currency}&page=${page}`
         )
       ).then(response => {
-        const body = response.text()
+        const body = await response.text()
         throw new Error(body)
 
         return JSON.parse(body)
