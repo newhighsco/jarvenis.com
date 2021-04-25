@@ -108,7 +108,7 @@ module.exports.bootstrap = async ({
         throw new Error(body)
 
         return JSON.parse(body)
-      })
+      }).catch(error => console.error(error)
 
       accumulator = accumulator.concat(products)
 
