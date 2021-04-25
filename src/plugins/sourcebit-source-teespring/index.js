@@ -103,13 +103,14 @@ module.exports.bootstrap = async ({
           options.permaLink,
           `store_products?currency=${options.currency}&page=${page}`
         )
-      ).then(response => {
-        console.error(999, response)
-        const body = response.text()
-        throw new Error(body)
+      )
+        .then(response => {
+          console.error(999, response)
+          const body = response.text()
 
-        return JSON.parse(body)
-      }).catch(error => console.error(111, error))
+          return JSON.parse(body)
+        })
+        .catch(error => console.error(111, error))
 
       accumulator = accumulator.concat(products)
 
