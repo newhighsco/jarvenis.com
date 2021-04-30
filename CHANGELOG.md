@@ -1,3 +1,10 @@
+## [1.11.14](https://github.com/newhighsco/jarvenis.com/compare/v1.11.13...v1.11.14) (2021-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/chipset to v6.5.13 ([#655](https://github.com/newhighsco/jarvenis.com/issues/655)) ([8e23471](https://github.com/newhighsco/jarvenis.com/commit/8e2347129ac4a7c638640e083515a1ce09bd46c1))
+
 ## [1.11.13](https://github.com/newhighsco/jarvenis.com/compare/v1.11.12...v1.11.13) (2021-04-29)
 
 
