@@ -4,7 +4,7 @@ const urlJoin = require('url-join')
 const mimeTypes = require('mime-types')
 
 const BASE_URL = 'https://teespring.com/'
-const API_BASE_URL = `${BASE_URL}api/stores/`
+const API_BASE_URL = `https://commerce.teespring.com/v1/stores/`
 const STOREFRONT_BASE_URL = `${BASE_URL}stores/`
 const SOURCE = 'sourcebit-source-teespring'
 
@@ -48,7 +48,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
     ).start()
 
     try {
-      await fetch(urlJoin(API_BASE_URL, answers.permaLink))
+      await fetch(urlJoin(API_BASE_URL, `?slug=${answers.permaLink}`))
     } catch (error) {
       spinner.fail()
 
@@ -97,17 +97,24 @@ module.exports.bootstrap = async ({
 }) => {
   const fetchProducts = async (page = 1, accumulator = []) => {
     try {
+      let body
       const { products, next, page: currentPage } = await fetch(
         urlJoin(
           API_BASE_URL,
-          options.permaLink,
-          `store_products?currency=${options.currency}&page=${page}`
+          'products',
+          `?slug=${options.permaLink}&currency=${options.currency}&page=${page}`
         )
-      ).then(response => response.json())
+      )
+        .then(async response => {
+          body = await response.text()
+
+          return JSON.parse(body)
+        })
+        .catch(error => console.error(error, body))
 
       accumulator = accumulator.concat(products)
 
-      if (next && currentPage < options.pageLimit) {
+      if (!!next?.length && currentPage < options.pageLimit) {
         return await fetchProducts(page + 1, accumulator)
       }
     } catch (error) {
@@ -125,7 +132,7 @@ module.exports.bootstrap = async ({
     const entries = await fetchProducts()
 
     setPluginContext({
-      assets: entries.map(({ id, image_url: url }) => ({
+      assets: entries.map(({ id, imageUrl: url }) => ({
         id,
         url: url.replace('vangogh.', 'mockup-api.')
       })),
@@ -148,7 +155,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
   }
 
   const normalizedEntries = entries.map(
-    ({ id, url: slug, name: title, product_name: type, price }) => ({
+    ({ id, url: slug, name: title, productName: type, price }) => ({
       id,
       slug: slug.replace(/([^?]+)\?.*/g, '$1'),
       href: urlJoin(BASE_URL, slug),
