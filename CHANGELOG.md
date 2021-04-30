@@ -1,3 +1,38 @@
+## [1.11.14](https://github.com/newhighsco/jarvenis.com/compare/v1.11.13...v1.11.14) (2021-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/chipset to v6.5.13 ([#655](https://github.com/newhighsco/jarvenis.com/issues/655)) ([8e23471](https://github.com/newhighsco/jarvenis.com/commit/8e2347129ac4a7c638640e083515a1ce09bd46c1))
+
+## [1.11.13](https://github.com/newhighsco/jarvenis.com/compare/v1.11.12...v1.11.13) (2021-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.32.12 ([#653](https://github.com/newhighsco/jarvenis.com/issues/653)) ([ab0f4fc](https://github.com/newhighsco/jarvenis.com/commit/ab0f4fcfa54cfb584dbf01401ec9d472b1d33e2d))
+
+## [1.11.12](https://github.com/newhighsco/jarvenis.com/compare/v1.11.11...v1.11.12) (2021-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/next-plugin-svgr to v3.0.20 ([#651](https://github.com/newhighsco/jarvenis.com/issues/651)) ([52aa085](https://github.com/newhighsco/jarvenis.com/commit/52aa0851499d93ccd2321618441c17082f7c3bd0))
+
+## [1.11.11](https://github.com/newhighsco/jarvenis.com/compare/v1.11.10...v1.11.11) (2021-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v10.2.0 ([#650](https://github.com/newhighsco/jarvenis.com/issues/650)) ([551681f](https://github.com/newhighsco/jarvenis.com/commit/551681f722c72c9c41d6968def34772062676eba))
+
+## [1.11.10](https://github.com/newhighsco/jarvenis.com/compare/v1.11.9...v1.11.10) (2021-04-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-transpile-modules to v6.4.1 ([#645](https://github.com/newhighsco/jarvenis.com/issues/645)) ([524ba26](https://github.com/newhighsco/jarvenis.com/commit/524ba260225acb0d75b8a3a7112f67227b6db27d))
+
 ## [1.11.9](https://github.com/newhighsco/jarvenis.com/compare/v1.11.8...v1.11.9) (2021-04-20)
 
 
