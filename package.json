@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "4.0.3",
-    "@newhighsco/chipset": "6.5.13",
+    "@newhighsco/chipset": "6.6.0",
     "@newhighsco/next-plugin-svgr": "3.0.20",
     "babel-loader": "8.2.2",
     "imagemin-mozjpeg": "9.0.0",
@@ -71,7 +71,7 @@
     "@newhighsco/commitlint-config": "1.0.10",
     "@newhighsco/editor-config": "1.1.1",
     "@newhighsco/eslint-config": "2.2.85",
-    "@newhighsco/postcss-config": "3.0.92",
+    "@newhighsco/postcss-config": "3.0.93",
     "@newhighsco/prettier-config": "2.0.8",
     "@newhighsco/release-config": "1.0.57",
     "@newhighsco/stylelint-config": "2.0.37",
