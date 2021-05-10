@@ -98,7 +98,11 @@ module.exports.bootstrap = async ({
   const fetchProducts = async (page = 1, accumulator = []) => {
     try {
       let body
-      const { products, next, page: currentPage } = await fetch(
+      const {
+        products,
+        next,
+        page: currentPage
+      } = await fetch(
         urlJoin(
           API_BASE_URL,
           'products',

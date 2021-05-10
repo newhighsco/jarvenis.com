@@ -6,10 +6,8 @@ import layouts from '.'
 import { meta as defaultMeta } from '../content/index.md'
 
 export const getLayoutStaticProps = async slug => {
-  const {
-    page,
-    ...commonProps
-  } = await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
+  const { page, ...commonProps } =
+    await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
   const { frontmatter, markdown } = page
   const { meta, title, ...rest } = frontmatter
   const canonical = !['/404'].includes(slug) ? urlJoin(config.url, slug) : null
