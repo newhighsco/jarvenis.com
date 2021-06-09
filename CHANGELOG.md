@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/newhighsco/jarvenis.com/compare/v1.11.55...v1.12.0) (2021-06-09)
+
+
+### Features
+
+* **scroll-containers:** style mobile toolbars ([#741](https://github.com/newhighsco/jarvenis.com/issues/741)) ([516414e](https://github.com/newhighsco/jarvenis.com/commit/516414ee254675bce80e03e8c5a0a83f2ecc093e))
+
 ## [1.11.55](https://github.com/newhighsco/jarvenis.com/compare/v1.11.54...v1.11.55) (2021-06-09)
 
 
