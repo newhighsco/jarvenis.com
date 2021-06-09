@@ -1,1 +1,37 @@
+@use "sass:math";
+@use '~@newhighsco/chipset/styles/mixins';
+@use './breakpoints.module';
+@use './functions';
+
 @forward '~@newhighsco/chipset/styles/mixins';
+
+@mixin scroll-container($visible: 1) {
+  $peak: math.div(15%, $visible);
+
+  @include mixins.mq($max: breakpoints.$tablet - 1) {
+    flex-wrap: nowrap !important;
+    margin-right: functions.spacing(-2);
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: functions.spacing(1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: currentColor;
+      border-radius: functions.spacing(1);
+    }
+
+    .item {
+      flex-shrink: 0;
+      padding-top: functions.spacing(0.5);
+      margin-right: -$peak;
+      padding-right: $peak;
+
+      &:last-child {
+        margin-right: 0;
+        padding-right: functions.spacing(2);
+      }
+    }
+  }
+}

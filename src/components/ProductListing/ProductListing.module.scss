@@ -1,31 +1,14 @@
-@use '../../styles/breakpoints.module';
 @use '../../styles/functions';
 @use '../../styles/mixins';
 
 .root {
+  @include mixins.scroll-container(2);
+
   text-align: center;
-
-  @include mixins.mq($max: breakpoints.$tablet - 1) {
-    flex-wrap: nowrap !important;
-    margin-right: functions.spacing(-2);
-    overflow-x: auto;
-
-    &::after {
-      content: '';
-      display: inline-block;
-      padding-left: functions.spacing(2);
-    }
-  }
 }
 
 .item {
   margin-bottom: functions.spacing(2);
-
-  @include mixins.mq($max: breakpoints.$tablet - 1) {
-    flex-shrink: 0;
-    padding-top: functions.spacing(0.5);
-    width: 42.5%;
-  }
 }
 
 .buttons {

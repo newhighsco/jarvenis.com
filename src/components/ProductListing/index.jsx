@@ -40,7 +40,7 @@ const ProductListing = ({ products = [], summary }) => {
           return (
             <Grid.Item
               key={id}
-              sizes={['tablet-one-half', 'tablet-landscape-one-quarter']}
+              sizes={['one-half', 'tablet-landscape-one-quarter']}
               className={styles.item}
             >
               <Card
