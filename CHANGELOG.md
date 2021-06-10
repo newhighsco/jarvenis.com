@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/newhighsco/jarvenis.com/compare/v1.12.0...v1.12.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-transpile-modules to v7.3.0 ([#742](https://github.com/newhighsco/jarvenis.com/issues/742)) ([6bd3e54](https://github.com/newhighsco/jarvenis.com/commit/6bd3e5478ec77e95e65b43ed2ae1905085ef418a))
+
 # [1.12.0](https://github.com/newhighsco/jarvenis.com/compare/v1.11.55...v1.12.0) (2021-06-09)
 
 
