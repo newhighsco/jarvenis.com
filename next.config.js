@@ -15,6 +15,9 @@ sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 const nextConfig = {
   poweredByHeader: false,
   env: envConfig[process.env.VERCEL_GITHUB_COMMIT_REF] || envConfig.preview,
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   webpack: config => {
     config.module.rules.push({
       test: /\.(woff(2)?)$/,
