@@ -1,3 +1,13 @@
+## [1.12.15](https://github.com/newhighsco/jarvenis.com/compare/v1.12.14...v1.12.15) (2021-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v11 ([2667b26](https://github.com/newhighsco/jarvenis.com/commit/2667b2602aadc092127dbe2414b02b3fe37c94b1))
+* **deps:** update dependency next-sitemap to v1.6.124 ([abf444b](https://github.com/newhighsco/jarvenis.com/commit/abf444be39e3d248daffc772ad5035a812a56277))
+* **deps:** update dependency next-transpile-modules to v8 ([3df4858](https://github.com/newhighsco/jarvenis.com/commit/3df48588bfb55ac92662244da936fab53d160391))
+* **next:** ignore eslint errors during build ([e4b235a](https://github.com/newhighsco/jarvenis.com/commit/e4b235a7a6357b8d29d0363b81958442d1cbfcea))
+
 ## [1.12.14](https://github.com/newhighsco/jarvenis.com/compare/v1.12.13...v1.12.14) (2021-06-21)
 
 
