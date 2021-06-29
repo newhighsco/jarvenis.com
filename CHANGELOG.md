@@ -1,3 +1,10 @@
+## [1.12.18](https://github.com/newhighsco/jarvenis.com/compare/v1.12.17...v1.12.18) (2021-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#776](https://github.com/newhighsco/jarvenis.com/issues/776)) ([afa0d8a](https://github.com/newhighsco/jarvenis.com/commit/afa0d8a1330a5907e759799fd8240e4e95a7dbba))
+
 ## [1.12.17](https://github.com/newhighsco/jarvenis.com/compare/v1.12.16...v1.12.17) (2021-06-26)
 
 
