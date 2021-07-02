@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/newhighsco/jarvenis.com/compare/v1.12.18...v1.13.0) (2021-07-02)
+
+
+### Bug Fixes
+
+* **nav:** remove warnings about JSON imports ([d0e407c](https://github.com/newhighsco/jarvenis.com/commit/d0e407cdd040b13c5bf91fdf5104597779d0b018))
+
+
+### Features
+
+* link to sitemap.xml ([dbcaa71](https://github.com/newhighsco/jarvenis.com/commit/dbcaa71f3d3efa7d44985f5455b09bf84973ae90))
+
 ## [1.12.18](https://github.com/newhighsco/jarvenis.com/compare/v1.12.17...v1.12.18) (2021-06-29)
 
 
