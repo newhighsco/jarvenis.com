@@ -30,6 +30,7 @@ class DocumentPage extends Document {
             title={meta.titleTemplate.replace(/%s/g, 'Feed')}
             href="/rss.xml"
           />
+          <link rel="sitemap" type="application/xml" href="sitemap.xml" />
         </Head>
         <body>
           <Main />
