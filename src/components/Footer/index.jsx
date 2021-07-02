@@ -13,7 +13,7 @@ import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
 import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
 import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
 import { config, socialLinks } from '../../../site.config'
-import { links } from '../../data/footer.json'
+import footer from '../../data/footer.json'
 
 import styles from './Footer.module.scss'
 
@@ -57,7 +57,7 @@ const Footer = () => (
         </Grid.Item>
         <Grid.Item sizes={['tablet-one-third']}>
           <Navigation
-            links={links}
+            links={footer.links}
             renderLink={({ href, text, ...rest }) => (
               <Link href={href} passHref>
                 <SmartLink {...rest}>{text}</SmartLink>

@@ -9,7 +9,7 @@ import {
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
 import backgroundImage from '../../images/header.jpg?size=1528&format=webp'
-import { links } from '../../data/header.json'
+import header from '../../data/header.json'
 
 import styles from './Header.module.scss'
 
@@ -42,7 +42,7 @@ const Header = () => {
           </Grid.Item>
           <Grid.Item className={styles.navigation}>
             <Navigation
-              links={links}
+              links={header.links}
               renderLink={({ href, text, ...rest }) => (
                 <Link href={href} passHref>
                   <SmartLink {...rest}>{text}</SmartLink>
