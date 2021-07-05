@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/newhighsco/jarvenis.com/compare/v1.13.1...v1.13.2) (2021-07-05)
+
+
+### Bug Fixes
+
+* **favicon:** move to PageContainer ([c93e3b9](https://github.com/newhighsco/jarvenis.com/commit/c93e3b9a17df63a0a012b2e95e1bb622ba204c1f))
+
 ## [1.13.1](https://github.com/newhighsco/jarvenis.com/compare/v1.13.0...v1.13.1) (2021-07-04)
 
 
