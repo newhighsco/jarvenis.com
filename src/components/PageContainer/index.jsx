@@ -3,6 +3,8 @@ import { node, object } from 'prop-types'
 import { PageContainer as ThemedPageContainer } from '@newhighsco/chipset'
 import { Footer, Header, Meta } from '..'
 
+import logoUrl from '../../images/logo.svg'
+
 const PageContainer = ({ meta, children }) => (
   <ThemedPageContainer
     as="main"
@@ -11,7 +13,20 @@ const PageContainer = ({ meta, children }) => (
     header={<Header />}
     footer={<Footer />}
   >
-    <Meta {...meta} />
+    <Meta
+      {...meta}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: logoUrl
+        },
+        {
+          rel: 'sitemap',
+          type: 'application/xml',
+          href: '/sitemap.xml'
+        }
+      ]}
+    />
     {children}
   </ThemedPageContainer>
 )

@@ -2,14 +2,11 @@ import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { config, meta } from '../../site.config'
 
-import logoUrl from '../images/logo.svg'
-
 class DocumentPage extends Document {
   render() {
     return (
       <Html lang={config.lang}>
         <Head>
-          <link rel="icon" href={logoUrl} />
           <link
             rel="preload"
             href="/fonts/big-noodle-titling/regular.woff2"
@@ -30,7 +27,6 @@ class DocumentPage extends Document {
             title={meta.titleTemplate.replace(/%s/g, 'Feed')}
             href="/rss.xml"
           />
-          <link rel="sitemap" type="application/xml" href="sitemap.xml" />
         </Head>
         <body>
           <Main />
