@@ -1,3 +1,10 @@
+## [1.13.8](https://github.com/newhighsco/jarvenis.com/compare/v1.13.7...v1.13.8) (2021-07-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-mdx-frontmatter to v0.0.4 ([#791](https://github.com/newhighsco/jarvenis.com/issues/791)) ([01c948f](https://github.com/newhighsco/jarvenis.com/commit/01c948f3b8d0d870965ad4d625d50c6d9bdb50bd))
+
 ## [1.13.7](https://github.com/newhighsco/jarvenis.com/compare/v1.13.6...v1.13.7) (2021-07-08)
 
 
