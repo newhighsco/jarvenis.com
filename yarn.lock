@@ -13451,10 +13451,10 @@ next-compose-plugins@2.2.1:
   resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.1.tgz#020fc53f275a7e719d62521bef4300fbb6fde5ab"
   integrity sha512-OjJ+fV15FXO2uQXQagLD4C0abYErBjyjE0I0FHpOEIB8upw0hg1ldFP6cqHTJBH1cZqy96OeR3u1dJ+Ez2D4Bg==
 
-next-mdx-frontmatter@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/next-mdx-frontmatter/-/next-mdx-frontmatter-0.0.3.tgz#d52396362bbaf63620292b508a425b9f34057388"
-  integrity sha512-tcEA2qwmwl2Kkm5yRxL1/KW4qsTAeUiVZIOtSRLvw1j+7aU+XrD1AQVfziInaO8NQIUBJRx4l0P8I8/YD9J+Eg==
+next-mdx-frontmatter@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/next-mdx-frontmatter/-/next-mdx-frontmatter-0.0.4.tgz#dcceddcc1b20604c9a74e27bf641733ff047aa05"
+  integrity sha512-fYk1m00HS8AnT1sAN6bm9XSqAADoE6SIMre15+HHSXs8ZobtM/AE9U5oCVacR2wOnJN4YX1pFNSg0hZ93ohxIg==
   dependencies:
     "@mdx-js/loader" "^0.15.0"
     front-matter ">=2.0.0"
