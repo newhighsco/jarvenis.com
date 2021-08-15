@@ -18,6 +18,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true
   },
+  images: {
+    disableStaticImages: true
+  },
   webpack: config => {
     config.module.rules.push({
       test: /\.(woff(2)?)$/,
