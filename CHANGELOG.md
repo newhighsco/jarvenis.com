@@ -1,3 +1,10 @@
+## [1.13.33](https://github.com/newhighsco/jarvenis.com/compare/v1.13.32...v1.13.33) (2021-08-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v11.1.0 [security] ([#837](https://github.com/newhighsco/jarvenis.com/issues/837)) ([b9ff836](https://github.com/newhighsco/jarvenis.com/commit/b9ff836e4204f81b2ff8107c5806b5ee08e69251))
+
 ## [1.13.32](https://github.com/newhighsco/jarvenis.com/compare/v1.13.31...v1.13.32) (2021-08-14)
 
 
