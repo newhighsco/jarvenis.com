@@ -1,3 +1,10 @@
+## [1.13.53](https://github.com/newhighsco/jarvenis.com/compare/v1.13.52...v1.13.53) (2021-09-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sharp to v0.29.1 ([#883](https://github.com/newhighsco/jarvenis.com/issues/883)) ([d0ca7cb](https://github.com/newhighsco/jarvenis.com/commit/d0ca7cb2f8d585d26d9633d6254dbe1efc860ea9))
+
 ## [1.13.52](https://github.com/newhighsco/jarvenis.com/compare/v1.13.51...v1.13.52) (2021-09-02)
 
 
