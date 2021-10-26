@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/newhighsco/jarvenis.com/compare/v1.13.85...v1.14.0) (2021-10-26)
+
+
+### Features
+
+* **deps:** update `stylelint` to v14 ([#968](https://github.com/newhighsco/jarvenis.com/issues/968)) ([3b7a2e8](https://github.com/newhighsco/jarvenis.com/commit/3b7a2e8b2507c44d597ecfed6b3a057bbac6d48f))
+
 ## [1.13.85](https://github.com/newhighsco/jarvenis.com/compare/v1.13.84...v1.13.85) (2021-10-25)
 
 
