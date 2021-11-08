@@ -1,3 +1,10 @@
+## [1.14.12](https://github.com/newhighsco/jarvenis.com/compare/v1.14.11...v1.14.12) (2021-11-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-mdx-remote to v3.0.8 ([#995](https://github.com/newhighsco/jarvenis.com/issues/995)) ([0729d7e](https://github.com/newhighsco/jarvenis.com/commit/0729d7ee8dc0c50cfaa954d9a5343e782f87d5b7))
+
 ## [1.14.11](https://github.com/newhighsco/jarvenis.com/compare/v1.14.10...v1.14.11) (2021-11-08)
 
 
