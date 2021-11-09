@@ -2190,10 +2190,10 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@stackbit/sdk@^0.2.16":
-  version "0.2.16"
-  resolved "https://registry.yarnpkg.com/@stackbit/sdk/-/sdk-0.2.16.tgz#fabb8ea73dc1c9ea5084de865908cecd225b89c1"
-  integrity sha512-+8ZmAVSzQOfHqzZEX/DjHd8X4tgFGseMX0E9X8FuUM8KAulQiRKTWGNb219az5t39mClUN4NGAaHcyAalrQLOg==
+"@stackbit/sdk@^0.2.17":
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/@stackbit/sdk/-/sdk-0.2.17.tgz#62860bdc7d2b0487d326865960f0ecb1cb6ba687"
+  integrity sha512-Fk4wJGhsoxpuXQq5XNVK8HOGQSmnp+Cpk/fco2djeOFSaWbS/4Etlxm/dpKqpnkRlQrbRiSmzANAk2mTahvJDw==
   dependencies:
     "@octokit/rest" "^18.3.5"
     "@stackbit/utils" "^0.2.1"
@@ -2205,16 +2205,6 @@
     micromatch "^4.0.2"
     moment "^2.29.1"
     semver "^7.3.5"
-
-"@stackbit/utils@^0.1.0":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@stackbit/utils/-/utils-0.1.2.tgz#06266450f0c596c78f45d6ab3a5ce49c0e3cf020"
-  integrity sha512-r8plP0O8HnNb7qCJKz7zQu8B5rSKOjMRLSxXuK0+IdrUtHuXgzSbDjL/paL6Ge8UbH+gMvzmiu3z2bM2Cyq/QQ==
-  dependencies:
-    "@iarna/toml" "^2.2.5"
-    fs-extra "^9.0.1"
-    js-yaml "^3.14.0"
-    lodash "^4.17.15"
 
 "@stackbit/utils@^0.2.1":
   version "0.2.1"
@@ -5686,7 +5676,7 @@ fs-extra@^10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^9.0.0, fs-extra@^9.0.1, fs-extra@^9.1.0:
+fs-extra@^9.0.0, fs-extra@^9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
@@ -7137,7 +7127,7 @@ joi@^17.4.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^3.13.1, js-yaml@^3.14.0:
+js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
@@ -11079,13 +11069,13 @@ source-map@^0.6.0, source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sourcebit-source-filesystem@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/sourcebit-source-filesystem/-/sourcebit-source-filesystem-0.1.4.tgz#a42df7c81428b59f4fa8696c680a5e65383d0b02"
-  integrity sha512-hDDvrM8ArRkWau8CPZCqyCT0NTF9+VicN+IIoHX5yPUMUqTtjwWZ3uLvZ2TKhaZDkJ5b4O31F+jYJi0vPkQjrA==
+sourcebit-source-filesystem@0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/sourcebit-source-filesystem/-/sourcebit-source-filesystem-0.1.6.tgz#6ca52fc7900bc4cf15b908aa573491b5695bab11"
+  integrity sha512-rpS13vDc0ENZeVnqznc2bjVW7SO3FcLVWVBjTch/eW5mKSMtD9ehhRDoc2yv0b5foTLYDmzWEdMzMrGONNvGug==
   dependencies:
-    "@stackbit/sdk" "^0.2.16"
-    "@stackbit/utils" "^0.1.0"
+    "@stackbit/sdk" "^0.2.17"
+    "@stackbit/utils" "^0.2.1"
     chokidar "^3.5.2"
     fs-extra "^10.0.0"
     lodash "^4.17.21"
