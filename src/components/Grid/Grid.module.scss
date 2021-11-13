@@ -12,7 +12,7 @@
   @include grid.widths('tablet', 2 3 4);
 }
 
-@include mixins.mq(breakpoints.$tabletLandscape) {
+@include mixins.mq(breakpoints.$tablet-landscape) {
   @include grid.widths('tablet-landscape', 4);
 }
 
