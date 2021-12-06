@@ -47,16 +47,7 @@ module.exports = withPlugins(
         }
       }
     ],
-    [
-      withSvgr,
-      {
-        svgrOptions: {
-          svgoConfig: {
-            plugins: [{ prefixIds: false }]
-          }
-        }
-      }
-    ],
+    [withSvgr],
     [withVideos]
   ],
   withMdx({ extension: /\.mdx?$/ })(nextConfig)
