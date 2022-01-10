@@ -12785,10 +12785,10 @@ source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sourcebit-source-filesystem@0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/sourcebit-source-filesystem/-/sourcebit-source-filesystem-0.1.6.tgz#6ca52fc7900bc4cf15b908aa573491b5695bab11"
-  integrity sha512-rpS13vDc0ENZeVnqznc2bjVW7SO3FcLVWVBjTch/eW5mKSMtD9ehhRDoc2yv0b5foTLYDmzWEdMzMrGONNvGug==
+sourcebit-source-filesystem@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/sourcebit-source-filesystem/-/sourcebit-source-filesystem-0.2.0.tgz#49741edc969e8c82ff5ea185222f7acb27e385fb"
+  integrity sha512-joz5KMWT5kZ1Jc/Yd4jTleiQmXbhvNrJUFbFULr56TwiYuLxRHNm4PdwOQEqBwI295zG6liVfbYs6H/nGS1S9Q==
   dependencies:
     "@stackbit/sdk" "^0.2.17"
     "@stackbit/utils" "^0.2.1"
