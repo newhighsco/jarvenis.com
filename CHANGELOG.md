@@ -1,3 +1,10 @@
+## [1.14.41](https://github.com/newhighsco/jarvenis.com/compare/v1.14.40...v1.14.41) (2022-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sourcebit-source-filesystem to v0.2.0 ([#1069](https://github.com/newhighsco/jarvenis.com/issues/1069)) ([76eebea](https://github.com/newhighsco/jarvenis.com/commit/76eebeac80096a3419a168c77ae26428788ad34a))
+
 ## [1.14.40](https://github.com/newhighsco/jarvenis.com/compare/v1.14.39...v1.14.40) (2022-01-10)
 
 
