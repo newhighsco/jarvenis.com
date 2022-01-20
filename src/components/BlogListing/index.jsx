@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { array, bool } from 'prop-types'
-import marked from 'marked'
+import { marked } from 'marked'
 import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
 import { config } from '../../../site.config'
 
