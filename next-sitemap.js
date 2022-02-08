@@ -10,7 +10,6 @@ if (env.DISALLOW_ROBOTS) {
 module.exports = {
   siteUrl: env.SITE_URL,
   generateRobotsTxt: true,
-  outDir: 'build',
   exclude: ['/404'],
   robotsTxtOptions
 }

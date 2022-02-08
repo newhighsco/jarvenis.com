@@ -23,7 +23,7 @@ const nextConfig = {
   },
   webpack: config => {
     config.module.rules.push({
-      test: /\.(woff(2)?)$/,
+      test: /\.(txt|xml|woff(2)?)$/,
       use: 'file-loader'
     })
 

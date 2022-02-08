@@ -8,6 +8,6 @@ module.exports = {
   siteDescription:
     'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
   siteLanguage: 'en-GB',
-  outDir: 'build',
+  outDir: 'public',
   postsDir: 'blog'
 }
