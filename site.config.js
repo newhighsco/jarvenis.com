@@ -3,7 +3,7 @@ import colors from './src/styles/_colors.module.scss'
 import logoUrl from './src/images/logo.jpg'
 import openGraphImageUrl from './src/images/sharing.jpg'
 
-const url = process.env.SITE_URL
+const url = process.env.NEXT_PUBLIC_SITE_URL
 
 export const config = {
   lang: 'en-GB',
@@ -14,7 +14,6 @@ export const config = {
   openGraphImage: urlJoin(url, openGraphImageUrl),
   themeColor: colors.denim,
   twitterHandle: 'jarvenis',
-  disallowRobots: process.env.DISALLOW_ROBOTS,
   dateFormat: {
     month: 'short',
     year: 'numeric',
@@ -23,8 +22,6 @@ export const config = {
 }
 
 export const meta = {
-  dangerouslySetAllPagesToNoFollow: config.disallowRobots,
-  dangerouslySetAllPagesToNoIndex: config.disallowRobots,
   titleTemplate: `%s | ${config.name}`,
   openGraph: {
     site_name: config.name,

@@ -16,23 +16,22 @@
   "files": [
     "public",
     "src",
-    "env.config.js",
     "next-sitemap.js",
     "next.config.js",
     "postcss.config.js",
     "site.config.js"
   ],
   "scripts": {
-    "clean": "rm -rf {.next,build,public/downloads,.sourcebit-*cache.json}",
+    "clean": "rm -rf {.next,public/{downloads,robots.txt,{atom,rss,sitemap*}.xml},.sourcebit-*cache.json}",
     "start": "next dev",
-    "build": "next build && next export --outdir build",
+    "build": "next build",
     "postbuild": "npm-run-all --parallel postbuild:*",
     "postbuild:sitemap": "next-sitemap",
     "postbuild:rss": "next-rss",
     "test": "yarn lint",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "eslint --cache --ext .js,.json,.jsx,.mdx .",
-    "lint:css": "stylelint '**/*.{css,scss}' --cache",
+    "lint:js": "eslint --cache --ignore-path .gitignore --ext .js,.json,.jsx,.mdx .",
+    "lint:css": "stylelint '**/*.{css,scss}' --cache --ignore-path .gitignore",
     "format": "npm-run-all --parallel format:*",
     "format:js": "yarn lint:js --fix",
     "format:css": "yarn lint:css --fix"
