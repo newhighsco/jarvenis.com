@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/newhighsco/jarvenis.com/compare/v1.14.73...v1.15.0) (2022-02-08)
+
+
+### Features
+
+* **build:** remove `next export` ([#1130](https://github.com/newhighsco/jarvenis.com/issues/1130)) ([82966b4](https://github.com/newhighsco/jarvenis.com/commit/82966b4925415cbe07a825ae538a743b2a4d3e03))
+
 ## [1.14.73](https://github.com/newhighsco/jarvenis.com/compare/v1.14.72...v1.14.73) (2022-02-07)
 
 
