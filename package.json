@@ -16,7 +16,6 @@
   "files": [
     "public",
     "src",
-    "env.config.js",
     "next-sitemap.js",
     "next.config.js",
     "postcss.config.js",
