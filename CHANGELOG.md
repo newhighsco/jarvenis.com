@@ -1,3 +1,10 @@
+## [1.15.18](https://github.com/newhighsco/jarvenis.com/compare/v1.15.17...v1.15.18) (2022-02-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sourcebit to v0.11.1 ([#1173](https://github.com/newhighsco/jarvenis.com/issues/1173)) ([49eb9e9](https://github.com/newhighsco/jarvenis.com/commit/49eb9e91aadeac2874551162622e3be5bd188561))
+
 ## [1.15.17](https://github.com/newhighsco/jarvenis.com/compare/v1.15.16...v1.15.17) (2022-02-25)
 
 
