@@ -1,3 +1,10 @@
+## [1.15.25](https://github.com/newhighsco/jarvenis.com/compare/v1.15.24...v1.15.25) (2022-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v2.5.9 ([#1189](https://github.com/newhighsco/jarvenis.com/issues/1189)) ([2999466](https://github.com/newhighsco/jarvenis.com/commit/2999466ceead1ad89d514165c2422b8417aacb5d))
+
 ## [1.15.24](https://github.com/newhighsco/jarvenis.com/compare/v1.15.23...v1.15.24) (2022-03-14)
 
 
