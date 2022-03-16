@@ -66,7 +66,7 @@
     "xml2js": "0.4.23"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.1",
+    "@commitlint/cli": "16.2.3",
     "@newhighsco/browserslist-config": "1.0.3",
     "@newhighsco/commitlint-config": "1.0.23",
     "@newhighsco/editor-config": "1.1.2",
