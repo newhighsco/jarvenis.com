@@ -1,3 +1,10 @@
+## [1.15.35](https://github.com/newhighsco/jarvenis.com/compare/v1.15.34...v1.15.35) (2022-03-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-seo to v5.2.0 ([#1203](https://github.com/newhighsco/jarvenis.com/issues/1203)) ([b99c941](https://github.com/newhighsco/jarvenis.com/commit/b99c9410d8936a7b87f5d2e143e56f01b7943592))
+
 ## [1.15.34](https://github.com/newhighsco/jarvenis.com/compare/v1.15.33...v1.15.34) (2022-03-28)
 
 
