@@ -22,7 +22,7 @@
     "site.config.js"
   ],
   "scripts": {
-    "clean": "rm -rf {.next,public/{downloads,robots.txt,{atom,rss,sitemap*}.xml},.sourcebit-*cache.json}",
+    "clean": "rm -rf {.next,public/{robots.txt,{atom,rss,sitemap*}.xml},.sourcebit-*cache.json}",
     "start": "next dev",
     "build": "next build",
     "postbuild": "npm-run-all --parallel postbuild:*",
@@ -37,7 +37,7 @@
     "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
-    "@newhighsco/chipset": "6.13.8",
+    "@newhighsco/chipset": "6.14.0",
     "@newhighsco/next-plugin-svgr": "3.0.46",
     "babel-loader": "8.2.4",
     "marked": "4.0.12",
@@ -57,11 +57,11 @@
     "sourcebit": "0.11.1",
     "sourcebit-source-filesystem": "0.2.0",
     "sourcebit-target-next": "0.8.1",
-    "sourcebit-transform-assets": "0.3.0",
     "xml2js": "0.4.23"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
+    "@netlify/plugin-nextjs": "4.3.1",
     "@newhighsco/browserslist-config": "1.1.0",
     "@newhighsco/commitlint-config": "1.1.0",
     "@newhighsco/editor-config": "1.2.0",

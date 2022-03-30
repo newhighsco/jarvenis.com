@@ -10,10 +10,14 @@ const withMdx = require('next-mdx-frontmatter')
 sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
-  poweredByHeader: false,
   eslint: {
     ignoreDuringBuilds: true
   },
+  generateBuildId: () => 'build',
+  images: {
+    domains: ['i.ytimg.com', 'mockup-api.teespring.com']
+  },
+  poweredByHeader: false,
   webpack: config => {
     config.module.rules.push({
       test: /\.(txt|xml|woff(2)?)$/,
