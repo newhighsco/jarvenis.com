@@ -17,7 +17,7 @@ const config = {
   themeColor: colors.denim,
   twitterHandle: 'jarvenis',
   socialLinks: {
-    discord: 'https://discordapp.com/invite/rwq9UHT',
+    discord: 'https://discord.com/invite/QesXtZp',
     email: 'jarv@jarvenis.com',
     teespring: 'https://teespring.com/stores/jarv',
     twitch: `https://www.twitch.tv/jarvenis`,
