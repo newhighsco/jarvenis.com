@@ -2,7 +2,7 @@ import React from 'react'
 import { array, bool } from 'prop-types'
 import Image from 'next/image'
 import { Button, Card, Grid } from '@newhighsco/chipset'
-import { socialLinks } from '../../../site.config'
+import config from '../../../site.config'
 
 import styles from './VideoListing.module.scss'
 
@@ -42,7 +42,7 @@ const VideoListing = ({ videos = [], summary }) => {
       </Grid>
       {summary && (
         <Button.Group className={styles.buttons}>
-          <Button href={socialLinks.youtube} target="_blank">
+          <Button href={config.socialLinks.youtube} target="_blank">
             View all videos
           </Button>
         </Button.Group>

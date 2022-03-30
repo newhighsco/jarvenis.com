@@ -2,7 +2,8 @@ const sourcebit = require('sourcebit')
 const sourcebitConfig = require('./sourcebit.config')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
-  '@newhighsco/chipset'
+  '@newhighsco/chipset',
+  '@newhighsco/press-start'
 ])
 const withSvgr = require('@newhighsco/next-plugin-svgr')
 const withMdx = require('next-mdx-frontmatter')
@@ -17,6 +18,10 @@ const nextConfig = {
   images: {
     domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
     formats: ['image/avif', 'image/webp']
+  },
+  i18n: {
+    locales: ['en-GB'],
+    defaultLocale: 'en-GB'
   },
   poweredByHeader: false,
   webpack: config => {

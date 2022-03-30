@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {
   ContentContainer,
   Grid,
+  HeaderContainer,
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
@@ -22,10 +23,7 @@ const Header = () => {
   }
 
   return (
-    <ContentContainer
-      id="top"
-      as="header"
-      role="banner"
+    <HeaderContainer
       theme={{ root: styles.root, content: styles.content }}
       className={classNames(menuVisible && styles.menuVisible)}
     >
@@ -70,7 +68,7 @@ const Header = () => {
           </Grid.Item>
         </Grid>
       </ContentContainer>
-    </ContentContainer>
+    </HeaderContainer>
   )
 }
 

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {
   ContentContainer,
   CreditLockup,
+  FooterContainer,
   Grid,
   Icon,
   Navigation,
@@ -12,37 +13,36 @@ import { LogoLockup } from '..'
 import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
 import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
 import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
-import { config, socialLinks } from '../../../site.config'
+import config from '../../../site.config'
 import footer from '../../data/footer.json'
 
 import styles from './Footer.module.scss'
 
+const { name, shortName, socialLinks } = config
 const year = new Date().getFullYear()
 const iconLinks = [
   {
     href: socialLinks.youtube,
-    text: `Subscribe to ${config.shortName} on YouTube`,
+    text: `Subscribe to ${shortName} on YouTube`,
     icon: YouTubeIcon,
     target: '_blank'
   },
   {
     href: socialLinks.twitch,
-    text: `Subscribe to ${config.shortName} on Twitch`,
+    text: `Subscribe to ${shortName} on Twitch`,
     icon: TwitchIcon,
     target: '_blank'
   },
   {
     href: socialLinks.twitter,
-    text: `Follow ${config.shortName} on Twitter`,
+    text: `Follow ${shortName} on Twitter`,
     icon: TwitterIcon,
     target: '_blank'
   }
 ]
 
 const Footer = () => (
-  <ContentContainer
-    as="footer"
-    role="contentinfo"
+  <FooterContainer
     theme={{ root: styles.root, content: styles.content }}
     gutter
   >
@@ -82,13 +82,13 @@ const Footer = () => (
         </Grid.Item>
         <Grid.Item className={styles.credits} align="center">
           <small>
-            &copy; {year} {config.name}. All rights reserved
+            &copy; {year} {name}. All rights reserved
           </small>
           <CreditLockup />
         </Grid.Item>
       </Grid>
     </ContentContainer>
-  </ContentContainer>
+  </FooterContainer>
 )
 
 export default Footer

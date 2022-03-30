@@ -1,11 +1,11 @@
 import { sourcebitDataClient } from 'sourcebit-target-next'
 import urlJoin from 'url-join'
 import { serialize } from 'next-mdx-remote/serialize'
-import { config } from '../../site.config'
+import config from '../../site.config'
 import layouts from '.'
 import { meta as defaultMeta } from '../content/index.md'
 
-export const getLayoutStaticProps = async slug => {
+export const getLayoutStaticProps = async (slug, locale) => {
   const { page, ...commonProps } =
     await sourcebitDataClient.getStaticPropsForPageAtPath(slug)
   const { frontmatter, markdown } = page
@@ -27,6 +27,7 @@ export const getLayoutStaticProps = async slug => {
     },
     title,
     markdown: await serialize(markdown),
+    locale,
     ...rest,
     ...(getPageProps ? getPageProps(slug, page) : {}),
     ...(getCommonProps ? getCommonProps(commonProps) : {})

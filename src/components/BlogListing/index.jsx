@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import { array, bool } from 'prop-types'
+import { array, bool, string } from 'prop-types'
 import { marked } from 'marked'
 import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
-import { config } from '../../../site.config'
+import config from '../../../site.config'
 
 import styles from './BlogListing.module.scss'
 
-const BlogListing = ({ posts = [], summary }) => {
+const BlogListing = ({ locale, posts = [], summary }) => {
   if (!posts?.length) return null
 
   return (
@@ -24,10 +24,7 @@ const BlogListing = ({ posts = [], summary }) => {
             >
               <div className={styles.content}>
                 <time dateTime={date} className={styles.date}>
-                  {new Date(date).toLocaleDateString(
-                    config.lang,
-                    config.dateFormat
-                  )}
+                  {new Date(date).toLocaleDateString(locale, config.dateFormat)}
                 </time>
                 <Link href={slug} passHref>
                   <SmartLink className={styles.heading}>
@@ -54,6 +51,7 @@ const BlogListing = ({ posts = [], summary }) => {
 }
 
 BlogListing.propTypes = {
+  locale: string,
   posts: array,
   summary: bool
 }

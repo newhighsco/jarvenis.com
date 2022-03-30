@@ -1,30 +1,27 @@
 import React from 'react'
 import { node, object } from 'prop-types'
 import { PageContainer as ThemedPageContainer } from '@newhighsco/chipset'
-import { Footer, Header, Meta } from '..'
-
-import logoUrl from '../../images/logo.svg'
+import { Meta } from '@newhighsco/press-start'
+import { Footer, Header } from '..'
 
 const PageContainer = ({ meta, children }) => (
-  <ThemedPageContainer
-    as="main"
-    id="content"
-    role="main"
-    header={<Header />}
-    footer={<Footer />}
-  >
+  <ThemedPageContainer header={<Header />} footer={<Footer />}>
     <Meta
       {...meta}
       additionalLinkTags={[
         {
-          rel: 'icon',
-          href: logoUrl
+          rel: 'alternate',
+          type: 'application/rss+xml',
+          title: 'Feed',
+          href: '/rss.xml'
         },
-        {
-          rel: 'sitemap',
-          type: 'application/xml',
-          href: '/sitemap.xml'
-        }
+        ...['big-noodle-titling', 'lemon-milk'].map(font => ({
+          rel: 'preload',
+          href: `/fonts/${font}/regular.woff2`,
+          as: 'font',
+          type: 'font/woff2',
+          crossOrigin: 'anonymous'
+        }))
       ]}
     />
     {children}
