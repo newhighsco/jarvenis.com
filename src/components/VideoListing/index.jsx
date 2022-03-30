@@ -25,7 +25,13 @@ const VideoListing = ({ videos = [], summary }) => {
                 heading={<h2>{title}</h2>}
                 image={{
                   render: () => (
-                    <Image src={image} alt="" width={320} height={180} />
+                    <Image
+                      src={image}
+                      alt=""
+                      width={320}
+                      height={180}
+                      layout="responsive"
+                    />
                   ),
                   ratio: '16:9'
                 }}

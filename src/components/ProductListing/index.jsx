@@ -23,15 +23,15 @@ const ProductListing = ({ products = [], summary }) => {
                 href={href}
                 target="_blank"
                 heading={<h2>{title}</h2>}
-                // image={{
-                //   src,
-                //   sources,
-                //   width: 320,
-                //   height: 320
-                // }}
                 image={{
                   render: () => (
-                    <Image src={image} alt="" width={320} height={320} />
+                    <Image
+                      src={image}
+                      alt=""
+                      width={320}
+                      height={320}
+                      layout="responsive"
+                    />
                   )
                 }}
               >
