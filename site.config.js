@@ -10,8 +10,8 @@ export const config = {
   url,
   name: 'Jarvenis',
   shortName: 'Jarv',
-  logo: urlJoin(url, logoUrl),
-  openGraphImage: urlJoin(url, openGraphImageUrl),
+  logo: urlJoin(url, logoUrl.src),
+  openGraphImage: urlJoin(url, openGraphImageUrl.src),
   themeColor: colors.denim,
   twitterHandle: 'jarvenis',
   dateFormat: {

@@ -3,8 +3,18 @@
 @use '../../styles/functions';
 @use '../../styles/mixins';
 
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
 .content {
   padding-top: functions.spacing(4);
+  position: relative;
 
   @include mixins.mq(breakpoints.$tablet) {
     padding-top: functions.spacing(6);
@@ -25,16 +35,18 @@
 
 .alternate {
   background-color: colors.$denim;
-  background-image: url('../../images/background.jpg');
-  background-position: 0% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: functions.spacing(4);
-  padding-bottom: functions.spacing(4);
+
+  .content {
+    padding-bottom: functions.spacing(4);
+  }
 
   @include mixins.mq(breakpoints.$tablet) {
     margin-top: functions.spacing(6);
-    padding-bottom: functions.spacing(6);
+
+    .content {
+      padding-bottom: functions.spacing(6);
+    }
   }
 
   & + & {

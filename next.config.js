@@ -1,12 +1,10 @@
 const sourcebit = require('sourcebit')
-const sourcebitConfig = require('./sourcebit.config.js')
+const sourcebitConfig = require('./sourcebit.config')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
   '@newhighsco/chipset'
 ])
-const withImages = require('next-optimized-images')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
-const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
 
 sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
@@ -15,9 +13,6 @@ const nextConfig = {
   poweredByHeader: false,
   eslint: {
     ignoreDuringBuilds: true
-  },
-  images: {
-    disableStaticImages: true
   },
   webpack: config => {
     config.module.rules.push({
@@ -30,23 +25,6 @@ const nextConfig = {
 }
 
 module.exports = withPlugins(
-  [
-    [withTranspileModules],
-    [
-      withImages,
-      {
-        imagesFolder: 'chunks/images',
-        inlineImageLimit: -1,
-        handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico'],
-        removeOriginalExtension: true,
-        responsive: {
-          adapter: require('responsive-loader/sharp'),
-          sizes: [160, 320, 480, 640, 800, 960, 1120]
-        }
-      }
-    ],
-    [withSvgr],
-    [withVideos]
-  ],
+  [[withTranspileModules], [withSvgr, { inlineImageLimit: -1 }]],
   withMdx({ extension: /\.mdx?$/ })(nextConfig)
 )
