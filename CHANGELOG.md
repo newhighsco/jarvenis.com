@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/newhighsco/jarvenis.com/compare/v1.15.37...v1.16.0) (2022-03-30)
+
+
+### Features
+
+* **images:** use `next/image` ([#1218](https://github.com/newhighsco/jarvenis.com/issues/1218)) ([fd8d837](https://github.com/newhighsco/jarvenis.com/commit/fd8d837d904b8a90813d860cea94c8aeffe18d3f))
+
 ## [1.15.37](https://github.com/newhighsco/jarvenis.com/compare/v1.15.36...v1.15.37) (2022-03-29)
 
 
