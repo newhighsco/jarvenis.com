@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   ContentContainer,
   Grid,
+  HeaderContainer,
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
 import { LogoLockup } from '..'
-import backgroundImage from '../../images/header.jpg?size=1528&format=webp'
+import backgroundImage from '../../images/header.jpg'
 import header from '../../data/header.json'
 
 import styles from './Header.module.scss'
@@ -21,16 +23,20 @@ const Header = () => {
   }
 
   return (
-    <ContentContainer
-      id="top"
-      as="header"
-      role="banner"
+    <HeaderContainer
       theme={{ root: styles.root, content: styles.content }}
       className={classNames(menuVisible && styles.menuVisible)}
-      style={{
-        backgroundImage: `-webkit-image-set(url(${backgroundImage}) 1x)`
-      }}
     >
+      <Image
+        src={backgroundImage}
+        alt=""
+        placeholder="blur"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="100% 50%"
+        className={styles.background}
+        priority
+      />
       <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>
@@ -62,7 +68,7 @@ const Header = () => {
           </Grid.Item>
         </Grid>
       </ContentContainer>
-    </ContentContainer>
+    </HeaderContainer>
   )
 }
 

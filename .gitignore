@@ -25,7 +25,6 @@ yarn-error.log
 .stylelintcache
 .next
 .sourcebit-*cache.json
-public/downloads
 public/atom.xml
 public/robots.txt
 public/rss.xml

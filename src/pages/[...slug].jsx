@@ -14,10 +14,10 @@ Page.propTypes = {
   layout: string
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
   const slug = params?.slug.join('/')
 
-  return await getLayoutStaticProps(slug)
+  return await getLayoutStaticProps(slug, locale)
 }
 
 export async function getStaticPaths() {

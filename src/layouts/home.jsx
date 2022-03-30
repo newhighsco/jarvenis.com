@@ -1,4 +1,5 @@
 import React from 'react'
+import urlJoin from 'url-join'
 import { array, object } from 'prop-types'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
@@ -12,7 +13,9 @@ import {
   VideoListing
 } from '../components'
 import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
-import { config, socialLinks } from '../../site.config'
+import config from '../../site.config'
+
+const { name, url, logo, socialLinks } = config
 
 export const getCommonProps = ({ videos, products, posts }) => ({
   videos: videos.slice(0, 4),
@@ -36,11 +39,13 @@ const HomeLayout = ({ meta, videos = [], products = [], posts = [] }) => {
     <PageContainer meta={meta}>
       <SocialProfileJsonLd
         type="Organization"
-        name={config.name}
-        url={config.url}
+        name={name}
+        url={url}
         sameAs={[socialLinks.twitter]}
       />
-      <LogoJsonLd url={config.url} logo={config.logo} />
+      {logo?.bitmap && (
+        <LogoJsonLd url={url} logo={urlJoin(url, logo.bitmap)} />
+      )}
       <Section size="desktopMedium">
         <LiveStream href={socialLinks.youtube} />
       </Section>

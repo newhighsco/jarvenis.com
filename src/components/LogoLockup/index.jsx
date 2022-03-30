@@ -2,11 +2,13 @@ import React from 'react'
 import { bool, string } from 'prop-types'
 import classNames from 'classnames'
 import { Icon, VisuallyHidden } from '@newhighsco/chipset'
-import { config } from '../../../site.config'
+import config from '../../../site.config'
 
 import styles from './LogoLockup.module.scss'
 import { ReactComponent as LogoSvg } from '../../images/logo.svg'
 import { ReactComponent as TextSvg } from '../../images/logo-text.svg'
+
+const { name } = config
 
 const LogoLockup = ({ showIcon = true, showText = true, className }) => (
   <div className={classNames(styles.root, className)}>
@@ -16,11 +18,11 @@ const LogoLockup = ({ showIcon = true, showText = true, className }) => (
       </Icon>
     )}
     {showText ? (
-      <Icon theme={{ root: styles.text }} alt={config.name}>
+      <Icon theme={{ root: styles.text }} alt={name}>
         <TextSvg />
       </Icon>
     ) : (
-      <VisuallyHidden>{config.name}</VisuallyHidden>
+      <VisuallyHidden>{name}</VisuallyHidden>
     )}
   </div>
 )

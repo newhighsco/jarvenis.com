@@ -6,10 +6,6 @@
 
 .root {
   background-color: colors.$denim;
-  background-image: url('../../images/header.jpg');
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
@@ -131,19 +127,9 @@
       display: none;
     }
 
-    &::before {
-      background-attachment: fixed;
-      background-image: url('../../images/background.jpg');
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: block;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
+    .background {
+      object-position: 0% 100% !important;
+      position: fixed !important;
     }
 
     .link {

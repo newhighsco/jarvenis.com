@@ -1,24 +1,29 @@
 const sourcebit = require('sourcebit')
-const sourcebitConfig = require('./sourcebit.config.js')
+const sourcebitConfig = require('./sourcebit.config')
 const withPlugins = require('next-compose-plugins')
 const withTranspileModules = require('next-transpile-modules')([
-  '@newhighsco/chipset'
+  '@newhighsco/chipset',
+  '@newhighsco/press-start'
 ])
-const withImages = require('next-optimized-images')
 const withSvgr = require('@newhighsco/next-plugin-svgr')
-const withVideos = require('next-videos')
 const withMdx = require('next-mdx-frontmatter')
 
 sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
-  poweredByHeader: false,
   eslint: {
     ignoreDuringBuilds: true
   },
+  generateBuildId: () => 'build',
   images: {
-    disableStaticImages: true
+    domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
+    formats: ['image/avif', 'image/webp']
   },
+  i18n: {
+    locales: ['en-GB'],
+    defaultLocale: 'en-GB'
+  },
+  poweredByHeader: false,
   webpack: config => {
     config.module.rules.push({
       test: /\.(txt|xml|woff(2)?)$/,
@@ -30,23 +35,6 @@ const nextConfig = {
 }
 
 module.exports = withPlugins(
-  [
-    [withTranspileModules],
-    [
-      withImages,
-      {
-        imagesFolder: 'chunks/images',
-        inlineImageLimit: -1,
-        handleImages: ['jpeg', 'png', 'webp', 'gif', 'ico'],
-        removeOriginalExtension: true,
-        responsive: {
-          adapter: require('responsive-loader/sharp'),
-          sizes: [160, 320, 480, 640, 800, 960, 1120]
-        }
-      }
-    ],
-    [withSvgr],
-    [withVideos]
-  ],
+  [[withTranspileModules], [withSvgr, { inlineImageLimit: -1 }]],
   withMdx({ extension: /\.mdx?$/ })(nextConfig)
 )

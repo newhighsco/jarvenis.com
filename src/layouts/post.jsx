@@ -1,11 +1,14 @@
 import React from 'react'
+import urlJoin from 'url-join'
 import { object, string } from 'prop-types'
 import { MDXRemote } from 'next-mdx-remote'
 import { ArticleJsonLd } from 'next-seo'
 import { Prose } from '@newhighsco/chipset'
 import { Heading, PageContainer, Section } from '../components'
-import { config } from '../../site.config'
+import config from '../../site.config'
 import { postsDir } from '../../next-rss'
+
+const { name, shortName, url, logo, dateFormat } = config
 
 export const getPageProps = (slug, { frontmatter }) => {
   const { meta, title, date } = frontmatter
@@ -19,7 +22,7 @@ export const getPageProps = (slug, { frontmatter }) => {
   }
 }
 
-const PostLayout = ({ title, date, markdown, meta }) => (
+const PostLayout = ({ locale, title, date, markdown, meta }) => (
   <PageContainer
     meta={{
       ...meta,
@@ -38,16 +41,16 @@ const PostLayout = ({ title, date, markdown, meta }) => (
       title={title}
       description={meta.description}
       images={meta?.images?.map(image => image.url)}
-      authorName={config.shortName}
-      publisherName={config.name}
-      publisherLogo={config.logo}
+      authorName={shortName}
+      publisherName={name}
+      publisherLogo={urlJoin(url, logo.bitmap)}
     />
     <Section size="desktopMedium">
       <Heading
         align="center"
         kicker={
           <time dateTime={date}>
-            {new Date(date).toLocaleDateString(config.lang, config.dateFormat)}
+            {new Date(date).toLocaleDateString(locale, dateFormat)}
           </time>
         }
       >
@@ -61,6 +64,7 @@ const PostLayout = ({ title, date, markdown, meta }) => (
 )
 
 PostLayout.propTypes = {
+  locale: string,
   title: string,
   date: string,
   markdown: object,
