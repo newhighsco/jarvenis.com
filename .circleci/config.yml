@@ -14,7 +14,7 @@ workflows:
           requires:
             - setup
       - newhighsco/release:
-          name: release:
+          name: release
           requires:
             - test
           filters:
