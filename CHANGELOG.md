@@ -1,3 +1,10 @@
+## [1.16.20](https://github.com/newhighsco/jarvenis.com/compare/v1.16.19...v1.16.20) (2022-04-15)
+
+
+### Bug Fixes
+
+* update Discord URL ([e51101a](https://github.com/newhighsco/jarvenis.com/commit/e51101aa7bfb4b1c3bb3abcfa39b449eaf763da7))
+
 ## [1.16.19](https://github.com/newhighsco/jarvenis.com/compare/v1.16.18...v1.16.19) (2022-04-13)
 
 
