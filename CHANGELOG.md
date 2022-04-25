@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/newhighsco/jarvenis.com/compare/v1.17.0...v1.17.1) (2022-04-25)
+
+
+### Bug Fixes
+
+* **influencerpack:** change proxy to redirect ([17603d7](https://github.com/newhighsco/jarvenis.com/commit/17603d72756046ae8db9ddd86ea15fecdb7fa944))
+
 # [1.17.0](https://github.com/newhighsco/jarvenis.com/compare/v1.16.22...v1.17.0) (2022-04-25)
 
 
