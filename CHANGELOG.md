@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/newhighsco/jarvenis.com/compare/v1.16.22...v1.17.0) (2022-04-25)
+
+
+### Features
+
+* add redirect to Influencer Pack ([1dcc33d](https://github.com/newhighsco/jarvenis.com/commit/1dcc33ded83d356b11acd6e7f91f4609a4becaf8))
+
 ## [1.16.22](https://github.com/newhighsco/jarvenis.com/compare/v1.16.21...v1.16.22) (2022-04-20)
 
 
