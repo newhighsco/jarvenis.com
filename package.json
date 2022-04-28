@@ -61,7 +61,7 @@
     "xml2js": "0.4.23"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.3",
+    "@commitlint/cli": "16.2.4",
     "@netlify/plugin-nextjs": "4.5.0",
     "@newhighsco/browserslist-config": "1.1.0",
     "@newhighsco/commitlint-config": "1.1.0",
