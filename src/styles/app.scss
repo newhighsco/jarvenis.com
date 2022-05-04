@@ -5,20 +5,19 @@
 
 @font-face {
   font-display: swap;
-  font-family: fonts.$big-noodle-titling;
+  font-family: fonts.$primal;
   font-weight: normal;
   font-style: normal;
-  src: url('/fonts/big-noodle-titling/regular.woff2') format('woff2'),
-    url('/fonts/big-noodle-titling/regular.woff') format('woff');
+  src: url('/fonts/primal/regular.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: fonts.$lemon-milk;
+  font-family: fonts.$blender-pro;
   font-weight: normal;
   font-style: normal;
-  src: url('/fonts/lemon-milk/regular.woff2') format('woff2'),
-    url('/fonts/lemon-milk/regular.woff') format('woff');
+  src: url('/fonts/blender-pro/bold.woff2') format('woff2'),
+    url('/fonts/blender-pro/bold.woff') format('woff');
 }
 
 body {

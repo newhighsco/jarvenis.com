@@ -15,11 +15,14 @@ const PageContainer = ({ meta, children }) => (
           title: 'Feed',
           href: '/rss.xml'
         },
-        ...['big-noodle-titling', 'lemon-milk'].map(font => ({
+        ...[
+          { path: 'primal' },
+          { path: 'blender-pro', weight: 'bold', extension: 'woff' }
+        ].map(({ path, weight = 'regular', extension = 'woff2' }) => ({
           rel: 'preload',
-          href: `/fonts/${font}/regular.woff2`,
+          href: `/fonts/${path}/${weight}.${extension}`,
           as: 'font',
-          type: 'font/woff2',
+          type: `font/${extension}`,
           crossOrigin: 'anonymous'
         }))
       ]}
