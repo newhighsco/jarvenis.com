@@ -16,8 +16,8 @@ const PageContainer = ({ meta, children }) => (
           href: '/rss.xml'
         },
         ...[
-          { path: 'primal' },
-          { path: 'blender-pro', weight: 'bold', extension: 'woff' }
+          { path: 'primal', extension: 'woff' },
+          { path: 'blender-pro', weight: 'bold' }
         ].map(({ path, weight = 'regular', extension = 'woff2' }) => ({
           rel: 'preload',
           href: `/fonts/${path}/${weight}.${extension}`,
