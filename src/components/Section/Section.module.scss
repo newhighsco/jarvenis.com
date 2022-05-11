@@ -34,7 +34,12 @@
 }
 
 .alternate {
-  background-color: colors.$denim;
+  background-color: colors.$midnight;
+  background-image: radial-gradient(
+    circle,
+    colors.$midnight 0%,
+    colors.$black 100%
+  );
   margin-top: functions.spacing(4);
 
   .content {

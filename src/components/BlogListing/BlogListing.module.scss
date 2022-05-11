@@ -14,8 +14,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
-    text-decoration: underline;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {

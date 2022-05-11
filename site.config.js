@@ -14,7 +14,7 @@ const config = {
     vector: logoVector
   },
   openGraphImage: openGraphImageUrl.src,
-  themeColor: colors.denim,
+  themeColor: colors.midnight,
   twitterHandle: 'jarvenis',
   socialLinks: {
     discord: 'https://discord.gg/QesXtZp',

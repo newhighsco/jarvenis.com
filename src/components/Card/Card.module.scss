@@ -3,12 +3,12 @@
 
 .root {
   background: colors.$smoke;
-  border-radius: functions.spacing(0.375);
-  color: colors.$gulf;
+  color: colors.$midnight;
 
   &[role='link']:hover,
   &[role='link']:focus-within {
-    box-shadow: 0 0 0 functions.spacing(0.5) colors.$sea;
+    outline: functions.spacing(0.25) solid colors.$white;
+    outline-offset: functions.spacing(0.75);
   }
 }
 

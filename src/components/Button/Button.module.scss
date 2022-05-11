@@ -3,18 +3,22 @@
 @use '../../styles/functions';
 
 .root {
-  background-color: colors.$gulf;
-  border: functions.spacing(0.375) solid colors.$sea;
-  border-radius: functions.spacing(0.375);
+  background-color: colors.$sunshine;
+  border: 1px solid transparent;
+  color: colors.$midnight;
   font-family: fonts.$alternate;
   font-size: 1.15em;
-  padding: functions.spacing(1) functions.spacing(2);
+  letter-spacing: functions.spacing(0.35);
+  padding: functions.spacing(0.75) functions.spacing(2);
+  padding-right: functions.spacing(1.55);
   text-transform: uppercase;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: colors.$denim;
+    background-color: transparent;
+    border-color: colors.$white;
+    color: colors.$sunshine;
   }
 }
 

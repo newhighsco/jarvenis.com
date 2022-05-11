@@ -5,7 +5,13 @@
 @use '../../styles/mixins';
 
 .root {
-  background-color: colors.$denim;
+  background-color: colors.$midnight;
+  background-image: radial-gradient(
+    top left,
+    circle,
+    colors.$midnight 0%,
+    colors.$black 100%
+  );
   position: relative;
 }
 
@@ -25,11 +31,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
-  }
-
-  path {
-    fill: currentColor;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
@@ -69,25 +71,18 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
-    color: colors.$gulf;
     font-size: 2em;
     margin-left: functions.spacing(4) !important;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: colors.$white;
-      text-decoration: underline;
-    }
   }
 }
 
 .toggle {
   background: none;
+  color: colors.$white;
   border: 0;
   font-size: 1em;
   margin: functions.spacing(4) functions.spacing(2);
@@ -100,7 +95,7 @@
   &:active,
   &:focus {
     background: none;
-    color: colors.$gulf;
+    color: colors.$sunshine;
     outline: none;
   }
 
@@ -113,7 +108,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 }
 

@@ -19,7 +19,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
@@ -49,7 +49,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: colors.$sea;
+      color: colors.$sunshine;
       text-decoration: underline;
     }
   }
@@ -72,7 +72,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
     transform: scale(1.1);
   }
 }
@@ -95,8 +95,15 @@
   }
 
   &::before {
-    background: colors.$sky;
-    height: functions.spacing(1);
+    background-image: linear-gradient(
+      to right,
+      colors.$sunshine 0%,
+      colors.$sunshine 25%,
+      transparent 25%
+    );
+    background-size: functions.spacing(2) functions.spacing(0.5);
+    background-repeat: repeat-x;
+    height: functions.spacing(0.5);
     margin-bottom: functions.spacing(2);
   }
 
