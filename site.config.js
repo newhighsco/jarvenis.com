@@ -19,7 +19,7 @@ const config = {
   socialLinks: {
     discord: 'https://discord.gg/QesXtZp',
     email: 'jarv@jarvenis.com',
-    teespring: 'https://teespring.com/stores/jarv',
+    teespring: 'https://jarv.creator-spring.com',
     twitch: `https://www.twitch.tv/jarvenis`,
     twitter: `https://twitter.com/jarvenis`,
     youtube: `https://youtube.com/jarvenis`
