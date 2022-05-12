@@ -5,13 +5,6 @@
 @use '../../styles/mixins';
 
 .root {
-  background-color: colors.$midnight;
-  background-image: radial-gradient(
-    top left,
-    circle,
-    colors.$midnight 0%,
-    colors.$black 100%
-  );
   position: relative;
 }
 
@@ -24,6 +17,23 @@
   position: relative;
 }
 
+.background {
+  background-color: colors.$night;
+  background-image: radial-gradient(
+    circle at 15% 0,
+    colors.$twilight 0%,
+    colors.$night 50%
+  );
+  inset: 0;
+  outline: 1px dashed colors.$smoke;
+  outline-offset: functions.spacing(-0.5);
+  position: absolute;
+
+  @include mixins.mq(breakpoints.$tablet) {
+    outline-offset: functions.spacing(-1);
+  }
+}
+
 .logo {
   margin: functions.spacing(2);
   width: auto;
@@ -31,7 +41,11 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sunshine;
+    color: colors.$white;
+
+    path {
+      fill: currentColor;
+    }
   }
 
   @include mixins.mq(breakpoints.$tablet) {
@@ -85,7 +99,7 @@
   color: colors.$white;
   border: 0;
   font-size: 1em;
-  margin: functions.spacing(4) functions.spacing(2);
+  margin: functions.spacing(4) functions.spacing(3);
   padding: 0;
   position: absolute;
   top: 0;

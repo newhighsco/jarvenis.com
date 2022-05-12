@@ -4,14 +4,12 @@ import { array, object } from 'prop-types'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import { Button } from '@newhighsco/chipset'
-import {
-  BlogListing,
-  Heading,
-  PageContainer,
-  ProductListing,
-  Section,
-  VideoListing
-} from '../components'
+import BlogListing from '../components/BlogListing'
+import Heading from '../components/Heading'
+import PageContainer from '../components/PageContainer'
+import ProductListing from '../components/ProductListing'
+import Section from '../components/Section'
+import VideoListing from '../components/VideoListing'
 import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 import config from '../../site.config'
 

@@ -5,6 +5,7 @@
 
 @include grid.gutter('', functions.spacing(2));
 @include grid.flex;
+@include grid.reverse;
 @include grid.valign(middle);
 @include grid.widths('', 2);
 

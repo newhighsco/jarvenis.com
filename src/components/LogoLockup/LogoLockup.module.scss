@@ -1,32 +1,23 @@
 @use '../../styles/colors.module';
-@use '../../styles/fonts.module';
 @use '../../styles/functions';
 
 .root {
   display: inline-block;
+  line-height: 0;
   text-align: center;
-  width: functions.spacing(7.5);
+  width: functions.spacing(6.25);
 }
 
 .icon {
   fill: currentColor;
-  width: 33.333%;
-
-  &:only-child {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .text {
   border: 1px solid colors.$white;
-  font-family: fonts.$alternate;
-  font-size: 0.55em;
-  display: block;
-  letter-spacing: 1.1em;
-  line-height: 1;
-  padding: 0.8em 1.1em;
-  padding-right: 0;
-  margin-top: 8.5%;
+  fill: currentColor;
+  margin-top: 10%;
+  width: 100%;
 
   &:only-child {
     margin-top: 0;

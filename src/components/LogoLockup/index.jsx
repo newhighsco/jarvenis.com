@@ -6,6 +6,7 @@ import config from '../../../site.config'
 
 import styles from './LogoLockup.module.scss'
 import { ReactComponent as LogoSvg } from '../../images/logo.svg'
+import { ReactComponent as TextSvg } from '../../images/logo-text.svg'
 
 const { name } = config
 
@@ -14,10 +15,15 @@ const LogoLockup = ({ showIcon = true, showText = true, className }) => (
     {showIcon && (
       <Icon theme={{ root: styles.icon }}>
         <LogoSvg />
-        {!showText && <VisuallyHidden>{name}</VisuallyHidden>}
       </Icon>
     )}
-    {showText && <span className={styles.text}>{name}</span>}
+    {showText ? (
+      <Icon theme={{ root: styles.text }} alt={name}>
+        <TextSvg />
+      </Icon>
+    ) : (
+      <VisuallyHidden>{name}</VisuallyHidden>
+    )}
   </div>
 )
 

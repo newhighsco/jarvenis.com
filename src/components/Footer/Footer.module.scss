@@ -14,7 +14,8 @@
 
 .logo {
   margin-bottom: functions.spacing(4);
-  width: functions.spacing(20) !important;
+  max-width: 100%;
+  width: functions.spacing(25) !important;
 
   &:hover,
   &:active,
@@ -50,7 +51,8 @@
     &:active,
     &:focus {
       color: colors.$sunshine;
-      text-decoration: underline;
+      text-decoration: underline 1px dashed currentColor;
+      text-underline-offset: functions.spacing(0.5);
     }
   }
 }
@@ -73,7 +75,6 @@
   &:active,
   &:focus {
     color: colors.$sunshine;
-    transform: scale(1.1);
   }
 }
 
@@ -101,10 +102,16 @@
       colors.$sunshine 25%,
       transparent 25%
     );
-    background-size: functions.spacing(2) functions.spacing(0.5);
     background-repeat: repeat-x;
+    background-size: functions.spacing(2) functions.spacing(0.5);
     height: functions.spacing(0.5);
-    margin-bottom: functions.spacing(2);
+    margin-bottom: functions.spacing(4);
+
+    @include mixins.mq(breakpoints.$tablet) {
+      margin-bottom: functions.spacing(2);
+      margin-inline: functions.spacing(-4);
+      width: calc(100% + functions.spacing(8));
+    }
   }
 
   & > * {
@@ -114,5 +121,11 @@
 
   small {
     opacity: 0.75;
+  }
+}
+
+.copyright {
+  @include mixins.mq(breakpoints.$tablet) {
+    text-align: right !important;
   }
 }

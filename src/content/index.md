@@ -3,8 +3,8 @@ layout: home
 title: Home
 meta:
   customTitle: true
-  title: Jarv - News. Guides. Reviews
-  description: Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News
+  title: Jarv - News. Streams. Guides
+  description: News, Weapon/Gear Reviews, Live Commentaries, Guides and more!
   image: ''
   noindex: false
   nofollow: false

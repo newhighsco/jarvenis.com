@@ -1,5 +1,11 @@
+@use '../../styles/breakpoints.module';
 @use '../../styles/functions';
+@use '../../styles/mixins';
 
 .root {
   margin: functions.spacing(4) 0 functions.spacing(2);
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin-top: 0;
+  }
 }

@@ -34,12 +34,13 @@
 }
 
 .alternate {
-  background-color: colors.$midnight;
+  background-color: colors.$night;
   background-image: radial-gradient(
-    circle,
-    colors.$midnight 0%,
-    colors.$black 100%
+    circle at 40% 30%,
+    colors.$twilight 0%,
+    colors.$night 90%
   );
+  background-attachment: fixed;
   margin-top: functions.spacing(4);
 
   .content {

@@ -1,5 +1,9 @@
+@use 'sass:color';
+
 $black: #000;
 $midnight: #12203f;
+$twilight: color.adjust($midnight, $lightness: 15%);
+$night: color.adjust($midnight, $lightness: -10%);
 $sunshine: #fae100;
 $smoke: #f6f6f6;
 $white: #fff;
@@ -7,6 +11,8 @@ $white: #fff;
 :export {
   black: $black;
   midnight: $midnight;
+  twilight: $twilight;
+  night: $night;
   sunshine: $sunshine;
   white: $white;
   smoke: $smoke;

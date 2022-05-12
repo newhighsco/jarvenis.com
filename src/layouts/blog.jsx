@@ -2,7 +2,10 @@ import React from 'react'
 import { array, object, string } from 'prop-types'
 import { MDXRemote } from 'next-mdx-remote'
 import { Prose } from '@newhighsco/chipset'
-import { BlogListing, Heading, PageContainer, Section } from '../components'
+import BlogListing from '../components/BlogListing'
+import Heading from '../components/Heading'
+import PageContainer from '../components/PageContainer'
+import Section from '../components/Section'
 
 export const getCommonProps = ({ posts }) => ({
   posts: posts.sort((a, b) =>

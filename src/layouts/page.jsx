@@ -2,7 +2,9 @@ import React from 'react'
 import { object, string } from 'prop-types'
 import { MDXRemote } from 'next-mdx-remote'
 import { Prose } from '@newhighsco/chipset'
-import { Heading, PageContainer, Section } from '../components'
+import Heading from '../components/Heading'
+import PageContainer from '../components/PageContainer'
+import Section from '../components/Section'
 
 const PageLayout = ({ title, markdown, meta }) => (
   <PageContainer meta={meta}>
