@@ -7,7 +7,7 @@
 
   &[role='link']:hover,
   &[role='link']:focus-within {
-    outline: functions.spacing(0.25) solid colors.$white;
+    outline: functions.spacing(0.25) solid colors.$smoke;
     outline-offset: functions.spacing(0.75);
   }
 }

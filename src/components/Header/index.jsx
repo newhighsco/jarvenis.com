@@ -26,7 +26,7 @@ const Header = () => {
       className={classNames(menuVisible && styles.menuVisible)}
     >
       <div className={styles.background} />
-      <ContentContainer theme={{ content: styles.inner }}>
+      <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>
             <Link href="/" passHref>

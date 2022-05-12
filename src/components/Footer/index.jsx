@@ -46,7 +46,7 @@ const Footer = () => (
     theme={{ root: styles.root, content: styles.content }}
     gutter
   >
-    <ContentContainer>
+    <ContentContainer size="desktopLarge">
       <Grid valign="middle">
         <Grid.Item sizes={['tablet-one-third']}>
           <Link href="/" passHref>

@@ -4,6 +4,7 @@
 @use '../../styles/mixins';
 
 .root {
+  overflow: hidden;
   position: relative;
   z-index: 2;
 }
@@ -96,21 +97,21 @@
   }
 
   &::before {
+    background-attachment: fixed;
     background-image: linear-gradient(
       to right,
-      colors.$sunshine 0%,
-      colors.$sunshine 25%,
-      transparent 25%
+      colors.$sunshine functions.spacing(0.5),
+      transparent functions.spacing(0.5)
     );
     background-repeat: repeat-x;
-    background-size: functions.spacing(2) functions.spacing(0.5);
+    background-size: functions.spacing(2);
     height: functions.spacing(0.5);
     margin-bottom: functions.spacing(4);
 
     @include mixins.mq(breakpoints.$tablet) {
       margin-bottom: functions.spacing(2);
-      margin-inline: functions.spacing(-4);
-      width: calc(100% + functions.spacing(8));
+      margin-inline: -50vw;
+      width: 200vw;
     }
   }
 

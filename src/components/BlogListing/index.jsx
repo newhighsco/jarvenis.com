@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { array, bool, string } from 'prop-types'
 import { marked } from 'marked'
 import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
-import config from '../../../site.config'
 
 import styles from './BlogListing.module.scss'
+import Timestamp from '../Timestamp'
 
 const BlogListing = ({ locale, posts = [], summary }) => {
   if (!posts?.length) return null
@@ -23,9 +23,7 @@ const BlogListing = ({ locale, posts = [], summary }) => {
               className={styles.item}
             >
               <div className={styles.content}>
-                <time dateTime={date} className={styles.date}>
-                  {new Date(date).toLocaleDateString(locale, config.dateFormat)}
-                </time>
+                <Timestamp date={date} locale={locale} />
                 <Link href={slug} passHref>
                   <SmartLink className={styles.heading}>
                     <h2>{title}</h2>
