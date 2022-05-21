@@ -54,7 +54,7 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "responsive-loader": "2.3.0",
-    "sass": "1.52.0",
+    "sass": "1.52.1",
     "sourcebit": "0.11.1",
     "sourcebit-source-filesystem": "0.2.0",
     "sourcebit-target-next": "0.8.2",
