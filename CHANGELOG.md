@@ -1,3 +1,73 @@
+## [1.17.18](https://github.com/newhighsco/jarvenis.com/compare/v1.17.17...v1.17.18) (2022-05-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v2.5.25 ([#1326](https://github.com/newhighsco/jarvenis.com/issues/1326)) ([b5b4b6e](https://github.com/newhighsco/jarvenis.com/commit/b5b4b6ef8937c0cb9c0683360fdd81260b82d75a))
+
+## [1.17.17](https://github.com/newhighsco/jarvenis.com/compare/v1.17.16...v1.17.17) (2022-05-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v2.5.24 ([#1319](https://github.com/newhighsco/jarvenis.com/issues/1319)) ([82efcc2](https://github.com/newhighsco/jarvenis.com/commit/82efcc28b3741487aec6f008368d9d4008c99ded))
+
+## [1.17.16](https://github.com/newhighsco/jarvenis.com/compare/v1.17.15...v1.17.16) (2022-05-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.52.1 ([#1313](https://github.com/newhighsco/jarvenis.com/issues/1313)) ([1a3b6c8](https://github.com/newhighsco/jarvenis.com/commit/1a3b6c83e7d5b38faf882dce3ea9d2e18d0fc754))
+
+## [1.17.15](https://github.com/newhighsco/jarvenis.com/compare/v1.17.14...v1.17.15) (2022-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-sitemap to v2.5.21 ([#1312](https://github.com/newhighsco/jarvenis.com/issues/1312)) ([d85d3a4](https://github.com/newhighsco/jarvenis.com/commit/d85d3a4054f35ae3a81a5840e59c435472d094ec))
+
+## [1.17.14](https://github.com/newhighsco/jarvenis.com/compare/v1.17.13...v1.17.14) (2022-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.52.0 ([#1311](https://github.com/newhighsco/jarvenis.com/issues/1311)) ([734959a](https://github.com/newhighsco/jarvenis.com/commit/734959a4d729f226d5875adad78fa8bbed2b2d63))
+
+## [1.17.13](https://github.com/newhighsco/jarvenis.com/compare/v1.17.12...v1.17.13) (2022-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.14 ([#1308](https://github.com/newhighsco/jarvenis.com/issues/1308)) ([2c4e01f](https://github.com/newhighsco/jarvenis.com/commit/2c4e01fd17e374b7a9cca88224512f8be805dc71))
+
+## [1.17.12](https://github.com/newhighsco/jarvenis.com/compare/v1.17.11...v1.17.12) (2022-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v4.0.16 ([#1306](https://github.com/newhighsco/jarvenis.com/issues/1306)) ([78548af](https://github.com/newhighsco/jarvenis.com/commit/78548af8d40ec6a69076e62d01583b4bc69fe849))
+
+## [1.17.11](https://github.com/newhighsco/jarvenis.com/compare/v1.17.10...v1.17.11) (2022-05-12)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#1300](https://github.com/newhighsco/jarvenis.com/issues/1300)) ([ca8fee9](https://github.com/newhighsco/jarvenis.com/commit/ca8fee9cb34f2fbedffb548e3cca8334fe0ae589))
+
+## [1.17.10](https://github.com/newhighsco/jarvenis.com/compare/v1.17.9...v1.17.10) (2022-05-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sourcebit-target-next to v0.8.2 ([#1299](https://github.com/newhighsco/jarvenis.com/issues/1299)) ([3ffcda3](https://github.com/newhighsco/jarvenis.com/commit/3ffcda34acc2451b56354567b5d4eefac03b6b90))
+
+## [1.17.9](https://github.com/newhighsco/jarvenis.com/compare/v1.17.8...v1.17.9) (2022-05-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/chipset to v6.14.4 ([#1298](https://github.com/newhighsco/jarvenis.com/issues/1298)) ([01df8a7](https://github.com/newhighsco/jarvenis.com/commit/01df8a76a5eb343c10f933007e7ef3960d8495a0))
+
 ## [1.17.8](https://github.com/newhighsco/jarvenis.com/compare/v1.17.7...v1.17.8) (2022-05-03)
 
 
