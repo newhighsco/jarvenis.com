@@ -32,6 +32,8 @@ const VideoListing = ({ videos = [], summary }) => {
                       height={180}
                       layout="responsive"
                       priority={index === 0}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII="
                     />
                   ),
                   ratio: '16:9'

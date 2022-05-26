@@ -31,6 +31,8 @@ const ProductListing = ({ products = [], summary }) => {
                       width={320}
                       height={320}
                       layout="responsive"
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII="
                     />
                   )
                 }}
