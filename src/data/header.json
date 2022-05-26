@@ -1,13 +1,13 @@
 {
   "links": [
     {
-      "href": "/blog",
-      "text": "Blog",
-      "target": ""
+      "href": "https://youtube.com/jarvenis",
+      "text": "Watch",
+      "target": "_blank"
     },
     {
       "href": "https://jarv.creator-spring.com",
-      "text": "Store",
+      "text": "Merch",
       "target": "_blank"
     }
   ]

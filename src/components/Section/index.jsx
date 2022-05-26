@@ -5,13 +5,16 @@ import { ContentContainer } from '@newhighsco/chipset'
 
 import styles from './Section.module.scss'
 
-const Section = ({ alternate, size = 'desktopLarge', children }) => {
+const Section = ({ alternate, highlight, size = 'desktopLarge', children }) => {
   if (!children) return null
 
   return (
     <ContentContainer
       theme={{ content: styles.outer }}
-      className={classNames(alternate && styles.alternate)}
+      className={classNames({
+        [styles.alternate]: alternate,
+        [styles.highlight]: highlight
+      })}
     >
       <ContentContainer
         gutter
@@ -26,6 +29,7 @@ const Section = ({ alternate, size = 'desktopLarge', children }) => {
 
 Section.propTypes = {
   alternate: bool,
+  highlight: bool,
   size: string,
   children: node
 }

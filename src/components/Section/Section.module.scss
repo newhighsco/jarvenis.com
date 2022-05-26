@@ -67,3 +67,16 @@
     }
   }
 }
+
+.highlight {
+  background-color: colors.$sunshine;
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 2.5%) 2px,
+      transparent 2px
+    ),
+    linear-gradient(to top, rgb(0 0 0 / 2.5%) 2px, transparent 2px);
+  background-size: functions.spacing(1) functions.spacing(1),
+    functions.spacing(1) functions.spacing(1);
+  color: colors.$midnight;
+}
