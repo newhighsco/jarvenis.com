@@ -29,24 +29,19 @@ const sponsors = [
 
 const SponsorListing = () => {
   return (
-    <>
-      <Grid className={styles.root} gutterless>
-        {sponsors.map(({ text, logo: LogoSvg, ...rest }, index) => {
-          return (
-            <Grid.Item key={index} sizes={['tablet-landscape-one-third']}>
-              <SmartLink {...rest} className={styles.link}>
-                <Icon theme={{ root: styles.logo }} alt={text}>
-                  {LogoSvg && <LogoSvg />}
-                </Icon>
-              </SmartLink>
-            </Grid.Item>
-          )
-        })}
-      </Grid>
-      <p className={styles.root}>
-        Use code <strong>Jarv</strong> at Checkout
-      </p>
-    </>
+    <Grid className={styles.root} gutterless>
+      {sponsors.map(({ text, logo: LogoSvg, ...rest }, index) => {
+        return (
+          <Grid.Item key={index} sizes={['tablet-landscape-one-third']}>
+            <SmartLink {...rest} className={styles.link}>
+              <Icon theme={{ root: styles.logo }} alt={text}>
+                {LogoSvg && <LogoSvg />}
+              </Icon>
+            </SmartLink>
+          </Grid.Item>
+        )
+      })}
+    </Grid>
   )
 }
 
