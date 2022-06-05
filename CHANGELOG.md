@@ -1,3 +1,10 @@
+## [1.17.23](https://github.com/newhighsco/jarvenis.com/compare/v1.17.22...v1.17.23) (2022-06-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sourcebit-target-next to v0.8.3 ([#1348](https://github.com/newhighsco/jarvenis.com/issues/1348)) ([d3ed470](https://github.com/newhighsco/jarvenis.com/commit/d3ed4707acd4d37fa8a96599f423e9da743e8cf3))
+
 ## [1.17.22](https://github.com/newhighsco/jarvenis.com/compare/v1.17.21...v1.17.22) (2022-06-03)
 
 
