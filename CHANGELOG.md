@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/newhighsco/jarvenis.com/compare/v1.17.26...v1.18.0) (2022-06-10)
+
+
+### Features
+
+* rebrand ([#1288](https://github.com/newhighsco/jarvenis.com/issues/1288)) ([cfb29fc](https://github.com/newhighsco/jarvenis.com/commit/cfb29fced145a61641d57aa846b9d42f3206fe90)), closes [#1287](https://github.com/newhighsco/jarvenis.com/issues/1287)
+
 ## [1.17.26](https://github.com/newhighsco/jarvenis.com/compare/v1.17.25...v1.17.26) (2022-06-10)
 
 
