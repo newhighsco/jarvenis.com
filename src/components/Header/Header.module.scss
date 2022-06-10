@@ -18,20 +18,23 @@
 }
 
 .background {
-  background-color: colors.$night;
   background-image: linear-gradient(
       to right,
       rgb(0 0 0 / 10%) 1px,
       transparent 1px
     ),
     linear-gradient(to top, rgb(0 0 0 / 10%) 1px, transparent 1px),
-    radial-gradient(circle at 25% 0, colors.$twilight 0%, colors.$night 50%);
+    radial-gradient(circle at 25% 0, colors.$twilight 0%, rgb(0 0 0 / 10%) 50%);
   background-size: functions.spacing(0.75) functions.spacing(0.75),
     functions.spacing(0.75) functions.spacing(0.75), 100%;
   inset: 0;
   outline: 1px dashed colors.$smoke;
   outline-offset: functions.spacing(-1);
   position: absolute;
+
+  img {
+    z-index: -1;
+  }
 
   @include mixins.mq(breakpoints.$tablet) {
     outline-offset: functions.spacing(-1.5);
@@ -144,6 +147,10 @@
     .background {
       object-position: 0% 100% !important;
       position: fixed !important;
+
+      img {
+        display: none !important;
+      }
     }
 
     .link {

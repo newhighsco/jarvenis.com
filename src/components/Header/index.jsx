@@ -9,9 +9,11 @@ import {
   SmartLink
 } from '@newhighsco/chipset'
 import LogoLockup from '../LogoLockup'
+import bannerUrl from '../../images/banner.jpg'
 import header from '../../data/header.json'
 
 import styles from './Header.module.scss'
+import Image from 'next/image'
 
 const Header = () => {
   const [menuVisible, setMenuVisibility] = useState(false)
@@ -25,7 +27,17 @@ const Header = () => {
       theme={{ root: styles.root, content: styles.content }}
       className={classNames(menuVisible && styles.menuVisible)}
     >
-      <div className={styles.background} />
+      <div className={styles.background}>
+        <Image
+          src={bannerUrl}
+          alt=""
+          placeholder="blur"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="100% 50%"
+          priority
+        />
+      </div>
       <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>
