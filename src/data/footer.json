@@ -1,13 +1,13 @@
 {
   "links": [
     {
-      "href": "/blog",
-      "text": "Blog",
-      "target": ""
-    },
-    {
       "href": "https://jarv.creator-spring.com",
       "text": "Merch",
+      "target": "_blank"
+    },
+    {
+      "href": "/influencerpack",
+      "text": "Influencer pack",
       "target": "_blank"
     }
   ]
