@@ -9,6 +9,9 @@ fields:
   label: Layout
   default: page
   hidden: true
+- name: draft
+  type: boolean
+  label: Draft
 - name: title
   type: text
   config:

@@ -1,5 +1,6 @@
 ---
 layout: home
+draft: false
 title: Home
 meta:
   customTitle: true

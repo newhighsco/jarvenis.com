@@ -1,11 +1,17 @@
 [[redirects]]
-  from = "/influencerpack"
-  to = "https://docs.google.com/presentation/d/e/2PACX-1vSwZ60sYbMZYIQXBIROORuBHh7f2GG8T3BtMZNlAdEEU5oYvlsQWEATj8bK8pYsZw/pub?start=false&loop=false&delayms=3000"
+  from = "/about"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/*"
   to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/influencerpack"
+  to = "https://docs.google.com/presentation/d/e/2PACX-1vSwZ60sYbMZYIQXBIROORuBHh7f2GG8T3BtMZNlAdEEU5oYvlsQWEATj8bK8pYsZw/pub?start=false&loop=false&delayms=3000"
   status = 301
   force = true
