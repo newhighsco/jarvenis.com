@@ -2,7 +2,8 @@ import React from 'react'
 import { node, object } from 'prop-types'
 import { PageContainer as ThemedPageContainer } from '@newhighsco/chipset'
 import { Meta } from '@newhighsco/press-start'
-import { Footer, Header } from '..'
+import Footer from '../Footer'
+import Header from '../Header'
 
 const PageContainer = ({ meta, children }) => (
   <ThemedPageContainer header={<Header />} footer={<Footer />}>
@@ -15,11 +16,14 @@ const PageContainer = ({ meta, children }) => (
           title: 'Feed',
           href: '/rss.xml'
         },
-        ...['big-noodle-titling', 'lemon-milk'].map(font => ({
+        ...[
+          { path: 'primal', extension: 'woff' },
+          { path: 'blender-pro', weight: 'bold' }
+        ].map(({ path, weight = 'regular', extension = 'woff2' }) => ({
           rel: 'preload',
-          href: `/fonts/${font}/regular.woff2`,
+          href: `/fonts/${path}/${weight}.${extension}`,
           as: 'font',
-          type: 'font/woff2',
+          type: `font/${extension}`,
           crossOrigin: 'anonymous'
         }))
       ]}

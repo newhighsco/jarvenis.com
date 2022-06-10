@@ -22,12 +22,13 @@
   }
 
   a[href] {
-    text-decoration: underline;
+    text-decoration: underline 1px dashed currentColor;
+    text-underline-offset: functions.spacing(0.5);
 
     &:hover,
     &:active,
     &:focus {
-      color: colors.$sea;
+      color: colors.$sunshine;
     }
   }
 

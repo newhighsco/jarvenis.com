@@ -1,5 +1,6 @@
 ---
 layout: page
+draft: true
 title: About Jarv
 meta:
   customTitle: false

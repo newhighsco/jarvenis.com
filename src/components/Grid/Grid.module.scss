@@ -5,6 +5,7 @@
 
 @include grid.gutter('', functions.spacing(2));
 @include grid.flex;
+@include grid.reverse;
 @include grid.valign(middle);
 @include grid.widths('', 2);
 
@@ -13,7 +14,7 @@
 }
 
 @include mixins.mq(breakpoints.$tablet-landscape) {
-  @include grid.widths('tablet-landscape', 4);
+  @include grid.widths('tablet-landscape', 3 4);
 }
 
 @include mixins.mq(breakpoints.$desktop) {

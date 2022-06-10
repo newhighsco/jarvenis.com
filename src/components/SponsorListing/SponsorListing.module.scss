@@ -1,0 +1,24 @@
+@use '../../styles/breakpoints.module';
+@use '../../styles/colors.module';
+@use '../../styles/functions';
+
+.root {
+  text-align: center;
+}
+
+.link {
+  display: block;
+  margin: functions.spacing(1);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$white;
+  }
+}
+
+.logo {
+  fill: currentColor;
+  max-width: 100%;
+  width: functions.spacing(30);
+}

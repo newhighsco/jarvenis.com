@@ -1,0 +1,13 @@
+@use '../../styles/colors.module';
+@use '../../styles/fonts.module';
+@use '../../styles/functions';
+
+.root {
+  background: colors.$sunshine;
+  color: colors.$midnight;
+  display: inline-block;
+  font-family: fonts.$heading;
+  line-height: 1;
+  padding: functions.spacing(0.5) functions.spacing(1);
+  text-transform: uppercase;
+}

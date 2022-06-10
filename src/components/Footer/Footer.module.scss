@@ -4,6 +4,7 @@
 @use '../../styles/mixins';
 
 .root {
+  overflow: hidden;
   position: relative;
   z-index: 2;
 }
@@ -14,12 +15,13 @@
 
 .logo {
   margin-bottom: functions.spacing(4);
-  width: functions.spacing(20) !important;
+  max-width: 100%;
+  width: functions.spacing(25) !important;
 
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
@@ -49,8 +51,9 @@
     &:hover,
     &:active,
     &:focus {
-      color: colors.$sea;
-      text-decoration: underline;
+      color: colors.$sunshine;
+      text-decoration: underline 1px dashed currentColor;
+      text-underline-offset: functions.spacing(0.5);
     }
   }
 }
@@ -72,8 +75,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
-    transform: scale(1.1);
+    color: colors.$sunshine;
   }
 }
 
@@ -95,9 +97,22 @@
   }
 
   &::before {
-    background: colors.$sky;
-    height: functions.spacing(1);
-    margin-bottom: functions.spacing(2);
+    background-attachment: fixed;
+    background-image: linear-gradient(
+      to right,
+      colors.$sunshine functions.spacing(0.5),
+      transparent functions.spacing(0.5)
+    );
+    background-repeat: repeat-x;
+    background-size: functions.spacing(2);
+    height: functions.spacing(0.5);
+    margin-bottom: functions.spacing(4);
+
+    @include mixins.mq(breakpoints.$tablet) {
+      margin-bottom: functions.spacing(2);
+      margin-inline: -50vw;
+      width: 200vw;
+    }
   }
 
   & > * {
@@ -107,5 +122,11 @@
 
   small {
     opacity: 0.75;
+  }
+}
+
+.copyright {
+  @include mixins.mq(breakpoints.$tablet) {
+    text-align: right !important;
   }
 }

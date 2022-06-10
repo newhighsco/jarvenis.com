@@ -4,11 +4,14 @@ import { object, string } from 'prop-types'
 import { MDXRemote } from 'next-mdx-remote'
 import { ArticleJsonLd } from 'next-seo'
 import { Prose } from '@newhighsco/chipset'
-import { Heading, PageContainer, Section } from '../components'
+import Heading from '../components/Heading'
+import PageContainer from '../components/PageContainer'
+import Section from '../components/Section'
+import Timestamp from '../components/Timestamp'
 import config from '../../site.config'
 import { postsDir } from '../../next-rss'
 
-const { name, shortName, url, logo, dateFormat } = config
+const { name, shortName, url, logo } = config
 
 export const getPageProps = (slug, { frontmatter }) => {
   const { meta, title, date } = frontmatter
@@ -48,11 +51,7 @@ const PostLayout = ({ locale, title, date, markdown, meta }) => (
     <Section size="desktopMedium">
       <Heading
         align="center"
-        kicker={
-          <time dateTime={date}>
-            {new Date(date).toLocaleDateString(locale, dateFormat)}
-          </time>
-        }
+        kicker={<Timestamp date={date} locale={locale} />}
       >
         {title}
       </Heading>

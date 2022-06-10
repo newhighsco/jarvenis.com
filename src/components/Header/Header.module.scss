@@ -5,7 +5,6 @@
 @use '../../styles/mixins';
 
 .root {
-  background-color: colors.$denim;
   position: relative;
 }
 
@@ -18,18 +17,42 @@
   position: relative;
 }
 
+.background {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 10%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to top, rgb(0 0 0 / 10%) 1px, transparent 1px),
+    radial-gradient(circle at 25% 0, colors.$twilight 0%, rgb(0 0 0 / 10%) 30%);
+  background-size: functions.spacing(0.75) functions.spacing(0.75),
+    functions.spacing(0.75) functions.spacing(0.75), 100%;
+  inset: 0;
+  outline: 1px dashed colors.$smoke;
+  outline-offset: functions.spacing(-1);
+  position: absolute;
+
+  img {
+    z-index: -1;
+  }
+
+  @include mixins.mq(breakpoints.$tablet) {
+    outline-offset: functions.spacing(-1.5);
+  }
+}
+
 .logo {
-  margin: functions.spacing(2);
+  margin: functions.spacing(2) functions.spacing(3);
   width: auto;
 
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
-  }
+    color: colors.$white;
 
-  path {
-    fill: currentColor;
+    path {
+      fill: currentColor;
+    }
   }
 
   @include mixins.mq(breakpoints.$tablet) {
@@ -64,32 +87,26 @@
   display: block;
   font-family: fonts.$heading;
   font-size: 2.5em;
+  text-transform: uppercase;
 
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 
   @include mixins.mq(breakpoints.$tablet) {
-    color: colors.$gulf;
     font-size: 2em;
     margin-left: functions.spacing(4) !important;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: colors.$white;
-      text-decoration: underline;
-    }
   }
 }
 
 .toggle {
   background: none;
+  color: colors.$white;
   border: 0;
   font-size: 1em;
-  margin: functions.spacing(4) functions.spacing(2);
+  margin: functions.spacing(4) functions.spacing(3);
   padding: 0;
   position: absolute;
   top: 0;
@@ -99,7 +116,7 @@
   &:active,
   &:focus {
     background: none;
-    color: colors.$gulf;
+    color: colors.$sunshine;
     outline: none;
   }
 
@@ -112,7 +129,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
+    color: colors.$sunshine;
   }
 }
 
@@ -130,6 +147,10 @@
     .background {
       object-position: 0% 100% !important;
       position: fixed !important;
+
+      img {
+        display: none !important;
+      }
     }
 
     .link {

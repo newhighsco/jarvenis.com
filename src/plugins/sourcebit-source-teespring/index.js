@@ -3,16 +3,17 @@ const fetch = require('node-fetch')
 const urlJoin = require('url-join')
 const mimeTypes = require('mime-types')
 
-const BASE_URL = 'https://teespring.com/'
 const API_BASE_URL = `https://commerce.teespring.com/v1/stores/`
-const STOREFRONT_BASE_URL = `${BASE_URL}stores/`
 const SOURCE = 'sourcebit-source-teespring'
 
 module.exports.name = SOURCE
 
 const CURRENCIES = ['USD', 'GBP', 'EUR', 'CAD', 'AUD']
 
+const storefrontUrl = permaLink => `https://${permaLink}.creator-spring.com/`
+
 module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
+  const { permaLink, currency, pageLimit } = currentOptions
   const questions = [
     {
       type: 'input',
@@ -20,7 +21,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
       message: 'What is your Teespring storefront URL permalink?',
       validate: value =>
         value.length > 0 ? true : 'Permalink cannot be empty',
-      default: currentOptions.permaLink
+      default: permaLink
     },
     {
       type: 'list',
@@ -28,27 +29,25 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
       message: 'What currency should prices be displayed in?',
       choices: CURRENCIES,
       validate: value => (value.length > 0 ? true : 'Currency cannot be empty'),
-      default: currentOptions.currency
+      default: currency
     },
     {
       type: 'number',
       name: 'pageLimit',
       message: 'Option - limit the number of pages of products to retrieve?',
-      default: currentOptions.pageLimit
+      default: pageLimit
     }
   ]
 
   return async () => {
     const answers = await inquirer.prompt(questions)
+    const { permaLink } = answers
     const spinner = ora(
-      `Looking for Teespring storefront ${urlJoin(
-        STOREFRONT_BASE_URL,
-        answers.permaLink
-      )}`
+      `Looking for Teespring storefront ${storefrontUrl(permaLink)}`
     ).start()
 
     try {
-      await fetch(urlJoin(API_BASE_URL, `?slug=${answers.permaLink}`))
+      await fetch(urlJoin(API_BASE_URL, `?slug=${permaLink}`))
     } catch (error) {
       spinner.fail()
 
@@ -66,10 +65,12 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
 }
 
 module.exports.getOptionsFromSetup = ({ answers }) => {
+  const { permaLink, currency, pageLimit } = answers
+
   return {
-    permaLink: answers.permaLink,
-    currency: answers.currency,
-    pageLimit: answers.pageLimit
+    permaLink,
+    currency,
+    pageLimit
   }
 }
 
@@ -95,6 +96,7 @@ module.exports.bootstrap = async ({
   log,
   setPluginContext
 }) => {
+  const { permaLink, currency, pageLimit, watch } = options
   const fetchProducts = async (page = 1, accumulator = []) => {
     try {
       let body
@@ -106,7 +108,7 @@ module.exports.bootstrap = async ({
         urlJoin(
           API_BASE_URL,
           'products',
-          `?slug=${options.permaLink}&currency=${options.currency}&page=${page}`
+          `?slug=${permaLink}&currency=${currency}&page=${page}`
         )
       )
         .then(async response => {
@@ -118,7 +120,7 @@ module.exports.bootstrap = async ({
 
       accumulator = accumulator.concat(products)
 
-      if (!!next?.length && currentPage < options.pageLimit) {
+      if (!!next?.length && currentPage < pageLimit) {
         return await fetchProducts(page + 1, accumulator)
       }
     } catch (error) {
@@ -130,7 +132,7 @@ module.exports.bootstrap = async ({
 
   const context = getPluginContext()
 
-  if (context && context.entries) {
+  if (context?.entries) {
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
     const entries = await fetchProducts()
@@ -144,12 +146,13 @@ module.exports.bootstrap = async ({
     })
   }
 
-  if (options.watch) {
+  if (watch) {
     console.error('Watch mode is not supported at this time')
   }
 }
 
-module.exports.transform = ({ data, getPluginContext }) => {
+module.exports.transform = ({ data, getPluginContext, options }) => {
+  const { permaLink } = options
   const { assets, entries } = getPluginContext()
 
   const model = {
@@ -159,19 +162,30 @@ module.exports.transform = ({ data, getPluginContext }) => {
   }
 
   const normalizedEntries = entries.map(
-    ({ id, url: slug, name: title, productName: type, price }) => ({
-      id,
-      slug: slug.replace(/([^?]+)\?.*/g, '$1'),
-      href: urlJoin(BASE_URL, slug),
-      title,
-      type,
-      image: assets.find(asset => asset.id === id).url,
-      price,
-      __metadata: {
-        ...model,
-        id
+    ({ id, url, name: title, productName: type, price }) => {
+      const {
+        groups: { slug, productId }
+      } = url.match(/(?<slug>[^?]+)\?.*pid=(?<productId>\d+).*/)
+
+      return {
+        id,
+        slug,
+        href: urlJoin(
+          storefrontUrl(permaLink),
+          'listing',
+          slug,
+          `?product=${productId}`
+        ),
+        title,
+        type,
+        image: assets.find(asset => asset.id === id).url,
+        price,
+        __metadata: {
+          ...model,
+          id
+        }
       }
-    })
+    }
   )
 
   const normalizedAssets = assets.map(({ id, url }) => {

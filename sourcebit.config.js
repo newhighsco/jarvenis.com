@@ -31,7 +31,8 @@ module.exports = {
         pages: [
           {
             path: '/{__metadata.urlPath}',
-            predicate: entry => entry.__metadata.modelType === 'page'
+            predicate: entry =>
+              entry.__metadata.modelType === 'page' && !entry.frontmatter?.draft
           }
         ],
         commonProps: entries =>

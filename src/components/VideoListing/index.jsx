@@ -12,7 +12,7 @@ const VideoListing = ({ videos = [], summary }) => {
   return (
     <>
       <Grid className={styles.root} flex>
-        {videos.map(({ id, href, image, title }) => {
+        {videos.map(({ id, href, image, title }, index) => {
           return (
             <Grid.Item
               key={id}
@@ -31,6 +31,9 @@ const VideoListing = ({ videos = [], summary }) => {
                       width={320}
                       height={180}
                       layout="responsive"
+                      priority={index === 0}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII="
                     />
                   ),
                   ratio: '16:9'

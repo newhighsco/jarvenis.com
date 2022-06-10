@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   ContentContainer,
@@ -9,11 +8,12 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import { LogoLockup } from '..'
-import backgroundImage from '../../images/header.jpg'
+import LogoLockup from '../LogoLockup'
+import bannerUrl from '../../images/banner.jpg'
 import header from '../../data/header.json'
 
 import styles from './Header.module.scss'
+import Image from 'next/image'
 
 const Header = () => {
   const [menuVisible, setMenuVisibility] = useState(false)
@@ -27,16 +27,17 @@ const Header = () => {
       theme={{ root: styles.root, content: styles.content }}
       className={classNames(menuVisible && styles.menuVisible)}
     >
-      <Image
-        src={backgroundImage}
-        alt=""
-        placeholder="blur"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="100% 50%"
-        className={styles.background}
-        priority
-      />
+      <div className={styles.background}>
+        <Image
+          src={bannerUrl}
+          alt=""
+          placeholder="blur"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="100% 50%"
+          priority
+        />
+      </div>
       <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>

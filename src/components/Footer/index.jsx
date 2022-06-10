@@ -9,7 +9,7 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import { LogoLockup } from '..'
+import LogoLockup from '../LogoLockup'
 import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
 import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
 import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
@@ -80,11 +80,17 @@ const Footer = () => (
             inline
           />
         </Grid.Item>
-        <Grid.Item className={styles.credits} align="center">
-          <small>
-            &copy; {year} {name}. All rights reserved
-          </small>
-          <CreditLockup />
+        <Grid.Item className={styles.credits}>
+          <Grid reverse>
+            <Grid.Item sizes={['tablet-one-half']} className={styles.copyright}>
+              <small>
+                &copy; {year} {name}. All rights reserved
+              </small>
+            </Grid.Item>
+            <Grid.Item sizes={['tablet-one-half']}>
+              <CreditLockup />
+            </Grid.Item>
+          </Grid>
         </Grid.Item>
       </Grid>
     </ContentContainer>

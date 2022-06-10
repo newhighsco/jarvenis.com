@@ -14,8 +14,9 @@
   &:hover,
   &:active,
   &:focus {
-    color: colors.$sea;
-    text-decoration: underline;
+    color: colors.$sunshine;
+    text-decoration: underline 1px dashed currentColor;
+    text-underline-offset: functions.spacing(0.5);
   }
 
   @include mixins.mq(breakpoints.$tablet) {
