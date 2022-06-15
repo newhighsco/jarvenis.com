@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/newhighsco/jarvenis.com/compare/v1.18.1...v1.18.2) (2022-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v18.2.0 ([#1361](https://github.com/newhighsco/jarvenis.com/issues/1361)) ([71bf3a3](https://github.com/newhighsco/jarvenis.com/commit/71bf3a3210c1f2cfa032e917f1d3cf636a894f50))
+
 ## [1.18.1](https://github.com/newhighsco/jarvenis.com/compare/v1.18.0...v1.18.1) (2022-06-13)
 
 
