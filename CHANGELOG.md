@@ -1,3 +1,10 @@
+## [1.18.34](https://github.com/newhighsco/jarvenis.com/compare/v1.18.33...v1.18.34) (2022-08-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.16 ([#1444](https://github.com/newhighsco/jarvenis.com/issues/1444)) ([8cea425](https://github.com/newhighsco/jarvenis.com/commit/8cea425eee06f20aadf5a67fe0dbc6e8f22ab75c))
+
 ## [1.18.33](https://github.com/newhighsco/jarvenis.com/compare/v1.18.32...v1.18.33) (2022-08-05)
 
 
