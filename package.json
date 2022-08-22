@@ -42,7 +42,7 @@
     "@newhighsco/next-plugin-svgr": "3.0.58",
     "@newhighsco/press-start": "2.2.1",
     "babel-loader": "8.2.5",
-    "marked": "4.0.18",
+    "marked": "4.0.19",
     "next": "12.2.5",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
