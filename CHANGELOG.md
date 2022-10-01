@@ -1,3 +1,10 @@
+## [1.18.58](https://github.com/newhighsco/jarvenis.com/compare/v1.18.57...v1.18.58) (2022-10-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v4.1.1 ([#1537](https://github.com/newhighsco/jarvenis.com/issues/1537)) ([8b78944](https://github.com/newhighsco/jarvenis.com/commit/8b78944c1e74e397af932560465f34758808ace2))
+
 ## [1.18.57](https://github.com/newhighsco/jarvenis.com/compare/v1.18.56...v1.18.57) (2022-09-27)
 
 
