@@ -1,3 +1,10 @@
+## [1.18.71](https://github.com/newhighsco/jarvenis.com/compare/v1.18.70...v1.18.71) (2022-10-27)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#1583](https://github.com/newhighsco/jarvenis.com/issues/1583)) ([e5cdb1d](https://github.com/newhighsco/jarvenis.com/commit/e5cdb1d7782a8c1d02b7d4257fbeee623bc1b351))
+
 ## [1.18.70](https://github.com/newhighsco/jarvenis.com/compare/v1.18.69...v1.18.70) (2022-10-27)
 
 
