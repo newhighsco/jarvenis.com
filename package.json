@@ -43,7 +43,7 @@
     "@newhighsco/press-start": "2.2.9",
     "babel-loader": "9.1.0",
     "marked": "4.2.2",
-    "next": "13.0.3",
+    "next": "13.0.4",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
     "next-mdx-remote": "4.2.0",
