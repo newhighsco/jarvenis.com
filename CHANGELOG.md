@@ -1,3 +1,10 @@
+## [1.18.116](https://github.com/newhighsco/jarvenis.com/compare/v1.18.115...v1.18.116) (2022-12-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v13.1.1 ([#1677](https://github.com/newhighsco/jarvenis.com/issues/1677)) ([397c907](https://github.com/newhighsco/jarvenis.com/commit/397c907009b220ba323734826446d17e7afb81de))
+
 ## [1.18.115](https://github.com/newhighsco/jarvenis.com/compare/v1.18.114...v1.18.115) (2022-12-23)
 
 
