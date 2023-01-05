@@ -1,3 +1,10 @@
+## [1.18.119](https://github.com/newhighsco/jarvenis.com/compare/v1.18.118...v1.18.119) (2023-01-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-loader to v9.1.2 ([#1684](https://github.com/newhighsco/jarvenis.com/issues/1684)) ([b306d46](https://github.com/newhighsco/jarvenis.com/commit/b306d46433135285203c4bb345d5fa818cae2709))
+
 ## [1.18.118](https://github.com/newhighsco/jarvenis.com/compare/v1.18.117...v1.18.118) (2023-01-03)
 
 
