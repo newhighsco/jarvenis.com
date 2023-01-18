@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/newhighsco/jarvenis.com/compare/v1.18.125...v1.19.0) (2023-01-18)
+
+
+### Features
+
+* **next:** use native transpiler ([#1708](https://github.com/newhighsco/jarvenis.com/issues/1708)) ([2b23f6d](https://github.com/newhighsco/jarvenis.com/commit/2b23f6df65e8ebf3e89980e85a82033886750dc7))
+
 ## [1.18.125](https://github.com/newhighsco/jarvenis.com/compare/v1.18.124...v1.18.125) (2023-01-14)
 
 
