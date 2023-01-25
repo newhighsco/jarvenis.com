@@ -1,5 +1,3 @@
-import React from 'react'
-import Link from 'next/link'
 import {
   ContentContainer,
   CreditLockup,
@@ -9,13 +7,15 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import LogoLockup from '../LogoLockup'
+import Link from 'next/link'
+import React from 'react'
+
+import config from '../../../site.config'
+import footer from '../../data/footer.json'
 import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
 import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
 import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
-import config from '../../../site.config'
-import footer from '../../data/footer.json'
-
+import LogoLockup from '../LogoLockup'
 import styles from './Footer.module.scss'
 
 const { name, shortName, socialLinks } = config

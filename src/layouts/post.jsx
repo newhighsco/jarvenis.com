@@ -1,15 +1,16 @@
-import React from 'react'
-import urlJoin from 'url-join'
-import { object, string } from 'prop-types'
+import { Prose } from '@newhighsco/chipset'
 import { MDXRemote } from 'next-mdx-remote'
 import { ArticleJsonLd } from 'next-seo'
-import { Prose } from '@newhighsco/chipset'
+import { object, string } from 'prop-types'
+import React from 'react'
+import urlJoin from 'url-join'
+
+import { postsDir } from '../../next-rss'
+import config from '../../site.config'
 import Heading from '../components/Heading'
 import PageContainer from '../components/PageContainer'
 import Section from '../components/Section'
 import Timestamp from '../components/Timestamp'
-import config from '../../site.config'
-import { postsDir } from '../../next-rss'
 
 const { name, shortName, url, logo } = config
 

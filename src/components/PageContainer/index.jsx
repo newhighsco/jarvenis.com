@@ -1,7 +1,8 @@
-import React from 'react'
-import { node, object } from 'prop-types'
 import { PageContainer as ThemedPageContainer } from '@newhighsco/chipset'
 import { Meta } from '@newhighsco/press-start'
+import { node, object } from 'prop-types'
+import React from 'react'
+
 import Footer from '../Footer'
 import Header from '../Header'
 

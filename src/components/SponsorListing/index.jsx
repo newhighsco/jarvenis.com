@@ -1,9 +1,9 @@
-import React from 'react'
 import { Grid, Icon, SmartLink } from '@newhighsco/chipset'
+import React from 'react'
+
 import { ReactComponent as AdvancedLogo } from '../../images/logos/advanced.svg'
 import { ReactComponent as ApexLogo } from '../../images/logos/apex.svg'
 import { ReactComponent as BouliesLogo } from '../../images/logos/boulies.svg'
-
 import styles from './SponsorListing.module.scss'
 
 const sponsors = [

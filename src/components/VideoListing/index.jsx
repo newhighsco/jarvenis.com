@@ -1,9 +1,9 @@
-import React from 'react'
-import { array, bool } from 'prop-types'
-import Image from 'next/image'
 import { Button, Card, Grid } from '@newhighsco/chipset'
-import config from '../../../site.config'
+import Image from 'next/image'
+import { array, bool } from 'prop-types'
+import React from 'react'
 
+import config from '../../../site.config'
 import styles from './VideoListing.module.scss'
 
 const VideoListing = ({ videos = [], summary }) => {

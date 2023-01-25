@@ -1,7 +1,7 @@
-import React from 'react'
-import { bool, node, string } from 'prop-types'
-import classNames from 'classnames'
 import { ContentContainer } from '@newhighsco/chipset'
+import classNames from 'classnames'
+import { bool, node, string } from 'prop-types'
+import React from 'react'
 
 import styles from './Section.module.scss'
 

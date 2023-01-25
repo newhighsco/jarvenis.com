@@ -1,7 +1,8 @@
-import React from 'react'
-import { array, object, string } from 'prop-types'
-import { MDXRemote } from 'next-mdx-remote'
 import { Prose } from '@newhighsco/chipset'
+import { MDXRemote } from 'next-mdx-remote'
+import { array, object, string } from 'prop-types'
+import React from 'react'
+
 import BlogListing from '../components/BlogListing'
 import Heading from '../components/Heading'
 import PageContainer from '../components/PageContainer'
