@@ -1,11 +1,11 @@
-import React from 'react'
+import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
+import { marked } from 'marked'
 import Link from 'next/link'
 import { array, bool, string } from 'prop-types'
-import { marked } from 'marked'
-import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
+import React from 'react'
 
-import styles from './BlogListing.module.scss'
 import Timestamp from '../Timestamp'
+import styles from './BlogListing.module.scss'
 
 const BlogListing = ({ locale, posts = [], summary }) => {
   if (!posts?.length) return null

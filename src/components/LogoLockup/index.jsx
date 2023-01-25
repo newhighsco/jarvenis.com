@@ -1,12 +1,12 @@
-import React from 'react'
-import { bool, string } from 'prop-types'
-import classNames from 'classnames'
 import { Icon, VisuallyHidden } from '@newhighsco/chipset'
-import config from '../../../site.config'
+import classNames from 'classnames'
+import { bool, string } from 'prop-types'
+import React from 'react'
 
-import styles from './LogoLockup.module.scss'
+import config from '../../../site.config'
 import { ReactComponent as LogoSvg } from '../../images/logo.svg'
 import { ReactComponent as TextSvg } from '../../images/logo-text.svg'
+import styles from './LogoLockup.module.scss'
 
 const { name } = config
 

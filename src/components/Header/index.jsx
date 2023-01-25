@@ -1,6 +1,3 @@
-import React, { useState } from 'react'
-import classNames from 'classnames'
-import Link from 'next/link'
 import {
   ContentContainer,
   Grid,
@@ -8,12 +5,15 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import LogoLockup from '../LogoLockup'
-import bannerUrl from '../../images/banner.jpg'
-import header from '../../data/header.json'
-
-import styles from './Header.module.scss'
+import classNames from 'classnames'
 import Image from 'next/image'
+import Link from 'next/link'
+import React, { useState } from 'react'
+
+import header from '../../data/header.json'
+import bannerUrl from '../../images/banner.jpg'
+import LogoLockup from '../LogoLockup'
+import styles from './Header.module.scss'
 
 const Header = () => {
   const [menuVisible, setMenuVisibility] = useState(false)

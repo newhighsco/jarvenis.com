@@ -1,9 +1,11 @@
-import React from 'react'
-import urlJoin from 'url-join'
-import { array, object } from 'prop-types'
+import { Button } from '@newhighsco/chipset'
 import dynamic from 'next/dynamic'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { Button } from '@newhighsco/chipset'
+import { array, object } from 'prop-types'
+import React from 'react'
+import urlJoin from 'url-join'
+
+import config from '../../site.config'
 import Heading from '../components/Heading'
 import PageContainer from '../components/PageContainer'
 import ProductListing from '../components/ProductListing'
@@ -11,7 +13,6 @@ import Section from '../components/Section'
 import SponsorListing from '../components/SponsorListing'
 import VideoListing from '../components/VideoListing'
 import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
-import config from '../../site.config'
 
 const { name, url, logo, socialLinks } = config
 

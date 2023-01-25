@@ -1,7 +1,7 @@
-import React from 'react'
 import { string } from 'prop-types'
-import config from '../../../site.config'
+import React from 'react'
 
+import config from '../../../site.config'
 import styles from './Timestamp.module.scss'
 
 const Timestamp = ({ date, locale }) => {

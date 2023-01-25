@@ -1,6 +1,7 @@
-import React from 'react'
 import { string } from 'prop-types'
+import React from 'react'
 import { sourcebitDataClient } from 'sourcebit-target-next'
+
 import layouts from '../layouts'
 import { getLayoutStaticProps } from '../layouts/utils'
 

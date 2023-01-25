@@ -1,7 +1,7 @@
-import colors from './src/styles/_colors.module.scss'
 import logoBitmap from './src/images/logo.jpg'
 import logoVector from './src/images/logo.svg'
 import openGraphImageUrl from './src/images/sharing.jpg'
+import colors from './src/styles/_colors.module.scss'
 
 const config = {
   url: process.env.NEXT_PUBLIC_SITE_URL,

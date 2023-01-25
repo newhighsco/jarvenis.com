@@ -1,6 +1,6 @@
-import React from 'react'
-import { node, oneOf } from 'prop-types'
 import { Element, Icon } from '@newhighsco/chipset'
+import { node, oneOf } from 'prop-types'
+import React from 'react'
 
 import styles from './Heading.module.scss'
 
