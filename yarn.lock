@@ -1722,14 +1722,14 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-1.1.0.tgz#23e1ce88944d770bd31878133089e31e676e7d19"
   integrity sha512-gPpJ1qgm/GvD5L/LQe299m/7aWguvfdy2Sg5E46QHo/AGGx0ws9r5f7a4SP54ntQXvFFpaSQsq8+CDY52JIN3w==
 
-"@newhighsco/chipset@6.14.11":
-  version "6.14.11"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.14.11.tgz#136422323ec25a4bed1e75aaed92f9e4cee51fb7"
-  integrity sha512-doanCGz3nisTzfyFdILnlolIPSn9IqhU5UJ4xEBlxjtL6JodkknoQCILb2GAw3x8RkCtgatNFN/rmYPMy5wR1Q==
+"@newhighsco/chipset@6.14.14":
+  version "6.14.14"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.14.14.tgz#2169a607e242495c8e68637d5b28381a1f6c1d89"
+  integrity sha512-BIvH0Qc/VeVCV0StNmjHqUkLPQBUFCNNVHCfSMK8zFxp8UxQFR2c6mMggWotXMwyiIt+TYJWnNbRtBbiNNyndw==
   dependencies:
     "@dr.pogodin/react-themes" "1.4.7"
     classnames "2.3.2"
-    react-device-detect "2.2.2"
+    react-device-detect "2.2.3"
 
 "@newhighsco/commitlint-config@1.1.13":
   version "1.1.13"
@@ -1813,10 +1813,10 @@
     "@semantic-release/release-notes-generator" "10.0.3"
     semantic-release-circleci-orb "1.1.1"
 
-"@newhighsco/stylelint-config@3.1.33":
-  version "3.1.33"
-  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.33.tgz#3c87ec9293f62459e8246a9953d74194e5ff57ef"
-  integrity sha512-tVVzkL8qH9Bq8jWHTd+QI2oe72K76WAbRXjNyWw7eMyW9xZ/0UYdjf7PkHbfyLoVv05NEYEEZIQuzDo2BD3lTA==
+"@newhighsco/stylelint-config@3.1.34":
+  version "3.1.34"
+  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.34.tgz#e610b49a88209c560f8001761b8f22a79cc2d88d"
+  integrity sha512-PUSasqclxNzYKLKUffLiSe7u4uY/ZB/yyWnPQqBkSYK8dFb+2YeRLUkTnBFVf++7UzmA/G5XTbyr/wqj8LXQZA==
   dependencies:
     stylelint-config-css-modules "4.1.0"
     stylelint-config-prettier "9.0.4"
@@ -10620,12 +10620,12 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-device-detect@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-2.2.2.tgz#dbabbce798ec359c83f574c3edb24cf1cca641a5"
-  integrity sha512-zSN1gIAztUekp5qUT/ybHwQ9fmOqVT1psxpSlTn1pe0CO+fnJHKRLOWWac5nKxOxvOpD/w84hk1I+EydrJp7SA==
+react-device-detect@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-2.2.3.tgz#97a7ae767cdd004e7c3578260f48cf70c036e7ca"
+  integrity sha512-buYY3qrCnQVlIFHrC5UcUoAj7iANs/+srdkwsnNjI7anr3Tt7UY6MqNxtMLlr0tMBied0O49UZVK8XKs3ZIiPw==
   dependencies:
-    ua-parser-js "^1.0.2"
+    ua-parser-js "^1.0.33"
 
 react-dom@18.2.0:
   version "18.2.0"
@@ -12464,10 +12464,10 @@ ua-parser-js@^0.7.18:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
   integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
-ua-parser-js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.2.tgz#e2976c34dbfb30b15d2c300b2a53eac87c57a775"
-  integrity sha512-00y/AXhx0/SsnI51fTc0rLRmafiGOM4/O+ny10Ps7f+j/b8p/ZY11ytMgznXkOVo4GQ+KwQG5UQLkLGirsACRg==
+ua-parser-js@^1.0.33:
+  version "1.0.33"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.33.tgz#f21f01233e90e7ed0f059ceab46eb190ff17f8f4"
+  integrity sha512-RqshF7TPTE0XLYAqmjlu5cLLuGdKrNu9O1KLA/qp39QtbZwuzwv1dT46DZSopoUMsYgXpB3Cv8a03FI8b74oFQ==
 
 ufo@^0.8.5:
   version "0.8.6"
