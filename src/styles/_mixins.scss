@@ -2,7 +2,6 @@
 @use '~@newhighsco/chipset/styles/mixins';
 @use './breakpoints.module';
 @use './functions';
-
 @forward '~@newhighsco/chipset/styles/mixins';
 
 @mixin scroll-container($visible: 1) {
