@@ -1,3 +1,10 @@
+## [1.19.38](https://github.com/newhighsco/jarvenis.com/compare/v1.19.37...v1.19.38) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v4.3.0 ([#1813](https://github.com/newhighsco/jarvenis.com/issues/1813)) ([4de1d17](https://github.com/newhighsco/jarvenis.com/commit/4de1d17aca77f21495943c8c5f7a13d3c73d3556))
+
 ## [1.19.37](https://github.com/newhighsco/jarvenis.com/compare/v1.19.36...v1.19.37) (2023-03-18)
 
 
