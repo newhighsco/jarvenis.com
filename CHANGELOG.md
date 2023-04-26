@@ -1,3 +1,10 @@
+## [1.19.53](https://github.com/newhighsco/jarvenis.com/compare/v1.19.52...v1.19.53) (2023-04-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.62.1 ([#1847](https://github.com/newhighsco/jarvenis.com/issues/1847)) ([3c80ec6](https://github.com/newhighsco/jarvenis.com/commit/3c80ec651781508ff7885e38a76a9bf932e6f35f))
+
 ## [1.19.52](https://github.com/newhighsco/jarvenis.com/compare/v1.19.51...v1.19.52) (2023-04-22)
 
 
