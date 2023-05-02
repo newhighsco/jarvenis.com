@@ -1,3 +1,10 @@
+## [1.19.58](https://github.com/newhighsco/jarvenis.com/compare/v1.19.57...v1.19.58) (2023-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/next-plugin-svgr to v3.0.90 ([#1853](https://github.com/newhighsco/jarvenis.com/issues/1853)) ([b7c7e66](https://github.com/newhighsco/jarvenis.com/commit/b7c7e661e86dc47bfdf06fcaed6dc4db272cfe8b))
+
 ## [1.19.57](https://github.com/newhighsco/jarvenis.com/compare/v1.19.56...v1.19.57) (2023-05-01)
 
 
