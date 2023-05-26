@@ -1,3 +1,10 @@
+## [1.19.73](https://github.com/newhighsco/jarvenis.com/compare/v1.19.72...v1.19.73) (2023-05-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency xml2js to v0.6.0 ([#1877](https://github.com/newhighsco/jarvenis.com/issues/1877)) ([d092ae9](https://github.com/newhighsco/jarvenis.com/commit/d092ae9d613ba3834eacb2b453a9d4f8e506a438))
+
 ## [1.19.72](https://github.com/newhighsco/jarvenis.com/compare/v1.19.71...v1.19.72) (2023-05-19)
 
 
