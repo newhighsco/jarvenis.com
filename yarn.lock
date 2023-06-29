@@ -1801,10 +1801,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-1.1.0.tgz#23e1ce88944d770bd31878133089e31e676e7d19"
   integrity sha512-gPpJ1qgm/GvD5L/LQe299m/7aWguvfdy2Sg5E46QHo/AGGx0ws9r5f7a4SP54ntQXvFFpaSQsq8+CDY52JIN3w==
 
-"@newhighsco/chipset@6.14.15":
-  version "6.14.15"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.14.15.tgz#48d136eab7bacbb293eef42764a08a0cbb491cef"
-  integrity sha512-rYjUcKp0Lq0s+CnG15ErZWXUu6RppHBJuCsN5+9/GXiDVSLIQqqA6Lfg0nCv6WBVJ7AUtmQpMBEVwazI4vDw4A==
+"@newhighsco/chipset@6.14.16":
+  version "6.14.16"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.14.16.tgz#0470ac729db404c9ba2e635c251f6273c4d20283"
+  integrity sha512-wFktaj/5t0ugaMIqpnaUsDXLp7UguJ6tuao2o99c1SFFoyTeOR+5sNisSjR+PJKGIsnnxVw4cP+oy2cXlPNLeg==
   dependencies:
     "@dr.pogodin/react-themes" "1.4.8"
     classnames "2.3.2"
@@ -1892,10 +1892,10 @@
     "@semantic-release/release-notes-generator" "11.0.3"
     semantic-release-circleci-orb "1.1.1"
 
-"@newhighsco/stylelint-config@3.1.45":
-  version "3.1.45"
-  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.45.tgz#d38dadf7a140ca96142dcda3fb142387f6482325"
-  integrity sha512-ps2JTP3EMgfwzv4HSTRE9V3q+PNzfsfdeNueoDj0Qg8qLaok3MROm0yIt2xQ6MV0R96nJu4ZRq7xowVhJniUZQ==
+"@newhighsco/stylelint-config@3.1.46":
+  version "3.1.46"
+  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.46.tgz#a10ac0adf552ecf679d83f2957c35e2649bd0776"
+  integrity sha512-vkzW90ECjSWhADf5PilUxTZxEWsTxa49s41sMuhiXL7xcgjINoroytoAgwzg0OKRSTMa/oSAScL3ERrHr2FLkA==
   dependencies:
     stylelint-config-css-modules "4.2.0"
     stylelint-config-prettier "9.0.5"
