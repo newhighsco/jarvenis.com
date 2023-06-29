@@ -1,6 +1,5 @@
 const path = require('path')
 const fetch = require('node-fetch')
-const urlJoin = require('url-join')
 const mimeTypes = require('mime-types')
 
 const API_BASE_URL = `https://commerce.teespring.com/v1/stores/`
@@ -40,6 +39,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
   ]
 
   return async () => {
+    const urlJoin = (await import('url-join')).default
     const answers = await inquirer.prompt(questions)
     const { permaLink } = answers
     const spinner = ora(
@@ -96,6 +96,7 @@ module.exports.bootstrap = async ({
   log,
   setPluginContext
 }) => {
+  const urlJoin = (await import('url-join')).default
   const { permaLink, currency, pageLimit, watch } = options
   const fetchProducts = async (page = 1, accumulator = []) => {
     try {
@@ -151,7 +152,8 @@ module.exports.bootstrap = async ({
   }
 }
 
-module.exports.transform = ({ data, getPluginContext, options }) => {
+module.exports.transform = async ({ data, getPluginContext, options }) => {
+  const urlJoin = (await import('url-join')).default
   const { permaLink } = options
   const { assets, entries } = getPluginContext()
 
