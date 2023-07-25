@@ -1,3 +1,10 @@
+## [1.19.106](https://github.com/newhighsco/jarvenis.com/compare/v1.19.105...v1.19.106) (2023-07-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v5.1.2 ([#1960](https://github.com/newhighsco/jarvenis.com/issues/1960)) ([54fc344](https://github.com/newhighsco/jarvenis.com/commit/54fc3442ccd0399c6b98a6c941e936b956f4f2a3))
+
 ## [1.19.105](https://github.com/newhighsco/jarvenis.com/compare/v1.19.104...v1.19.105) (2023-07-22)
 
 
