@@ -55,7 +55,7 @@
     "sourcebit": "0.11.1",
     "sourcebit-source-filesystem": "0.2.0",
     "sourcebit-target-next": "0.8.3",
-    "xml2js": "0.6.1"
+    "xml2js": "0.6.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.7",
