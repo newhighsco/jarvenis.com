@@ -1,3 +1,10 @@
+## [1.19.110](https://github.com/newhighsco/jarvenis.com/compare/v1.19.109...v1.19.110) (2023-08-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/chipset to v6.15.0 ([#1973](https://github.com/newhighsco/jarvenis.com/issues/1973)) ([f9d6045](https://github.com/newhighsco/jarvenis.com/commit/f9d60457d82e8cb258fd8ec2d9a6b0acc95d1043))
+
 ## [1.19.109](https://github.com/newhighsco/jarvenis.com/compare/v1.19.108...v1.19.109) (2023-08-02)
 
 
