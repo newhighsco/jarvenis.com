@@ -1839,10 +1839,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@4.0.53":
-  version "4.0.53"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.53.tgz#db870fbf9c0ee5cee16da5b02c2eb9464d29be8d"
-  integrity sha512-09JmMGyrtG9p1K0KpPHV4Xyg5JG9+ak2onvH3oQALgsSWX/VMnEtJd2f0TKzIO7nVdB3+PmB9RrBa3ThJHIY2A==
+"@newhighsco/eslint-config@4.0.54":
+  version "4.0.54"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.54.tgz#3cc948209eae9d88a87bfdbd305230b7b9799b66"
+  integrity sha512-9F6WQKPpXnLF6lmyRTX9lfO5y8gH7zo1B6ZvzmK3BUBVXWW4nwt04aT+2n15h0ztMPeV2Etqv6Ys125KOI9IMw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "5.62.0"
     "@typescript-eslint/parser" "5.62.0"
@@ -1867,22 +1867,22 @@
     eslint-plugin-testing-library "5.11.1"
     eslint-plugin-tsc "2.0.0"
 
-"@newhighsco/next-plugin-svgr@3.0.105":
-  version "3.0.105"
-  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.105.tgz#b02ce67a4a07be4874f39b022f35774050e0445d"
-  integrity sha512-LxIyC+YB79TMJith7KK7qlcnQohFI9CUN3njeiEOQee/0tgrut/GR2HtfpBfv9TUahtPI5WJlEAIDqytWKrVGQ==
+"@newhighsco/next-plugin-svgr@3.0.107":
+  version "3.0.107"
+  resolved "https://registry.yarnpkg.com/@newhighsco/next-plugin-svgr/-/next-plugin-svgr-3.0.107.tgz#82cb49330c229334f67d8791c48755d7818a3755"
+  integrity sha512-oXXa7g9ZJfYLoqI4f5dYQuzwgcuV785aT8N7QWmaw5QN4RWQQHzfV3cp1S/gkifK62JKnJBi9GW8mNwdWi07Bw==
   dependencies:
-    "@svgr/webpack" "8.0.1"
+    "@svgr/webpack" "8.1.0"
     file-loader "6.2.0"
     url-loader "4.1.1"
 
-"@newhighsco/postcss-config@3.5.143":
-  version "3.5.143"
-  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.5.143.tgz#b3eda4bb11334c941e123ead5403e251dc89a3d5"
-  integrity sha512-5VNvJwGU1ty0ximLFhEbcIF9SAkdDtpTmhlcRZDKH/x91fYlzup4jeNPWPb43WgypxaQ9HIT4wETqR01g1CeWg==
+"@newhighsco/postcss-config@3.5.144":
+  version "3.5.144"
+  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.5.144.tgz#2b73e5a62ce85189f79a99e7c2a4de82045b7148"
+  integrity sha512-Q/uQjndaGsUUgVhdzTqB4+ltSmE2q4oPQD/V1fcOkunk8dTSGgqm+D6ALUu3IG8My/HGLmd2WV2kjeQIFGX2hA==
   dependencies:
     "@fullhuman/postcss-purgecss" "5.0.0"
-    autoprefixer "10.4.14"
+    autoprefixer "10.4.15"
     caniuse-lite "1.0.30001520"
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "9.1.1"
@@ -1894,10 +1894,10 @@
   dependencies:
     next-seo "6.1.0"
 
-"@newhighsco/prettier-config@2.1.13":
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.1.13.tgz#8b7605f744d0d7ebc21aeb0adc7835539a54b5cc"
-  integrity sha512-uj62Uui2TRIDxMWP60M6AYeHweYknj1LTmvDctZHr+h7A696Vsd7v4kJ+8uZBgHpSXWFd5W1gP88/VceKUBQyA==
+"@newhighsco/prettier-config@2.1.14":
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.1.14.tgz#0b29a516d2c5e0ec2c807290087c8decb7a48e1f"
+  integrity sha512-0grkbUnoMHuNubDEvzToYtvVkZlgBukbn01VRyiuQElbwSCQqGjTNBYD58b9h34oAO0qmCImrksgcLkDWW0EbQ==
 
 "@newhighsco/release-config@1.3.22":
   version "1.3.22"
@@ -1912,10 +1912,10 @@
     "@semantic-release/release-notes-generator" "11.0.4"
     semantic-release-circleci-orb "1.1.1"
 
-"@newhighsco/stylelint-config@3.1.55":
-  version "3.1.55"
-  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.55.tgz#af3e3df89135b027a9482900e9f79e93ac3ea9f6"
-  integrity sha512-V/HEtvX9P1Yd+UmTl/X2PKeQqj/mqdHaozpEta6YACv6yGoor3Lyu5Qmijuri9DqUbVPYyPB8+nP/Ll9aMJEAQ==
+"@newhighsco/stylelint-config@3.1.56":
+  version "3.1.56"
+  resolved "https://registry.yarnpkg.com/@newhighsco/stylelint-config/-/stylelint-config-3.1.56.tgz#4d99dd884a847b252a4a3790ea66890022e5203b"
+  integrity sha512-maTxjWqR1S6pw+xuwQQ1WG6BrhgY0v76NIV9p/iMTkxXl40+b6YsC+pincsBLfcemrl0vcdu8xpmWVrmhKn7PA==
   dependencies:
     stylelint-config-css-modules "4.3.0"
     stylelint-config-prettier "9.0.5"
@@ -2590,20 +2590,20 @@
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-svg-em-dimensions/-/babel-plugin-svg-em-dimensions-8.0.0.tgz#35e08df300ea8b1d41cb8f62309c241b0369e501"
   integrity sha512-mURHYnu6Iw3UBTbhGwE/vsngtCIbHE43xCRK7kCw4t01xyGqb2Pd+WXekRRoFOBIY29ZoOhUCTEweDMdrjfi9g==
 
-"@svgr/babel-plugin-transform-react-native-svg@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-transform-react-native-svg/-/babel-plugin-transform-react-native-svg-8.0.0.tgz#023cd0895b98521f566060d6bb92100b9fee3775"
-  integrity sha512-UKrY3860AQICgH7g+6h2zkoxeVEPLYwX/uAjmqo4PIq2FIHppwhIqZstIyTz0ZtlwreKR41O3W3BzsBBiJV2Aw==
+"@svgr/babel-plugin-transform-react-native-svg@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-transform-react-native-svg/-/babel-plugin-transform-react-native-svg-8.1.0.tgz#90a8b63998b688b284f255c6a5248abd5b28d754"
+  integrity sha512-Tx8T58CHo+7nwJ+EhUwx3LfdNSG9R2OKfaIXXs5soiy5HtgoAEkDay9LIimLOcG8dJQH1wPZp/cnAv6S9CrR1Q==
 
 "@svgr/babel-plugin-transform-svg-component@8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-transform-svg-component/-/babel-plugin-transform-svg-component-8.0.0.tgz#013b4bfca88779711f0ed2739f3f7efcefcf4f7e"
   integrity sha512-DFx8xa3cZXTdb/k3kfPeaixecQLgKh5NVBMwD0AQxOzcZawK4oo1Jh9LbrcACUivsCA7TLG8eeWgrDXjTMhRmw==
 
-"@svgr/babel-preset@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@svgr/babel-preset/-/babel-preset-8.0.0.tgz#6d78100b3b6daf11c940b82d5bd8c3164b9c6ad9"
-  integrity sha512-KLcjiZychInVrhs86OvcYPLTFu9L5XV2vj0XAaE1HwE3J3jLmIzRY8ttdeAg/iFyp8nhavJpafpDZTt+1LIpkQ==
+"@svgr/babel-preset@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/babel-preset/-/babel-preset-8.1.0.tgz#0e87119aecdf1c424840b9d4565b7137cabf9ece"
+  integrity sha512-7EYDbHE7MxHpv4sxvnVPngw5fuR6pw79SkcrILHJ/iMpuKySNCl5W1qcwPEpU+LgyRXOaAFgH0KhwD18wwg6ug==
   dependencies:
     "@svgr/babel-plugin-add-jsx-attribute" "8.0.0"
     "@svgr/babel-plugin-remove-jsx-attribute" "8.0.0"
@@ -2611,16 +2611,16 @@
     "@svgr/babel-plugin-replace-jsx-attribute-value" "8.0.0"
     "@svgr/babel-plugin-svg-dynamic-title" "8.0.0"
     "@svgr/babel-plugin-svg-em-dimensions" "8.0.0"
-    "@svgr/babel-plugin-transform-react-native-svg" "8.0.0"
+    "@svgr/babel-plugin-transform-react-native-svg" "8.1.0"
     "@svgr/babel-plugin-transform-svg-component" "8.0.0"
 
-"@svgr/core@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@svgr/core/-/core-8.0.0.tgz#e96829cdb0473345d5671568282ee0736e86ef12"
-  integrity sha512-aJKtc+Pie/rFYsVH/unSkDaZGvEeylNv/s2cP+ta9/rYWxRVvoV/S4Qw65Kmrtah4CBK5PM6ISH9qUH7IJQCng==
+"@svgr/core@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/core/-/core-8.1.0.tgz#41146f9b40b1a10beaf5cc4f361a16a3c1885e88"
+  integrity sha512-8QqtOQT5ACVlmsvKOJNEaWmRPmcojMOzCz4Hs2BGG/toAp/K38LcsMRyLp349glq5AzJbCEeimEoxaX6v/fLrA==
   dependencies:
     "@babel/core" "^7.21.3"
-    "@svgr/babel-preset" "8.0.0"
+    "@svgr/babel-preset" "8.1.0"
     camelcase "^6.2.0"
     cosmiconfig "^8.1.3"
     snake-case "^3.0.4"
@@ -2633,38 +2633,38 @@
     "@babel/types" "^7.21.3"
     entities "^4.4.0"
 
-"@svgr/plugin-jsx@8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@svgr/plugin-jsx/-/plugin-jsx-8.0.1.tgz#b9495e06062cc0cac0e035751b69471ee328236b"
-  integrity sha512-bfCFb+4ZsM3UuKP2t7KmDwn6YV8qVn9HIQJmau6xeQb/iV65Rpi7NBNBWA2hcCd4GKoCqG8hpaaDk5FDR0eH+g==
+"@svgr/plugin-jsx@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/plugin-jsx/-/plugin-jsx-8.1.0.tgz#96969f04a24b58b174ee4cd974c60475acbd6928"
+  integrity sha512-0xiIyBsLlr8quN+WyuxooNW9RJ0Dpr8uOnH/xrCVO8GLUcwHISwj1AG0k+LFzteTkAA0GbX0kj9q6Dk70PTiPA==
   dependencies:
     "@babel/core" "^7.21.3"
-    "@svgr/babel-preset" "8.0.0"
+    "@svgr/babel-preset" "8.1.0"
     "@svgr/hast-util-to-babel-ast" "8.0.0"
     svg-parser "^2.0.4"
 
-"@svgr/plugin-svgo@8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-8.0.1.tgz#df0199313fdc88c3d7cd8e0dff16695e9718548c"
-  integrity sha512-29OJ1QmJgnohQHDAgAuY2h21xWD6TZiXji+hnx+W635RiXTAlHTbjrZDktfqzkN0bOeQEtNe+xgq73/XeWFfSg==
+"@svgr/plugin-svgo@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-8.1.0.tgz#b115b7b967b564f89ac58feae89b88c3decd0f00"
+  integrity sha512-Ywtl837OGO9pTLIN/onoWLmDQ4zFUycI1g76vuKGEz6evR/ZTJlJuz3G/fIkb6OVBJ2g0o6CGJzaEjfmEo3AHA==
   dependencies:
     cosmiconfig "^8.1.3"
     deepmerge "^4.3.1"
     svgo "^3.0.2"
 
-"@svgr/webpack@8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@svgr/webpack/-/webpack-8.0.1.tgz#a0e4a711daae347b515335449d198a275b3ab1e4"
-  integrity sha512-zSoeKcbCmfMXjA11uDuCJb+1LWNb3vy6Qw/VHj0Nfcl3UuqwuoZWknHsBIhCWvi4wU9vPui3aq054qjVyZqY4A==
+"@svgr/webpack@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/webpack/-/webpack-8.1.0.tgz#16f1b5346f102f89fda6ec7338b96a701d8be0c2"
+  integrity sha512-LnhVjMWyMQV9ZmeEy26maJk+8HTIbd59cH4F2MJ439k9DqejRisfFNGAPvRYlKETuh9LrImlS8aKsBgKjMA8WA==
   dependencies:
     "@babel/core" "^7.21.3"
     "@babel/plugin-transform-react-constant-elements" "^7.21.3"
     "@babel/preset-env" "^7.20.2"
     "@babel/preset-react" "^7.18.6"
     "@babel/preset-typescript" "^7.21.0"
-    "@svgr/core" "8.0.0"
-    "@svgr/plugin-jsx" "8.0.1"
-    "@svgr/plugin-svgo" "8.0.1"
+    "@svgr/core" "8.1.0"
+    "@svgr/plugin-jsx" "8.1.0"
+    "@svgr/plugin-svgo" "8.1.0"
 
 "@swc/helpers@0.5.1":
   version "0.5.1"
@@ -3395,13 +3395,13 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-autoprefixer@10.4.14, autoprefixer@^10.4.14:
-  version "10.4.14"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.14.tgz#e28d49902f8e759dd25b153264e862df2705f79d"
-  integrity sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==
+autoprefixer@10.4.15, autoprefixer@^10.4.14:
+  version "10.4.15"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.15.tgz#a1230f4aeb3636b89120b34a1f513e2f6834d530"
+  integrity sha512-KCuPB8ZCIqFdA4HwKXsvz7j6gvSDNhDP7WnUjBleRkKjPdvCmHFuQ77ocavI8FT6NdvlBnE2UFr2H4Mycn8Vew==
   dependencies:
-    browserslist "^4.21.5"
-    caniuse-lite "^1.0.30001464"
+    browserslist "^4.21.10"
+    caniuse-lite "^1.0.30001520"
     fraction.js "^4.2.0"
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
@@ -3601,7 +3601,7 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.21.10, browserslist@^4.21.3, browserslist@^4.21.4, browserslist@^4.21.5:
+browserslist@^4.21.10, browserslist@^4.21.3, browserslist@^4.21.4:
   version "4.21.10"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.10.tgz#dbbac576628c13d3b2231332cb2ec5a46e015bb0"
   integrity sha512-bipEBdZfVH5/pwrvqc+Ub0kUPVfGUhlKxbvfD+z1BDnPEO/X98ruXGA1WP5ASpAFKan7Qr6j736IacbZQuAlKQ==
@@ -3785,10 +3785,15 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-caniuse-lite@1.0.30001520, caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001517:
+caniuse-lite@1.0.30001520:
   version "1.0.30001520"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001520.tgz#62e2b7a1c7b35269594cf296a80bdf8cb9565006"
   integrity sha512-tahF5O9EiiTzwTUqAeFjIZbn4Dnqxzz7ktrgGlMYNLH43Ul26IgTMH/zvL3DG0lZxBYnlT04axvInszUsZULdA==
+
+caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001517, caniuse-lite@^1.0.30001520:
+  version "1.0.30001521"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001521.tgz#e9930cf499f7c1e80334b6c1fbca52e00d889e56"
+  integrity sha512-fnx1grfpEOvDGH+V17eccmNjucGUnCbP6KL+l5KqBIerp26WK/+RQ7CIDE37KGJjaPyqWXXlFUyKiWmvdNNKmQ==
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
