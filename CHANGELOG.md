@@ -1,3 +1,10 @@
+## [1.19.127](https://github.com/newhighsco/jarvenis.com/compare/v1.19.126...v1.19.127) (2023-08-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v7.0.5 ([#2025](https://github.com/newhighsco/jarvenis.com/issues/2025)) ([84d1c6b](https://github.com/newhighsco/jarvenis.com/commit/84d1c6b99e83fb75a666b9cae3b37aab20a02fd9))
+
 ## [1.19.126](https://github.com/newhighsco/jarvenis.com/compare/v1.19.125...v1.19.126) (2023-08-20)
 
 
