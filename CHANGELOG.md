@@ -1,3 +1,10 @@
+## [1.19.145](https://github.com/newhighsco/jarvenis.com/compare/v1.19.144...v1.19.145) (2023-10-03)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#2094](https://github.com/newhighsco/jarvenis.com/issues/2094)) ([aa4e0bd](https://github.com/newhighsco/jarvenis.com/commit/aa4e0bdabd94e3545192e222f1f579042b0adbc3))
+
 ## [1.19.144](https://github.com/newhighsco/jarvenis.com/compare/v1.19.143...v1.19.144) (2023-10-03)
 
 
