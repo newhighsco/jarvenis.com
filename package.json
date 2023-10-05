@@ -41,7 +41,7 @@
     "@newhighsco/chipset": "6.15.1",
     "@newhighsco/next-plugin-svgr": "3.0.113",
     "@newhighsco/press-start": "2.2.12",
-    "marked": "9.0.3",
+    "marked": "9.1.0",
     "next": "13.5.4",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
