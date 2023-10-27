@@ -1,3 +1,10 @@
+## [1.19.161](https://github.com/newhighsco/jarvenis.com/compare/v1.19.160...v1.19.161) (2023-10-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v14 ([#2142](https://github.com/newhighsco/jarvenis.com/issues/2142)) ([2676d0b](https://github.com/newhighsco/jarvenis.com/commit/2676d0b97c7a8c8197dfae5ec33d0f0bc89e9a4d))
+
 ## [1.19.160](https://github.com/newhighsco/jarvenis.com/compare/v1.19.159...v1.19.160) (2023-10-26)
 
 
