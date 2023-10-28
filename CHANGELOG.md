@@ -1,3 +1,10 @@
+## [1.19.163](https://github.com/newhighsco/jarvenis.com/compare/v1.19.162...v1.19.163) (2023-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v9.1.3 ([#2146](https://github.com/newhighsco/jarvenis.com/issues/2146)) ([1ad6ed3](https://github.com/newhighsco/jarvenis.com/commit/1ad6ed36fd9ec0b4dbdd2748cd726817012ca3cf))
+
 ## [1.19.162](https://github.com/newhighsco/jarvenis.com/compare/v1.19.161...v1.19.162) (2023-10-27)
 
 
