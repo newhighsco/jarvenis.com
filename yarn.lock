@@ -956,10 +956,10 @@
     "@babel/helper-validator-option" "^7.21.0"
     "@babel/plugin-transform-typescript" "^7.21.0"
 
-"@babel/runtime@^7.14.6", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2", "@babel/runtime@^7.24.6", "@babel/runtime@^7.8.4":
-  version "7.24.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.6.tgz#5b76eb89ad45e2e4a0a8db54c456251469a3358e"
-  integrity sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==
+"@babel/runtime@^7.14.6", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2", "@babel/runtime@^7.24.7", "@babel/runtime@^7.8.4":
+  version "7.24.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.7.tgz#f4f0d5530e8dbdf59b3451b9b3e594b6ba082e12"
+  integrity sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -1454,12 +1454,12 @@
   resolved "https://registry.yarnpkg.com/@csstools/utilities/-/utilities-1.0.0.tgz#42f3c213f2fb929324d465684ab9f46a0febd4bb"
   integrity sha512-tAgvZQe/t2mlvpNosA4+CkMiZ2azISW5WPAcdSalZlEjQvUfghHxfQcrCiK/7/CrfAWVxyM88kGFYO82heIGDg==
 
-"@dr.pogodin/react-themes@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.6.2.tgz#9553aa1e20ef1bd7d1eb1a58c7de7dea32cb8f54"
-  integrity sha512-PiX4pB+Ut43BNn+2hMv4dndNFyOdx6TnT6yizN1WwoRXGuQUCEt2J01hlls5zB4Y6FGCFL7HstriXy/l6zqrTA==
+"@dr.pogodin/react-themes@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.7.0.tgz#e9ff24de6155778ba9da973f7c5a64c6c4cdc0f7"
+  integrity sha512-fl9JY2hBQQG3h635heZkbXq4iD3L6YkTfs+XNpjPOBGN7plZMqCxo07rQsolq7YvVEt2DJNtgUmAEdNSoAbKSw==
   dependencies:
-    "@babel/runtime" "^7.24.6"
+    "@babel/runtime" "^7.24.7"
 
 "@dual-bundle/import-meta-resolve@^4.1.0":
   version "4.1.0"
@@ -1680,12 +1680,12 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-1.1.0.tgz#23e1ce88944d770bd31878133089e31e676e7d19"
   integrity sha512-gPpJ1qgm/GvD5L/LQe299m/7aWguvfdy2Sg5E46QHo/AGGx0ws9r5f7a4SP54ntQXvFFpaSQsq8+CDY52JIN3w==
 
-"@newhighsco/chipset@6.16.2":
-  version "6.16.2"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.16.2.tgz#57f94aca6c75ce03064bc6bd61e42591622b3110"
-  integrity sha512-aVE+CCIji+CXtQuNX62KiYfambagWh23DgZna51cByuLKxQY97X/3Dm1KgR0qKY1yerF5XYWTknvRyPM0txmsQ==
+"@newhighsco/chipset@6.16.3":
+  version "6.16.3"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.16.3.tgz#d18e493e4e73bb41aafa49d5c1decfc2a63b35b9"
+  integrity sha512-dw1teSoHCDfMbIlREd+Cio4FxMQdqM/EWl7l/uaq0cfPZg275s+IxDJp0SUWieU36HNFyhf4ErQbBRAuRh/FZw==
   dependencies:
-    "@dr.pogodin/react-themes" "1.6.2"
+    "@dr.pogodin/react-themes" "1.7.0"
     classnames "2.5.1"
     react-device-detect "2.2.3"
 
