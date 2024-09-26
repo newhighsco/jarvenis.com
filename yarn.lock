@@ -1744,14 +1744,14 @@
     file-loader "6.2.0"
     url-loader "4.1.1"
 
-"@newhighsco/postcss-config@3.5.277":
-  version "3.5.277"
-  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.5.277.tgz#cf18d12621f2654e333ec731f6db2efcf68a0bea"
-  integrity sha512-UssUFkRSlkkxQVUmlnWCYr7DCwg8g9CjGAvvaqcj7Hrs0Y/pvcXhfpncxocVmKof3u5ZjudUi7Z0gX2QoX3MAw==
+"@newhighsco/postcss-config@3.5.278":
+  version "3.5.278"
+  resolved "https://registry.yarnpkg.com/@newhighsco/postcss-config/-/postcss-config-3.5.278.tgz#78d26640b494182f7e05a114784b6d863c3bfd11"
+  integrity sha512-JEXddjNdfWB7ap6JitJTdS3rB6yCc6buiYpuUMgi4aWxH8I5POK8v7kT7x0tyP3k83/1qJw+0y7Ym9SCATRZUA==
   dependencies:
     "@fullhuman/postcss-purgecss" "6.0.0"
     autoprefixer "10.4.20"
-    caniuse-lite "1.0.30001663"
+    caniuse-lite "1.0.30001664"
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "10.0.5"
 
@@ -1767,15 +1767,15 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.1.26.tgz#e5da18727744dbf3ee775b84cfb7e243350c8539"
   integrity sha512-HM7R8kQXyHfMCxviQmpKZ5urLYTl9ouNcRYAykDKzjN0nXDDa5gEKA+3Ua68R9TRuCDA8dmvsv/XD5lx1PuCAQ==
 
-"@newhighsco/release-config@1.3.90":
-  version "1.3.90"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.90.tgz#1e14526878842c2638b4864ddef6c4c2da20adcf"
-  integrity sha512-ihQn4y5KnFjqY106fU4/wtTpew8h7DY/jKYFlT9Xpcz2gJEu1t3zO0kXU5juZene3v1d8r/Qm+tG+MmZXM7ZPA==
+"@newhighsco/release-config@1.3.91":
+  version "1.3.91"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.91.tgz#0dbb69f0843fe0612138d433aca7b1c07ca783b4"
+  integrity sha512-TkzJ5U/kOIyBqgh1twkTdrc3RMJMjo7lq98atBCSdoWpjFRrfza49xw4xzXBUN4FCCUCXXKk8sHhrc+w6DDo9Q==
   dependencies:
     "@semantic-release/changelog" "6.0.3"
     "@semantic-release/commit-analyzer" "13.0.0"
     "@semantic-release/git" "10.0.1"
-    "@semantic-release/github" "10.3.5"
+    "@semantic-release/github" "11.0.0"
     "@semantic-release/npm" "12.0.1"
     "@semantic-release/release-notes-generator" "14.0.1"
     semantic-release-circleci-orb "1.1.1"
@@ -2322,7 +2322,29 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@10.3.5", "@semantic-release/github@^10.0.0":
+"@semantic-release/github@11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-11.0.0.tgz#1cbfed43b96282994a1c480a204179b89b73a387"
+  integrity sha512-Uon6G6gJD8U1JNvPm7X0j46yxNRJ8Ui6SgK4Zw5Ktu8RgjEft3BGn+l/RX1TTzhhO3/uUcKuqM+/9/ETFxWS/Q==
+  dependencies:
+    "@octokit/core" "^6.0.0"
+    "@octokit/plugin-paginate-rest" "^11.0.0"
+    "@octokit/plugin-retry" "^7.0.0"
+    "@octokit/plugin-throttling" "^9.0.0"
+    "@semantic-release/error" "^4.0.0"
+    aggregate-error "^5.0.0"
+    debug "^4.3.4"
+    dir-glob "^3.0.1"
+    globby "^14.0.0"
+    http-proxy-agent "^7.0.0"
+    https-proxy-agent "^7.0.0"
+    issue-parser "^7.0.0"
+    lodash-es "^4.17.21"
+    mime "^4.0.0"
+    p-filter "^4.0.0"
+    url-join "^5.0.0"
+
+"@semantic-release/github@^10.0.0":
   version "10.3.5"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-10.3.5.tgz#112b6ee41fe78356359aa7ba9a1e98b68c8640fc"
   integrity sha512-svvRglGmvqvxjmDgkXhrjf0lC88oZowFhOfifTldbgX9Dzj0inEtMLaC+3/MkDEmxmaQjWmF5Q/0CMIvPNSVdQ==
@@ -3718,10 +3740,10 @@ camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-caniuse-lite@1.0.30001663, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001646:
-  version "1.0.30001663"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001663.tgz#1529a723505e429fdfd49532e9fc42273ba7fed7"
-  integrity sha512-o9C3X27GLKbLeTYZ6HBOLU1tsAcBZsLis28wrVzddShCS16RujjHp9GDHKZqrB3meE0YjhawvMFsGb/igqiPzA==
+caniuse-lite@1.0.30001664, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001646:
+  version "1.0.30001664"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001664.tgz#d588d75c9682d3301956b05a3749652a80677df4"
+  integrity sha512-AmE7k4dXiNKQipgn7a2xg558IRqPN3jMQY/rOsbxDhrd0tyChwbITBfiwtnqz8bi2M5mIWbxAYBvk7W7QBUS2g==
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
