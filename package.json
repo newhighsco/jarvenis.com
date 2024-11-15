@@ -52,7 +52,7 @@
     "postcss": "8.4.49",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sass": "1.80.7",
+    "sass": "1.81.0",
     "sourcebit": "0.11.1",
     "sourcebit-source-filesystem": "0.2.0",
     "sourcebit-target-next": "0.8.3",
