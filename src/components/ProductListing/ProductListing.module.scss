@@ -2,9 +2,9 @@
 @use '../../styles/mixins';
 
 .root {
-  @include mixins.scroll-container(2);
-
   text-align: center;
+
+  @include mixins.scroll-container(2);
 }
 
 .item {
