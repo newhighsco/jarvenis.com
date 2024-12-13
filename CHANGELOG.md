@@ -1,3 +1,10 @@
+## [1.19.317](https://github.com/newhighsco/jarvenis.com/compare/v1.19.316...v1.19.317) (2024-12-13)
+
+
+### Bug Fixes
+
+* prevent sass warnings ([8304e2a](https://github.com/newhighsco/jarvenis.com/commit/8304e2a6855da7e2bf78ecde8683d04748e2c268))
+
 ## [1.19.316](https://github.com/newhighsco/jarvenis.com/compare/v1.19.315...v1.19.316) (2024-12-13)
 
 
