@@ -1,3 +1,10 @@
+## [1.19.338](https://github.com/newhighsco/jarvenis.com/compare/v1.19.337...v1.19.338) (2024-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency concurrently to v9.1.2 ([#2719](https://github.com/newhighsco/jarvenis.com/issues/2719)) ([9eca189](https://github.com/newhighsco/jarvenis.com/commit/9eca1893f8613ac18ecd313ffa8b66861ef7e7f6))
+
 ## [1.19.337](https://github.com/newhighsco/jarvenis.com/compare/v1.19.336...v1.19.337) (2024-12-31)
 
 
