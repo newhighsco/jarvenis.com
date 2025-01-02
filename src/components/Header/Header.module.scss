@@ -34,18 +34,22 @@
   outline-offset: functions.spacing(-1);
   position: absolute;
 
-  img {
-    z-index: -1;
-  }
-
   @include mixins.mq(breakpoints.$tablet) {
     outline-offset: functions.spacing(-1.5);
+  }
+
+  img {
+    z-index: -1;
   }
 }
 
 .logo {
   margin: functions.spacing(2) functions.spacing(3);
   width: auto;
+
+  @include mixins.mq(breakpoints.$tablet) {
+    margin: functions.spacing(4);
+  }
 
   &:hover,
   &:active,
@@ -55,10 +59,6 @@
     path {
       fill: currentColor;
     }
-  }
-
-  @include mixins.mq(breakpoints.$tablet) {
-    margin: functions.spacing(4);
   }
 }
 
@@ -91,15 +91,15 @@
   font-size: 2.5em;
   text-transform: uppercase;
 
+  @include mixins.mq(breakpoints.$tablet) {
+    font-size: 2em;
+    margin-left: functions.spacing(4) !important;
+  }
+
   &:hover,
   &:active,
   &:focus {
     color: colors.$sunshine;
-  }
-
-  @include mixins.mq(breakpoints.$tablet) {
-    font-size: 2em;
-    margin-left: functions.spacing(4) !important;
   }
 }
 
@@ -114,16 +114,16 @@
   top: 0;
   right: 0;
 
+  @include mixins.mq(breakpoints.$tablet) {
+    display: none;
+  }
+
   &:hover,
   &:active,
   &:focus {
     background: none;
     color: colors.$sunshine;
     outline: none;
-  }
-
-  @include mixins.mq(breakpoints.$tablet) {
-    display: none;
   }
 }
 

@@ -11,20 +11,20 @@
   font-weight: bold;
   line-height: 1.2;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: colors.$sunshine;
-    text-decoration: underline 1px dashed currentColor;
-    text-underline-offset: functions.spacing(0.5);
-  }
-
   @include mixins.mq(breakpoints.$tablet) {
     font-size: 1.25em;
   }
 
   @include mixins.mq(breakpoints.$desktop) {
     font-size: 1.5em;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$sunshine;
+    text-decoration: underline 1px dashed currentColor;
+    text-underline-offset: functions.spacing(0.5);
   }
 }
 
