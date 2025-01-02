@@ -49,16 +49,16 @@
     auto;
   margin-top: functions.spacing(4);
 
-  .content {
-    padding-bottom: functions.spacing(4);
-  }
-
   @include mixins.mq(breakpoints.$tablet) {
     margin-top: functions.spacing(6);
 
     .content {
       padding-bottom: functions.spacing(6);
     }
+  }
+
+  .content {
+    padding-bottom: functions.spacing(4);
   }
 
   & + & {
