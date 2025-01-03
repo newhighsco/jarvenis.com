@@ -1,3 +1,10 @@
+## [1.19.351](https://github.com/newhighsco/jarvenis.com/compare/v1.19.350...v1.19.351) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#2734](https://github.com/newhighsco/jarvenis.com/issues/2734)) ([650c91a](https://github.com/newhighsco/jarvenis.com/commit/650c91a4eb4da9170fcc00d0fe7800224e5e3c5c))
+
 ## [1.19.350](https://github.com/newhighsco/jarvenis.com/compare/v1.19.349...v1.19.350) (2025-01-03)
 
 
