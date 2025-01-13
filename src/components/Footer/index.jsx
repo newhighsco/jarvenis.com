@@ -49,7 +49,7 @@ const Footer = () => (
     <ContentContainer size="desktopLarge">
       <Grid valign="middle">
         <Grid.Item sizes={['tablet-one-third']}>
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <SmartLink>
               <LogoLockup className={styles.logo} showIcon={false} />
             </SmartLink>
@@ -59,7 +59,7 @@ const Footer = () => (
           <Navigation
             links={footer.links}
             renderLink={({ href, text, ...rest }) => (
-              <Link href={href} passHref>
+              <Link href={href} passHref legacyBehavior>
                 <SmartLink {...rest}>{text}</SmartLink>
               </Link>
             )}
