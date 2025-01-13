@@ -1,3 +1,10 @@
+## [1.19.373](https://github.com/newhighsco/jarvenis.com/compare/v1.19.372...v1.19.373) (2025-01-13)
+
+
+### Bug Fixes
+
+* **link:** restore `legacyBehavior` ([#2759](https://github.com/newhighsco/jarvenis.com/issues/2759)) ([1c64c83](https://github.com/newhighsco/jarvenis.com/commit/1c64c83247ff1337fa095cfc680352ce22d22468))
+
 ## [1.19.372](https://github.com/newhighsco/jarvenis.com/compare/v1.19.371...v1.19.372) (2025-01-13)
 
 
