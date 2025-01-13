@@ -41,7 +41,7 @@ const Header = () => {
       <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>
-            <Link href="/" passHref>
+            <Link href="/" passHref legacyBehavior>
               <SmartLink>
                 <LogoLockup showText={false} />
               </SmartLink>
@@ -51,7 +51,7 @@ const Header = () => {
             <Navigation
               links={header.links}
               renderLink={({ href, text, ...rest }) => (
-                <Link href={href} passHref>
+                <Link href={href} passHref legacyBehavior>
                   <SmartLink {...rest}>{text}</SmartLink>
                 </Link>
               )}

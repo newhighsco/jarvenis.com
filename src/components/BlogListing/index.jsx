@@ -24,7 +24,7 @@ const BlogListing = ({ locale, posts = [], summary }) => {
             >
               <div className={styles.content}>
                 <Timestamp date={date} locale={locale} />
-                <Link href={slug} passHref>
+                <Link href={slug} passHref legacyBehavior>
                   <SmartLink className={styles.heading}>
                     <h2>{title}</h2>
                   </SmartLink>
@@ -39,7 +39,7 @@ const BlogListing = ({ locale, posts = [], summary }) => {
       </Grid>
       {summary && (
         <Button.Group className={styles.buttons}>
-          <Link href="/blog" passHref>
+          <Link href="/blog" passHref legacyBehavior>
             <Button>Read the blog</Button>
           </Link>
         </Button.Group>
