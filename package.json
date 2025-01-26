@@ -40,7 +40,7 @@
   "dependencies": {
     "@newhighsco/chipset": "6.17.2",
     "@newhighsco/next-plugin-svgr": "3.0.154",
-    "@newhighsco/press-start": "2.3.33",
+    "@newhighsco/press-start": "2.3.34",
     "concurrently": "9.1.2",
     "marked": "15.0.6",
     "next": "15.1.6",
@@ -67,7 +67,7 @@
     "@newhighsco/postcss-config": "3.5.307",
     "@newhighsco/prettier-config": "2.1.28",
     "@newhighsco/release-config": "1.4.1",
-    "@newhighsco/stylelint-config": "4.0.2",
+    "@newhighsco/stylelint-config": "4.0.3",
     "eslint": "8.57.1",
     "husky": "9.1.7",
     "prettier": "3.4.2",
