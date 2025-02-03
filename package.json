@@ -40,7 +40,7 @@
   "dependencies": {
     "@newhighsco/chipset": "6.17.2",
     "@newhighsco/next-plugin-svgr": "3.0.154",
-    "@newhighsco/press-start": "2.3.47",
+    "@newhighsco/press-start": "2.3.50",
     "concurrently": "9.1.2",
     "marked": "15.0.6",
     "next": "15.1.6",
@@ -61,7 +61,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.7.1",
     "@newhighsco/browserslist-config": "1.1.0",
-    "@newhighsco/commitlint-config": "1.1.45",
+    "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "4.0.253",
     "@newhighsco/postcss-config": "3.5.308",
