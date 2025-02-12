@@ -36,11 +36,8 @@
 .alternate {
   background-attachment: fixed;
   background-color: colors.$night;
-  background-image: linear-gradient(
-      to right,
-      rgb(0 0 0 / 10%) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 10%) 1px, transparent 1px),
     linear-gradient(to top, rgb(0 0 0 / 10%) 1px, transparent 1px),
     radial-gradient(circle at 40% 20%, colors.$twilight 0%, colors.$night 90%);
   background-size:
@@ -72,11 +69,8 @@
 
 .highlight {
   background-color: colors.$sunshine;
-  background-image: linear-gradient(
-      to right,
-      rgb(0 0 0 / 2.5%) 2px,
-      transparent 2px
-    ),
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 2.5%) 2px, transparent 2px),
     linear-gradient(to top, rgb(0 0 0 / 2.5%) 2px, transparent 2px);
   background-size:
     functions.spacing(1) functions.spacing(1),

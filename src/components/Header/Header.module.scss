@@ -18,11 +18,8 @@
 }
 
 .background {
-  background-image: linear-gradient(
-      to right,
-      rgb(0 0 0 / 10%) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 10%) 1px, transparent 1px),
     linear-gradient(to top, rgb(0 0 0 / 10%) 1px, transparent 1px),
     radial-gradient(circle at 25% 0, colors.$twilight 0%, rgb(0 0 0 / 10%) 30%);
   background-size:
