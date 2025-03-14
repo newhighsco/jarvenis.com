@@ -1,3 +1,10 @@
+## [1.19.481](https://github.com/newhighsco/jarvenis.com/compare/v1.19.480...v1.19.481) (2025-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/press-start to v2.3.147 ([#2887](https://github.com/newhighsco/jarvenis.com/issues/2887)) ([1895a67](https://github.com/newhighsco/jarvenis.com/commit/1895a677a678c07008bebbfc69f072c885ac7bb2))
+
 ## [1.19.480](https://github.com/newhighsco/jarvenis.com/compare/v1.19.479...v1.19.480) (2025-03-13)
 
 
