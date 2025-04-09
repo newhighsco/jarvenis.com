@@ -4,6 +4,5 @@ module.exports = {
   siteDescription:
     'Destiny Weapon/Gear Reviews, Live Commentaries, Guides and News',
   siteLanguage: 'en-GB',
-  outDir: 'public',
   postsDir: 'blog'
 }
