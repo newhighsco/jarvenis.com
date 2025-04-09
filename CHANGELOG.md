@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/newhighsco/jarvenis.com/compare/v1.19.523...v1.20.0) (2025-04-09)
+
+
+### Features
+
+* remove RSS feed ([#2936](https://github.com/newhighsco/jarvenis.com/issues/2936)) ([6aa42fc](https://github.com/newhighsco/jarvenis.com/commit/6aa42fcb0e9c5ee20853e98c94d5ec62fb65fbd5))
+
 ## [1.19.523](https://github.com/newhighsco/jarvenis.com/compare/v1.19.522...v1.19.523) (2025-04-08)
 
 
