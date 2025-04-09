@@ -11,12 +11,6 @@ const PageContainer = ({ meta, children }) => (
     <Meta
       {...meta}
       additionalLinkTags={[
-        {
-          rel: 'alternate',
-          type: 'application/rss+xml',
-          title: 'Feed',
-          href: '/rss.xml'
-        },
         ...[
           { path: 'primal', extension: 'woff' },
           { path: 'blender-pro', weight: 'bold' }
