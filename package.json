@@ -42,7 +42,7 @@
     "@newhighsco/press-start": "2.3.245",
     "concurrently": "9.1.2",
     "marked": "15.0.12",
-    "next": "15.3.3",
+    "next": "15.3.4",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
     "next-mdx-remote": "5.0.0",
