@@ -40,7 +40,7 @@
     "@newhighsco/chipset": "6.17.4",
     "@newhighsco/next-plugin-svgr": "3.0.157",
     "@newhighsco/press-start": "2.3.245",
-    "concurrently": "9.1.2",
+    "concurrently": "9.2.0",
     "marked": "15.0.12",
     "next": "15.3.4",
     "next-compose-plugins": "2.2.1",
