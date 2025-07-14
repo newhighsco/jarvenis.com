@@ -39,7 +39,7 @@
   "dependencies": {
     "@newhighsco/chipset": "6.17.4",
     "@newhighsco/next-plugin-svgr": "3.0.157",
-    "@newhighsco/press-start": "2.3.256",
+    "@newhighsco/press-start": "2.3.260",
     "concurrently": "9.2.0",
     "marked": "16.0.0",
     "next": "15.3.5",
@@ -62,7 +62,7 @@
     "@newhighsco/browserslist-config": "2.0.0",
     "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/eslint-config": "4.1.36",
+    "@newhighsco/eslint-config": "4.1.38",
     "@newhighsco/postcss-config": "3.5.339",
     "@newhighsco/prettier-config": "2.1.32",
     "@newhighsco/release-config": "1.4.6",
