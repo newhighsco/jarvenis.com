@@ -43,7 +43,7 @@
     "@newhighsco/press-start": "2.3.271",
     "@omlet/cli": "2.0.0",
     "concurrently": "9.2.0",
-    "marked": "16.1.1",
+    "marked": "16.1.2",
     "next": "15.4.5",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
