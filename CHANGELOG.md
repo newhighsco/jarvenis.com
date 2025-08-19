@@ -1,3 +1,10 @@
+## [1.20.56](https://github.com/newhighsco/jarvenis.com/compare/v1.20.55...v1.20.56) (2025-08-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v16.2.0 ([#3013](https://github.com/newhighsco/jarvenis.com/issues/3013)) ([55db5fa](https://github.com/newhighsco/jarvenis.com/commit/55db5faa16578b55157e96f0283902d4504eaacc))
+
 ## [1.20.55](https://github.com/newhighsco/jarvenis.com/compare/v1.20.54...v1.20.55) (2025-08-08)
 
 
