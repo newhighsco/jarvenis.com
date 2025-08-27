@@ -7,7 +7,6 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import Link from 'next/link'
 import React from 'react'
 
 import config from '../../../site.config'
@@ -49,20 +48,13 @@ const Footer = () => (
     <ContentContainer size="desktopLarge">
       <Grid valign="middle">
         <Grid.Item sizes={['tablet-one-third']}>
-          <Link href="/" passHref legacyBehavior>
-            <SmartLink>
-              <LogoLockup className={styles.logo} showIcon={false} />
-            </SmartLink>
-          </Link>
+          <SmartLink href="/">
+            <LogoLockup className={styles.logo} showIcon={false} />
+          </SmartLink>
         </Grid.Item>
         <Grid.Item sizes={['tablet-one-third']}>
           <Navigation
             links={footer.links}
-            renderLink={({ href, text, ...rest }) => (
-              <Link href={href} passHref legacyBehavior>
-                <SmartLink {...rest}>{text}</SmartLink>
-              </Link>
-            )}
             theme={{ root: styles.links, item: styles.link }}
           />
         </Grid.Item>

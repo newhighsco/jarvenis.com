@@ -1,6 +1,5 @@
 import { Button, Grid, Prose, SmartLink } from '@newhighsco/chipset'
 import { marked } from 'marked'
-import Link from 'next/link'
 import { array, bool, string } from 'prop-types'
 import React from 'react'
 
@@ -24,11 +23,9 @@ const BlogListing = ({ locale, posts = [], summary }) => {
             >
               <div className={styles.content}>
                 <Timestamp date={date} locale={locale} />
-                <Link href={slug} passHref legacyBehavior>
-                  <SmartLink className={styles.heading}>
-                    <h2>{title}</h2>
-                  </SmartLink>
-                </Link>
+                <SmartLink href={slug} className={styles.heading}>
+                  <h2>{title}</h2>
+                </SmartLink>
                 {excerpt && (
                   <Prose className={styles.excerpt} html={marked(excerpt)} />
                 )}
@@ -39,9 +36,7 @@ const BlogListing = ({ locale, posts = [], summary }) => {
       </Grid>
       {summary && (
         <Button.Group className={styles.buttons}>
-          <Link href="/blog" passHref legacyBehavior>
-            <Button>Read the blog</Button>
-          </Link>
+          <Button href="/blog">Read the blog</Button>
         </Button.Group>
       )}
     </>
