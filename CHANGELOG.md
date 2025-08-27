@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/newhighsco/jarvenis.com/compare/v1.20.61...v1.21.0) (2025-08-27)
+
+
+### Features
+
+* **press-start:** use `LinkProvider` ([#3019](https://github.com/newhighsco/jarvenis.com/issues/3019)) ([c48926c](https://github.com/newhighsco/jarvenis.com/commit/c48926c6d57a37e99c5bd53777d7db27eb0c6168))
+
 ## [1.20.61](https://github.com/newhighsco/jarvenis.com/compare/v1.20.60...v1.20.61) (2025-08-27)
 
 
