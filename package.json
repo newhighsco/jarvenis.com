@@ -42,7 +42,7 @@
     "@newhighsco/next-plugin-svgr": "3.0.157",
     "@newhighsco/press-start": "2.3.287",
     "@omlet/cli": "2.0.0",
-    "concurrently": "9.2.0",
+    "concurrently": "9.2.1",
     "marked": "16.2.0",
     "next": "15.5.0",
     "next-compose-plugins": "2.2.1",
