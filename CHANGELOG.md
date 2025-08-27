@@ -1,3 +1,10 @@
+## [1.20.61](https://github.com/newhighsco/jarvenis.com/compare/v1.20.60...v1.20.61) (2025-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency concurrently to v9.2.1 ([#3017](https://github.com/newhighsco/jarvenis.com/issues/3017)) ([1da11c6](https://github.com/newhighsco/jarvenis.com/commit/1da11c6d012c0abcfb7781d86e04ba0d751f6e79))
+
 ## [1.20.60](https://github.com/newhighsco/jarvenis.com/compare/v1.20.59...v1.20.60) (2025-08-27)
 
 
