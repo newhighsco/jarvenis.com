@@ -7,7 +7,6 @@ import {
 } from '@newhighsco/chipset'
 import classNames from 'classnames'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
 
 import header from '../../data/header.json'
@@ -41,20 +40,13 @@ const Header = () => {
       <ContentContainer size="desktopLarge" theme={{ content: styles.inner }}>
         <Grid gutterless flex valign="middle">
           <Grid.Item className={styles.logo}>
-            <Link href="/" passHref legacyBehavior>
-              <SmartLink>
-                <LogoLockup showText={false} />
-              </SmartLink>
-            </Link>
+            <SmartLink href="/">
+              <LogoLockup showText={false} />
+            </SmartLink>
           </Grid.Item>
           <Grid.Item className={styles.navigation}>
             <Navigation
               links={header.links}
-              renderLink={({ href, text, ...rest }) => (
-                <Link href={href} passHref legacyBehavior>
-                  <SmartLink {...rest}>{text}</SmartLink>
-                </Link>
-              )}
               theme={{
                 list: styles.list,
                 item: styles.item,

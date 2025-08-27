@@ -2,12 +2,12 @@
   "links": [
     {
       "href": "https://youtube.com/jarvenis",
-      "text": "Watch",
+      "children": "Watch",
       "target": "_blank"
     },
     {
       "href": "https://jarv.creator-spring.com",
-      "text": "Merch",
+      "children": "Merch",
       "target": "_blank"
     }
   ]

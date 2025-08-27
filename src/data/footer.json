@@ -2,12 +2,12 @@
   "links": [
     {
       "href": "https://jarv.creator-spring.com",
-      "text": "Merch",
+      "children": "Merch",
       "target": "_blank"
     },
     {
       "href": "https://jarvenis.com/influencerpack",
-      "text": "Influencer Pack",
+      "children": "Influencer Pack",
       "target": "_blank"
     }
   ]
