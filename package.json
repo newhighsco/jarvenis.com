@@ -1,7 +1,7 @@
 {
   "name": "@newhighsco/jarvenis.com",
   "description": "Jarvenis website",
-  "version": "1.22.0",
+  "version": "1.22.1",
   "author": "New High Score",
   "license": "ISC",
   "private": true,
@@ -65,7 +65,7 @@
     "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "4.1.44",
-    "@newhighsco/postcss-config": "3.5.346",
+    "@newhighsco/postcss-config": "3.5.347",
     "@newhighsco/prettier-config": "2.1.32",
     "@newhighsco/release-config": "1.4.7",
     "@newhighsco/stylelint-config": "4.0.17",
