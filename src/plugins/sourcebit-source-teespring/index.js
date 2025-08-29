@@ -115,11 +115,17 @@ module.exports.bootstrap = async ({
         .then(async response => {
           body = await response.text()
 
+          if (!response.ok) {
+            return {}
+          }
+
           return JSON.parse(body)
         })
         .catch(error => console.error(error, body))
 
-      accumulator = accumulator.concat(products)
+      if (products) {
+        accumulator = accumulator.concat(products)
+      }
 
       if (!!next?.length && currentPage < pageLimit) {
         return await fetchProducts(page + 1, accumulator)
