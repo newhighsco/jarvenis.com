@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/newhighsco/jarvenis.com/compare/v1.21.3...v1.22.0) (2025-08-29)
+
+
+### Features
+
+* **svg:** use `@newhighsco/svgr-config` ([#3023](https://github.com/newhighsco/jarvenis.com/issues/3023)) ([4e1a36f](https://github.com/newhighsco/jarvenis.com/commit/4e1a36ff569f55dbd60bf8402a04f92742b4e87b))
+
 ## [1.21.3](https://github.com/newhighsco/jarvenis.com/compare/v1.21.2...v1.21.3) (2025-08-29)
 
 
