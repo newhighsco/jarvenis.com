@@ -1,5 +1,4 @@
 import { Button, Card, Grid } from '@newhighsco/chipset'
-import Image from 'next/image'
 import { array, bool } from 'prop-types'
 import React from 'react'
 
@@ -24,17 +23,12 @@ const ProductListing = ({ products = [], summary }) => {
                 target="_blank"
                 heading={<h2>{title}</h2>}
                 image={{
-                  render: () => (
-                    <Image
-                      src={image}
-                      alt=""
-                      width={320}
-                      height={320}
-                      layout="responsive"
-                      placeholder="blur"
-                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII="
-                    />
-                  )
+                  src: image,
+                  width: 320,
+                  height: 320,
+                  placeholder: 'blur',
+                  blurDataURL:
+                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII='
                 }}
               >
                 <p>{type}</p>
