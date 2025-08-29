@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/newhighsco/jarvenis.com/compare/v1.22.1...v1.23.0) (2025-08-29)
+
+
+### Features
+
+* use `ImageProvider` ([#3026](https://github.com/newhighsco/jarvenis.com/issues/3026)) ([2e68f69](https://github.com/newhighsco/jarvenis.com/commit/2e68f696320f5790f5bd15fafb70fa2197740438))
+
 ## [1.22.1](https://github.com/newhighsco/jarvenis.com/compare/v1.22.0...v1.22.1) (2025-08-29)
 
 
