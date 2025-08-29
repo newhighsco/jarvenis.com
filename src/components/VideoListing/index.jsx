@@ -1,5 +1,4 @@
 import { Button, Card, Grid } from '@newhighsco/chipset'
-import Image from 'next/image'
 import { array, bool } from 'prop-types'
 import React from 'react'
 
@@ -24,18 +23,13 @@ const VideoListing = ({ videos = [], summary }) => {
                 target="_blank"
                 heading={<h2>{title}</h2>}
                 image={{
-                  render: () => (
-                    <Image
-                      src={image}
-                      alt=""
-                      width={320}
-                      height={180}
-                      layout="responsive"
-                      priority={index === 0}
-                      placeholder="blur"
-                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII="
-                    />
-                  ),
+                  src: image,
+                  width: 320,
+                  height: 180,
+                  priority: index === 0,
+                  placeholder: 'blur',
+                  blurDataURL:
+                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Vg8AAnEBdzTCX3oAAAAASUVORK5CYII=',
                   ratio: '16:9'
                 }}
               />

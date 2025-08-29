@@ -2,11 +2,11 @@ import {
   ContentContainer,
   Grid,
   HeaderContainer,
+  Image,
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
 import classNames from 'classnames'
-import Image from 'next/image'
 import React, { useState } from 'react'
 
 import header from '../../data/header.json'
@@ -29,11 +29,9 @@ const Header = () => {
       <div className={styles.background}>
         <Image
           src={bannerUrl}
-          alt=""
           placeholder="blur"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="100% 50%"
+          fill
+          style={{ objectFit: 'cover', objectPosition: '100% 50%' }}
           priority
         />
       </div>
