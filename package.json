@@ -64,7 +64,7 @@
     "@newhighsco/browserslist-config": "2.0.0",
     "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/eslint-config": "4.1.45",
+    "@newhighsco/eslint-config": "4.2.0",
     "@newhighsco/postcss-config": "3.5.348",
     "@newhighsco/prettier-config": "2.1.32",
     "@newhighsco/release-config": "1.4.10",
@@ -91,15 +91,7 @@
   },
   "prettier": "@newhighsco/prettier-config",
   "release": {
-    "extends": "@newhighsco/release-config",
-    "branches": [
-      "main"
-    ]
-  },
-  "renovate": {
-    "extends": [
-      "local>newhighsco/.github:renovate-config"
-    ]
+    "extends": "@newhighsco/release-config"
   },
   "stylelint": {
     "extends": [
