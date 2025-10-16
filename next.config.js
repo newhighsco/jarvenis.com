@@ -10,7 +10,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true
   },
-  generateBuildId: () => 'build',
   images: {
     domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
     formats: ['image/avif', 'image/webp']
