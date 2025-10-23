@@ -51,11 +51,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
     } catch (error) {
       spinner.fail()
 
-      return module.exports.getSetup({
-        currentOptions,
-        inquirer,
-        ora
-      })()
+      return module.exports.getSetup({ currentOptions, inquirer, ora })()
     }
 
     spinner.succeed()
@@ -67,27 +63,14 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
 module.exports.getOptionsFromSetup = ({ answers }) => {
   const { permaLink, currency, pageLimit } = answers
 
-  return {
-    permaLink,
-    currency,
-    pageLimit
-  }
+  return { permaLink, currency, pageLimit }
 }
 
 module.exports.options = {
-  watch: {
-    default: false,
-    runtimeParameter: 'watch'
-  },
-  permaLink: {
-    default: null
-  },
-  currency: {
-    default: CURRENCIES[0]
-  },
-  pageLimit: {
-    default: Number.MAX_SAFE_INTEGER
-  }
+  watch: { default: false, runtimeParameter: 'watch' },
+  permaLink: { default: null },
+  currency: { default: CURRENCIES[0] },
+  pageLimit: { default: Number.MAX_SAFE_INTEGER }
 }
 
 module.exports.bootstrap = async ({
@@ -188,10 +171,7 @@ module.exports.transform = async ({ data, getPluginContext, options }) => {
         type,
         image: assets.find(asset => asset.id === id).url,
         price,
-        __metadata: {
-          ...model,
-          id
-        }
+        __metadata: { ...model, id }
       }
     }
   )
@@ -203,12 +183,7 @@ module.exports.transform = async ({ data, getPluginContext, options }) => {
       contentType: mimeTypes.lookup(extension),
       fileName: `teespring/${id}${extension}`,
       url,
-      __metadata: {
-        ...model,
-        modelName: '__asset',
-        modelLabel: 'Asset',
-        id
-      }
+      __metadata: { ...model, modelName: '__asset', modelLabel: 'Asset', id }
     }
   })
 

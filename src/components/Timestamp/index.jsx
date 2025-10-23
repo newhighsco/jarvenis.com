@@ -12,10 +12,7 @@ const Timestamp = ({ date, locale }) => {
   )
 }
 
-Timestamp.propTypes = {
-  date: string,
-  locale: string
-}
+Timestamp.propTypes = { date: string, locale: string }
 
 export default Timestamp
 export { Timestamp }

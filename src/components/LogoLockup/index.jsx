@@ -27,11 +27,7 @@ const LogoLockup = ({ showIcon = true, showText = true, className }) => (
   </div>
 )
 
-LogoLockup.propTypes = {
-  showIcon: bool,
-  showText: bool,
-  className: string
-}
+LogoLockup.propTypes = { showIcon: bool, showText: bool, className: string }
 
 export default LogoLockup
 export { LogoLockup }

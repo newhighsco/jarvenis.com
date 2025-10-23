@@ -18,10 +18,6 @@ const PageLayout = ({ title, markdown, meta }) => (
   </PageContainer>
 )
 
-PageLayout.propTypes = {
-  title: string,
-  markdown: object,
-  meta: object
-}
+PageLayout.propTypes = { title: string, markdown: object, meta: object }
 
 export default PageLayout

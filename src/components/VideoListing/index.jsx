@@ -48,10 +48,7 @@ const VideoListing = ({ videos = [], summary }) => {
   )
 }
 
-VideoListing.propTypes = {
-  videos: array,
-  summary: bool
-}
+VideoListing.propTypes = { videos: array, summary: bool }
 
 export default VideoListing
 export { VideoListing }

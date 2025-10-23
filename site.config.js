@@ -9,10 +9,7 @@ const config = {
   shortName: 'Jarv',
   title: null,
   description: null,
-  logo: {
-    bitmap: logoBitmap.src,
-    vector: logoVector
-  },
+  logo: { bitmap: logoBitmap.src, vector: logoVector },
   openGraphImage: openGraphImageUrl.src,
   themeColor: colors.midnight,
   twitterHandle: 'jarvenis',
@@ -24,11 +21,7 @@ const config = {
     twitter: `https://twitter.com/jarvenis`,
     youtube: `https://youtube.com/jarvenis`
   },
-  dateFormat: {
-    month: 'short',
-    year: 'numeric',
-    day: 'numeric'
-  }
+  dateFormat: { month: 'short', year: 'numeric', day: 'numeric' }
 }
 
 export default config

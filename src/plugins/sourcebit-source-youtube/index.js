@@ -30,11 +30,7 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
     } catch (error) {
       spinner.fail()
 
-      return module.exports.getSetup({
-        currentOptions,
-        inquirer,
-        ora
-      })()
+      return module.exports.getSetup({ currentOptions, inquirer, ora })()
     }
 
     spinner.succeed()
@@ -44,19 +40,12 @@ module.exports.getSetup = ({ currentOptions, inquirer, ora }) => {
 }
 
 module.exports.getOptionsFromSetup = ({ answers }) => {
-  return {
-    channelId: answers.channelId
-  }
+  return { channelId: answers.channelId }
 }
 
 module.exports.options = {
-  watch: {
-    default: false,
-    runtimeParameter: 'watch'
-  },
-  channelId: {
-    default: null
-  }
+  watch: { default: false, runtimeParameter: 'watch' },
+  channelId: { default: null }
 }
 
 module.exports.bootstrap = async ({
@@ -117,12 +106,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
         href,
         title,
         image: assets.find(asset => asset.id === id).url,
-        __metadata: {
-          ...model,
-          id,
-          createdAt,
-          updatedAt
-        }
+        __metadata: { ...model, id, createdAt, updatedAt }
       })
     )
 
@@ -130,12 +114,7 @@ module.exports.transform = ({ data, getPluginContext }) => {
     contentType: 'image/jpeg',
     fileName: `youtube/${id}.jpg`,
     url,
-    __metadata: {
-      ...model,
-      modelName: '__asset',
-      modelLabel: 'Asset',
-      id
-    }
+    __metadata: { ...model, modelName: '__asset', modelLabel: 'Asset', id }
   }))
 
   return {

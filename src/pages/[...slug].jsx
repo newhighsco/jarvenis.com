@@ -11,9 +11,7 @@ const Page = props => {
   return <Layout {...props} />
 }
 
-Page.propTypes = {
-  layout: string
-}
+Page.propTypes = { layout: string }
 
 export async function getStaticProps({ params, locale }) {
   const slug = params?.slug.join('/')
