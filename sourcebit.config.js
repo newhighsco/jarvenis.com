@@ -2,27 +2,15 @@ module.exports = {
   plugins: [
     {
       module: require('./src/plugins/sourcebit-source-teespring'),
-      options: {
-        permaLink: 'jarv',
-        currency: 'GBP'
-      }
+      options: { permaLink: 'jarv', currency: 'GBP' }
     },
     {
       module: require('./src/plugins/sourcebit-source-youtube'),
-      options: {
-        channelId: 'UCPbVYd8r0hfiBhKSyxMsjiw'
-      }
+      options: { channelId: 'UCPbVYd8r0hfiBhKSyxMsjiw' }
     },
     {
       module: require('sourcebit-source-filesystem'),
-      options: {
-        sources: [
-          {
-            name: 'pages',
-            path: './src/content'
-          }
-        ]
-      }
+      options: { sources: [{ name: 'pages', path: './src/content' }] }
     },
     {
       module: require('sourcebit-target-next'),

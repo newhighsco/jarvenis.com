@@ -48,10 +48,7 @@ const ProductListing = ({ products = [], summary }) => {
   )
 }
 
-ProductListing.propTypes = {
-  products: array,
-  summary: bool
-}
+ProductListing.propTypes = { products: array, summary: bool }
 
 export default ProductListing
 export { ProductListing }

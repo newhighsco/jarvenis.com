@@ -9,9 +9,6 @@ import theme from '../theme'
 
 const App = props => <AppPage {...props} theme={theme} config={config} />
 
-App.propTypes = {
-  Component: func,
-  pageProps: object
-}
+App.propTypes = { Component: func, pageProps: object }
 
 export default App

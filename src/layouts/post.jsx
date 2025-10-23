@@ -32,10 +32,7 @@ const PostLayout = ({ locale, title, date, markdown, meta }) => (
       ...meta,
       openGraph: {
         type: 'article',
-        article: {
-          publishedTime: date,
-          section: 'Blog'
-        }
+        article: { publishedTime: date, section: 'Blog' }
       }
     }}
   >

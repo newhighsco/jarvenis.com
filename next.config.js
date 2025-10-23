@@ -7,17 +7,12 @@ const withMdx = require('next-mdx-frontmatter')
 sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true
-  },
+  eslint: { ignoreDuringBuilds: true },
   images: {
     domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
     formats: ['image/avif', 'image/webp']
   },
-  i18n: {
-    locales: ['en-GB'],
-    defaultLocale: 'en-GB'
-  },
+  i18n: { locales: ['en-GB'], defaultLocale: 'en-GB' },
   poweredByHeader: false,
   transpilePackages: ['@newhighsco/chipset', '@newhighsco/press-start'],
   webpack: config => {

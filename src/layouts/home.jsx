@@ -80,10 +80,6 @@ const HomeLayout = ({ meta, videos = [], products = [] }) => {
   )
 }
 
-HomeLayout.propTypes = {
-  meta: object,
-  videos: array,
-  products: array
-}
+HomeLayout.propTypes = { meta: object, videos: array, products: array }
 
 export default HomeLayout

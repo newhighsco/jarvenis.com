@@ -43,11 +43,7 @@ const BlogListing = ({ locale, posts = [], summary }) => {
   )
 }
 
-BlogListing.propTypes = {
-  locale: string,
-  posts: array,
-  summary: bool
-}
+BlogListing.propTypes = { locale: string, posts: array, summary: bool }
 
 export default BlogListing
 export { BlogListing }
