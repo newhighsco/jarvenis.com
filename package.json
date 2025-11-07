@@ -24,8 +24,8 @@
   "scripts": {
     "prepare": "husky",
     "clean": "rm -rf {.next,public/{robots.txt,{atom,rss,sitemap*}.xml},.sourcebit-*cache.json}",
-    "start": "next dev",
-    "build": "next build",
+    "start": "next dev --webpack",
+    "build": "next build --webpack",
     "postbuild": "concurrently yarn:postbuild:*",
     "postbuild:sitemap": "next-sitemap",
     "test": "yarn lint",

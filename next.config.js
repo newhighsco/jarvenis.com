@@ -7,7 +7,6 @@ const withMdx = require('next-mdx-frontmatter')
 sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
-  eslint: { ignoreDuringBuilds: true },
   images: {
     domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
     formats: ['image/avif', 'image/webp']
