@@ -1447,13 +1447,6 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@dr.pogodin/react-themes@1.9.3":
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.9.3.tgz#572e32cf2711ac7b700630586f0559d32321a161"
-  integrity sha512-3gr++vy5ArJaTRFSzE62ybBNVd6PhpDG4GDCA2HafX3q6vQwJ5IgOH6pe552JumtX084m1W4DjeE11/gKHdtHw==
-  dependencies:
-    "@babel/runtime" "^7.28.4"
-
 "@dr.pogodin/react-themes@1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.9.4.tgz#f31305068a5a7a41e0432684d572a4058ec2212f"
@@ -1969,15 +1962,6 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-2.0.0.tgz#5b61d7689c59073145d063c7d698c7579ed1ad5e"
   integrity sha512-2pONPrJX/6uAFjWPcOoSWH+nwXcmNej7wS9a1q0yAoxV6rY/paE3jJ6pyjXsWgzn/Rr179SnJ79TJDLtYNq71w==
 
-"@newhighsco/chipset@6.25.2":
-  version "6.25.2"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.2.tgz#4a3d1f0d2d5fa08e79dfd56b38a5f1246018567e"
-  integrity sha512-XrKl3Sfn26hbZEsCJWPd4WqQDBkQxj+aQtVKD/XOFL+LwyYip7F0udWfaEN2HU4CoGGEJdttgZOHuaw/yEeW/g==
-  dependencies:
-    "@dr.pogodin/react-themes" "1.9.3"
-    classnames "2.5.1"
-    react-device-detect "2.2.3"
-
 "@newhighsco/chipset@6.25.3":
   version "6.25.3"
   resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.3.tgz#79d9487811321e300a4a9725889b4b37044c9f0b"
@@ -2046,12 +2030,12 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "10.4.0"
 
-"@newhighsco/press-start@2.6.13":
-  version "2.6.13"
-  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.13.tgz#7e81e555e6849e5cdc55e647e25dc2fb9c2cf0f6"
-  integrity sha512-y4wjC5JsG8VRLsVaEWbhg4Qr+ngewov9acqa+XfNmK8BxjLOZ/EbcfkH7JKixiojzKPT62+5SoNvxBX6qdgOTA==
+"@newhighsco/press-start@2.6.14":
+  version "2.6.14"
+  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.14.tgz#efb4e3f10a4ed216de682883e64103e4363eb6ed"
+  integrity sha512-s/fFjxnVks2wUbyHPuq9TxoeA0wmuddWbyfVoXoXdAnqOcjciImalrmUYc1iJpANjcUjPq4uLjSZd81QyXap8Q==
   dependencies:
-    "@newhighsco/chipset" "6.25.2"
+    "@newhighsco/chipset" "6.25.3"
     next-seo "6.8.0"
 
 "@newhighsco/prettier-config@2.3.2":
