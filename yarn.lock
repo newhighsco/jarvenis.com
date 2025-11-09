@@ -1454,6 +1454,13 @@
   dependencies:
     "@babel/runtime" "^7.28.4"
 
+"@dr.pogodin/react-themes@1.9.4":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.9.4.tgz#f31305068a5a7a41e0432684d572a4058ec2212f"
+  integrity sha512-STq5zC1KJ4TDsuvPwCHjrmrkQlAql0kvoa6bvYPPVU+klZRUX926FDfBGxYP9gU2YwpU/TERK4H/cP/eN9Zcew==
+  dependencies:
+    "@babel/runtime" "^7.28.4"
+
 "@dual-bundle/import-meta-resolve@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@dual-bundle/import-meta-resolve/-/import-meta-resolve-4.2.1.tgz#cd0b25b3808cd9e684cd6cd549bbf8e1dcf05ee7"
@@ -1968,6 +1975,15 @@
   integrity sha512-XrKl3Sfn26hbZEsCJWPd4WqQDBkQxj+aQtVKD/XOFL+LwyYip7F0udWfaEN2HU4CoGGEJdttgZOHuaw/yEeW/g==
   dependencies:
     "@dr.pogodin/react-themes" "1.9.3"
+    classnames "2.5.1"
+    react-device-detect "2.2.3"
+
+"@newhighsco/chipset@6.25.3":
+  version "6.25.3"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.3.tgz#79d9487811321e300a4a9725889b4b37044c9f0b"
+  integrity sha512-c74+jRTIOLmG7Lh9GjO/r4h003aXLv6LQtmm3PAySBCPZ0mwntsS1+ZhtyZjTEuhZRFcjH5W5Kk6dsx1ipVKRg==
+  dependencies:
+    "@dr.pogodin/react-themes" "1.9.4"
     classnames "2.5.1"
     react-device-detect "2.2.3"
 
