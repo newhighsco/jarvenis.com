@@ -1472,6 +1472,13 @@
   dependencies:
     "@babel/runtime" "^7.28.4"
 
+"@dr.pogodin/react-themes@1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.1.tgz#223c38b24f1cd6f6e0e31bad44621e719b6c4b72"
+  integrity sha512-BbdcwVJT7Pc8rDHXIjojnOvuhze9uAaUjkFSx4vJr3XMmvXSkxU7ehRm5XmqteLmI5aOdOHjupb+9Msd71Rl5w==
+  dependencies:
+    "@babel/runtime" "^7.28.4"
+
 "@dual-bundle/import-meta-resolve@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@dual-bundle/import-meta-resolve/-/import-meta-resolve-4.2.1.tgz#cd0b25b3808cd9e684cd6cd549bbf8e1dcf05ee7"
@@ -2005,6 +2012,15 @@
     classnames "2.5.1"
     react-device-detect "2.2.3"
 
+"@newhighsco/chipset@6.25.5":
+  version "6.25.5"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.5.tgz#48696e59b247ad21d7db799a5f77f790cc801714"
+  integrity sha512-hCPXYuS89BCaBeQTUN55cqdqC73xhLUnpEStP/fFZVsw76Q0APeH5MveLVa1vGOpAbVitU6QtvF5NlmJbV1ALA==
+  dependencies:
+    "@dr.pogodin/react-themes" "1.10.1"
+    classnames "2.5.1"
+    react-device-detect "2.2.3"
+
 "@newhighsco/commitlint-config@1.1.46":
   version "1.1.46"
   resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.46.tgz#2ab32ea1eacc8a8af319c2a809c1a45512636cbc"
@@ -2064,10 +2080,10 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "10.4.0"
 
-"@newhighsco/press-start@2.6.18":
-  version "2.6.18"
-  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.18.tgz#8f73f44b9448e1a3f4438ff01fd2148c36206f82"
-  integrity sha512-IvrV+piRrNvr2V1gftvy7C+Ti6BaMJ3nlATdn10+kcmvypVJbeF18+0iSFPAQ90BpcAB1ouKlgdGyjScX86IxQ==
+"@newhighsco/press-start@2.6.19":
+  version "2.6.19"
+  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.19.tgz#39420110073e888ced59d9fe86302fa95f36daba"
+  integrity sha512-b0nTBF29p99Wrnuvp6Gwn42KPol+FH7Im9RvhbR5mmhd+nytFaGKFNqJPEUPCQOD5+42dW6la0yELYAbW97Twg==
   dependencies:
     "@newhighsco/chipset" "6.25.4"
     next-seo "6.8.0"
