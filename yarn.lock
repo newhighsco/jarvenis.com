@@ -1465,13 +1465,6 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@dr.pogodin/react-themes@1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.0.tgz#6541926ed0bff155cefa85b2cf4d4737b9d8ef95"
-  integrity sha512-uHTS7eS64jV0gT085KVYGn/UOWe+promTTQDtUeQWu4wezTzBUPU60JEEZRXssxWwuTOusMD9KdyZH/E5aYFyQ==
-  dependencies:
-    "@babel/runtime" "^7.28.4"
-
 "@dr.pogodin/react-themes@1.10.1":
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.1.tgz#223c38b24f1cd6f6e0e31bad44621e719b6c4b72"
@@ -2003,15 +1996,6 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-2.0.0.tgz#5b61d7689c59073145d063c7d698c7579ed1ad5e"
   integrity sha512-2pONPrJX/6uAFjWPcOoSWH+nwXcmNej7wS9a1q0yAoxV6rY/paE3jJ6pyjXsWgzn/Rr179SnJ79TJDLtYNq71w==
 
-"@newhighsco/chipset@6.25.4":
-  version "6.25.4"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.4.tgz#16122db799e33a03a884e11979e870516e8ae255"
-  integrity sha512-DoTwoKPfUUylUCe7/UhaXArqnhQ9t3xc3KF3YVDOBdsUAgjMZvwpcycZhiSPZlmfhdLiSV9tDXk+cJSlUOqwWA==
-  dependencies:
-    "@dr.pogodin/react-themes" "1.10.0"
-    classnames "2.5.1"
-    react-device-detect "2.2.3"
-
 "@newhighsco/chipset@6.25.5":
   version "6.25.5"
   resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.25.5.tgz#48696e59b247ad21d7db799a5f77f790cc801714"
@@ -2031,10 +2015,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-6.0.0.tgz#0216b28ed69bc76255d98147901b3013f09050d0"
-  integrity sha512-jqpEu1YDw/d2KtujUIZXXz88w+R9sT/uAUcdvJJq7SvFSA2wfAdHBskOs/XvwZJlk4XtFq61a4aCEbjlh81cIw==
+"@newhighsco/eslint-config@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-6.0.1.tgz#ba323a067284441f1238a1948a604033f06000c1"
+  integrity sha512-vjMxXtqkH/RVrK2oPizD17sJ6XA7l1cQbz9pYiPn7HoLp6VmAK/h8Zry/JCKGkETP3QAdDDUre1mOr/U+uDq2A==
   dependencies:
     "@eslint/compat" "2.0.0"
     "@eslint/eslintrc" "3.3.1"
@@ -2057,7 +2041,7 @@
     eslint-plugin-react "7.37.5"
     eslint-plugin-react-hooks "7.0.1"
     eslint-plugin-simple-import-sort "12.1.1"
-    eslint-plugin-storybook "10.0.8"
+    eslint-plugin-storybook "10.1.0"
     eslint-plugin-testing-library "7.13.5"
 
 "@newhighsco/next-plugin-svgr@3.0.157":
@@ -2080,12 +2064,12 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "10.4.0"
 
-"@newhighsco/press-start@2.6.19":
-  version "2.6.19"
-  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.19.tgz#39420110073e888ced59d9fe86302fa95f36daba"
-  integrity sha512-b0nTBF29p99Wrnuvp6Gwn42KPol+FH7Im9RvhbR5mmhd+nytFaGKFNqJPEUPCQOD5+42dW6la0yELYAbW97Twg==
+"@newhighsco/press-start@2.6.20":
+  version "2.6.20"
+  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.20.tgz#428cb806118181f77d7f76fbae31beb731680591"
+  integrity sha512-fDkkAqztWnHqFg7lscVHkjrAdlU7w3cAQLW/bqSX718cm6LXcklF9WdtQdpUrWkkzZpnkryXO82WeaXyAUfEPw==
   dependencies:
-    "@newhighsco/chipset" "6.25.4"
+    "@newhighsco/chipset" "6.25.5"
     next-seo "6.8.0"
 
 "@newhighsco/prettier-config@2.3.2":
@@ -5675,10 +5659,10 @@ eslint-plugin-simple-import-sort@12.1.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-12.1.1.tgz#e64bfdaf91c5b98a298619aa634a9f7aa43b709e"
   integrity sha512-6nuzu4xwQtE3332Uz0to+TxDQYRLTKRESSc2hefVT48Zc8JthmN23Gx9lnYhu0FtkRSL1oxny3kJ2aveVhmOVA==
 
-eslint-plugin-storybook@10.0.8:
-  version "10.0.8"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-10.0.8.tgz#09460cce1d049c1b339eb8a2e1b24730dba10c12"
-  integrity sha512-ZKEMFhF/z/HRVvIgnEIYG2uAqmuLbkebUdHH3DpGHE64GPgk+KozcpqnD6zNk5vJ407bFmcWsGinBc2zi74f0g==
+eslint-plugin-storybook@10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-10.1.0.tgz#faf371e7b631c994c5db9ed8463a51e76f14544b"
+  integrity sha512-5s/Hi9bKl6xSChPOlHwLrQDW+Nj6OXnl9nnQmbKtEQoCdEuSDbAEDc8zZ9NLAyD2rljE2N6Jhe9iP9+2lm43tQ==
   dependencies:
     "@typescript-eslint/utils" "^8.8.1"
 
