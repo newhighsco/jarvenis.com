@@ -1,3 +1,10 @@
+## [1.23.51](https://github.com/newhighsco/jarvenis.com/compare/v1.23.50...v1.23.51) (2025-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v19.2.3 ([#3145](https://github.com/newhighsco/jarvenis.com/issues/3145)) ([881b55e](https://github.com/newhighsco/jarvenis.com/commit/881b55ef9450fb20f645b4683e60d57a7ade95a3))
+
 ## [1.23.50](https://github.com/newhighsco/jarvenis.com/compare/v1.23.49...v1.23.50) (2025-12-11)
 
 
