@@ -2032,19 +2032,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-2.0.0.tgz#5b61d7689c59073145d063c7d698c7579ed1ad5e"
   integrity sha512-2pONPrJX/6uAFjWPcOoSWH+nwXcmNej7wS9a1q0yAoxV6rY/paE3jJ6pyjXsWgzn/Rr179SnJ79TJDLtYNq71w==
 
-"@newhighsco/chipset@6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.26.0.tgz#446979a84548c9da14e4f64318a4e059ab5efe2c"
-  integrity sha512-egz6pOGJDaTBchKWh2q3A2nEppcZcWOfSs2OUfMcIzAldkhuI0bhiwrHw01mwlngij3EgAPnDqtO9va1RBJHWA==
-  dependencies:
-    "@dr.pogodin/react-themes" "1.10.1"
-    classnames "2.5.1"
-    react-device-detect "2.2.3"
-
-"@newhighsco/chipset@6.26.1":
-  version "6.26.1"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.26.1.tgz#0b90a738fdaaeda9c6356c4ac3d05d0152bd5b4c"
-  integrity sha512-GvfN5sjp5WqnMJdkEWkLqezmk7ZWD8hCSPz3hQaayOLZ8rUO+cQ3N1fmw5aipggTispG58Pd6BkSZPW+uqSPjw==
+"@newhighsco/chipset@6.27.0":
+  version "6.27.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.27.0.tgz#648b635f881ab9be524ab3c3bc39f8975403ddf6"
+  integrity sha512-vpjvyp/Ut1YIqdctmjY7WtCLfEW2pjIinQYQ3tt3ZcWqJV0tzRnPGPdutQCh1atcMHYIOy8oYB9qBKG2jXezYA==
   dependencies:
     "@dr.pogodin/react-themes" "1.10.1"
     classnames "2.5.1"
@@ -2109,12 +2100,12 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "11.1.1"
 
-"@newhighsco/press-start@2.6.25":
-  version "2.6.25"
-  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.25.tgz#aead6cc7cc68b582725e1fd81ec8840a3c207e37"
-  integrity sha512-4ht60TWZtaw9XfVqymwE3YEbo+4lezIe16IhEmN9Oh59RcVXW+PgJcCHwiXGr5X6c0VxyhsthAR+uxyIJ9MXsA==
+"@newhighsco/press-start@2.6.26":
+  version "2.6.26"
+  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.26.tgz#2d68caa6f19422439b5f711784d1912b514f9708"
+  integrity sha512-6KyzMRLFgDtnXG1m0yzMyfTH3BXcViZhGRTWWUwreNJnq6FvnPkMQKpJ9Q1l8+PuZSMOK9WxjdbKeaGP3NfAAA==
   dependencies:
-    "@newhighsco/chipset" "6.26.0"
+    "@newhighsco/chipset" "6.27.0"
     next-seo "6.8.0"
 
 "@newhighsco/prettier-config@2.3.2":

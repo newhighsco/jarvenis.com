@@ -38,9 +38,9 @@
     "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
-    "@newhighsco/chipset": "6.26.1",
+    "@newhighsco/chipset": "6.27.0",
     "@newhighsco/next-plugin-svgr": "3.0.158",
-    "@newhighsco/press-start": "2.6.25",
+    "@newhighsco/press-start": "2.6.26",
     "@omlet/cli": "2.0.0",
     "concurrently": "9.2.1",
     "marked": "17.0.1",
