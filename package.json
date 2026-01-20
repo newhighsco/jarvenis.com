@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@newhighsco/chipset": "6.27.0",
-    "@newhighsco/next-plugin-svgr": "3.0.159",
+    "@newhighsco/next-plugin-svgr": "3.0.160",
     "@newhighsco/press-start": "2.6.27",
     "@omlet/cli": "2.0.0",
     "concurrently": "9.2.1",
