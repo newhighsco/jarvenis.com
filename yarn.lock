@@ -870,7 +870,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.28.5"
 
-"@babel/runtime@^7.28.4":
+"@babel/runtime@^7.28.4", "@babel/runtime@^7.28.6":
   version "7.28.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
   integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
@@ -1513,6 +1513,13 @@
   dependencies:
     "@babel/runtime" "^7.28.4"
 
+"@dr.pogodin/react-themes@1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.2.tgz#dd2591bb74c12141f5f03c14072e1ca99062f6e3"
+  integrity sha512-XQjUY7TqsVQSYPG9apebjA/PnBoVRkzviujQgBsV8uPplwuKchNNKHIZQ/JHBLKvsuj5bZneIEP12bJBvwuasw==
+  dependencies:
+    "@babel/runtime" "^7.28.6"
+
 "@emnapi/runtime@^1.7.0":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.8.1.tgz#550fa7e3c0d49c5fb175a116e8cd70614f9a22a5"
@@ -2038,6 +2045,15 @@
   integrity sha512-vpjvyp/Ut1YIqdctmjY7WtCLfEW2pjIinQYQ3tt3ZcWqJV0tzRnPGPdutQCh1atcMHYIOy8oYB9qBKG2jXezYA==
   dependencies:
     "@dr.pogodin/react-themes" "1.10.1"
+    classnames "2.5.1"
+    react-device-detect "2.2.3"
+
+"@newhighsco/chipset@6.27.1":
+  version "6.27.1"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.27.1.tgz#4fdf450a8a99eb25c0583d044b2f7f6f9ee470b9"
+  integrity sha512-CDAeMos5LtUpp0twxoXbF8UOlVJ0G4brBFIDqp/60At77i5OUt8i/i3h6ObKhpolwOam5KBlLADagOEyR5n3oQ==
+  dependencies:
+    "@dr.pogodin/react-themes" "1.10.2"
     classnames "2.5.1"
     react-device-detect "2.2.3"
 
