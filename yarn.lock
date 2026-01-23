@@ -870,7 +870,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.28.5"
 
-"@babel/runtime@^7.28.4", "@babel/runtime@^7.28.6":
+"@babel/runtime@^7.28.6":
   version "7.28.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
   integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
@@ -1506,13 +1506,6 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@dr.pogodin/react-themes@1.10.1":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.1.tgz#223c38b24f1cd6f6e0e31bad44621e719b6c4b72"
-  integrity sha512-BbdcwVJT7Pc8rDHXIjojnOvuhze9uAaUjkFSx4vJr3XMmvXSkxU7ehRm5XmqteLmI5aOdOHjupb+9Msd71Rl5w==
-  dependencies:
-    "@babel/runtime" "^7.28.4"
-
 "@dr.pogodin/react-themes@1.10.2":
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/@dr.pogodin/react-themes/-/react-themes-1.10.2.tgz#dd2591bb74c12141f5f03c14072e1ca99062f6e3"
@@ -2039,15 +2032,6 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/browserslist-config/-/browserslist-config-2.0.0.tgz#5b61d7689c59073145d063c7d698c7579ed1ad5e"
   integrity sha512-2pONPrJX/6uAFjWPcOoSWH+nwXcmNej7wS9a1q0yAoxV6rY/paE3jJ6pyjXsWgzn/Rr179SnJ79TJDLtYNq71w==
 
-"@newhighsco/chipset@6.27.0":
-  version "6.27.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.27.0.tgz#648b635f881ab9be524ab3c3bc39f8975403ddf6"
-  integrity sha512-vpjvyp/Ut1YIqdctmjY7WtCLfEW2pjIinQYQ3tt3ZcWqJV0tzRnPGPdutQCh1atcMHYIOy8oYB9qBKG2jXezYA==
-  dependencies:
-    "@dr.pogodin/react-themes" "1.10.1"
-    classnames "2.5.1"
-    react-device-detect "2.2.3"
-
 "@newhighsco/chipset@6.27.1":
   version "6.27.1"
   resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.27.1.tgz#4fdf450a8a99eb25c0583d044b2f7f6f9ee470b9"
@@ -2116,12 +2100,12 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "11.1.1"
 
-"@newhighsco/press-start@2.6.28":
-  version "2.6.28"
-  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.28.tgz#c8fe687acff0a850a7a063d485e79ebef7f871bb"
-  integrity sha512-MIHXOF7LcL8izyY4HRFdxTj6zKjIfaOpqDLPme2gs/GUyCeA189zdXAzMDwUB03nHU024pnXyr/sMooirz47MQ==
+"@newhighsco/press-start@2.6.29":
+  version "2.6.29"
+  resolved "https://registry.yarnpkg.com/@newhighsco/press-start/-/press-start-2.6.29.tgz#add6b366e298b8b78f6ff3133d4b18098d60928f"
+  integrity sha512-Jyhr3OS3sFn7ED2THYEnvZeMoSDIArFETEeHwXsEmydL04gYoSW2GWy5JnbTarxo9IK7lutLemoR3q+RtlwGnQ==
   dependencies:
-    "@newhighsco/chipset" "6.27.0"
+    "@newhighsco/chipset" "6.27.1"
     next-seo "6.8.0"
 
 "@newhighsco/prettier-config@2.3.3":
