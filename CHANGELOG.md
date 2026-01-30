@@ -1,3 +1,10 @@
+## [1.23.80](https://github.com/newhighsco/jarvenis.com/compare/v1.23.79...v1.23.80) (2026-01-30)
+
+
+### Bug Fixes
+
+* **header:** improved a11y ([#3199](https://github.com/newhighsco/jarvenis.com/issues/3199)) ([1db3a8c](https://github.com/newhighsco/jarvenis.com/commit/1db3a8cf759ddbe068f8a9a038b20d941e42a692))
+
 ## [1.23.79](https://github.com/newhighsco/jarvenis.com/compare/v1.23.78...v1.23.79) (2026-01-28)
 
 
