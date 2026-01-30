@@ -70,7 +70,8 @@
 
 .list {
   @include mixins.mq(breakpoints.$tablet) {
-    &[hidden] {
+    &[hidden],
+    [aria-expanded='false'] ~ & {
       display: block;
     }
   }
