@@ -70,7 +70,7 @@
 
 .iconLink {
   display: inline-block;
-  margin-left: functions.spacing(2);
+  margin-left: functions.spacing(2) !important;
 
   &:hover,
   &:active,

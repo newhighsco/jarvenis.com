@@ -68,7 +68,7 @@ const Footer = () => (
                 </Icon>
               </SmartLink>
             )}
-            theme={{ root: styles.iconLinks, link: styles.iconLink }}
+            theme={{ root: styles.iconLinks, item: styles.iconLink }}
             inline
           />
         </Grid.Item>

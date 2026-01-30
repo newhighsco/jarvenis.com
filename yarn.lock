@@ -2159,6 +2159,15 @@
     classnames "2.5.1"
     react-device-detect "2.2.3"
 
+"@newhighsco/chipset@6.27.2":
+  version "6.27.2"
+  resolved "https://registry.yarnpkg.com/@newhighsco/chipset/-/chipset-6.27.2.tgz#7e68a6fa7eb7181affa0dcc778fa7b528f441ad2"
+  integrity sha512-8090t5XL9FImmh0/X6ywmlZF3fSycdh/oik/xoeCbkAnAJYROuQGQC9NGcfVG7N+1T0MJTcNtUzMdEzwdEeUbQ==
+  dependencies:
+    "@dr.pogodin/react-themes" "1.10.2"
+    classnames "2.5.1"
+    react-device-detect "2.2.3"
+
 "@newhighsco/commitlint-config@1.1.47":
   version "1.1.47"
   resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.47.tgz#8472bc56f1a38cf366e172002e701d7b1cafaf36"
