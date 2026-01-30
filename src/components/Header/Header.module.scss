@@ -70,7 +70,7 @@
 
 .list {
   @include mixins.mq(breakpoints.$tablet) {
-    &[hidden] {
+    [aria-expanded='false'] ~ & {
       display: block;
     }
   }
@@ -79,6 +79,7 @@
 .item {
   @include mixins.mq(breakpoints.$tablet) {
     display: inline-block;
+    margin-left: functions.spacing(4) !important;
   }
 }
 
@@ -90,7 +91,6 @@
 
   @include mixins.mq(breakpoints.$tablet) {
     font-size: 2em;
-    margin-left: functions.spacing(4) !important;
   }
 
   &:hover,
