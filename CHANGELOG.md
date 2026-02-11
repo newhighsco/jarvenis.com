@@ -1,3 +1,10 @@
+## [1.23.83](https://github.com/newhighsco/jarvenis.com/compare/v1.23.82...v1.23.83) (2026-02-11)
+
+
+### Bug Fixes
+
+* **images:** configure `remotePatterns` ([b97a3a3](https://github.com/newhighsco/jarvenis.com/commit/b97a3a31a1c9f4eeca0840c5c1cc441e3e2e820d))
+
 ## [1.23.82](https://github.com/newhighsco/jarvenis.com/compare/v1.23.81...v1.23.82) (2026-02-09)
 
 
