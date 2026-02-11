@@ -13,6 +13,7 @@
   "bugs": {
     "url": "https://github.com/newhighsco/jarvenis.com/issues"
   },
+  "packageManager": "yarn@4.12.0",
   "files": [
     "public",
     "src",
@@ -30,10 +31,10 @@
     "postbuild:sitemap": "next-sitemap",
     "test": "yarn lint",
     "analyze": "omlet analyze",
-    "lint": "concurrently yarn:lint:*",
+    "lint": "concurrently 'yarn:lint:*'",
     "lint:js": "eslint --cache .",
     "lint:css": "stylelint --cache --ignore-path .gitignore '**/*.?(s)css'",
-    "format": "concurrently yarn:format:*",
+    "format": "concurrently 'yarn:format:*'",
     "format:js": "yarn lint:js --fix",
     "format:css": "yarn lint:css --fix"
   },
