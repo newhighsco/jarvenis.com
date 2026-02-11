@@ -8,7 +8,10 @@ sourcebit.fetch(sourcebitConfig, { cache: false, quiet: true })
 
 const nextConfig = {
   images: {
-    domains: ['i.ytimg.com', 'mockup-api.teespring.com'],
+    remotePatterns: [
+      new URL('https://i.ytimg.com/**'),
+      new URL('https://mockup-api.teespring.com/**')
+    ],
     formats: ['image/avif', 'image/webp']
   },
   i18n: { locales: ['en-GB'], defaultLocale: 'en-GB' },
