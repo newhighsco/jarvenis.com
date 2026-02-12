@@ -48,7 +48,7 @@
     "next": "16.1.6",
     "next-compose-plugins": "2.2.1",
     "next-mdx-frontmatter": "0.0.4",
-    "next-mdx-remote": "5.0.0",
+    "next-mdx-remote": "6.0.0",
     "next-rss": "1.0.1",
     "next-sitemap": "4.2.3",
     "postcss": "8.5.6",
