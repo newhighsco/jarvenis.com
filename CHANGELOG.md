@@ -1,3 +1,10 @@
+## [1.23.88](https://github.com/newhighsco/jarvenis.com/compare/v1.23.87...v1.23.88) (2026-02-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @newhighsco/chipset to v7 ([#3245](https://github.com/newhighsco/jarvenis.com/issues/3245)) ([06c79ff](https://github.com/newhighsco/jarvenis.com/commit/06c79ff8c06b8d29f3bb3cdf35572165c8bffdda))
+
 ## [1.23.87](https://github.com/newhighsco/jarvenis.com/compare/v1.23.86...v1.23.87) (2026-02-19)
 
 
