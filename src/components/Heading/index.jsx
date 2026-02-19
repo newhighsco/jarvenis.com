@@ -8,7 +8,7 @@ const Heading = ({ as = 'h1', kicker, icon, children, ...rest }) => (
   <div className={styles.root} {...rest}>
     {kicker && <div className={styles.kicker}>{kicker}</div>}
     <Element as={as} className={styles.content}>
-      {icon && <Icon theme={{ root: styles.icon }}>{icon}</Icon>}
+      {icon && <Icon name={icon} theme={{ root: styles.icon }} />}
       {children}
     </Element>
   </div>

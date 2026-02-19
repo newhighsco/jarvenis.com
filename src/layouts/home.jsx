@@ -12,7 +12,6 @@ import ProductListing from '../components/ProductListing'
 import Section from '../components/Section'
 import SponsorListing from '../components/SponsorListing'
 import VideoListing from '../components/VideoListing'
-import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 
 const { name, url, logo, socialLinks } = config
 
@@ -36,7 +35,7 @@ const HomeLayout = ({ meta, videos = [], products = [] }) => {
         type="Organization"
         name={name}
         url={url}
-        sameAs={[socialLinks.twitter]}
+        sameAs={[socialLinks.x]}
       />
       {logo?.bitmap && (
         <LogoJsonLd url={url} logo={urlJoin(url, logo.bitmap)} />
@@ -61,7 +60,7 @@ const HomeLayout = ({ meta, videos = [], products = [] }) => {
         </Section>
       )}
       <Section size="desktopMedium">
-        <Heading as="h2" align="center" icon={<DiscordIcon />}>
+        <Heading as="h2" align="center" icon="simple-icons:discord">
           Community Hub
         </Heading>
         <Button.Group>
