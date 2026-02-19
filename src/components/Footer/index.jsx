@@ -11,9 +11,6 @@ import React from 'react'
 
 import config from '../../../site.config'
 import footer from '../../data/footer.json'
-import { ReactComponent as TwitchIcon } from '../../images/icons/twitch.svg'
-import { ReactComponent as TwitterIcon } from '../../images/icons/twitter.svg'
-import { ReactComponent as YouTubeIcon } from '../../images/icons/youtube.svg'
 import LogoLockup from '../LogoLockup'
 import styles from './Footer.module.scss'
 
@@ -23,19 +20,19 @@ const iconLinks = [
   {
     href: socialLinks.youtube,
     text: `Subscribe to ${shortName} on YouTube`,
-    icon: YouTubeIcon,
+    icon: 'simple-icons:youtube',
     target: '_blank'
   },
   {
     href: socialLinks.twitch,
     text: `Subscribe to ${shortName} on Twitch`,
-    icon: TwitchIcon,
+    icon: 'simple-icons:twitch',
     target: '_blank'
   },
   {
-    href: socialLinks.twitter,
-    text: `Follow ${shortName} on Twitter`,
-    icon: TwitterIcon,
+    href: socialLinks.x,
+    text: `Follow ${shortName} on X`,
+    icon: 'simple-icons:x',
     target: '_blank'
   }
 ]
@@ -61,11 +58,9 @@ const Footer = () => (
         <Grid.Item sizes={['tablet-one-third']}>
           <Navigation
             links={iconLinks}
-            renderLink={({ text, icon: IconSvg, ...rest }) => (
+            renderLink={({ text, icon, ...rest }) => (
               <SmartLink {...rest}>
-                <Icon theme={{ root: styles.icon }} alt={text}>
-                  {IconSvg && <IconSvg />}
-                </Icon>
+                <Icon name={icon} theme={{ root: styles.icon }} alt={text} />
               </SmartLink>
             )}
             theme={{ root: styles.iconLinks, item: styles.iconLink }}

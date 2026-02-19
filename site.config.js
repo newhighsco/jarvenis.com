@@ -18,7 +18,7 @@ const config = {
     email: 'jarv@jarvenis.com',
     teespring: 'https://jarv.creator-spring.com',
     twitch: `https://www.twitch.tv/jarvenis`,
-    twitter: `https://twitter.com/jarvenis`,
+    x: `https://x.com/jarvenis`,
     youtube: `https://youtube.com/jarvenis`
   },
   dateFormat: { month: 'short', year: 'numeric', day: 'numeric' }
