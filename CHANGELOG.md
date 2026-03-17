@@ -1,3 +1,10 @@
+## [1.23.93](https://github.com/newhighsco/jarvenis.com/compare/v1.23.92...v1.23.93) (2026-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update newhighsco packages ([#3293](https://github.com/newhighsco/jarvenis.com/issues/3293)) ([ba5e77b](https://github.com/newhighsco/jarvenis.com/commit/ba5e77b269f36a84db4b3980149f67bffd570bec))
+
 ## [1.23.92](https://github.com/newhighsco/jarvenis.com/compare/v1.23.91...v1.23.92) (2026-03-17)
 
 
