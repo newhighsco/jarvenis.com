@@ -3148,7 +3148,7 @@ __metadata:
     concurrently: "npm:9.2.1"
     eslint: "npm:10.2.0"
     husky: "npm:9.1.7"
-    marked: "npm:18.0.0"
+    marked: "npm:18.0.1"
     next: "npm:16.2.4"
     next-compose-plugins: "npm:2.2.1"
     next-mdx-frontmatter: "npm:0.0.4"
@@ -10735,12 +10735,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:18.0.0":
-  version: 18.0.0
-  resolution: "marked@npm:18.0.0"
+"marked@npm:18.0.1":
+  version: 18.0.1
+  resolution: "marked@npm:18.0.1"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/4a2ce60b9fd96a3092405e10c616a5cdf5375d031da1d44d3aa9d790971851fbca20628efd28db28cc91e84e18b9f5b95ec1e6fd1124a85d94abb1b6f6b409ae
+  checksum: 10c0/30ddea15ed8c9d0b294a30427052aeaf32897fed5aa7b86f78c4d80d17ceff4e4f753b057db4b10675908e7ee8989b74ef492b22aee4318484fad341d2eae95b
   languageName: node
   linkType: hard
 
