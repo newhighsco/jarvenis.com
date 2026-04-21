@@ -1,3 +1,10 @@
+## [1.23.116](https://github.com/newhighsco/jarvenis.com/compare/v1.23.115...v1.23.116) (2026-04-21)
+
+
+### Bug Fixes
+
+* **youtube:** error catching ([#3371](https://github.com/newhighsco/jarvenis.com/issues/3371)) ([7907c00](https://github.com/newhighsco/jarvenis.com/commit/7907c005561809c064c99cc2a2d15ca1ec0d60fa))
+
 ## [1.23.115](https://github.com/newhighsco/jarvenis.com/compare/v1.23.114...v1.23.115) (2026-04-18)
 
 
