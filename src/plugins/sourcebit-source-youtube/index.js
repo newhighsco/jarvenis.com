@@ -59,23 +59,27 @@ module.exports.bootstrap = async ({
   if (context && context.entries) {
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
-    const xml = await fetch(feedUrl(options.channelId)).then(response =>
-      response.text()
-    )
-    const {
-      feed: { entry: entries }
-    } = await parseStringPromise(xml, {
-      explicitArray: false,
-      mergeAttrs: true
-    }).then(result => result)
+    try {
+      const xml = await fetch(feedUrl(options.channelId)).then(response =>
+        response.text()
+      )
+      const {
+        feed: { entry: entries }
+      } = await parseStringPromise(xml, {
+        explicitArray: false,
+        mergeAttrs: true
+      }).then(result => result)
 
-    setPluginContext({
-      assets: entries.map(({ 'yt:videoId': id }) => ({
-        id,
-        url: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
-      })),
-      entries
-    })
+      setPluginContext({
+        assets: entries.map(({ 'yt:videoId': id }) => ({
+          id,
+          url: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
+        })),
+        entries
+      })
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   if (options.watch) {
