@@ -41,7 +41,7 @@
     "@newhighsco/chipset": "7.0.0",
     "@newhighsco/next-plugin-svgr": "3.0.168",
     "@newhighsco/press-start": "2.6.40",
-    "@omlet/cli": "2.0.0",
+    "@omlet/cli": "2.2.0",
     "concurrently": "9.2.1",
     "marked": "18.0.2",
     "next": "16.2.4",
