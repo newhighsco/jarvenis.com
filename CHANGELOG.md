@@ -1,3 +1,10 @@
+## [1.23.117](https://github.com/newhighsco/jarvenis.com/compare/v1.23.116...v1.23.117) (2026-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @omlet/cli to v2.2.0 ([#3375](https://github.com/newhighsco/jarvenis.com/issues/3375)) ([2d6a725](https://github.com/newhighsco/jarvenis.com/commit/2d6a7254761df93739f22eab62100e7798b0d939))
+
 ## [1.23.116](https://github.com/newhighsco/jarvenis.com/compare/v1.23.115...v1.23.116) (2026-04-21)
 
 
