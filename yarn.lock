@@ -3087,6 +3087,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@newhighsco/chipset@npm:7.0.1":
+  version: 7.0.1
+  resolution: "@newhighsco/chipset@npm:7.0.1"
+  dependencies:
+    "@dr.pogodin/react-themes": "npm:1.10.3"
+    "@iconify/react": "npm:6.0.2"
+    classnames: "npm:2.5.1"
+    react-device-detect: "npm:2.2.3"
+  peerDependencies:
+    react: 19.2.5
+    react-dom: 19.2.5
+  checksum: 10c0/0bcdda68962922c7bae4a12e0268fe97602e96b2e5c8a66b0f4061ecc322c0b87bd71cb9404e8bfaa0b3997ba8339c806dcecf5492e25ead44616fc513e9ed92
+  languageName: node
+  linkType: hard
+
 "@newhighsco/commitlint-config@npm:1.1.53":
   version: 1.1.53
   resolution: "@newhighsco/commitlint-config@npm:1.1.53"
@@ -3142,7 +3157,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:20.5.2"
     "@newhighsco/browserslist-config": "npm:2.0.0"
-    "@newhighsco/chipset": "npm:7.0.0"
+    "@newhighsco/chipset": "npm:7.0.1"
     "@newhighsco/commitlint-config": "npm:1.1.53"
     "@newhighsco/editor-config": "npm:1.2.0"
     "@newhighsco/eslint-config": "npm:7.0.54"
