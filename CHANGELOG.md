@@ -1,3 +1,10 @@
+## [1.23.122](https://github.com/newhighsco/jarvenis.com/compare/v1.23.121...v1.23.122) (2026-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.5.13 ([#3394](https://github.com/newhighsco/jarvenis.com/issues/3394)) ([a6250f7](https://github.com/newhighsco/jarvenis.com/commit/a6250f729bf376410b7a8bc09698aafc7b3bf9ce))
+
 ## [1.23.121](https://github.com/newhighsco/jarvenis.com/compare/v1.23.120...v1.23.121) (2026-04-29)
 
 
