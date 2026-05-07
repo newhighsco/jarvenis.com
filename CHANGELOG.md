@@ -1,3 +1,10 @@
+## [1.23.127](https://github.com/newhighsco/jarvenis.com/compare/v1.23.126...v1.23.127) (2026-05-07)
+
+
+### Bug Fixes
+
+* **youtube:** handle missing videos ([3e17209](https://github.com/newhighsco/jarvenis.com/commit/3e172099adc99ba1c57c735d725ef81d27477578))
+
 ## [1.23.126](https://github.com/newhighsco/jarvenis.com/compare/v1.23.125...v1.23.126) (2026-05-06)
 
 
