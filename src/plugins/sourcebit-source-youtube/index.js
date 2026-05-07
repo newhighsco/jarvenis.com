@@ -56,19 +56,27 @@ module.exports.bootstrap = async ({
 }) => {
   const context = getPluginContext()
 
-  if (context && context.entries) {
+  if (context?.entries) {
     log(`Loaded ${context.entries.length} entries from cache`)
   } else {
     try {
-      const xml = await fetch(feedUrl(options.channelId)).then(response =>
-        response.text()
-      )
-      const {
-        feed: { entry: entries }
-      } = await parseStringPromise(xml, {
-        explicitArray: false,
-        mergeAttrs: true
-      }).then(result => result)
+      let body
+      const entries = await fetch(feedUrl(options.channelId))
+        .then(async response => {
+          if (!response.ok) {
+            return []
+          }
+
+          body = await response.text()
+
+          const { feed } = await parseStringPromise(body, {
+            explicitArray: false,
+            mergeAttrs: true
+          })
+
+          return feed.entry
+        })
+        .catch(error => console.error(error, body))
 
       setPluginContext({
         assets: entries.map(({ 'yt:videoId': id }) => ({
