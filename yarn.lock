@@ -2912,9 +2912,9 @@ __metadata:
     "@newhighsco/editor-config": "npm:1.2.0"
     "@newhighsco/eslint-config": "npm:7.1.6"
     "@newhighsco/lint-staged-config": "npm:1.1.0"
-    "@newhighsco/next-plugin-svgr": "npm:3.0.170"
+    "@newhighsco/next-plugin-svgr": "npm:3.0.171"
     "@newhighsco/postcss-config": "npm:4.0.52"
-    "@newhighsco/press-start": "npm:2.6.43"
+    "@newhighsco/press-start": "npm:2.6.44"
     "@newhighsco/prettier-config": "npm:2.3.5"
     "@newhighsco/release-config": "npm:1.5.0"
     "@newhighsco/stylelint-config": "npm:4.0.43"
@@ -2955,16 +2955,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@newhighsco/next-plugin-svgr@npm:3.0.170":
-  version: 3.0.170
-  resolution: "@newhighsco/next-plugin-svgr@npm:3.0.170"
+"@newhighsco/next-plugin-svgr@npm:3.0.171":
+  version: 3.0.171
+  resolution: "@newhighsco/next-plugin-svgr@npm:3.0.171"
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
     file-loader: "npm:6.2.0"
     url-loader: "npm:4.1.1"
   peerDependencies:
-    next: 16.2.6
-  checksum: 10c0/c53fba434da2c5025a4ec4ec78f3fedc50aec03b4b5238b651ec156ce884f5d726980f0c937078e0bd4463b356502b9476be65af3a748d7f9716d34afd20e992
+    next: 16.2.7
+  checksum: 10c0/db4672d2978f76cddb4adcff409eff13c9a5bad08aef7f5a3f78cf6eb996148a419c843f6ff318007cca29809dfd327dd27b0a5c1952c15908fa1c6ba247bb5d
   languageName: node
   linkType: hard
 
@@ -2983,15 +2983,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@newhighsco/press-start@npm:2.6.43":
-  version: 2.6.43
-  resolution: "@newhighsco/press-start@npm:2.6.43"
+"@newhighsco/press-start@npm:2.6.44":
+  version: 2.6.44
+  resolution: "@newhighsco/press-start@npm:2.6.44"
   dependencies:
     "@newhighsco/chipset": "npm:7.0.2"
     next-seo: "npm:6.8.0"
   peerDependencies:
-    next: 16.2.6
-  checksum: 10c0/dfaf7d7c841b9d652cfe162766ccabdf8ad1623fb6a435a55e84bb6315752a7e934189bbf8b112afa3d6c692047c46cdd2a7326604fe0d29386da07c7e71d47b
+    next: 16.2.7
+  checksum: 10c0/9d72f4d02609dc8d749c60f4835262f368ee2a0d504b525da9a40765c4785cad5c81c12bd475027933c2c3af5ac5af340fcc974fcb1aa662036a260316081f6d
   languageName: node
   linkType: hard
 
