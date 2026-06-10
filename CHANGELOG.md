@@ -1,3 +1,9 @@
+## [1.23.144](https://github.com/newhighsco/jarvenis.com/compare/v1.23.143...v1.23.144) (2026-06-10)
+
+### Bug Fixes
+
+* **deps:** update nextjs packages to v16.2.9 ([#3475](https://github.com/newhighsco/jarvenis.com/issues/3475)) ([b47c362](https://github.com/newhighsco/jarvenis.com/commit/b47c36248ab9bb5166965735ef4499fb83f1adee))
+
 ## [1.23.143](https://github.com/newhighsco/jarvenis.com/compare/v1.23.142...v1.23.143) (2026-06-04)
 
 ### Bug Fixes
