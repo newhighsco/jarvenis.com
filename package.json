@@ -37,9 +37,9 @@
     "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
-    "@newhighsco/chipset": "7.1.0",
+    "@newhighsco/chipset": "7.2.1",
     "@newhighsco/next-plugin-svgr": "3.0.172",
-    "@newhighsco/press-start": "2.7.2",
+    "@newhighsco/press-start": "2.8.0",
     "concurrently": "10.0.3",
     "marked": "18.0.5",
     "next": "16.2.9",
@@ -64,7 +64,7 @@
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "7.1.9",
     "@newhighsco/lint-staged-config": "1.1.0",
-    "@newhighsco/postcss-config": "4.0.53",
+    "@newhighsco/postcss-config": "4.0.54",
     "@newhighsco/prettier-config": "2.3.6",
     "@newhighsco/release-config": "1.5.1",
     "@newhighsco/stylelint-config": "4.0.45",
