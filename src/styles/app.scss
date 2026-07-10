@@ -1,25 +1,8 @@
 @use '~@newhighsco/chipset/styles/normalize';
 @use '../styles/breakpoints.module';
 @use '../styles/colors.module';
+@use '../styles/font-faces.module';
 @use '../styles/fonts.module';
-
-@font-face {
-  font-display: swap;
-  font-family: fonts.$primal;
-  font-weight: normal;
-  font-style: normal;
-  src: url('/fonts/primal/regular.woff') format('woff');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: fonts.$blender-pro;
-  font-weight: normal;
-  font-style: normal;
-  src:
-    url('/fonts/blender-pro/bold.woff2') format('woff2'),
-    url('/fonts/blender-pro/bold.woff') format('woff');
-}
 
 body {
   background-color: colors.$midnight;

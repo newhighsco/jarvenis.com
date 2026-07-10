@@ -8,21 +8,7 @@ import Header from '../Header'
 
 const PageContainer = ({ meta, children }) => (
   <ThemedPageContainer header={<Header />} footer={<Footer />}>
-    <Meta
-      {...meta}
-      additionalLinkTags={[
-        ...[
-          { path: 'primal', extension: 'woff' },
-          { path: 'blender-pro', weight: 'bold' }
-        ].map(({ path, weight = 'regular', extension = 'woff2' }) => ({
-          rel: 'preload',
-          href: `/fonts/${path}/${weight}.${extension}`,
-          as: 'font',
-          type: `font/${extension}`,
-          crossOrigin: 'anonymous'
-        }))
-      ]}
-    />
+    <Meta {...meta} />
     {children}
   </ThemedPageContainer>
 )
