@@ -1,0 +1,17 @@
+@use '~@newhighsco/chipset/styles/mixins/font';
+@use './fonts.module';
+
+$font-faces: (
+  fonts.$primal: (
+    filename: 'primal/regular.woff'
+  ),
+  fonts.$blender-pro: (
+    filename: 'blender-pro/bold.woff2'
+  )
+);
+
+@include font.font-faces($font-faces);
+
+:export {
+  urls: font.font-urls($font-faces);
+}
