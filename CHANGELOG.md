@@ -1,3 +1,5 @@
+## [1.24.14](https://github.com/newhighsco/jarvenis.com/compare/v1.24.13...v1.24.14) (2026-07-24)
+
 ## [1.24.13](https://github.com/newhighsco/jarvenis.com/compare/v1.24.12...v1.24.13) (2026-07-23)
 
 ## [1.24.12](https://github.com/newhighsco/jarvenis.com/compare/v1.24.11...v1.24.12) (2026-07-23)
