@@ -2942,7 +2942,7 @@ __metadata:
     eslint: "npm:10.8.0"
     husky: "npm:9.1.7"
     lint-staged: "npm:17.3.0"
-    marked: "npm:18.0.8"
+    marked: "npm:18.0.9"
     next: "npm:16.3.0"
     next-compose-plugins: "npm:2.2.1"
     next-mdx-frontmatter: "npm:0.0.4"
@@ -9923,12 +9923,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:18.0.8":
-  version: 18.0.8
-  resolution: "marked@npm:18.0.8"
+"marked@npm:18.0.9":
+  version: 18.0.9
+  resolution: "marked@npm:18.0.9"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/46201cab7179a7bd6185cc868f4867208e98e3aff697307ed2af28a567ea55b4a324c5d15b22d42c7080035966b80833f8cdbb894e34b959265021664c3db9f0
+  checksum: 10c0/2fec6c41a8a18f0d9aa6750cd71d8baa7c1abd371e84b04784b735dddf1e581e04bfb37adadeffdb53a3a9e07b1905ab3231cfdf199cc0324edf7b861e3acc46
   languageName: node
   linkType: hard
 
